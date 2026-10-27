@@ -661,42 +661,42 @@ def specs(rng):
     add = lambda kind_, lv, **p: L.append((kind_, lv, p))
 
     # --- 望遠鏡和 (7)
-    add("k_tel_a", 1, a=rng.choice([2, 3]))
-    add("k_tel_b", 1, **rng.choice([{"k": 2, "b": -1}, {"k": 3, "b": -2}]))
-    add("k_tel_quad", 2, c=rng.choice([2, 3]))
+    add("k_tel_a", 1, a=rng.choice([2, 3, 4]))
+    add("k_tel_b", 1, **rng.choice([{"k": 2, "b": -1}, {"k": 3, "b": -2}, {"k": 2, "b": 1}, {"k": 4, "b": -3}, {"k": 3, "b": -1}]))
+    add("k_tel_quad", 2, c=rng.choice([1, 2, 3, 4]))
     add("k_tel_c", 2)
     add("k_log_div", 2)
     add("k_log_prod", 3)
     add("k_fact_tel", 3)
 
     # --- 収束判定 (9)
-    kk, aa = rng.choice([2, 3]), rng.choice([2, 3])
+    kk, aa = rng.choice([2, 3, 4]), rng.choice([2, 3, 4, 5])
     add("k_ratio", 1, expr="n**%d/%d**n" % (kk, aa), title="比判定法(多項式÷指数)",
         tool="$n^%d$ と $%d^n$ の比較なので比をとると多項式部分は $1$ に近づき、指数部分の比 $\\dfrac{1}{%d}$ だけが残る(ダランベールの判定法)。" % (kk, aa, aa))
     add("k_ratio", 2, expr="factorial(n)**2/factorial(2*n)", title="比判定法(階乗)",
         tool="階乗を含む一般項は比をとると約分で多項式の比になる(ダランベールの判定法)。$(2n+2)!=(2n+2)(2n+1)(2n)!$ に注意する。")
-    cc = rng.choice([5, 6])
+    cc = rng.choice([5, 6, 8])
     add("k_ratio", 2, expr="%d**n*factorial(n)**2/factorial(2*n)" % cc, title="比判定法(階乗と指数)",
         tool="階乗と指数の積なので比をとる(ダランベール)。比の極限が $1$ より大きいか小さいかで判定する。")
     add("k_ratio_e", 3, **{"as": [2, 3]})
-    a1, c1 = rng.choice([(2, 3), (3, 4), (3, 5)])
+    a1, c1 = rng.choice([(2, 3), (3, 4), (3, 5), (1, 2), (2, 5), (4, 5)])
     add("k_root", 1, expr="((%d*n+1)/(%d*n+2))**n" % (a1, c1), base="(%d*n+1)/(%d*n+2)" % (a1, c1),
         title="根判定法(n 乗の形)", tool="一般項が丸ごと $n$ 乗なので $n$ 乗根をとると括弧の中だけが残る(コーシーの根判定法)。")
-    a2 = rng.choice([1, 2])
+    a2 = rng.choice([1, 2, 3])
     add("k_root", 2, expr="(n/(n+%d))**(n**2)" % a2, base="(n/(n+%d))**n" % a2,
         title="根判定法と e の極限",
         tool="指数が $n^2$ なので $n$ 乗根をとると $\\left(\\dfrac{n}{n+%d}\\right)^n$ が残る。これは $\\left(1+\\dfrac{%d}{n}\\right)^{-n}$ と見て $e$ の極限を使う。" % (a2, a2),
         extra=r"$\left(\dfrac{n}{n+%d}\right)^n=\dfrac{1}{\left(1+\frac{%d}{n}\right)^n}$" % (a2, a2))
-    b1, b2 = rng.choice([(1, 2), (2, 1), (3, 1)])
+    b1, b2 = rng.choice([(1, 2), (2, 1), (3, 1), (4, 1), (1, 5)])
     add("k_comp", 1, expr="(n+%d)/(n**3+%d)" % (b1, b2), p="2", title="p 級数との極限比較",
         tool="分子は1次、分母は3次なので一般項は $\\dfrac{1}{n^2}$ と同じオーダー。$p$ 級数 $\\sum\\dfrac{1}{n^2}$ と極限比較する。")
-    b3 = rng.choice([2, 3])
+    b3 = rng.choice([1, 2, 3, 4])
     add("k_comp", 2, expr="1/sqrt(n**2+%d*n)" % b3, p="1", title="極限比較で発散",
         tool="根号の中は2次式なので一般項は $\\dfrac{1}{n}$ と同じオーダー。調和級数($p=1$)と極限比較する。")
-    b4 = rng.choice([2, 3])
+    b4 = rng.choice([1, 2, 3, 5])
     add("k_comp", 2, expr="sqrt(n)/(n**2+%d)" % b4, p="3/2", title="分数乗の p 級数と比較",
         tool="分子が $n^{1/2}$、分母が $n^2$ なので一般項は $\\dfrac{1}{n^{3/2}}$ のオーダー。$p=\\dfrac{3}{2}$ の $p$ 級数と極限比較する。")
-    b5 = rng.choice([2, 3])
+    b5 = rng.choice([2, 3, 4])
     add("k_comp", 3, expr="1-cos(%d/n)" % b5, p="2", title="テイラー展開と極限比較",
         tool="$n\\to\\infty$ で $\\dfrac{%d}{n}\\to 0$ なので $1-\\cos\\theta\\approx\\dfrac{\\theta^2}{2}$ を使うと一般項は $\\dfrac{1}{n^2}$ のオーダーとわかる。これと極限比較する。" % b5,
         extra=r"$1-\cos\theta=\dfrac{\theta^2}{2}+O(\theta^4)$ に $\theta=\dfrac{%d}{n}$ を代入すると $1-\cos\dfrac{%d}{n}\approx\dfrac{%d}{n^2}$" % (b5, b5, b5 * b5 // 2) if b5 % 2 == 0 else
@@ -706,15 +706,15 @@ def specs(rng):
     add("k_alt", 1, b="1/n**(1/3)", p="1/3", shift=True, title="交代 p 級数",
         tool="絶対値をとると $p=\\dfrac{1}{3}$ の $p$ 級数。絶対収束しないときはライプニッツの判定法で収束を確かめる。",
         mono=r"$\sqrt[3]{n}$ は単調増加なので $\dfrac{1}{\sqrt[3]{n}}$ は単調減少")
-    e2 = rng.choice([1, 2])
+    e2 = rng.choice([1, 2, 3])
     add("k_alt", 1, b="n/(n**3+%d)" % e2, p="2", title="絶対収束の判定",
         tool="まず絶対値の級数を調べる。分子1次・分母3次で $\\dfrac{1}{n^2}$ のオーダーなので $p$ 級数と比較できる。", mono="")
-    e3 = rng.choice([2, 3])
+    e3 = rng.choice([2, 3, 5, 6])
     n0 = int(sp.floor(sp.sqrt(e3))) + 1
     add("k_alt", 2, b="n/(n**2+%d)" % e3, p="1", title="条件収束の判定",
         tool="絶対値は $\\dfrac{1}{n}$ のオーダーで発散するので絶対収束しない。そこでライプニッツの判定法($|a_n|$ が単調減少して $0$ に収束)を確かめる。",
         mono=r"$g(x)=\dfrac{x}{x^2+%d}$ は $g'(x)=\dfrac{%d-x^2}{(x^2+%d)^2}<0$ $(x>\sqrt{%d})$ なので $n\ge %d$ で単調減少" % (e3, e3, e3, e3, n0))
-    e4 = rng.choice([2, 3])
+    e4 = rng.choice([2, 3, 4, 5])
     add("k_alt", 2, b="n/(%d*n+1)" % e4, title="一般項が 0 に行かない交代級数",
         tool="交代級数でもまず一般項 $\\to 0$ を確認する。$0$ に収束しなければその時点で発散と決まる(ライプニッツは使えない)。")
     add("k_alt", 2, b="1/log(n+1)", p="0", title="対数を含む条件収束",
@@ -725,34 +725,34 @@ def specs(rng):
 
     # --- 収束半径 (12): x^{2n}, x^{2n+1} 型を 9 題
     t2 = "$x^{2n}$ の係数しかなく奇数次の係数が $0$ なので、係数の比の公式はそのまま使えない。$t=x^2$ と置いて $t$ の整級数の収束半径を求めてから $x$ に戻す(または項どうしの比をとる)。"
-    a = rng.choice([2, 3, 5])
+    a = rng.choice([2, 3, 5, 6, 7])
     add("k_radius", 1, c="%d**n" % a, k=2, title="x²ⁿ 型の収束半径", tool=t2)
-    a = rng.choice([5, 7])
+    a = rng.choice([5, 7, 3, 11])
     add("k_radius", 1, c="1/%d**n" % a, k=2, title="x²ⁿ 型の収束半径(割る形)", tool=t2)
-    a = rng.choice([4, 9])
+    a = rng.choice([4, 9, 16, 25])
     add("k_radius", 1, c="%d**n" % a, k=2, j=1, title="x²ⁿ⁺¹ 型の収束半径",
         tool="偶数次の係数が $0$ なので係数の比の公式はそのまま使えない。$x^{2n+1}=x\\cdot(x^2)^n$ と分けて $t=x^2$ と置く(または項どうしの比をとる)。")
-    a = rng.choice([3, 5])
+    a = rng.choice([3, 5, 2, 7])
     add("k_radius", 2, c="n/%d**n" % a, k=2, title="n がかかった x²ⁿ 型", tool=t2)
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 5])
     add("k_radius", 2, c="(-1)**n*%d**n/(n+1)" % a, k=2, j=1, title="符号つき x²ⁿ⁺¹ 型",
         tool="係数の符号 $(-1)^n$ は比の絶対値をとれば消える。$x^{2n+1}=x(x^2)^n$ として $t=x^2$ の整級数の収束半径を求める(偶数次の係数が $0$ なので公式を直接は使えない)。")
-    a = rng.choice([8, 27])
+    a = rng.choice([8, 27, 64])
     add("k_radius", 2, c="%d**n" % a, k=3, title="x³ⁿ 型の収束半径",
         tool="$x^{3n}$ の項しかないので $t=x^3$ と置く。$|t|<R_t\\iff|x|<\\sqrt[3]{R_t}$ で戻す。")
-    a = rng.choice([3, 5])
+    a = rng.choice([3, 5, 2, 7])
     add("k_radius", 3, c="%d**n/n" % a, k=2, lo=1, endpoints=True, p_end="1", title="x²ⁿ 型の収束域(端点で発散)",
         tool="$t=x^2$ と置いて収束半径を出し、端点 $x=\\pm R$ では $x^{2n}=R^{2n}$ を代入した級数を $p$ 級数として別に調べる(比判定法は端点では使えない)。")
-    a = rng.choice([4, 9])
+    a = rng.choice([4, 9, 16, 2])
     add("k_radius", 3, c="%d**n/n**2" % a, k=2, lo=1, endpoints=True, p_end="2", title="x²ⁿ 型の収束域(端点で収束)",
         tool="$t=x^2$ と置いて収束半径を出し、端点では代入した級数を $p$ 級数として調べる。$p=2>1$ なら端点も含む。")
-    a, b = rng.choice([(2, 3), (2, 5), (3, 4)])
+    a, b = rng.choice([(2, 3), (2, 5), (3, 4), (4, 9), (5, 9)])
     add("k_radius", 3, c="%d**n+%d**n" % (a, b), k=2, title="係数が和の x²ⁿ 型",
         tool="係数 $%d^n+%d^n$ は $n$ が大きいと大きい方の $%d^n$ が支配する。$t=x^2$ と置き、比の極限を $%d^n$ でくくって求める。" % (a, b, max(a, b), max(a, b)))
-    a, ctr = rng.choice([(4, 1), (9, 2)])
+    a, ctr = rng.choice([(4, 1), (9, 2), (16, 3), (4, 2)])
     add("k_radius", 3, c="1/%d**n" % a, k=2, center=ctr, endpoints=True, p_end="0", title="中心がずれた (x−c)²ⁿ 型",
         tool="$u=x-%d$, $t=u^2$ と2回置き換える。端点では各項が $1$ になり一般項が $0$ に収束しないことを使う。" % ctr)
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 4, 5])
     add("k_radius", 1, c="n**2/%d**n" % a, k=1, title="基本の収束半径",
         tool="すべての次数の係数がそろっているので、係数の比 $\\left|\\dfrac{c_{n+1}}{c_n}\\right|$ の極限の逆数が収束半径になる。")
     add("k_radius", 3, c="factorial(n)/n**n", k=1, lo=1,

@@ -629,17 +629,17 @@ def specs(rng):
     add = lambda kind_, lv, **p: L.append((kind_, lv, p))
 
     # --- 偏微分 (8)
-    a, b = rng.choice([(3, 2), (4, 3), (2, 5)])
+    a, b = rng.choice([(3, 2), (4, 3), (2, 5), (5, 2), (3, 4)])
     c = rng.choice([3, 4, 5])
     add("b_pd", 1, f="x**%d*y**%d+%d*x*y" % (a, b, c), title="多項式の偏微分",
         tool="$f_x$ は $y$ を定数とみて $x$ で微分、$f_y$ は $x$ を定数とみて $y$ で微分する。")
-    a, b = rng.choice([(2, 3), (3, 2), (2, 5)])
+    a, b = rng.choice([(2, 3), (3, 2), (2, 5), (4, 3), (5, 2)])
     add("b_pd", 1, f="exp(%d*x)*sin(%d*y)" % (a, b), title="指数×三角の偏微分",
         tool="$x$ で微分するとき $\\sin %dy$ は定数、$y$ で微分するとき $e^{%dx}$ は定数。それぞれ合成関数の微分で中身の係数が前に出る。" % (b, a))
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 4])
     add("b_pd", 1, f="log(x**2+%d*y**2)" % a, title="対数関数の偏微分",
         tool="$\\log u$ の微分は $\\dfrac{u'}{u}$。中身 $u=x^2+%dy^2$ を $x$, $y$ でそれぞれ偏微分する。" % a)
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 4])
     add("b_pd", 2, f="exp(x*y**%d)" % a, title="指数の肩に積がある偏微分",
         tool="$e^{u}$ の偏微分は $e^{u}\\cdot u_x$, $e^{u}\\cdot u_y$。肩の $u=xy^%d$ を偏微分したものがかかる。" % a)
     add("b_pd", 2, f="atan(y/x)", title="逆正接の偏微分",
@@ -650,31 +650,31 @@ def specs(rng):
     a = rng.choice([1, 2])
     add("b_pd", 2, f="(x+%d*y)/(x-y)" % a, title="商の偏微分",
         tool="商の微分公式 $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}$ を $x$, $y$ それぞれについて使う。")
-    a, (x0, y0) = rng.choice([(3, ("1", "1")), (8, ("1", "1")), (5, ("2", "1"))])
+    a, (x0, y0) = rng.choice([(3, ("1", "1")), (8, ("1", "1")), (5, ("2", "1")), (15, ("1", "1")), (24, ("1", "1"))])
     add("b_pd_pt", 1, f="sqrt(%d*x**2+y**2)" % a, pt=[x0, y0], title="点での偏微分係数",
         tool="$\\sqrt{u}$ の微分は $\\dfrac{u'}{2\\sqrt{u}}$。偏導関数を求めてから点の座標を代入する。")
 
     # --- 連鎖律 (4)
     add("b_chain_t", 1, z="x**2*y", x="cos(t)", y="sin(t)", t0="pi/4", title="1変数への連鎖律")
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 4])
     add("b_chain_t", 2, z="exp(x)*log(y)", x="%d*t" % a, y="t**2+1", t0="0", title="指数・対数の連鎖律")
     add("b_chain_uv", 2, F="u**2*v", u="x+y", v="x*y", title="2変数への連鎖律")
     add("b_chain_polar", 2, f="x**2-y**2")
 
     # --- 接平面 (7)
-    a, (x0, y0) = rng.choice([(2, ("1", "1")), (3, ("1", "2")), (2, ("2", "1"))])
+    a, (x0, y0) = rng.choice([(2, ("1", "1")), (3, ("1", "2")), (2, ("2", "1")), (4, ("1", "1")), (3, ("2", "1"))])
     add("b_tp", 1, f="x**2+%d*y**2" % a, pt=[x0, y0], title="接平面(2次式)")
     add("b_tp", 1, f="x**2*y+y**3", pt=["1", "2"], title="接平面(3次式)")
     add("b_tp", 2, f="log(x**2+y**2)", pt=["1", "1"], title="接平面(対数)")
     add("b_tp", 2, f="exp(x)*cos(y)", pt=["0", "0"], title="接平面(指数×三角)")
-    P = rng.choice([("1", "2", "2"), ("2", "1", "2"), ("2", "2", "1")])
+    P = rng.choice([("1", "2", "2"), ("2", "1", "2"), ("2", "2", "1"), ("-1", "2", "2"), ("2", "-2", "1")])
     add("b_tp_imp", 2, F="x**2+y**2+z**2", c="9", pt=list(P), title="球面の接平面")
     add("b_tp_imp", 2, F="x*y*z", c="6", pt=["1", "2", "3"], title="陰関数表示の曲面の接平面")
-    k, (pn, qn) = rng.choice([(2, ("2", "8")), (3, ("4", "6")), (2, ("6", "4"))])
+    k, (pn, qn) = rng.choice([(2, ("2", "8")), (3, ("4", "6")), (2, ("6", "4")), (2, ("4", "4")), (3, ("2", "12")), (4, ("2", "8"))])
     add("b_tp_par", 3, f="x**2+%d*y**2" % k, pq=[pn, qn])
 
     # --- 極限が存在する (5)
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 4])
     add("b_lim_exist", 1, f="%d*x**2*y/(x**2+y**2)" % a, L="0", polar="%d*r*cos(theta)**2*sin(theta)" % a,
         bound="%d*r" % a, title="極座標で極限を求める",
         tool="分母が $x^2+y^2=r^2$ になるので極座標 $x=r\\cos\\theta,\\ y=r\\sin\\theta$ に直し、$\\theta$ によらない評価ではさみうちにする。",
@@ -687,7 +687,7 @@ def specs(rng):
         bound="r**2", title="極座標で 2 次の残り",
         tool="分母が $r^2$、分子が $r^4$ の次数なので極座標で $r^2\\times(\\theta$ の有界な式$)$ になる。",
         steps=[r"$|f|=r^2\cos^2\theta\sin^2\theta\le r^2$", r"$r\to 0$ で $r^2\to 0$ なので極限は $0$"])
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 4])
     add("b_lim_exist", 2, f="sin(%d*(x**2+y**2))/(x**2+y**2)" % a, L=str(a), bound="%d*r**4/6" % (a**3),
         title="1変数の極限に帰着",
         tool="$x,y$ が $x^2+y^2$ の形でしか現れないので $s=x^2+y^2\\to+0$ と1変数にまとめ、$\\displaystyle\\lim_{u\\to 0}\\dfrac{\\sin u}{u}=1$ を使う。",
@@ -706,7 +706,7 @@ def specs(rng):
         tool="直線 $y=mx$ に沿って近づけて、極限が $m$ によって変わることを示す(経路依存性)。",
         conclude=r"$m=0$ なら $@0$, $m=1$ なら $@1$ と近づき方で値が異なる",
         answer="存在しない($y=mx$ に沿うと $\\dfrac{m}{1+m^2}$ に近づき、$m$ によって値が変わる)")
-    a = rng.choice([2, 3])
+    a = rng.choice([2, 3, 4])
     add("b_lim_none", 1, f="(x**2-%d*y**2)/(x**2+y**2)" % a, paths=[["x", "m*x"]],
         check_paths=[["x", "m*x", "0"], ["x", "m*x", "1"]], title="直線に沿った極限(2次の比)",
         tool="分子と分母がどちらも2次なので、直線 $y=mx$ に沿うと $x^2$ が約分されて $m$ だけの式が残る。",
@@ -728,10 +728,10 @@ def specs(rng):
         answer="存在しない(直線 $x=my$ ではすべて $0$、曲線 $x=my^2$ に沿うと $\\dfrac{m}{1+m^2}$)")
 
     # --- 高階偏導関数 (4)
-    a, b = rng.choice([(3, 2), (4, 2), (3, 3)])
+    a, b = rng.choice([(3, 2), (4, 2), (3, 3), (4, 3), (5, 2)])
     add("b_high", 1, f="x**%d*y**%d" % (a, b), title="2階偏導関数(多項式)",
         tool="まず $f_x, f_y$ を求め、それをもう一度偏微分する。$f_{xy}$ は $f_x$ を $y$ で微分したもの。")
-    a, b = rng.choice([(2, 3), (3, 2)])
+    a, b = rng.choice([(2, 3), (3, 2), (2, 5), (4, 1)])
     add("b_high", 2, f="exp(%d*x)*cos(%d*y)" % (a, b), title="2階偏導関数(指数×三角)",
         tool="指数と三角は微分しても形が変わらない。係数がどう出てくるかに注意して2回偏微分する。")
     add("b_high", 2, f="log(x**2+y**2)", laplace=True, title="ラプラシアンの計算",
@@ -740,10 +740,10 @@ def specs(rng):
         tool="$x$ で微分すると $x^n$ 型、$y$ で微分すると $a^y$ 型になる。$f_{xy}$ では積の微分も必要になる(2つの微分公式の組み合わせ)。")
 
     # --- 全微分 (4)
-    a, b = rng.choice([(2, 3), (3, 2)])
+    a, b = rng.choice([(2, 3), (3, 2), (2, 4), (4, 1)])
     add("b_td", 1, f="x**%d*y**%d" % (a, b), title="全微分(多項式)")
     add("b_td", 1, f="x/y", title="全微分(商)")
-    qx, qy = rng.choice([(("301/100", "398/100"), "\\sqrt{3.01^2+3.98^2}"), (("298/100", "403/100"), "\\sqrt{2.98^2+4.03^2}")])
+    qx, qy = rng.choice([(("301/100", "398/100"), "\\sqrt{3.01^2+3.98^2}"), (("298/100", "403/100"), "\\sqrt{2.98^2+4.03^2}"), (("302/100", "396/100"), "\\sqrt{3.02^2+3.96^2}"), (("297/100", "401/100"), "\\sqrt{2.97^2+4.01^2}")])
     add("b_td_approx", 2, f="sqrt(x**2+y**2)", pt=["3", "4"], d=[str(sp.Rational(qx[0]) - 3), str(sp.Rational(qx[1]) - 4)], qtex=qy)
     add("b_td_err", 3, r="5", h="10", dr="1/10", dh="1/5")
     return L

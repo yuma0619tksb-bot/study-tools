@@ -49,6 +49,21 @@ python scripts/verify.py          # 検証(失敗すると終了コード 1)
 4. **物理の数値**: 答えに出てくる数値がすべて、検算値を有効数字3桁にしたものと一致するか
 5. **決定性**: 生成器をもう一度動かした結果が保存済みの JSON と一致するか
 
+## 単元と類題
+
+- `output/params.json` には問題ごとの単元(`unit`、例: `収束半径(x²ⁿ型)`)も入っている。通学ドリルは
+  これを `meta` コレクションに入れて、単元ごとの理解度を出すのに使う。
+- 類題は「元の問題と同じ出題枠で数値だけ変えた問題」で、検算に通ったものだけを
+  `problem_bank/variants.json` に追加する。ドリルで×や△だった問題の id を指定して実行する:
+
+  ```sh
+  python scripts/make_variants.py k024 b013 --per 1
+  python scripts/build.py && python scripts/verify.py
+  ```
+
+  類題の id は各科目の基本問題の後ろに続く(例: 解析学なら `k039` 以降)。数値の選択肢がない固定の問題
+  (例: `k004`)は類題を作れないので、同じ単元の別の問題で練習する。
+
 ## JSON の形式
 
 `output/problems.json` は次の形のオブジェクトの配列(キーはこれでちょうど)。
@@ -90,10 +105,11 @@ problem_bank/
   kaiseki.py       解析学の問題の型と出題リスト
   bisekibun2.py    微積第二の問題の型と出題リスト
   butsuri2.py      物理学概論第二の問題の型と出題リスト
-  bank.py          全科目をまとめて id・order を振る
+  bank.py          全科目をまとめて id・order・単元を振る(類題も含む)
 scripts/
   build.py         JSON を再生成する
   verify.py        検証する
+  make_variants.py ×・△の問題から検算つきの類題を作る
 output/
   problems.json    ドリルに取り込む問題
   params.json      検算用のパラメータ

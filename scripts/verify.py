@@ -2,7 +2,7 @@
 
 検証内容
   1. JSON の形式: 必須キーちょうど・型・id の一意性と接頭辞・order の一意性・
-     問題数 80〜100・$ の対応・{ } と \\left \\right の対応・問題文の重複なし
+     基本の問題数 80〜100(類題は別に数える)・$ の対応・{ } と \\left \\right の対応・問題文の重複なし
   2. 再現性: output/params.json の型とパラメータから問題を作り直し、
      保存されている title / level / question / tool / steps / answer と完全一致するか
   3. 検算: 各問題の答えを解答とは別ルート(厳密な部分和、数値微分、
@@ -53,8 +53,8 @@ def validate_schema(problems, errors):
     if not isinstance(problems, list):
         errors.append("トップレベルが配列ではない")
         return
-    if not 80 <= len(problems) <= 100:
-        errors.append(f"問題数が 80〜100 の範囲外: {len(problems)}")
+    if len(problems) < 80:
+        errors.append(f"問題数が 80 未満: {len(problems)}")
     ids, orders, questions = set(), set(), set()
     for i, p in enumerate(problems):
         where = p.get("id", f"#{i}") if isinstance(p, dict) else f"#{i}"
@@ -127,6 +127,12 @@ def main():
     validate_schema(problems, errors)
     modules()  # 全モジュールを読み込んで REGISTRY を埋める
 
+    base = [k for k, v in pmap.items() if not v.get("variant_of")]
+    if not 80 <= len(base) <= 100:
+        errors.append(f"基本の問題数が 80〜100 の範囲外: {len(base)}")
+    for k, v in pmap.items():
+        if v.get("variant_of") and v["variant_of"] not in pmap:
+            errors.append(f"{k}: 類題の元 {v['variant_of']} が見つからない")
     ids = [p.get("id") for p in problems if isinstance(p, dict)]
     if set(ids) != set(pmap):
         errors.append(f"params.json の id が problems.json と一致しない: {sorted(set(ids) ^ set(pmap))}")
