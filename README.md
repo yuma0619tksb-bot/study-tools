@@ -61,6 +61,10 @@ python scripts/verify.py          # 検証(失敗すると終了コード 1)
   python scripts/build.py && python scripts/verify.py
   ```
 
+  通学ドリルで「この型の類題をClaudeに頼む」を押すと、学生本人の記録(`data/users/<id>`)に
+  `kind: "variant_request"` の文書が残る。Claude に「類題を追加して」と頼んだら、その文書と×・△の記録を読み、
+  上のコマンドで類題を作って検証に通してから、ドリルの `problems` と `meta` コレクションに書き込む。
+
   類題の id は各科目の基本問題の後ろに続く(例: 解析学なら `k039` 以降)。数値の選択肢がない固定の問題
   (例: `k004`)は類題を作れないので、同じ単元の別の問題で練習する。
 
