@@ -1,0 +1,68 @@
+# materials/<科目>/raw/ に資料が push されたら、テキスト化と目次の更新を自動で行う。
+# OCR と要約(digest)は Claude Code のセッション開始時に検出して処理する(.claude/hooks/)。
+name: 資料の取り込み
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "materials/*/raw/**"
+      - "materials/*/digest/**"
+      - "materials/*/text/**"
+      - "tools/materials.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: materials-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存の準備
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+          # 旧形式(doc/ppt など)があるときだけ LibreOffice を入れる(重いため)
+          if find materials -path '*/raw/*' -type f \( -iname '*.doc' -o -iname '*.ppt' -o -iname '*.odt' -o -iname '*.odp' -o -iname '*.rtf' \) | grep -q .; then
+            sudo apt-get install -y -qq --no-install-recommends libreoffice-writer libreoffice-impress
+          fi
+          pip install -q pypdf python-docx python-pptx
+
+      - name: 取り込み
+        run: |
+          python3 tools/materials.py ingest
+          python3 tools/materials.py status
+
+      - name: 変更を commit
+        run: |
+          git add materials
+          if git diff --cached --quiet; then
+            echo "変更なし"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "資料の取り込み(自動)"
+          git push
+
+      - name: claude.ai プロジェクト用一式を作成
+        run: python3 tools/materials.py bundle
+
+      - name: 一式をダウンロードできるようにする
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude_project
+          path: exports/claude_project/
+          if-no-files-found: ignore
+          retention-days: 30

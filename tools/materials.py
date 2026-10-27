@@ -350,6 +350,8 @@ def cmd_status(args):
     refresh_digest_state(cat)
     todo_digest = [k for k, e in cat.items() if e["digest"] != "最新" and (not args.subject or e["subject"] == args.subject)]
     todo_ocr = [(k, e["ocr_pending"]) for k, e in cat.items() if e.get("ocr_pending") and (not args.subject or e["subject"] == args.subject)]
+    if args.quiet and not todo_digest and not todo_ocr:
+        return
     print(f"資料 {len(cat)} 件")
     print(f"\n■ 要約(digest)が未作成・古い: {len(todo_digest)} 件")
     for k in todo_digest:
@@ -490,7 +492,9 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("ingest"); p.add_argument("--subject"); p.add_argument("--force", action="store_true")
     p.set_defaults(func=cmd_ingest)
-    p = sub.add_parser("status"); p.add_argument("--subject"); p.set_defaults(func=cmd_status)
+    p = sub.add_parser("status"); p.add_argument("--subject")
+    p.add_argument("--quiet", action="store_true", help="未処理が無ければ何も出さない")
+    p.set_defaults(func=cmd_status)
     p = sub.add_parser("search"); p.add_argument("terms", nargs="+"); p.add_argument("--subject")
     p.add_argument("--limit", type=int, default=30); p.set_defaults(func=cmd_search)
     p = sub.add_parser("ocr"); p.add_argument("--subject"); p.add_argument("--dpi", type=int, default=150)

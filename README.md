@@ -31,3 +31,7 @@ materials/
 | `python3 tools/materials.py bundle [--subject 科目]` | claude.aiプロジェクトのナレッジ用一式を `exports/claude_project/` に作成 |
 
 claude.ai プロジェクト側の指示に貼る定型文: `docs/claude-project-instructions.md`
+
+### 自動化
+- **GitHub Actions**(`.github/workflows/materials.yml`):main に `materials/<科目>/raw/` の資料が push されると、テキスト化と目次の更新を自動で行い commit する。claude.ai プロジェクト用一式は、Actions の実行結果ページから `claude_project` としてダウンロードできる(30日保存)。
+- **起動時フック**(`.claude/settings.json`):Claude Code のセッションを開くと未処理(OCR待ち・要約待ち)を確認し、あれば Claude が自動で処理する。
