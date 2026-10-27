@@ -1,0 +1,1457 @@
+[
+  {
+    "id": "k001",
+    "order": 1,
+    "subject": "解析学",
+    "title": "部分分数分解で望遠鏡和",
+    "level": 1,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{1}{n(n+4)}$ の和を求めよ。部分和 $S_N$ を求めてから極限をとること。",
+    "tool": "分母が積なので部分分数分解すると、$4$ つ離れた項どうしが打ち消し合う(望遠鏡和)。部分和を $N$ の式で書いてから $N\\to\\infty$ とする。",
+    "steps": [
+      "$\\dfrac{1}{n(n+4)}=\\dfrac{1}{4}\\left(\\dfrac{1}{n}-\\dfrac{1}{n+4}\\right)$",
+      "$S_N=\\dfrac{1}{4}\\left\\{\\left(1 + \\dfrac{1}{2} + \\dfrac{1}{3} + \\dfrac{1}{4}\\right)-\\left(\\dfrac{1}{N+1} + \\dfrac{1}{N+2} + \\dfrac{1}{N+3} + \\dfrac{1}{N+4}\\right)\\right\\}$",
+      "$N\\to\\infty$ で $\\dfrac{1}{N+k}\\to 0$ より $S_N\\to\\dfrac{1}{4}\\left(1 + \\dfrac{1}{2} + \\dfrac{1}{3} + \\dfrac{1}{4}\\right)=\\dfrac{25}{48}$"
+    ],
+    "answer": "$\\dfrac{25}{48}$"
+  },
+  {
+    "id": "k002",
+    "order": 2,
+    "subject": "解析学",
+    "title": "1次式の積の望遠鏡和",
+    "level": 1,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{1}{(3 n - 1)(3 n + 2)}$ の和を求めよ。途中式も書くこと。",
+    "tool": "2つの1次式の差が定数 $3$ なので部分分数分解できる。分解した後の項は次の $n$ の項と打ち消し合う。",
+    "steps": [
+      "$\\dfrac{1}{(3 n - 1)(3 n + 2)}=\\dfrac{1}{3}\\left(\\dfrac{1}{3 n - 1}-\\dfrac{1}{3 n + 2}\\right)$",
+      "$S_N=\\dfrac{1}{3}\\left(\\dfrac{1}{2}-\\dfrac{1}{3 N + 2}\\right)$",
+      "$N\\to\\infty$ で $S_N\\to \\dfrac{1}{6}$"
+    ],
+    "answer": "$\\dfrac{1}{6}$"
+  },
+  {
+    "id": "k003",
+    "order": 3,
+    "subject": "解析学",
+    "title": "因数分解してから望遠鏡和",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{1}{n^{2} + 7 n + 12}$ の和を求めよ。途中式も書くこと。",
+    "tool": "分母の2次式を因数分解すると差が1の1次式の積になるので、部分分数分解して望遠鏡和にする。",
+    "steps": [
+      "$n^{2} + 7 n + 12=(n+3)(n+4)$",
+      "$\\dfrac{1}{(n+3)(n+4)}=\\dfrac{1}{n+3}-\\dfrac{1}{n+4}$",
+      "$S_N=\\dfrac{1}{4} - \\dfrac{1}{N + 4}$",
+      "$N\\to\\infty$ で $S_N\\to \\dfrac{1}{4}$"
+    ],
+    "answer": "$\\dfrac{1}{4}$"
+  },
+  {
+    "id": "k004",
+    "order": 4,
+    "subject": "解析学",
+    "title": "3つの積の望遠鏡和",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{1}{n(n+1)(n+2)}$ の和を求めよ。途中式も書くこと。",
+    "tool": "3つの積は「隣り合う2つの積」の差に分解できる。$\\dfrac{1}{n(n+1)}-\\dfrac{1}{(n+1)(n+2)}$ を計算すると分子が $2$ になることを使う。",
+    "steps": [
+      "$\\dfrac{1}{n(n+1)}-\\dfrac{1}{(n+1)(n+2)}=\\dfrac{2}{n(n+1)(n+2)}$",
+      "$\\dfrac{1}{n(n+1)(n+2)}=\\dfrac{1}{2}\\left(\\dfrac{1}{n(n+1)}-\\dfrac{1}{(n+1)(n+2)}\\right)$",
+      "$S_N=\\dfrac{1}{2}\\left(\\dfrac{1}{2}-\\dfrac{1}{(N+1)(N+2)}\\right)$",
+      "$N\\to\\infty$ で $S_N\\to\\dfrac{1}{4}$"
+    ],
+    "answer": "$\\dfrac{1}{4}$"
+  },
+  {
+    "id": "k005",
+    "order": 5,
+    "subject": "解析学",
+    "title": "対数の望遠鏡和(発散)",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\log\\left(1+\\dfrac{1}{n}\\right)$ は収束するか。部分和 $S_N$ を求めて判定せよ。",
+    "tool": "$\\log$ の中を $\\dfrac{n+1}{n}$ と通分すると $\\log(n+1)-\\log n$ という差になり、部分和が打ち消し合う。一般項 $\\to 0$ だけでは収束と言えない例である。",
+    "steps": [
+      "$\\log\\left(1+\\dfrac{1}{n}\\right)=\\log(n+1)-\\log n$",
+      "$S_N=\\log(N+1)-\\log 1=\\log(N+1)$",
+      "$N\\to\\infty$ で $\\log(N+1)\\to\\infty$"
+    ],
+    "answer": "発散する($S_N=\\log(N+1)\\to\\infty$)"
+  },
+  {
+    "id": "k006",
+    "order": 6,
+    "subject": "解析学",
+    "title": "対数の望遠鏡和(収束)",
+    "level": 3,
+    "question": "級数 $\\displaystyle\\sum_{n=2}^{\\infty} \\log\\left(1-\\dfrac{1}{n^2}\\right)$ の和を求めよ。途中式も書くこと。",
+    "tool": "$1-\\dfrac{1}{n^2}=\\dfrac{(n-1)(n+1)}{n^2}$ と因数分解し、$\\log$ を差に分けると $\\log\\dfrac{n-1}{n}-\\log\\dfrac{n}{n+1}$ の形の望遠鏡和になる。",
+    "steps": [
+      "$\\log\\left(1-\\dfrac{1}{n^2}\\right)=\\log\\dfrac{n-1}{n}-\\log\\dfrac{n}{n+1}$",
+      "$S_N=\\displaystyle\\sum_{n=2}^{N}\\left(\\log\\dfrac{n-1}{n}-\\log\\dfrac{n}{n+1}\\right)=\\log\\dfrac{1}{2}-\\log\\dfrac{N}{N+1}$",
+      "$N\\to\\infty$ で $\\log\\dfrac{N}{N+1}\\to 0$ より $S_N\\to-\\log 2$"
+    ],
+    "answer": "$- \\log 2$"
+  },
+  {
+    "id": "k007",
+    "order": 7,
+    "subject": "解析学",
+    "title": "階乗の望遠鏡和",
+    "level": 3,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{n}{(n+1)!}$ の和を求めよ。途中式も書くこと。",
+    "tool": "分子を $n=(n+1)-1$ と書き換えると $\\dfrac{1}{n!}-\\dfrac{1}{(n+1)!}$ の差になり、部分分数分解と同じく望遠鏡和にできる。",
+    "steps": [
+      "$\\dfrac{n}{(n+1)!}=\\dfrac{(n+1)-1}{(n+1)!}=\\dfrac{1}{n!}-\\dfrac{1}{(n+1)!}$",
+      "$S_N=\\dfrac{1}{1!}-\\dfrac{1}{(N+1)!}$",
+      "$N\\to\\infty$ で $S_N\\to 1$"
+    ],
+    "answer": "$1$"
+  },
+  {
+    "id": "k008",
+    "order": 8,
+    "subject": "解析学",
+    "title": "比判定法(多項式÷指数)",
+    "level": 1,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{n^{3}}{3^{n}}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "$n^3$ と $3^n$ の比較なので比をとると多項式部分は $1$ に近づき、指数部分の比 $\\dfrac{1}{3}$ だけが残る(ダランベールの判定法)。",
+    "steps": [
+      "$a_n=\\dfrac{n^{3}}{3^{n}}$ とおくと $\\dfrac{a_{n+1}}{a_n}=\\dfrac{\\left(n + 1\\right)^{3}}{3 n^{3}}$",
+      "$n\\to\\infty$ で $\\dfrac{a_{n+1}}{a_n}\\to \\dfrac{1}{3}$",
+      "$\\dfrac{1}{3} < 1$ なのでダランベールの判定法より収束する"
+    ],
+    "answer": "収束する"
+  },
+  {
+    "id": "k009",
+    "order": 9,
+    "subject": "解析学",
+    "title": "比判定法(階乗)",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{\\left(n!\\right)^{2}}{\\left(2 n\\right)!}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "階乗を含む一般項は比をとると約分で多項式の比になる(ダランベールの判定法)。$(2n+2)!=(2n+2)(2n+1)(2n)!$ に注意する。",
+    "steps": [
+      "$a_n=\\dfrac{\\left(n!\\right)^{2}}{\\left(2 n\\right)!}$ とおくと $\\dfrac{a_{n+1}}{a_n}=\\dfrac{n + 1}{2 \\left(2 n + 1\\right)}$",
+      "$n\\to\\infty$ で $\\dfrac{a_{n+1}}{a_n}\\to \\dfrac{1}{4}$",
+      "$\\dfrac{1}{4} < 1$ なのでダランベールの判定法より収束する"
+    ],
+    "answer": "収束する"
+  },
+  {
+    "id": "k010",
+    "order": 10,
+    "subject": "解析学",
+    "title": "比判定法(階乗と指数)",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{8^{n} \\left(n!\\right)^{2}}{\\left(2 n\\right)!}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "階乗と指数の積なので比をとる(ダランベール)。比の極限が $1$ より大きいか小さいかで判定する。",
+    "steps": [
+      "$a_n=\\dfrac{8^{n} \\left(n!\\right)^{2}}{\\left(2 n\\right)!}$ とおくと $\\dfrac{a_{n+1}}{a_n}=\\dfrac{4 \\left(n + 1\\right)}{2 n + 1}$",
+      "$n\\to\\infty$ で $\\dfrac{a_{n+1}}{a_n}\\to 2$",
+      "$2 > 1$ なのでダランベールの判定法より発散する"
+    ],
+    "answer": "発散する"
+  },
+  {
+    "id": "k011",
+    "order": 11,
+    "subject": "解析学",
+    "title": "比の極限に e が出る判定",
+    "level": 3,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{a^n\\, n!}{n^n}$ $(a>0)$ について、$a=2$ のときと $a=3$ のときそれぞれ収束・発散を判定せよ。",
+    "tool": "階乗と $n^n$ を含むので比をとる(ダランベール)。比の極限に $\\left(1+\\dfrac{1}{n}\\right)^n\\to e$ が現れ、$a$ と $e$ の大小で場合分けになる。",
+    "steps": [
+      "$\\dfrac{a_{n+1}}{a_n}=\\dfrac{a^{n+1}(n+1)!}{(n+1)^{n+1}}\\cdot\\dfrac{n^n}{a^n\\,n!}=\\dfrac{a\\,n^n}{(n+1)^n}=a\\left(\\dfrac{n}{n+1}\\right)^n$",
+      "$\\left(\\dfrac{n}{n+1}\\right)^n=\\dfrac{1}{\\left(1+\\frac{1}{n}\\right)^n}\\to\\dfrac{1}{e}$ より $\\dfrac{a_{n+1}}{a_n}\\to\\dfrac{a}{e}$",
+      "$a=2$: $\\dfrac{2}{e}<1$ で収束 / $a=3$: $\\dfrac{3}{e}>1$ で発散"
+    ],
+    "answer": "$a=2$ のとき収束し、$a=3$ のとき発散する"
+  },
+  {
+    "id": "k012",
+    "order": 12,
+    "subject": "解析学",
+    "title": "根判定法(n 乗の形)",
+    "level": 1,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\left(\\dfrac{4 n + 1}{5 n + 2}\\right)^{n}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "一般項が丸ごと $n$ 乗なので $n$ 乗根をとると括弧の中だけが残る(コーシーの根判定法)。",
+    "steps": [
+      "$\\sqrt[n]{a_n}=\\dfrac{4 n + 1}{5 n + 2}$",
+      "$n\\to\\infty$ で $\\sqrt[n]{a_n}\\to \\dfrac{4}{5}$",
+      "$\\dfrac{4}{5} < 1$ なのでコーシーの判定法(根判定法)より収束する"
+    ],
+    "answer": "収束する"
+  },
+  {
+    "id": "k013",
+    "order": 13,
+    "subject": "解析学",
+    "title": "根判定法と e の極限",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\left(\\dfrac{n}{n + 2}\\right)^{n^{2}}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "指数が $n^2$ なので $n$ 乗根をとると $\\left(\\dfrac{n}{n+2}\\right)^n$ が残る。これは $\\left(1+\\dfrac{2}{n}\\right)^{-n}$ と見て $e$ の極限を使う。",
+    "steps": [
+      "$\\sqrt[n]{a_n}=\\left(\\dfrac{n}{n + 2}\\right)^{n}$",
+      "$\\left(\\dfrac{n}{n+2}\\right)^n=\\dfrac{1}{\\left(1+\\frac{2}{n}\\right)^n}$",
+      "$n\\to\\infty$ で $\\sqrt[n]{a_n}\\to e^{-2}$",
+      "$e^{-2} < 1$ なのでコーシーの判定法(根判定法)より収束する"
+    ],
+    "answer": "収束する"
+  },
+  {
+    "id": "k014",
+    "order": 14,
+    "subject": "解析学",
+    "title": "p 級数との極限比較",
+    "level": 1,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{n + 2}{n^{3} + 1}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "分子は1次、分母は3次なので一般項は $\\dfrac{1}{n^2}$ と同じオーダー。$p$ 級数 $\\sum\\dfrac{1}{n^2}$ と極限比較する。",
+    "steps": [
+      "$b_n=\\dfrac{1}{n^{2}}$ とすると $\\dfrac{a_n}{b_n}=\\dfrac{n + 2}{n^{3} + 1}\\cdot n^{2}\\to 1$ $(0<1<\\infty)$",
+      "$\\displaystyle\\sum\\dfrac{1}{n^{2}}$ は $p=2>1$ の $p$ 級数なので収束する",
+      "極限比較判定法より、もとの級数も収束する"
+    ],
+    "answer": "収束する"
+  },
+  {
+    "id": "k015",
+    "order": 15,
+    "subject": "解析学",
+    "title": "極限比較で発散",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{1}{\\sqrt{n^{2} + 3 n}}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "根号の中は2次式なので一般項は $\\dfrac{1}{n}$ と同じオーダー。調和級数($p=1$)と極限比較する。",
+    "steps": [
+      "$b_n=\\dfrac{1}{n}$ とすると $\\dfrac{a_n}{b_n}=\\dfrac{1}{\\sqrt{n^{2} + 3 n}}\\cdot n\\to 1$ $(0<1<\\infty)$",
+      "$\\displaystyle\\sum\\dfrac{1}{n}$ は $p=1\\le 1$ の $p$ 級数なので発散する",
+      "極限比較判定法より、もとの級数も発散する"
+    ],
+    "answer": "発散する"
+  },
+  {
+    "id": "k016",
+    "order": 16,
+    "subject": "解析学",
+    "title": "分数乗の p 級数と比較",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{\\sqrt{n}}{n^{2} + 2}$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "分子が $n^{1/2}$、分母が $n^2$ なので一般項は $\\dfrac{1}{n^{3/2}}$ のオーダー。$p=\\dfrac{3}{2}$ の $p$ 級数と極限比較する。",
+    "steps": [
+      "$b_n=\\dfrac{1}{n^{3/2}}$ とすると $\\dfrac{a_n}{b_n}=\\dfrac{\\sqrt{n}}{n^{2} + 2}\\cdot n^{3/2}\\to 1$ $(0<1<\\infty)$",
+      "$\\displaystyle\\sum\\dfrac{1}{n^{3/2}}$ は $p=\\dfrac{3}{2}>1$ の $p$ 級数なので収束する",
+      "極限比較判定法より、もとの級数も収束する"
+    ],
+    "answer": "収束する"
+  },
+  {
+    "id": "k017",
+    "order": 17,
+    "subject": "解析学",
+    "title": "テイラー展開と極限比較",
+    "level": 3,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\left(1 - \\cos{\\left(\\dfrac{4}{n} \\right)}\\right)$ の収束・発散を判定せよ。途中式も書くこと。",
+    "tool": "$n\\to\\infty$ で $\\dfrac{4}{n}\\to 0$ なので $1-\\cos\\theta\\approx\\dfrac{\\theta^2}{2}$ を使うと一般項は $\\dfrac{1}{n^2}$ のオーダーとわかる。これと極限比較する。",
+    "steps": [
+      "$1-\\cos\\theta=\\dfrac{\\theta^2}{2}+O(\\theta^4)$ に $\\theta=\\dfrac{4}{n}$ を代入すると $1-\\cos\\dfrac{4}{n}\\approx\\dfrac{8}{n^2}$",
+      "$b_n=\\dfrac{1}{n^{2}}$ とすると $\\dfrac{a_n}{b_n}=\\left(1 - \\cos{\\left(\\dfrac{4}{n} \\right)}\\right)\\cdot n^{2}\\to 8$ $(0<8<\\infty)$",
+      "$\\displaystyle\\sum\\dfrac{1}{n^{2}}$ は $p=2>1$ の $p$ 級数なので収束する",
+      "極限比較判定法より、もとの級数も収束する"
+    ],
+    "answer": "収束する"
+  },
+  {
+    "id": "k018",
+    "order": 18,
+    "subject": "解析学",
+    "title": "交代 p 級数",
+    "level": 1,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} (-1)^{n-1}\\dfrac{1}{\\sqrt[3]{n}}$ は絶対収束・条件収束・発散のどれか。理由も書くこと。",
+    "tool": "絶対値をとると $p=\\dfrac{1}{3}$ の $p$ 級数。絶対収束しないときはライプニッツの判定法で収束を確かめる。",
+    "steps": [
+      "$|a_n|=\\dfrac{1}{\\sqrt[3]{n}}$ で $|a_n|\\cdot \\sqrt[3]{n}\\to 1$。$p=\\dfrac{1}{3}\\le 1$ の $p$ 級数と比べて $\\displaystyle\\sum|a_n|$ は発散",
+      "$\\sqrt[3]{n}$ は単調増加なので $\\dfrac{1}{\\sqrt[3]{n}}$ は単調減少、かつ $\\dfrac{1}{\\sqrt[3]{n}}\\to 0$",
+      "ライプニッツの判定法より $\\displaystyle\\sum a_n$ は収束する",
+      "収束するが絶対収束しないので条件収束"
+    ],
+    "answer": "条件収束する"
+  },
+  {
+    "id": "k019",
+    "order": 19,
+    "subject": "解析学",
+    "title": "絶対収束の判定",
+    "level": 1,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} (-1)^n\\, \\dfrac{n}{n^{3} + 2}$ は絶対収束・条件収束・発散のどれか。理由も書くこと。",
+    "tool": "まず絶対値の級数を調べる。分子1次・分母3次で $\\dfrac{1}{n^2}$ のオーダーなので $p$ 級数と比較できる。",
+    "steps": [
+      "$|a_n|=\\dfrac{n}{n^{3} + 2}$ で、$|a_n|\\cdot n^{2}\\to 1$",
+      "$\\displaystyle\\sum\\dfrac{1}{n^{2}}$ は $p=2>1$ で収束するので、極限比較判定法より $\\displaystyle\\sum|a_n|$ は収束",
+      "よって絶対収束する(絶対収束する級数は収束する)"
+    ],
+    "answer": "絶対収束する"
+  },
+  {
+    "id": "k020",
+    "order": 20,
+    "subject": "解析学",
+    "title": "条件収束の判定",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} (-1)^n\\, \\dfrac{n}{n^{2} + 3}$ は絶対収束・条件収束・発散のどれか。理由も書くこと。",
+    "tool": "絶対値は $\\dfrac{1}{n}$ のオーダーで発散するので絶対収束しない。そこでライプニッツの判定法($|a_n|$ が単調減少して $0$ に収束)を確かめる。",
+    "steps": [
+      "$|a_n|=\\dfrac{n}{n^{2} + 3}$ で $|a_n|\\cdot n\\to 1$。$p=1\\le 1$ の $p$ 級数と比べて $\\displaystyle\\sum|a_n|$ は発散",
+      "$g(x)=\\dfrac{x}{x^2+3}$ は $g'(x)=\\dfrac{3-x^2}{(x^2+3)^2}<0$ $(x>\\sqrt{3})$ なので $n\\ge 2$ で単調減少、かつ $\\dfrac{n}{n^{2} + 3}\\to 0$",
+      "ライプニッツの判定法より $\\displaystyle\\sum a_n$ は収束する",
+      "収束するが絶対収束しないので条件収束"
+    ],
+    "answer": "条件収束する"
+  },
+  {
+    "id": "k021",
+    "order": 21,
+    "subject": "解析学",
+    "title": "一般項が 0 に行かない交代級数",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} (-1)^n\\, \\dfrac{n}{5 n + 1}$ は絶対収束・条件収束・発散のどれか。理由も書くこと。",
+    "tool": "交代級数でもまず一般項 $\\to 0$ を確認する。$0$ に収束しなければその時点で発散と決まる(ライプニッツは使えない)。",
+    "steps": [
+      "$|a_n|=\\dfrac{n}{5 n + 1}\\to \\dfrac{1}{5}\\neq 0$",
+      "一般項 $a_n$ が $0$ に収束しない($n$ の偶奇で $\\pm \\dfrac{1}{5}$ に近づく)",
+      "収束の必要条件 $a_n\\to 0$ を満たさないので発散する"
+    ],
+    "answer": "発散する"
+  },
+  {
+    "id": "k022",
+    "order": 22,
+    "subject": "解析学",
+    "title": "対数を含む条件収束",
+    "level": 2,
+    "question": "級数 $\\displaystyle\\sum_{n=1}^{\\infty} (-1)^n\\dfrac{1}{\\log\\left(n + 1\\right)}$ は絶対収束・条件収束・発散のどれか。理由も書くこと。",
+    "tool": "$\\log(n+1)<n+1$ を使うと絶対値の級数は調和級数より大きく発散する。一方 $\\dfrac{1}{\\log(n+1)}$ は単調減少して $0$ に収束するのでライプニッツが使える。",
+    "steps": [
+      "$\\log(n+1)<n+1$ より $|a_n|=\\dfrac{1}{\\log(n+1)}>\\dfrac{1}{n+1}$。$\\displaystyle\\sum\\dfrac{1}{n+1}$ は発散するので比較判定法より $\\displaystyle\\sum|a_n|$ は発散",
+      "$\\log(n+1)$ は単調増加なので $\\dfrac{1}{\\log(n+1)}$ は単調減少、かつ $\\dfrac{1}{\\log\\left(n + 1\\right)}\\to 0$",
+      "ライプニッツの判定法より $\\displaystyle\\sum a_n$ は収束する",
+      "収束するが絶対収束しないので条件収束"
+    ],
+    "answer": "条件収束する"
+  },
+  {
+    "id": "k023",
+    "order": 23,
+    "subject": "解析学",
+    "title": "交代 p 級数の場合分け",
+    "level": 3,
+    "question": "実数 $p$ に対して、級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{(-1)^{n}}{n^p}$ が絶対収束・条件収束・発散のどれになるかを $p$ の値で場合分けして答えよ。",
+    "tool": "絶対値をとると $p$ 級数 $\\sum\\dfrac{1}{n^p}$ になる。$p\\le 1$ のときはライプニッツの判定法が使えるか(単調減少して $0$ に収束するか)を調べ、$p\\le 0$ では一般項が $0$ に収束しないことに注意する。",
+    "steps": [
+      "$p>1$: $\\displaystyle\\sum\\left|\\dfrac{(-1)^n}{n^p}\\right|=\\sum\\dfrac{1}{n^p}$ は収束 → 絶対収束",
+      "$0<p\\le 1$: $\\displaystyle\\sum\\dfrac{1}{n^p}$ は発散。一方 $\\dfrac{1}{n^p}$ は単調減少して $0$ に収束するのでライプニッツの判定法より収束 → 条件収束",
+      "$p\\le 0$: $\\left|\\dfrac{(-1)^n}{n^p}\\right|=n^{-p}\\ge 1$ で一般項が $0$ に収束しない → 発散"
+    ],
+    "answer": "$p>1$ で絶対収束、$0<p\\le 1$ で条件収束、$p\\le 0$ で発散"
+  },
+  {
+    "id": "k024",
+    "order": 24,
+    "subject": "解析学",
+    "title": "x²ⁿ 型の収束半径",
+    "level": 1,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} 6^{n}\\,x^{2 n}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "$x^{2n}$ の係数しかなく奇数次の係数が $0$ なので、係数の比の公式はそのまま使えない。$t=x^2$ と置いて $t$ の整級数の収束半径を求めてから $x$ に戻す(または項どうしの比をとる)。",
+    "steps": [
+      "$t=x^{2}$ とおくと $\\displaystyle\\sum 6^{n}\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=6$(一定)より、$t$ についての収束半径は $\\dfrac{1}{6}$",
+      "$|t|<\\dfrac{1}{6} \\iff |x|^{2}<\\dfrac{1}{6} \\iff |x|<\\dfrac{\\sqrt{6}}{6}$"
+    ],
+    "answer": "$R=\\dfrac{\\sqrt{6}}{6}$"
+  },
+  {
+    "id": "k025",
+    "order": 25,
+    "subject": "解析学",
+    "title": "x²ⁿ 型の収束半径(割る形)",
+    "level": 1,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{1}{5^{n}}\\,x^{2 n}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "$x^{2n}$ の係数しかなく奇数次の係数が $0$ なので、係数の比の公式はそのまま使えない。$t=x^2$ と置いて $t$ の整級数の収束半径を求めてから $x$ に戻す(または項どうしの比をとる)。",
+    "steps": [
+      "$t=x^{2}$ とおくと $\\displaystyle\\sum \\dfrac{1}{5^{n}}\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{1}{5}$(一定)より、$t$ についての収束半径は $5$",
+      "$|t|<5 \\iff |x|^{2}<5 \\iff |x|<\\sqrt{5}$"
+    ],
+    "answer": "$R=\\sqrt{5}$"
+  },
+  {
+    "id": "k026",
+    "order": 26,
+    "subject": "解析学",
+    "title": "x²ⁿ⁺¹ 型の収束半径",
+    "level": 1,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} 25^{n}\\,x^{2 n + 1}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "偶数次の係数が $0$ なので係数の比の公式はそのまま使えない。$x^{2n+1}=x\\cdot(x^2)^n$ と分けて $t=x^2$ と置く(または項どうしの比をとる)。",
+    "steps": [
+      "$x^{2 n + 1}=x\\cdot(x^{2})^n$ なので $t=x^{2}$ とおき $\\displaystyle\\sum 25^{n}\\,t^n$ の収束半径を調べる",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=25$(一定)より、$t$ についての収束半径は $\\dfrac{1}{25}$",
+      "$|t|<\\dfrac{1}{25} \\iff |x|^{2}<\\dfrac{1}{25} \\iff |x|<\\dfrac{1}{5}$"
+    ],
+    "answer": "$R=\\dfrac{1}{5}$"
+  },
+  {
+    "id": "k027",
+    "order": 27,
+    "subject": "解析学",
+    "title": "n がかかった x²ⁿ 型",
+    "level": 2,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{n}{5^{n}}\\,x^{2 n}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "$x^{2n}$ の係数しかなく奇数次の係数が $0$ なので、係数の比の公式はそのまま使えない。$t=x^2$ と置いて $t$ の整級数の収束半径を求めてから $x$ に戻す(または項どうしの比をとる)。",
+    "steps": [
+      "$t=x^{2}$ とおくと $\\displaystyle\\sum \\dfrac{n}{5^{n}}\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{n + 1}{5 n}\\to \\dfrac{1}{5}$ より、$t$ についての収束半径は $5$",
+      "$|t|<5 \\iff |x|^{2}<5 \\iff |x|<\\sqrt{5}$"
+    ],
+    "answer": "$R=\\sqrt{5}$"
+  },
+  {
+    "id": "k028",
+    "order": 28,
+    "subject": "解析学",
+    "title": "符号つき x²ⁿ⁺¹ 型",
+    "level": 2,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{\\left(-5\\right)^{n}}{n + 1}\\,x^{2 n + 1}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "係数の符号 $(-1)^n$ は比の絶対値をとれば消える。$x^{2n+1}=x(x^2)^n$ として $t=x^2$ の整級数の収束半径を求める(偶数次の係数が $0$ なので公式を直接は使えない)。",
+    "steps": [
+      "$x^{2 n + 1}=x\\cdot(x^{2})^n$ なので $t=x^{2}$ とおき $\\displaystyle\\sum \\dfrac{\\left(-5\\right)^{n}}{n + 1}\\,t^n$ の収束半径を調べる",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{5 \\left(n + 1\\right)}{n + 2}\\to 5$ より、$t$ についての収束半径は $\\dfrac{1}{5}$",
+      "$|t|<\\dfrac{1}{5} \\iff |x|^{2}<\\dfrac{1}{5} \\iff |x|<\\dfrac{\\sqrt{5}}{5}$"
+    ],
+    "answer": "$R=\\dfrac{\\sqrt{5}}{5}$"
+  },
+  {
+    "id": "k029",
+    "order": 29,
+    "subject": "解析学",
+    "title": "x³ⁿ 型の収束半径",
+    "level": 2,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} 64^{n}\\,x^{3 n}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "$x^{3n}$ の項しかないので $t=x^3$ と置く。$|t|<R_t\\iff|x|<\\sqrt[3]{R_t}$ で戻す。",
+    "steps": [
+      "$t=x^{3}$ とおくと $\\displaystyle\\sum 64^{n}\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=64$(一定)より、$t$ についての収束半径は $\\dfrac{1}{64}$",
+      "$|t|<\\dfrac{1}{64} \\iff |x|^{3}<\\dfrac{1}{64} \\iff |x|<\\dfrac{1}{4}$"
+    ],
+    "answer": "$R=\\dfrac{1}{4}$"
+  },
+  {
+    "id": "k030",
+    "order": 30,
+    "subject": "解析学",
+    "title": "x²ⁿ 型の収束域(端点で発散)",
+    "level": 3,
+    "question": "整級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{2^{n}}{n}\\,x^{2 n}$ の収束半径 $R$ を求め、さらに端点での収束・発散を調べて収束域(収束する $x$ の範囲)を答えよ。途中式も書くこと。",
+    "tool": "$t=x^2$ と置いて収束半径を出し、端点 $x=\\pm R$ では $x^{2n}=R^{2n}$ を代入した級数を $p$ 級数として別に調べる(比判定法は端点では使えない)。",
+    "steps": [
+      "$t=x^{2}$ とおくと $\\displaystyle\\sum \\dfrac{2^{n}}{n}\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{2 n}{n + 1}\\to 2$ より、$t$ についての収束半径は $\\dfrac{1}{2}$",
+      "$|t|<\\dfrac{1}{2} \\iff |x|^{2}<\\dfrac{1}{2} \\iff |x|<\\dfrac{\\sqrt{2}}{2}$",
+      "$x=\\pm \\dfrac{\\sqrt{2}}{2}$ では $x^{2 n}=\\left(\\dfrac{1}{2}\\right)^n$ となり、級数は $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{1}{n}$。$p=1$ の $p$ 級数なので発散"
+    ],
+    "answer": "$R=\\dfrac{\\sqrt{2}}{2}$、収束域は $- \\dfrac{\\sqrt{2}}{2}< x< \\dfrac{\\sqrt{2}}{2}$"
+  },
+  {
+    "id": "k031",
+    "order": 31,
+    "subject": "解析学",
+    "title": "x²ⁿ 型の収束域(端点で収束)",
+    "level": 3,
+    "question": "整級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{9^{n}}{n^{2}}\\,x^{2 n}$ の収束半径 $R$ を求め、さらに端点での収束・発散を調べて収束域(収束する $x$ の範囲)を答えよ。途中式も書くこと。",
+    "tool": "$t=x^2$ と置いて収束半径を出し、端点では代入した級数を $p$ 級数として調べる。$p=2>1$ なら端点も含む。",
+    "steps": [
+      "$t=x^{2}$ とおくと $\\displaystyle\\sum \\dfrac{9^{n}}{n^{2}}\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{9 n^{2}}{\\left(n + 1\\right)^{2}}\\to 9$ より、$t$ についての収束半径は $\\dfrac{1}{9}$",
+      "$|t|<\\dfrac{1}{9} \\iff |x|^{2}<\\dfrac{1}{9} \\iff |x|<\\dfrac{1}{3}$",
+      "$x=\\pm \\dfrac{1}{3}$ では $x^{2 n}=\\left(\\dfrac{1}{9}\\right)^n$ となり、級数は $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{1}{n^{2}}$。$p=2$ の $p$ 級数なので収束"
+    ],
+    "answer": "$R=\\dfrac{1}{3}$、収束域は $- \\dfrac{1}{3}\\le x\\le \\dfrac{1}{3}$"
+  },
+  {
+    "id": "k032",
+    "order": 32,
+    "subject": "解析学",
+    "title": "係数が和の x²ⁿ 型",
+    "level": 3,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} \\left(2^{n} + 5^{n}\\right)\\,x^{2 n}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "係数 $2^n+5^n$ は $n$ が大きいと大きい方の $5^n$ が支配する。$t=x^2$ と置き、比の極限を $5^n$ でくくって求める。",
+    "steps": [
+      "$t=x^{2}$ とおくと $\\displaystyle\\sum \\left(2^{n} + 5^{n}\\right)\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{2^{n + 1} + 5^{n + 1}}{2^{n} + 5^{n}}=\\dfrac{2 \\left(\\dfrac{2}{5}\\right)^{n} + 5}{\\left(\\dfrac{2}{5}\\right)^{n} + 1}$($5^n$ で分母分子を割った)",
+      "$\\left(\\dfrac{2}{5}\\right)^n\\to 0$ より $\\to 5$。$t$ についての収束半径は $\\dfrac{1}{5}$",
+      "$|t|<\\dfrac{1}{5} \\iff |x|^{2}<\\dfrac{1}{5} \\iff |x|<\\dfrac{\\sqrt{5}}{5}$"
+    ],
+    "answer": "$R=\\dfrac{\\sqrt{5}}{5}$"
+  },
+  {
+    "id": "k033",
+    "order": 33,
+    "subject": "解析学",
+    "title": "中心がずれた (x−c)²ⁿ 型",
+    "level": 3,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{1}{9^{n}}\\,(x-2)^{2 n}$ の収束半径 $R$ を求め、さらに端点での収束・発散を調べて収束域(収束する $x$ の範囲)を答えよ。途中式も書くこと。",
+    "tool": "$u=x-2$, $t=u^2$ と2回置き換える。端点では各項が $1$ になり一般項が $0$ に収束しないことを使う。",
+    "steps": [
+      "$t=(x-2)^{2}$ とおくと $\\displaystyle\\sum \\dfrac{1}{9^{n}}\\,t^n$($t$ の整級数)",
+      "$\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{1}{9}$(一定)より、$t$ についての収束半径は $9$",
+      "$|t|<9 \\iff |x-2|^{2}<9 \\iff |x-2|<3$",
+      "$x-2=\\pm 3$ では $(x-2)^{2 n}=9^n$ となり、級数は $\\displaystyle\\sum_{n=0}^{\\infty} 1$。一般項が $0$ に収束しないので発散"
+    ],
+    "answer": "$R=3$、収束域は $-1< x< 5$"
+  },
+  {
+    "id": "k034",
+    "order": 34,
+    "subject": "解析学",
+    "title": "基本の収束半径",
+    "level": 1,
+    "question": "整級数 $\\displaystyle\\sum_{n=0}^{\\infty} \\dfrac{n^{2}}{5^{n}}\\,x^{n}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "すべての次数の係数がそろっているので、係数の比 $\\left|\\dfrac{c_{n+1}}{c_n}\\right|$ の極限の逆数が収束半径になる。",
+    "steps": [
+      "$c_n=\\dfrac{n^{2}}{5^{n}}$ とおくと $\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\dfrac{\\left(n + 1\\right)^{2}}{5 n^{2}}$",
+      "$n\\to\\infty$ で $\\to \\dfrac{1}{5}$",
+      "収束半径は極限の逆数なので $R=5$"
+    ],
+    "answer": "$R=5$"
+  },
+  {
+    "id": "k035",
+    "order": 35,
+    "subject": "解析学",
+    "title": "係数の比に e が出る収束半径",
+    "level": 3,
+    "question": "整級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{n!}{n^{n}}\\,x^{n}$ の収束半径を求めよ。途中式も書くこと。",
+    "tool": "係数に階乗と $n^n$ があるので比をとる。比の極限に $\\left(1+\\dfrac{1}{n}\\right)^n\\to e$ が出てくることがポイント。",
+    "steps": [
+      "$c_n=\\dfrac{n!}{n^{n}}$ とおくと $\\left|\\dfrac{c_{n+1}}{c_n}\\right|=\\left(\\dfrac{n}{n + 1}\\right)^{n}$",
+      "$\\left(\\dfrac{n}{n+1}\\right)^n=\\dfrac{1}{\\left(1+\\frac{1}{n}\\right)^n}\\to\\dfrac{1}{e}$",
+      "$n\\to\\infty$ で $\\to e^{-1}$",
+      "収束半径は極限の逆数なので $R=e$"
+    ],
+    "answer": "$R=e$"
+  },
+  {
+    "id": "k036",
+    "order": 36,
+    "subject": "解析学",
+    "title": "aⁿ/n の場合分け",
+    "level": 3,
+    "question": "$a>0$ とする。級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{a^n}{n}$ が収束するような $a$ の範囲を求めよ。",
+    "tool": "比をとると極限が $a$ になるので $a<1$, $a>1$ はダランベールで決まる。比の極限が $1$ になる $a=1$ は判定法が使えないので、代入して直接調べる(場合分け)。",
+    "steps": [
+      "$\\dfrac{a_{n+1}}{a_n}=\\dfrac{a^{n+1}}{n+1}\\cdot\\dfrac{n}{a^n}=\\dfrac{an}{n+1}\\to a$",
+      "$0<a<1$ なら収束、$a>1$ なら発散(ダランベール)",
+      "$a=1$ のとき $\\displaystyle\\sum\\dfrac{1}{n}$(調和級数)で発散"
+    ],
+    "answer": "$0<a<1$"
+  },
+  {
+    "id": "k037",
+    "order": 37,
+    "subject": "解析学",
+    "title": "p 級数との比較で場合分け",
+    "level": 3,
+    "question": "実数 $p$ に対して、級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{n^p}{n^3+1}$ が収束するための $p$ の条件を求めよ。",
+    "tool": "一般項は $n$ が大きいとき $\\dfrac{n^p}{n^3}=\\dfrac{1}{n^{3-p}}$ のようにふるまうので、$p$ 級数との極限比較で $3-p>1$ かどうかに帰着させる。",
+    "steps": [
+      "$b_n=\\dfrac{1}{n^{3-p}}$ とすると $\\dfrac{a_n}{b_n}=\\dfrac{n^3}{n^3+1}\\to 1$",
+      "極限比較判定法より $\\displaystyle\\sum a_n$ と $\\displaystyle\\sum\\dfrac{1}{n^{3-p}}$ は収束・発散が一致",
+      "$p$ 級数は $3-p>1$ のとき収束、$3-p\\le 1$ のとき発散"
+    ],
+    "answer": "$p<2$"
+  },
+  {
+    "id": "k038",
+    "order": 38,
+    "subject": "解析学",
+    "title": "a の大小で3通りに場合分け",
+    "level": 3,
+    "question": "$a>0$ とする。級数 $\\displaystyle\\sum_{n=1}^{\\infty} \\dfrac{a^n}{1+a^{2n}}$ の収束・発散を $a$ の値で場合分けして判定せよ。",
+    "tool": "$a<1$ と $a>1$ で分母の主要項が $1$ と $a^{2n}$ に入れ替わるので場合分けし、それぞれ等比級数と比較する。$a=1$ は直接代入する。",
+    "steps": [
+      "$0<a<1$: $0<\\dfrac{a^n}{1+a^{2n}}\\le a^n$、$\\displaystyle\\sum a^n$ は公比 $a<1$ の等比級数で収束 → 収束",
+      "$a>1$: $\\dfrac{a^n}{1+a^{2n}}\\le\\dfrac{a^n}{a^{2n}}=\\left(\\dfrac{1}{a}\\right)^n$、公比 $\\dfrac{1}{a}<1$ で収束 → 収束",
+      "$a=1$: 一般項 $=\\dfrac{1}{2}\\not\\to 0$ → 発散"
+    ],
+    "answer": "$a\\neq 1$ のとき収束、$a=1$ のとき発散"
+  },
+  {
+    "id": "b001",
+    "order": 39,
+    "subject": "微積第二",
+    "title": "多項式の偏微分",
+    "level": 1,
+    "question": "$f(x,y)=x^{3} y^{2} + 5 x y$ の偏導関数 $f_x,\\ f_y$ を求めよ。途中式も書くこと。",
+    "tool": "$f_x$ は $y$ を定数とみて $x$ で微分、$f_y$ は $x$ を定数とみて $y$ で微分する。",
+    "steps": [
+      "$f_x=3 x^{2} y^{2} + 5 y$($y$ を定数とみる)",
+      "$f_y=2 x^{3} y + 5 x$($x$ を定数とみる)"
+    ],
+    "answer": "$f_x=3 x^{2} y^{2} + 5 y,\\quad f_y=2 x^{3} y + 5 x$"
+  },
+  {
+    "id": "b002",
+    "order": 40,
+    "subject": "微積第二",
+    "title": "指数×三角の偏微分",
+    "level": 1,
+    "question": "$f(x,y)=e^{3 x} \\sin\\left(2 y\\right)$ の偏導関数 $f_x,\\ f_y$ を求めよ。途中式も書くこと。",
+    "tool": "$x$ で微分するとき $\\sin 2y$ は定数、$y$ で微分するとき $e^{3x}$ は定数。それぞれ合成関数の微分で中身の係数が前に出る。",
+    "steps": [
+      "$f_x=e^{3 x}\\cdot 3\\cdot \\sin\\left(2 y\\right)=3 e^{3 x} \\sin\\left(2 y\\right)$($y$ を定数とみる)",
+      "$f_y=\\cos\\left(2 y\\right)\\cdot 2\\cdot e^{3 x}=2 e^{3 x} \\cos\\left(2 y\\right)$($x$ を定数とみる)"
+    ],
+    "answer": "$f_x=3 e^{3 x} \\sin\\left(2 y\\right),\\quad f_y=2 e^{3 x} \\cos\\left(2 y\\right)$"
+  },
+  {
+    "id": "b003",
+    "order": 41,
+    "subject": "微積第二",
+    "title": "対数関数の偏微分",
+    "level": 1,
+    "question": "$f(x,y)=\\log{\\left(x^{2} + 4 y^{2} \\right)}$ の偏導関数 $f_x,\\ f_y$ を求めよ。途中式も書くこと。",
+    "tool": "$\\log u$ の微分は $\\dfrac{u'}{u}$。中身 $u=x^2+4y^2$ を $x$, $y$ でそれぞれ偏微分する。",
+    "steps": [
+      "$f_x=\\dfrac{1}{x^{2} + 4 y^{2}}\\cdot 2 x=\\dfrac{2 x}{x^{2} + 4 y^{2}}$($y$ を定数とみる)",
+      "$f_y=\\dfrac{1}{x^{2} + 4 y^{2}}\\cdot 8 y=\\dfrac{8 y}{x^{2} + 4 y^{2}}$($x$ を定数とみる)"
+    ],
+    "answer": "$f_x=\\dfrac{2 x}{x^{2} + 4 y^{2}},\\quad f_y=\\dfrac{8 y}{x^{2} + 4 y^{2}}$"
+  },
+  {
+    "id": "b004",
+    "order": 42,
+    "subject": "微積第二",
+    "title": "指数の肩に積がある偏微分",
+    "level": 2,
+    "question": "$f(x,y)=e^{x y^{3}}$ の偏導関数 $f_x,\\ f_y$ を求めよ。途中式も書くこと。",
+    "tool": "$e^{u}$ の偏微分は $e^{u}\\cdot u_x$, $e^{u}\\cdot u_y$。肩の $u=xy^3$ を偏微分したものがかかる。",
+    "steps": [
+      "$f_x=e^{x y^{3}}\\cdot y^{3}=y^{3} e^{x y^{3}}$($y$ を定数とみる)",
+      "$f_y=e^{x y^{3}}\\cdot 3 x y^{2}=3 x y^{2} e^{x y^{3}}$($x$ を定数とみる)"
+    ],
+    "answer": "$f_x=y^{3} e^{x y^{3}},\\quad f_y=3 x y^{2} e^{x y^{3}}$"
+  },
+  {
+    "id": "b005",
+    "order": 43,
+    "subject": "微積第二",
+    "title": "逆正接の偏微分",
+    "level": 2,
+    "question": "$f(x,y)=\\arctan{\\left(\\dfrac{y}{x} \\right)}$ の偏導関数 $f_x,\\ f_y$ を求めよ。途中式も書くこと。",
+    "tool": "$(\\arctan u)'=\\dfrac{1}{1+u^2}$ と合成関数の微分を使う。$u=\\dfrac{y}{x}$ を $x$ で微分すると $-\\dfrac{y}{x^2}$ になる。",
+    "steps": [
+      "$f_x=\\dfrac{1}{1 + \\dfrac{y^{2}}{x^{2}}}\\cdot \\left(- \\dfrac{y}{x^{2}}\\right)=- \\dfrac{y}{x^{2} + y^{2}}$($y$ を定数とみる)",
+      "$f_y=\\dfrac{1}{1 + \\dfrac{y^{2}}{x^{2}}}\\cdot \\dfrac{1}{x}=\\dfrac{x}{x^{2} + y^{2}}$($x$ を定数とみる)"
+    ],
+    "answer": "$f_x=- \\dfrac{y}{x^{2} + y^{2}},\\quad f_y=\\dfrac{x}{x^{2} + y^{2}}$"
+  },
+  {
+    "id": "b006",
+    "order": 44,
+    "subject": "微積第二",
+    "title": "xʸ の偏微分",
+    "level": 2,
+    "question": "$f(x,y)=x^y\\ (x>0)$ の偏導関数 $f_x,\\ f_y$ を求めよ。途中式も書くこと。",
+    "tool": "$x$ で微分するときは $y$ が定数なので $x^n$ の微分、$y$ で微分するときは $x$ が定数なので $a^y$ の微分($a^y\\log a$)になる。",
+    "steps": [
+      "$f_x=x^{y - 1} y$($y$ を定数とみる)",
+      "$f_y=x^{y} \\log x$($x$ を定数とみる)"
+    ],
+    "answer": "$f_x=x^{y - 1} y,\\quad f_y=x^{y} \\log x$"
+  },
+  {
+    "id": "b007",
+    "order": 45,
+    "subject": "微積第二",
+    "title": "商の偏微分",
+    "level": 2,
+    "question": "$f(x,y)=\\dfrac{x + 2 y}{x - y}$ の偏導関数 $f_x,\\ f_y$ を求めよ。途中式も書くこと。",
+    "tool": "商の微分公式 $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}$ を $x$, $y$ それぞれについて使う。",
+    "steps": [
+      "$f_x=\\dfrac{1\\cdot \\left(x - y\\right)-\\left(x + 2 y\\right)\\cdot 1}{\\left(x - y\\right)^{2}}=- \\dfrac{3 y}{\\left(x - y\\right)^{2}}$($y$ を定数とみる)",
+      "$f_y=\\dfrac{2\\cdot \\left(x - y\\right)-\\left(x + 2 y\\right)\\cdot \\left(-1\\right)}{\\left(x - y\\right)^{2}}=\\dfrac{3 x}{\\left(x - y\\right)^{2}}$($x$ を定数とみる)"
+    ],
+    "answer": "$f_x=- \\dfrac{3 y}{\\left(x - y\\right)^{2}},\\quad f_y=\\dfrac{3 x}{\\left(x - y\\right)^{2}}$"
+  },
+  {
+    "id": "b008",
+    "order": 46,
+    "subject": "微積第二",
+    "title": "点での偏微分係数",
+    "level": 1,
+    "question": "$f(x,y)=\\sqrt{5 x^{2} + y^{2}}$ について、点 $(2,1)$ における $f_x,\\ f_y$ の値を求めよ。",
+    "tool": "$\\sqrt{u}$ の微分は $\\dfrac{u'}{2\\sqrt{u}}$。偏導関数を求めてから点の座標を代入する。",
+    "steps": [
+      "$f_x=\\dfrac{1}{2}\\,\\dfrac{1}{\\sqrt{5 x^{2} + y^{2}}}\\cdot 10 x=\\dfrac{5 x}{\\sqrt{5 x^{2} + y^{2}}}$($y$ を定数とみる)",
+      "$f_y=\\dfrac{1}{2}\\,\\dfrac{1}{\\sqrt{5 x^{2} + y^{2}}}\\cdot 2 y=\\dfrac{y}{\\sqrt{5 x^{2} + y^{2}}}$($x$ を定数とみる)",
+      "$(x,y)=(2,1)$ を代入する"
+    ],
+    "answer": "$f_x(2,1)=\\dfrac{10 \\sqrt{21}}{21},\\quad f_y(2,1)=\\dfrac{\\sqrt{21}}{21}$"
+  },
+  {
+    "id": "b009",
+    "order": 47,
+    "subject": "微積第二",
+    "title": "1変数への連鎖律",
+    "level": 1,
+    "question": "$z=x^{2} y$, $x=\\cos\\left(t\\right)$, $y=\\sin\\left(t\\right)$ のとき $\\dfrac{dz}{dt}$ を $t$ の式で求め、$t=\\dfrac{\\pi}{4}$ での値も答えよ。",
+    "tool": "合成関数の微分(連鎖律) $\\dfrac{dz}{dt}=z_x\\dfrac{dx}{dt}+z_y\\dfrac{dy}{dt}$ を使う。最後に $x,y$ を $t$ で書き直す。",
+    "steps": [
+      "$z_x=2 x y,\\ z_y=x^{2}$",
+      "$\\dfrac{dx}{dt}=- \\sin\\left(t\\right),\\ \\dfrac{dy}{dt}=\\cos\\left(t\\right)$",
+      "$\\dfrac{dz}{dt}=2 x y\\cdot \\left(- \\sin\\left(t\\right)\\right)+x^{2}\\cdot \\cos\\left(t\\right)$",
+      "$x=\\cos\\left(t\\right),\\ y=\\sin\\left(t\\right)$ を代入して整理すると $\\dfrac{dz}{dt}=\\left(1 - 3 \\sin^{2}{\\left(t \\right)}\\right) \\cos\\left(t\\right)$"
+    ],
+    "answer": "$\\dfrac{dz}{dt}=\\left(1 - 3 \\sin^{2}{\\left(t \\right)}\\right) \\cos\\left(t\\right)$、$t=\\dfrac{\\pi}{4}$ で $- \\dfrac{\\sqrt{2}}{4}$"
+  },
+  {
+    "id": "b010",
+    "order": 48,
+    "subject": "微積第二",
+    "title": "指数・対数の連鎖律",
+    "level": 2,
+    "question": "$z=e^{x} \\log y$, $x=3 t$, $y=t^{2} + 1$ のとき $\\dfrac{dz}{dt}$ を $t$ の式で求め、$t=0$ での値も答えよ。",
+    "tool": "合成関数の微分(連鎖律) $\\dfrac{dz}{dt}=z_x\\dfrac{dx}{dt}+z_y\\dfrac{dy}{dt}$ を使う。最後に $x,y$ を $t$ で書き直す。",
+    "steps": [
+      "$z_x=e^{x} \\log y,\\ z_y=\\dfrac{e^{x}}{y}$",
+      "$\\dfrac{dx}{dt}=3,\\ \\dfrac{dy}{dt}=2 t$",
+      "$\\dfrac{dz}{dt}=e^{x} \\log y\\cdot 3+\\dfrac{e^{x}}{y}\\cdot 2 t$",
+      "$x=3 t,\\ y=t^{2} + 1$ を代入して整理すると $\\dfrac{dz}{dt}=\\dfrac{2 t e^{3 t}}{t^{2} + 1} + 3 e^{3 t} \\log{\\left(t^{2} + 1 \\right)}$"
+    ],
+    "answer": "$\\dfrac{dz}{dt}=\\dfrac{2 t e^{3 t}}{t^{2} + 1} + 3 e^{3 t} \\log{\\left(t^{2} + 1 \\right)}$、$t=0$ で $0$"
+  },
+  {
+    "id": "b011",
+    "order": 49,
+    "subject": "微積第二",
+    "title": "2変数への連鎖律",
+    "level": 2,
+    "question": "$z=u^{2} v$, $u=x + y$, $v=x y$ のとき、$\\dfrac{\\partial z}{\\partial x}$ と $\\dfrac{\\partial z}{\\partial y}$ を $x,y$ の式で求めよ。",
+    "tool": "$z$ は $u,v$ を通して $x,y$ に依存するので連鎖律 $z_x=z_u u_x+z_v v_x$, $z_y=z_u u_y+z_v v_y$ を使う。",
+    "steps": [
+      "$z_u=2 u v,\\ z_v=u^{2}$",
+      "$u_x=1,\\ u_y=1,\\ v_x=y,\\ v_y=x$",
+      "$z_x=2 u v\\cdot 1+u^{2}\\cdot y$ に $u=x + y,\\ v=x y$ を代入して $z_x=3 x^{2} y + 4 x y^{2} + y^{3}$",
+      "同様に $z_y=2 u v\\cdot 1+u^{2}\\cdot x=x^{3} + 4 x^{2} y + 3 x y^{2}$"
+    ],
+    "answer": "$\\dfrac{\\partial z}{\\partial x}=3 x^{2} y + 4 x y^{2} + y^{3},\\quad \\dfrac{\\partial z}{\\partial y}=x^{3} + 4 x^{2} y + 3 x y^{2}$"
+  },
+  {
+    "id": "b012",
+    "order": 50,
+    "subject": "微積第二",
+    "title": "極座標への連鎖律",
+    "level": 2,
+    "question": "$z=x^{2} - y^{2}$, $x=r\\cos\\theta$, $y=r\\sin\\theta$ のとき $\\dfrac{\\partial z}{\\partial r}$ と $\\dfrac{\\partial z}{\\partial \\theta}$ を $r,\\theta$ の式で求めよ。",
+    "tool": "連鎖律 $z_r=z_x x_r+z_y y_r$, $z_\\theta=z_x x_\\theta+z_y y_\\theta$ を使い、最後に倍角の公式で整理する。",
+    "steps": [
+      "$z_x=2 x,\\ z_y=- 2 y$",
+      "$x_r=\\cos\\theta,\\ y_r=\\sin\\theta,\\ x_\\theta=-r\\sin\\theta,\\ y_\\theta=r\\cos\\theta$",
+      "$z_r=2 r \\cos\\left(\\theta\\right)\\cos\\theta+\\left(- 2 r \\sin\\left(\\theta\\right)\\right)\\sin\\theta=2 r \\cos\\left(2 \\theta\\right)$",
+      "$z_\\theta=2 r \\cos\\left(\\theta\\right)\\cdot(-r\\sin\\theta)+\\left(- 2 r \\sin\\left(\\theta\\right)\\right)\\cdot r\\cos\\theta=- 2 r^{2} \\sin\\left(2 \\theta\\right)$"
+    ],
+    "answer": "$\\dfrac{\\partial z}{\\partial r}=2 r \\cos\\left(2 \\theta\\right),\\quad \\dfrac{\\partial z}{\\partial \\theta}=- 2 r^{2} \\sin\\left(2 \\theta\\right)$"
+  },
+  {
+    "id": "b013",
+    "order": 51,
+    "subject": "微積第二",
+    "title": "接平面(2次式)",
+    "level": 1,
+    "question": "曲面 $z=x^{2} + 3 y^{2}$ 上の点 $(2,1,7)$ における接平面の方程式を求めよ。",
+    "tool": "接平面は $z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)$。まず偏導関数を求めて点の値を代入する。",
+    "steps": [
+      "$f_x=2 x,\\ f_y=6 y$",
+      "$f(2,1)=7,\\ f_x(2,1)=4,\\ f_y(2,1)=6$",
+      "$z=7+4(x-2)+6(y-1)$"
+    ],
+    "answer": "$z=4 x + 6 y - 7$"
+  },
+  {
+    "id": "b014",
+    "order": 52,
+    "subject": "微積第二",
+    "title": "接平面(3次式)",
+    "level": 1,
+    "question": "曲面 $z=x^{2} y + y^{3}$ 上の点 $(1,2,10)$ における接平面の方程式を求めよ。",
+    "tool": "接平面は $z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)$。まず偏導関数を求めて点の値を代入する。",
+    "steps": [
+      "$f_x=2 x y,\\ f_y=x^{2} + 3 y^{2}$",
+      "$f(1,2)=10,\\ f_x(1,2)=4,\\ f_y(1,2)=13$",
+      "$z=10+4(x-1)+13(y-2)$"
+    ],
+    "answer": "$z=4 x + 13 y - 20$"
+  },
+  {
+    "id": "b015",
+    "order": 53,
+    "subject": "微積第二",
+    "title": "接平面(対数)",
+    "level": 2,
+    "question": "曲面 $z=\\log{\\left(x^{2} + y^{2} \\right)}$ 上の点 $(1,1,\\log 2)$ における接平面の方程式を求めよ。",
+    "tool": "接平面は $z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)$。まず偏導関数を求めて点の値を代入する。",
+    "steps": [
+      "$f_x=\\dfrac{2 x}{x^{2} + y^{2}},\\ f_y=\\dfrac{2 y}{x^{2} + y^{2}}$",
+      "$f(1,1)=\\log 2,\\ f_x(1,1)=1,\\ f_y(1,1)=1$",
+      "$z=\\log 2+(x-1)+(y-1)$"
+    ],
+    "answer": "$z=x + y - 2 + \\log 2$"
+  },
+  {
+    "id": "b016",
+    "order": 54,
+    "subject": "微積第二",
+    "title": "接平面(指数×三角)",
+    "level": 2,
+    "question": "曲面 $z=e^{x} \\cos\\left(y\\right)$ 上の点 $(0,0,1)$ における接平面の方程式を求めよ。",
+    "tool": "接平面は $z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b)$。まず偏導関数を求めて点の値を代入する。",
+    "steps": [
+      "$f_x=e^{x} \\cos\\left(y\\right),\\ f_y=- e^{x} \\sin\\left(y\\right)$",
+      "$f(0,0)=1,\\ f_x(0,0)=1,\\ f_y(0,0)=0$",
+      "$z=1+x$"
+    ],
+    "answer": "$z=x + 1$"
+  },
+  {
+    "id": "b017",
+    "order": 55,
+    "subject": "微積第二",
+    "title": "球面の接平面",
+    "level": 2,
+    "question": "曲面 $x^{2} + y^{2} + z^{2}=9$ 上の点 $(2,2,1)$ における接平面の方程式を求めよ。",
+    "tool": "陰関数の形 $F(x,y,z)=c$ の曲面では、勾配 $(F_x,F_y,F_z)$ が法線ベクトルになる。法線ベクトルと点から平面の式を作る。",
+    "steps": [
+      "$F=x^{2} + y^{2} + z^{2}$ とおくと $F_x=2 x,\\ F_y=2 y,\\ F_z=2 z$",
+      "点 $(2,2,1)$ での法線ベクトル $(4,4,2)$",
+      "$4(x-2)+4(y-2)+2(z-1)=0$"
+    ],
+    "answer": "$2 x + 2 y + z=9$"
+  },
+  {
+    "id": "b018",
+    "order": 56,
+    "subject": "微積第二",
+    "title": "陰関数表示の曲面の接平面",
+    "level": 2,
+    "question": "曲面 $x y z=6$ 上の点 $(1,2,3)$ における接平面の方程式を求めよ。",
+    "tool": "陰関数の形 $F(x,y,z)=c$ の曲面では、勾配 $(F_x,F_y,F_z)$ が法線ベクトルになる。法線ベクトルと点から平面の式を作る。",
+    "steps": [
+      "$F=x y z$ とおくと $F_x=y z,\\ F_y=x z,\\ F_z=x y$",
+      "点 $(1,2,3)$ での法線ベクトル $(6,3,2)$",
+      "$6(x-1)+3(y-2)+2(z-3)=0$"
+    ],
+    "answer": "$6 x + 3 y + 2 z=18$"
+  },
+  {
+    "id": "b019",
+    "order": 57,
+    "subject": "微積第二",
+    "title": "平面に平行な接平面",
+    "level": 3,
+    "question": "曲面 $z=x^{2} + 2 y^{2}$ の接平面のうち、平面 $z = 2 x + 8 y$ に平行なものの接点と方程式を求めよ。",
+    "tool": "$z=px+qy+c$ の形の平面どうしが平行 ⇔ 傾き $(p,q)$ が等しい。接平面の傾きは $(f_x,f_y)$ なので $f_x=p,\\ f_y=q$ を解いて接点を求める(接平面の式と連立方程式の組み合わせ)。",
+    "steps": [
+      "$f_x=2 x,\\ f_y=4 y$",
+      "平行条件 $f_x=2,\\ f_y=8$ より $x=1,\\ y=2$",
+      "$z=f(1,2)=9$ なので接点は $(1,2,9)$",
+      "$z=9+2(x-1)+8(y-2)$"
+    ],
+    "answer": "接点 $(1,2,9)$、接平面 $z=2 x + 8 y - 9$"
+  },
+  {
+    "id": "b020",
+    "order": 58,
+    "subject": "微積第二",
+    "title": "極座標で極限を求める",
+    "level": 1,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{3 x^{2} y}{x^{2} + y^{2}}$ を求めよ。存在することの理由も書くこと。",
+    "tool": "分母が $x^2+y^2=r^2$ になるので極座標 $x=r\\cos\\theta,\\ y=r\\sin\\theta$ に直し、$\\theta$ によらない評価ではさみうちにする。",
+    "steps": [
+      "$x=r\\cos\\theta,\\ y=r\\sin\\theta$ とおくと $f=3 r \\sin\\left(\\theta\\right) \\cos^{2}{\\left(\\theta \\right)}$",
+      "$|f|=3 r|\\cos^2\\theta\\sin\\theta|\\le 3 r$",
+      "$r\\to 0$ で $3 r\\to 0$ なので、はさみうちの原理より極限は $0$"
+    ],
+    "answer": "$0$"
+  },
+  {
+    "id": "b021",
+    "order": 59,
+    "subject": "微積第二",
+    "title": "極座標とはさみうち",
+    "level": 1,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x^{3} + y^{3}}{x^{2} + y^{2}}$ を求めよ。存在することの理由も書くこと。",
+    "tool": "極座標に直すと $r$ が1つ残り、残りの $\\theta$ の部分は有界。$|\\cos\\theta|,|\\sin\\theta|\\le 1$ で評価する。",
+    "steps": [
+      "$x=r\\cos\\theta,\\ y=r\\sin\\theta$ とおくと $f=r \\left(\\sin^{3}{\\left(\\theta \\right)} + \\cos^{3}{\\left(\\theta \\right)}\\right)$",
+      "$|f|\\le r(|\\cos\\theta|^3+|\\sin\\theta|^3)\\le 2r$",
+      "$r\\to 0$ で $2r\\to 0$ なので、はさみうちの原理より極限は $0$"
+    ],
+    "answer": "$0$"
+  },
+  {
+    "id": "b022",
+    "order": 60,
+    "subject": "微積第二",
+    "title": "極座標で 2 次の残り",
+    "level": 2,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x^{2} y^{2}}{x^{2} + y^{2}}$ を求めよ。存在することの理由も書くこと。",
+    "tool": "分母が $r^2$、分子が $r^4$ の次数なので極座標で $r^2\\times(\\theta$ の有界な式$)$ になる。",
+    "steps": [
+      "$x=r\\cos\\theta,\\ y=r\\sin\\theta$ とおくと $f=r^{2} \\sin^{2}{\\left(\\theta \\right)} \\cos^{2}{\\left(\\theta \\right)}$",
+      "$|f|=r^2\\cos^2\\theta\\sin^2\\theta\\le r^2$",
+      "$r\\to 0$ で $r^2\\to 0$ なので極限は $0$"
+    ],
+    "answer": "$0$"
+  },
+  {
+    "id": "b023",
+    "order": 61,
+    "subject": "微積第二",
+    "title": "1変数の極限に帰着",
+    "level": 2,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{\\sin{\\left(4 x^{2} + 4 y^{2} \\right)}}{x^{2} + y^{2}}$ を求めよ。存在することの理由も書くこと。",
+    "tool": "$x,y$ が $x^2+y^2$ の形でしか現れないので $s=x^2+y^2\\to+0$ と1変数にまとめ、$\\displaystyle\\lim_{u\\to 0}\\dfrac{\\sin u}{u}=1$ を使う。",
+    "steps": [
+      "$s=x^2+y^2$ とおくと $(x,y)\\to(0,0)$ のとき $s\\to +0$",
+      "$f=\\dfrac{\\sin 4s}{s}=4\\cdot\\dfrac{\\sin 4s}{4s}$",
+      "$\\dfrac{\\sin 4s}{4s}\\to 1$ より $f\\to 4$"
+    ],
+    "answer": "$4$"
+  },
+  {
+    "id": "b024",
+    "order": 62,
+    "subject": "微積第二",
+    "title": "相加相乗平均で評価する極限",
+    "level": 3,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x^{3} y}{x^{4} + y^{2}}$ を求めよ。存在することの理由も書くこと。",
+    "tool": "極座標では分母が $r^4\\cos^4\\theta+r^2\\sin^2\\theta$ となり $\\theta$ の評価が難しい。$x^4+y^2\\ge 2x^2|y|$(相加相乗平均)で分子と比べる。",
+    "steps": [
+      "$x^4+y^2\\ge 2\\sqrt{x^4y^2}=2x^2|y|$",
+      "$|f|=\\dfrac{|x|\\cdot x^2|y|}{x^4+y^2}\\le\\dfrac{|x|\\cdot x^2|y|}{2x^2|y|}=\\dfrac{|x|}{2}$($xy\\neq 0$。$xy=0$ なら $f=0$)",
+      "$|x|\\to 0$ なので、はさみうちの原理より極限は $0$"
+    ],
+    "answer": "$0$"
+  },
+  {
+    "id": "b025",
+    "order": 63,
+    "subject": "微積第二",
+    "title": "直線に沿った極限が傾きで変わる",
+    "level": 1,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x y}{x^{2} + y^{2}}$ は存在しないことを示せ。",
+    "tool": "直線 $y=mx$ に沿って近づけて、極限が $m$ によって変わることを示す(経路依存性)。",
+    "steps": [
+      "$y=m x$ に沿って近づけると $f=\\dfrac{m}{m^{2} + 1}$(一定)",
+      "$m=0$ なら $0$, $m=1$ なら $\\dfrac{1}{2}$ と近づき方で値が異なる"
+    ],
+    "answer": "存在しない($y=mx$ に沿うと $\\dfrac{m}{1+m^2}$ に近づき、$m$ によって値が変わる)"
+  },
+  {
+    "id": "b026",
+    "order": 64,
+    "subject": "微積第二",
+    "title": "直線に沿った極限(2次の比)",
+    "level": 1,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x^{2} - 2 y^{2}}{x^{2} + y^{2}}$ は存在しないことを示せ。",
+    "tool": "分子と分母がどちらも2次なので、直線 $y=mx$ に沿うと $x^2$ が約分されて $m$ だけの式が残る。",
+    "steps": [
+      "$y=m x$ に沿って近づけると $f=\\dfrac{1 - 2 m^{2}}{m^{2} + 1}$(一定)",
+      "$m=0$ なら $1$, $m=1$ なら $- \\dfrac{1}{2}$ と近づき方で値が異なる"
+    ],
+    "answer": "存在しない($y=mx$ に沿うと $\\dfrac{1-2m^2}{1+m^2}$ に近づき、$m$ によって値が変わる)"
+  },
+  {
+    "id": "b027",
+    "order": 65,
+    "subject": "微積第二",
+    "title": "2つの経路で値が違う",
+    "level": 2,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x^{2} y^{2}}{x^{2} y^{2} + \\left(x - y\\right)^{2}}$ は存在しないことを示せ。",
+    "tool": "分母の $(x-y)^2$ が $y=x$ 上で消えることに注目し、$y=x$ と $y=0$ の2つの経路を比べる。",
+    "steps": [
+      "$y=x$ に沿って近づけると $f=1$(一定)",
+      "$y=0$ に沿って近づけると $f=0$(一定)",
+      "経路によって極限が $1$ と $0$ で異なる"
+    ],
+    "answer": "存在しない($y=x$ に沿うと $1$、$y=0$ に沿うと $0$)"
+  },
+  {
+    "id": "b028",
+    "order": 66,
+    "subject": "微積第二",
+    "title": "直線では同じでも放物線で違う",
+    "level": 3,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x^{2} y}{x^{4} + y^{2}}$ は存在しないことを示せ。",
+    "tool": "直線 $y=mx$ ではどれも $0$ になってしまう。分母の $x^4$ と $y^2$ の次数をそろえるため放物線 $y=mx^2$ に沿って調べる。",
+    "steps": [
+      "$y=m x$ に沿って近づけると $f=\\dfrac{m x}{m^{2} + x^{2}}\\to 0$",
+      "$y=m x^{2}$ に沿って近づけると $f=\\dfrac{m}{m^{2} + 1}$(一定)",
+      "直線に沿うとすべて $0$ だが、放物線 $y=x^2$ に沿うと $\\dfrac{1}{2}$ で一致しない"
+    ],
+    "answer": "存在しない(直線 $y=mx$ ではすべて $0$、放物線 $y=mx^2$ に沿うと $\\dfrac{m}{1+m^2}$)"
+  },
+  {
+    "id": "b029",
+    "order": 67,
+    "subject": "微積第二",
+    "title": "x=my² に沿った極限",
+    "level": 3,
+    "question": "極限 $\\displaystyle\\lim_{(x,y)\\to(0,0)}\\dfrac{x y^{2}}{x^{2} + y^{4}}$ は存在しないことを示せ。",
+    "tool": "分母の $x^2$ と $y^4$ の次数をそろえるため、$x=my^2$ という曲線に沿って近づける。直線だけでは $0$ にしかならない。",
+    "steps": [
+      "$x=m y$ に沿って近づけると $f=\\dfrac{m y}{m^{2} + y^{2}}\\to 0$",
+      "$x=m y^{2}$ に沿って近づけると $f=\\dfrac{m}{m^{2} + 1}$(一定)",
+      "直線 $x=my$ ではすべて $0$ だが、$x=y^2$ に沿うと $\\dfrac{1}{2}$ で一致しない"
+    ],
+    "answer": "存在しない(直線 $x=my$ ではすべて $0$、曲線 $x=my^2$ に沿うと $\\dfrac{m}{1+m^2}$)"
+  },
+  {
+    "id": "b030",
+    "order": 68,
+    "subject": "微積第二",
+    "title": "2階偏導関数(多項式)",
+    "level": 1,
+    "question": "$f(x,y)=x^{5} y^{2}$ の2階偏導関数 $f_{xx},\\ f_{xy},\\ f_{yy}$ を求めよ。",
+    "tool": "まず $f_x, f_y$ を求め、それをもう一度偏微分する。$f_{xy}$ は $f_x$ を $y$ で微分したもの。",
+    "steps": [
+      "$f_x=5 x^{4} y^{2},\\ f_y=2 x^{5} y$",
+      "$f_{xx}=(f_x)_x=20 x^{3} y^{2}$",
+      "$f_{xy}=(f_x)_y=10 x^{4} y$、$f_{yx}=(f_y)_x=10 x^{4} y$(一致する)",
+      "$f_{yy}=(f_y)_y=2 x^{5}$"
+    ],
+    "answer": "$f_{xx}=20 x^{3} y^{2},\\quad f_{xy}=10 x^{4} y,\\quad f_{yy}=2 x^{5}$"
+  },
+  {
+    "id": "b031",
+    "order": 69,
+    "subject": "微積第二",
+    "title": "2階偏導関数(指数×三角)",
+    "level": 2,
+    "question": "$f(x,y)=e^{4 x} \\cos\\left(y\\right)$ の2階偏導関数 $f_{xx},\\ f_{xy},\\ f_{yy}$ を求めよ。",
+    "tool": "指数と三角は微分しても形が変わらない。係数がどう出てくるかに注意して2回偏微分する。",
+    "steps": [
+      "$f_x=4 e^{4 x} \\cos\\left(y\\right),\\ f_y=- e^{4 x} \\sin\\left(y\\right)$",
+      "$f_{xx}=(f_x)_x=16 e^{4 x} \\cos\\left(y\\right)$",
+      "$f_{xy}=(f_x)_y=- 4 e^{4 x} \\sin\\left(y\\right)$、$f_{yx}=(f_y)_x=- 4 e^{4 x} \\sin\\left(y\\right)$(一致する)",
+      "$f_{yy}=(f_y)_y=- e^{4 x} \\cos\\left(y\\right)$"
+    ],
+    "answer": "$f_{xx}=16 e^{4 x} \\cos\\left(y\\right),\\quad f_{xy}=- 4 e^{4 x} \\sin\\left(y\\right),\\quad f_{yy}=- e^{4 x} \\cos\\left(y\\right)$"
+  },
+  {
+    "id": "b032",
+    "order": 70,
+    "subject": "微積第二",
+    "title": "ラプラシアンの計算",
+    "level": 2,
+    "question": "$f(x,y)=\\log{\\left(x^{2} + y^{2} \\right)}$ について $f_{xx}+f_{yy}$ を計算せよ。$f_{xx},\\ f_{yy}$ も答えること。",
+    "tool": "$f_x$ は商の形になるので、2階は商の微分公式を使う。$f_{xx}$ と $f_{yy}$ を足すと打ち消し合う。",
+    "steps": [
+      "$f_x=\\dfrac{2 x}{x^{2} + y^{2}},\\ f_y=\\dfrac{2 y}{x^{2} + y^{2}}$",
+      "$f_{xx}=(f_x)_x=\\dfrac{- 2 x^{2} + 2 y^{2}}{\\left(x^{2} + y^{2}\\right)^{2}}$",
+      "$f_{yy}=(f_y)_y=\\dfrac{2 x^{2} - 2 y^{2}}{\\left(x^{2} + y^{2}\\right)^{2}}$",
+      "$f_{xx}+f_{yy}=0$"
+    ],
+    "answer": "$f_{xx}=\\dfrac{- 2 x^{2} + 2 y^{2}}{\\left(x^{2} + y^{2}\\right)^{2}},\\quad f_{yy}=\\dfrac{2 x^{2} - 2 y^{2}}{\\left(x^{2} + y^{2}\\right)^{2}},\\quad f_{xx}+f_{yy}=0$"
+  },
+  {
+    "id": "b033",
+    "order": 71,
+    "subject": "微積第二",
+    "title": "xʸ の2階偏導関数",
+    "level": 3,
+    "question": "$f(x,y)=x^{y}$ の2階偏導関数 $f_{xx},\\ f_{xy},\\ f_{yy}$ を求めよ。",
+    "tool": "$x$ で微分すると $x^n$ 型、$y$ で微分すると $a^y$ 型になる。$f_{xy}$ では積の微分も必要になる(2つの微分公式の組み合わせ)。",
+    "steps": [
+      "$f_x=x^{y - 1} y,\\ f_y=x^{y} \\log x$",
+      "$f_{xx}=(f_x)_x=x^{y - 2} y \\left(y - 1\\right)$",
+      "$f_{xy}=(f_x)_y=x^{y - 1} y \\log x + x^{y - 1}$、$f_{yx}=(f_y)_x=\\dfrac{x^{y} y \\log x + x^{y}}{x}$(一致する)",
+      "$f_{yy}=(f_y)_y=x^{y} \\left(\\log x\\right)^{2}$"
+    ],
+    "answer": "$f_{xx}=x^{y - 2} y \\left(y - 1\\right),\\quad f_{xy}=x^{y - 1} y \\log x + x^{y - 1},\\quad f_{yy}=x^{y} \\left(\\log x\\right)^{2}$"
+  },
+  {
+    "id": "b034",
+    "order": 72,
+    "subject": "微積第二",
+    "title": "全微分(多項式)",
+    "level": 1,
+    "question": "$z=x^{4} y$ の全微分 $dz$ を求めよ。",
+    "tool": "全微分は $dz=z_x\\,dx+z_y\\,dy$。偏導関数を2つ求めて並べればよい。",
+    "steps": [
+      "$z_x=4 x^{3} y$($y$ を定数とみる)",
+      "$z_y=x^{4}$($x$ を定数とみる)"
+    ],
+    "answer": "$dz=4 x^{3} y\\,dx+x^{4}\\,dy$"
+  },
+  {
+    "id": "b035",
+    "order": 73,
+    "subject": "微積第二",
+    "title": "全微分(商)",
+    "level": 1,
+    "question": "$z=\\dfrac{x}{y}$ の全微分 $dz$ を求めよ。",
+    "tool": "全微分は $dz=z_x\\,dx+z_y\\,dy$。偏導関数を2つ求めて並べればよい。",
+    "steps": [
+      "$z_x=\\dfrac{1}{y}$($y$ を定数とみる)",
+      "$z_y=- \\dfrac{x}{y^{2}}$($x$ を定数とみる)"
+    ],
+    "answer": "$dz=\\dfrac{1}{y}\\,dx-\\dfrac{x}{y^{2}}\\,dy$"
+  },
+  {
+    "id": "b036",
+    "order": 74,
+    "subject": "微積第二",
+    "title": "全微分による近似値",
+    "level": 2,
+    "question": "全微分を用いて $\\sqrt{2.97^2+4.01^2}$ の近似値を求めよ(小数で答えよ)。",
+    "tool": "$f(x,y)=\\sqrt{x^{2} + y^{2}}$ とし、計算しやすい点 $(3,4)$ のまわりで $f(a+\\Delta x,b+\\Delta y)\\approx f(a,b)+f_x\\Delta x+f_y\\Delta y$ を使う。",
+    "steps": [
+      "$f_x=\\dfrac{x}{\\sqrt{x^{2} + y^{2}}},\\ f_y=\\dfrac{y}{\\sqrt{x^{2} + y^{2}}}$",
+      "$f(3,4)=5,\\ f_x(3,4)=\\dfrac{3}{5},\\ f_y(3,4)=\\dfrac{4}{5}$",
+      "$\\Delta x=-0.03,\\ \\Delta y=0.01$ より $df=\\dfrac{3}{5}\\cdot (-0.03)+\\dfrac{4}{5}\\cdot 0.01=-0.01$",
+      "$f(2.97,4.01)\\approx 5-0.01=4.99$"
+    ],
+    "answer": "$4.99$"
+  },
+  {
+    "id": "b037",
+    "order": 75,
+    "subject": "微積第二",
+    "title": "全微分による誤差の評価",
+    "level": 3,
+    "question": "円柱の半径を $r=5\\ \\mathrm{cm}$、高さを $h=10\\ \\mathrm{cm}$ と測った。測定誤差がそれぞれ最大 $0.1\\ \\mathrm{cm}$, $0.2\\ \\mathrm{cm}$ のとき、体積 $V=\\pi r^2 h$ の誤差の最大値(1次近似)と相対誤差を求めよ。",
+    "tool": "全微分 $dV=V_r\\,dr+V_h\\,dh$ で誤差を1次近似し、各項の絶対値を足して最大値を出す。相対誤差は $\\dfrac{|dV|}{V}\\le 2\\dfrac{|dr|}{r}+\\dfrac{|dh|}{h}$ でも求まる。",
+    "steps": [
+      "$V_r=2\\pi rh,\\ V_h=\\pi r^2$",
+      "$|dV|\\le 2\\pi\\cdot 5\\cdot 10\\cdot 0.1+\\pi\\cdot 5^2\\cdot 0.2=15 \\pi$",
+      "$V=\\pi\\cdot 5^2\\cdot 10=250 \\pi$ より $\\dfrac{|dV|}{V}\\le \\dfrac{3}{50}=0.06$"
+    ],
+    "answer": "誤差の最大値 $15 \\pi\\ \\mathrm{cm^3}$($\\approx 47.1\\ \\mathrm{cm^3}$)、相対誤差 $0.06$($6\\,\\%$)"
+  },
+  {
+    "id": "p001",
+    "order": 76,
+    "subject": "物理学概論第二",
+    "title": "融解のエントロピー変化",
+    "level": 1,
+    "question": "$1.5\\ \\mathrm{kg}$ の氷($0$℃)がすべて水($0$℃)になった。このときの氷のエントロピー変化 $\\Delta S$ を有効数字3桁で求めよ。融解熱 $L=3.34\\times 10^{5}\\ \\mathrm{J/kg}$ とする。",
+    "tool": "相転移の間は温度が一定なので $\\Delta S=\\dfrac{Q}{T}$ がそのまま使える。温度は必ず絶対温度 [K] に直す。",
+    "steps": [
+      "$T=0+273.15=273.15\\ \\mathrm{K}$",
+      "吸収する熱 $Q=mL=1.5\\times 3.34\\times 10^{5}=5.010\\times 10^{5}\\ \\mathrm{J}$",
+      "$\\Delta S=\\dfrac{Q}{T}=\\dfrac{5.010\\times 10^{5}}{273.15}=1.83\\times 10^{3}\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$\\Delta S=1.83\\times 10^{3}\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p002",
+    "order": 77,
+    "subject": "物理学概論第二",
+    "title": "融解のエントロピー変化",
+    "level": 1,
+    "question": "$300\\ \\mathrm{g}$ の氷($0$℃)がすべて水($0$℃)になった。このときの氷のエントロピー変化 $\\Delta S$ を有効数字3桁で求めよ。融解熱 $L=3.34\\times 10^{5}\\ \\mathrm{J/kg}$ とする。",
+    "tool": "相転移の間は温度が一定なので $\\Delta S=\\dfrac{Q}{T}$ がそのまま使える。温度は必ず絶対温度 [K] に直す。",
+    "steps": [
+      "$T=0+273.15=273.15\\ \\mathrm{K}$",
+      "吸収する熱 $Q=mL=0.3\\times 3.34\\times 10^{5}=1.002\\times 10^{5}\\ \\mathrm{J}$",
+      "$\\Delta S=\\dfrac{Q}{T}=\\dfrac{1.002\\times 10^{5}}{273.15}=367\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$\\Delta S=367\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p003",
+    "order": 78,
+    "subject": "物理学概論第二",
+    "title": "沸騰(蒸発)のエントロピー変化",
+    "level": 1,
+    "question": "$0.2\\ \\mathrm{kg}$ の水($100$℃)がすべて水蒸気($100$℃)になった。このときの水のエントロピー変化 $\\Delta S$ を有効数字3桁で求めよ。蒸発熱 $L=2.26\\times 10^{6}\\ \\mathrm{J/kg}$ とする。",
+    "tool": "相転移の間は温度が一定なので $\\Delta S=\\dfrac{Q}{T}$ がそのまま使える。温度は必ず絶対温度 [K] に直す。",
+    "steps": [
+      "$T=100+273.15=373.15\\ \\mathrm{K}$",
+      "吸収する熱 $Q=mL=0.2\\times 2.26\\times 10^{6}=4.520\\times 10^{5}\\ \\mathrm{J}$",
+      "$\\Delta S=\\dfrac{Q}{T}=\\dfrac{4.520\\times 10^{5}}{373.15}=1.21\\times 10^{3}\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$\\Delta S=1.21\\times 10^{3}\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p004",
+    "order": 79,
+    "subject": "物理学概論第二",
+    "title": "凝固のエントロピー変化",
+    "level": 2,
+    "question": "$1.2\\ \\mathrm{kg}$ の水($0$℃)がすべて氷($0$℃)になった。このときの水のエントロピー変化 $\\Delta S$ を有効数字3桁で求めよ。融解熱 $L=3.34\\times 10^{5}\\ \\mathrm{J/kg}$ とする。",
+    "tool": "相転移の間は温度が一定なので $\\Delta S=\\dfrac{Q}{T}$ がそのまま使える。温度は必ず絶対温度 [K] に直す。熱を放出する変化なので $\\Delta S<0$ になる。",
+    "steps": [
+      "$T=0+273.15=273.15\\ \\mathrm{K}$",
+      "放出する熱 $Q=mL=1.2\\times 3.34\\times 10^{5}=4.008\\times 10^{5}\\ \\mathrm{J}$",
+      "$\\Delta S=-\\dfrac{Q}{T}=-\\dfrac{4.008\\times 10^{5}}{273.15}=-1.47\\times 10^{3}\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$\\Delta S=-1.47\\times 10^{3}\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p005",
+    "order": 80,
+    "subject": "物理学概論第二",
+    "title": "加熱のエントロピー変化",
+    "level": 1,
+    "question": "質量 $1\\ \\mathrm{kg}$ の水を $30$℃ から $90$℃ までゆっくり温めた。水のエントロピー変化を有効数字3桁で求めよ。水の比熱 $c=4190\\ \\mathrm{J/(kg\\cdot K)}$ とする。",
+    "tool": "温度が変わるので $\\Delta S=Q/T$ は使えない。$dS=\\dfrac{dQ}{T}=\\dfrac{mc\\,dT}{T}$ を積分して $\\Delta S=mc\\log\\dfrac{T_2}{T_1}$ を使う。",
+    "steps": [
+      "$T_1=303.15\\ \\mathrm{K},\\ T_2=363.15\\ \\mathrm{K}$",
+      "$\\Delta S=\\displaystyle\\int_{T_1}^{T_2}\\dfrac{mc}{T}\\,dT=mc\\log\\dfrac{T_2}{T_1}$",
+      "$=1\\times 4190\\times\\log\\dfrac{363.15}{303.15}=4.190\\times 10^{3}\\times 0.1806$",
+      "$\\Delta S=757\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$\\Delta S=757\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p006",
+    "order": 81,
+    "subject": "物理学概論第二",
+    "title": "冷却のエントロピー変化",
+    "level": 2,
+    "question": "質量 $0.5\\ \\mathrm{kg}$ の水を $70$℃ から $10$℃ までゆっくり冷やした。水のエントロピー変化を有効数字3桁で求めよ。水の比熱 $c=4190\\ \\mathrm{J/(kg\\cdot K)}$ とする。",
+    "tool": "温度が変わるので $\\Delta S=Q/T$ は使えない。$dS=\\dfrac{dQ}{T}=\\dfrac{mc\\,dT}{T}$ を積分して $\\Delta S=mc\\log\\dfrac{T_2}{T_1}$ を使う。",
+    "steps": [
+      "$T_1=343.15\\ \\mathrm{K},\\ T_2=283.15\\ \\mathrm{K}$",
+      "$\\Delta S=\\displaystyle\\int_{T_1}^{T_2}\\dfrac{mc}{T}\\,dT=mc\\log\\dfrac{T_2}{T_1}$",
+      "$=0.5\\times 4190\\times\\log\\dfrac{283.15}{343.15}=2.095\\times 10^{3}\\times (-0.1922)$",
+      "$\\Delta S=-403\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$\\Delta S=-403\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p007",
+    "order": 82,
+    "subject": "物理学概論第二",
+    "title": "氷から水への全エントロピー変化",
+    "level": 3,
+    "question": "$-15$℃ の氷 $0.3\\ \\mathrm{kg}$ をゆっくり加熱して $25$℃ の水にした。エントロピー変化の合計を有効数字3桁で求めよ。氷の比熱 $2100$、水の比熱 $4190\\ \\mathrm{J/(kg\\cdot K)}$、融解熱 $3.34\\times 10^{5}\\ \\mathrm{J/kg}$ とする。",
+    "tool": "「氷の温度上昇」「0℃での融解」「水の温度上昇」の3段階に分ける。温度が変わる段階は $mc\\log\\dfrac{T_2}{T_1}$、融解は $\\dfrac{mL}{T}$ を使い、最後に足す(2つの公式の組み合わせ)。",
+    "steps": [
+      "氷の加熱: $\\Delta S_1=0.3\\times 2100\\times\\log\\dfrac{273.15}{258.15}=35.58\\ \\mathrm{J/K}$",
+      "融解: $\\Delta S_2=\\dfrac{0.3\\times 3.34\\times 10^{5}}{273.15}=366.8\\ \\mathrm{J/K}$",
+      "水の加熱: $\\Delta S_3=0.3\\times 4190\\times\\log\\dfrac{298.15}{273.15}=110.1\\ \\mathrm{J/K}$",
+      "$\\Delta S=\\Delta S_1+\\Delta S_2+\\Delta S_3=512\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$\\Delta S=512\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p008",
+    "order": 83,
+    "subject": "物理学概論第二",
+    "title": "水の混合によるエントロピー増加",
+    "level": 3,
+    "question": "$80$℃ の水 $1\\ \\mathrm{kg}$ と $20$℃ の水 $1\\ \\mathrm{kg}$ を断熱容器の中で混ぜた。全体のエントロピー変化を有効数字3桁で求めよ。水の比熱 $4190\\ \\mathrm{J/(kg\\cdot K)}$ とする。",
+    "tool": "まず熱量の保存(高温側が失う熱 = 低温側が得る熱)で最終温度を求める。そのあと高温側・低温側それぞれ $mc\\log\\dfrac{T_f}{T}$ を計算して足す(熱量保存とエントロピーの組み合わせ)。",
+    "steps": [
+      "熱量保存 $m_1c(T_f-T_1)+m_2c(T_f-T_2)=0$ より $T_f=\\dfrac{m_1T_1+m_2T_2}{m_1+m_2}=323.15\\ \\mathrm{K}$",
+      "高温の水: $\\Delta S_1=1\\times 4190\\times\\log\\dfrac{323.15}{353.15}=-372.0\\ \\mathrm{J/K}$",
+      "低温の水: $\\Delta S_2=1\\times 4190\\times\\log\\dfrac{323.15}{293.15}=408.2\\ \\mathrm{J/K}$",
+      "$\\Delta S=\\Delta S_1+\\Delta S_2=36.3\\ \\mathrm{J/K}>0$(不可逆変化なので増加)"
+    ],
+    "answer": "$\\Delta S=36.3\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p009",
+    "order": 84,
+    "subject": "物理学概論第二",
+    "title": "理想気体の内部エネルギー",
+    "level": 1,
+    "question": "単原子分子($f=3$)の理想気体 $3\\ \\mathrm{mol}$ が温度 $400\\ \\mathrm{K}$ にある。内部エネルギー $U$ を有効数字3桁で求めよ。$R=8.31\\ \\mathrm{J/(mol\\cdot K)}$ とする。",
+    "tool": "エネルギー等分配則より、自由度1つあたり $\\dfrac{1}{2}RT$ (1 mol あたり)。理想気体の内部エネルギーは $U=\\dfrac{f}{2}nRT$。",
+    "steps": [
+      "$U=\\dfrac{f}{2}nRT$ で $f=3$",
+      "$U=\\dfrac{3}{2}\\times 3\\times 8.31\\times 400=1.50\\times 10^{4}\\ \\mathrm{J}$"
+    ],
+    "answer": "$U=1.50\\times 10^{4}\\ \\mathrm{J}$"
+  },
+  {
+    "id": "p010",
+    "order": 85,
+    "subject": "物理学概論第二",
+    "title": "定積変化で必要な熱",
+    "level": 2,
+    "question": "2原子分子($f=5$)の理想気体 $2\\ \\mathrm{mol}$ を体積一定のまま温度を $50\\ \\mathrm{K}$ 上げた。気体が吸収した熱量 $Q$ を有効数字3桁で求めよ。$R=8.31\\ \\mathrm{J/(mol\\cdot K)}$ とする。",
+    "tool": "体積一定なので気体は仕事をしない($W=0$)。熱力学第1法則 $Q=\\Delta U+W$ より $Q=\\Delta U=\\dfrac{f}{2}nR\\Delta T$。",
+    "steps": [
+      "定積なので $W=0$、$Q=\\Delta U$",
+      "$\\Delta U=\\dfrac{5}{2}nR\\Delta T=\\dfrac{5}{2}\\times 2\\times 8.31\\times 50$",
+      "$Q=2.08\\times 10^{3}\\ \\mathrm{J}$"
+    ],
+    "answer": "$Q=2.08\\times 10^{3}\\ \\mathrm{J}$"
+  },
+  {
+    "id": "p011",
+    "order": 86,
+    "subject": "物理学概論第二",
+    "title": "定圧変化と第1法則",
+    "level": 3,
+    "question": "単原子分子($f=3$)の理想気体 $2\\ \\mathrm{mol}$ を圧力一定のまま $400\\ \\mathrm{K}$ から $500\\ \\mathrm{K}$ まで加熱した。内部エネルギーの変化 $\\Delta U$、気体がした仕事 $W$、吸収した熱量 $Q$ をそれぞれ有効数字3桁で求めよ。$R=8.31\\ \\mathrm{J/(mol\\cdot K)}$ とする。",
+    "tool": "$\\Delta U=\\dfrac{f}{2}nR\\Delta T$ は過程によらない。定圧では $W=p\\Delta V=nR\\Delta T$(状態方程式)。最後に第1法則 $Q=\\Delta U+W$ でまとめる(3つの関係の組み合わせ)。",
+    "steps": [
+      "$\\Delta T=100\\ \\mathrm{K}$",
+      "$\\Delta U=\\dfrac{3}{2}\\times 2\\times 8.31\\times 100=2.493\\times 10^{3}\\ \\mathrm{J}$",
+      "$W=p\\Delta V=nR\\Delta T=2\\times 8.31\\times 100=1.662\\times 10^{3}\\ \\mathrm{J}$",
+      "$Q=\\Delta U+W=4.155\\times 10^{3}\\ \\mathrm{J}$"
+    ],
+    "answer": "$\\Delta U=2.49\\times 10^{3}\\ \\mathrm{J}$, $W=1.66\\times 10^{3}\\ \\mathrm{J}$, $Q=4.16\\times 10^{3}\\ \\mathrm{J}$"
+  },
+  {
+    "id": "p012",
+    "order": 87,
+    "subject": "物理学概論第二",
+    "title": "カルノー機関の効率",
+    "level": 1,
+    "question": "高温熱源 $700\\ \\mathrm{K}$、低温熱源 $350\\ \\mathrm{K}$の間で動くカルノー機関の効率 $\\eta$ を有効数字3桁で求めよ。",
+    "tool": "カルノー機関の効率は熱源の絶対温度だけで決まり $\\eta=1-\\dfrac{T_C}{T_H}$。",
+    "steps": [
+      "$\\eta=1-\\dfrac{T_C}{T_H}=1-\\dfrac{350}{700}=0.5000$"
+    ],
+    "answer": "$\\eta=0.500$($50.0\\,\\%$)"
+  },
+  {
+    "id": "p013",
+    "order": 88,
+    "subject": "物理学概論第二",
+    "title": "カルノー機関の効率",
+    "level": 1,
+    "question": "高温熱源 $127$℃、低温熱源 $27$℃の間で動くカルノー機関の効率 $\\eta$ を有効数字3桁で求めよ。",
+    "tool": "カルノー機関の効率は熱源の絶対温度だけで決まり $\\eta=1-\\dfrac{T_C}{T_H}$。",
+    "steps": [
+      "$T_H=400.15\\ \\mathrm{K},\\ T_C=300.15\\ \\mathrm{K}$",
+      "$\\eta=1-\\dfrac{T_C}{T_H}=1-\\dfrac{300.15}{400.15}=0.2499$"
+    ],
+    "answer": "$\\eta=0.250$($25.0\\,\\%$)"
+  },
+  {
+    "id": "p014",
+    "order": 89,
+    "subject": "物理学概論第二",
+    "title": "カルノー機関の仕事と排熱",
+    "level": 2,
+    "question": "高温熱源 $500$℃、低温熱源 $100$℃の間で動くカルノー機関が、1サイクルで高温熱源から $2\\times 10^{4}\\ \\mathrm{J}$ の熱を吸収する。1サイクルでする仕事 $W$ と低温熱源に捨てる熱 $Q_C$ を有効数字3桁で求めよ。",
+    "tool": "まず温度から効率 $\\eta=1-\\dfrac{T_C}{T_H}$ を求め、$W=\\eta Q_H$。エネルギー保存 $Q_H=W+Q_C$ から $Q_C$ を出す。",
+    "steps": [
+      "$T_H=773.15\\ \\mathrm{K},\\ T_C=373.15\\ \\mathrm{K}$",
+      "$\\eta=1-\\dfrac{T_C}{T_H}=1-\\dfrac{373.15}{773.15}=0.5174$",
+      "$W=\\eta Q_H=0.5174\\times 2\\times 10^{4}=1.035\\times 10^{4}\\ \\mathrm{J}$",
+      "$Q_C=Q_H-W=9.653\\times 10^{3}\\ \\mathrm{J}$"
+    ],
+    "answer": "$W=1.03\\times 10^{4}\\ \\mathrm{J}$, $Q_C=9.65\\times 10^{3}\\ \\mathrm{J}$"
+  },
+  {
+    "id": "p015",
+    "order": 90,
+    "subject": "物理学概論第二",
+    "title": "仕事から吸収熱を逆算",
+    "level": 2,
+    "question": "高温熱源 $600\\ \\mathrm{K}$、低温熱源 $400\\ \\mathrm{K}$の間で動くカルノー機関に、1サイクルあたり $1000\\ \\mathrm{J}$ の仕事をさせたい。高温熱源から吸収する熱 $Q_H$ と低温熱源に捨てる熱 $Q_C$ を有効数字3桁で求めよ。",
+    "tool": "効率の定義 $\\eta=\\dfrac{W}{Q_H}$ を逆に使って $Q_H=\\dfrac{W}{\\eta}$。$Q_C$ はエネルギー保存から。",
+    "steps": [
+      "$\\eta=1-\\dfrac{T_C}{T_H}=1-\\dfrac{400}{600}=0.3333$",
+      "$Q_H=\\dfrac{W}{\\eta}=\\dfrac{1000}{0.3333}=3.000\\times 10^{3}\\ \\mathrm{J}$",
+      "$Q_C=Q_H-W=2.000\\times 10^{3}\\ \\mathrm{J}$"
+    ],
+    "answer": "$Q_H=3.00\\times 10^{3}\\ \\mathrm{J}$, $Q_C=2.00\\times 10^{3}\\ \\mathrm{J}$"
+  },
+  {
+    "id": "p016",
+    "order": 91,
+    "subject": "物理学概論第二",
+    "title": "効率を上げるための高温熱源の温度",
+    "level": 3,
+    "question": "低温熱源の温度が $7$℃ のカルノー機関がある。効率を $30\\,\\%$ から $40\\,\\%$ に上げるには、高温熱源の温度を何 K 上げればよいか。有効数字3桁で答えよ。",
+    "tool": "$\\eta=1-\\dfrac{T_C}{T_H}$ を $T_H$ について解くと $T_H=\\dfrac{T_C}{1-\\eta}$。2つの効率それぞれで $T_H$ を出して差をとる(式変形と場合の比較)。",
+    "steps": [
+      "$T_C=280.15\\ \\mathrm{K}$、$T_H=\\dfrac{T_C}{1-\\eta}$",
+      "$\\eta=0.3$: $T_H=\\dfrac{280.15}{0.7}=400.2\\ \\mathrm{K}$",
+      "$\\eta=0.4$: $T_H=\\dfrac{280.15}{0.6}=466.9\\ \\mathrm{K}$",
+      "差 $66.70\\ \\mathrm{K}$"
+    ],
+    "answer": "$66.7\\ \\mathrm{K}$ 上げればよい"
+  },
+  {
+    "id": "p017",
+    "order": 92,
+    "subject": "物理学概論第二",
+    "title": "等温膨張の仕事と熱",
+    "level": 1,
+    "question": "理想気体 $1\\ \\mathrm{mol}$ を温度 $300\\ \\mathrm{K}$ に保ったまま、体積を $2$ 倍にゆっくり膨張させた。気体がした仕事 $W$ と吸収した熱 $Q$ を有効数字3桁で求めよ。$R=8.31\\ \\mathrm{J/(mol\\cdot K)}$ とする。",
+    "tool": "等温変化では $p=\\dfrac{nRT}{V}$ を積分して仕事を出す。理想気体の内部エネルギーは温度だけで決まるので $\\Delta U=0$、よって $Q=W$。",
+    "steps": [
+      "$W=\\displaystyle\\int_{V_1}^{V_2}p\\,dV=\\int_{V_1}^{V_2}\\dfrac{nRT}{V}dV=nRT\\log\\dfrac{V_2}{V_1}$",
+      "$W=1\\times 8.31\\times 300\\times\\log 2=1.728\\times 10^{3}\\ \\mathrm{J}$",
+      "等温なので $\\Delta U=0$、第1法則より $Q=W$"
+    ],
+    "answer": "$W=1.73\\times 10^{3}\\ \\mathrm{J}$, $Q=1.73\\times 10^{3}\\ \\mathrm{J}$"
+  },
+  {
+    "id": "p018",
+    "order": 93,
+    "subject": "物理学概論第二",
+    "title": "等温圧縮の熱とエントロピー",
+    "level": 2,
+    "question": "理想気体 $2\\ \\mathrm{mol}$ を温度 $350\\ \\mathrm{K}$ に保ったまま、圧力 $1\\times 10^{5}\\ \\mathrm{Pa}$ から $2\\times 10^{5}\\ \\mathrm{Pa}$ までゆっくり圧縮した。気体が吸収した熱 $Q$ とエントロピー変化 $\\Delta S$ を有効数字3桁で求めよ。$R=8.31\\ \\mathrm{J/(mol\\cdot K)}$ とする。",
+    "tool": "等温ではボイルの法則 $p_1V_1=p_2V_2$ で体積比に直し、$Q=W=nRT\\log\\dfrac{V_2}{V_1}$。温度一定なので $\\Delta S=\\dfrac{Q}{T}$ が使える。圧縮では $Q<0$, $\\Delta S<0$。",
+    "steps": [
+      "等温なので $pV=$ 一定、$\\dfrac{V_2}{V_1}=\\dfrac{p_1}{p_2}=0.5$",
+      "$Q=W=nRT\\log\\dfrac{V_2}{V_1}=2\\times 8.31\\times 350\\times\\log 0.5=-4.032\\times 10^{3}\\ \\mathrm{J}$",
+      "$\\Delta S=\\dfrac{Q}{T}=nR\\log\\dfrac{V_2}{V_1}=-11.52\\ \\mathrm{J/K}$"
+    ],
+    "answer": "$Q=-4.03\\times 10^{3}\\ \\mathrm{J}$, $\\Delta S=-11.5\\ \\mathrm{J/K}$"
+  },
+  {
+    "id": "p019",
+    "order": 94,
+    "subject": "物理学概論第二",
+    "title": "断熱変化後の温度",
+    "level": 2,
+    "question": "単原子分子($f=3$)の理想気体 $1\\ \\mathrm{mol}$(温度 $400\\ \\mathrm{K}$)を断熱的にゆっくり体積が $8$ 倍になるまで膨張させた。変化後の温度 $T_2$ を有効数字3桁で求めよ。",
+    "tool": "断熱準静的変化ではポアソンの式 $TV^{\\gamma-1}=$ 一定 が成り立つ。比熱比は $\\gamma=\\dfrac{f+2}{f}$。",
+    "steps": [
+      "$\\gamma=\\dfrac{f+2}{f}=\\dfrac{5}{3}$",
+      "$TV^{\\gamma-1}=$ 一定より $T_2=T_1\\left(\\dfrac{V_1}{V_2}\\right)^{\\gamma-1}$",
+      "$T_2=400\\times\\left(\\dfrac{1}{8}\\right)^{2/3}=100.0\\ \\mathrm{K}$"
+    ],
+    "answer": "$T_2=100\\ \\mathrm{K}$"
+  },
+  {
+    "id": "p020",
+    "order": 95,
+    "subject": "物理学概論第二",
+    "title": "断熱圧縮後の圧力",
+    "level": 2,
+    "question": "2原子分子($f=5$)の理想気体 $1\\ \\mathrm{mol}$(圧力 $1\\times 10^{5}\\ \\mathrm{Pa}$)を断熱的にゆっくり体積が $\\dfrac{1}{4}$ になるまで圧縮した。変化後の圧力 $p_2$ を有効数字3桁で求めよ。",
+    "tool": "断熱準静的変化ではポアソンの式 $pV^{\\gamma}=$ 一定。2原子分子なので $\\gamma=\\dfrac{7}{5}$。",
+    "steps": [
+      "$\\gamma=\\dfrac{f+2}{f}=\\dfrac{7}{5}$",
+      "$pV^{\\gamma}=$ 一定より $p_2=p_1\\left(\\dfrac{V_1}{V_2}\\right)^{\\gamma}$",
+      "$p_2=1\\times 10^{5}\\times 4^{7/5}=6.964\\times 10^{5}\\ \\mathrm{Pa}$"
+    ],
+    "answer": "$p_2=6.96\\times 10^{5}\\ \\mathrm{Pa}$"
+  },
+  {
+    "id": "p021",
+    "order": 96,
+    "subject": "物理学概論第二",
+    "title": "断熱圧縮の温度と仕事",
+    "level": 3,
+    "question": "2原子分子($f=5$)の理想気体 $1\\ \\mathrm{mol}$(温度 $280\\ \\mathrm{K}$)を断熱的にゆっくり体積が $\\dfrac{1}{5}$ になるまで圧縮した。変化後の温度 $T_2$ と、この間に気体がされた仕事 $W$ を有効数字3桁で求めよ。$R=8.31\\ \\mathrm{J/(mol\\cdot K)}$ とする。",
+    "tool": "ポアソンの式 $TV^{\\gamma-1}=$ 一定 で温度を出し、断熱 $Q=0$ なので第1法則から「された仕事 $=\\Delta U$」として求める(2つの関係の組み合わせ)。",
+    "steps": [
+      "$\\gamma=\\dfrac{f+2}{f}=\\dfrac{7}{5}$",
+      "$T_2=T_1\\left(\\dfrac{V_1}{V_2}\\right)^{\\gamma-1}=280\\times 5^{2/5}=533.0\\ \\mathrm{K}$",
+      "断熱なので $Q=0$、第1法則より $W=\\Delta U=\\dfrac{5}{2}nR(T_2-T_1)$",
+      "$W=\\dfrac{5}{2}\\times 1\\times 8.31\\times(533.0-280)=5.257\\times 10^{3}\\ \\mathrm{J}$"
+    ],
+    "answer": "$T_2=533\\ \\mathrm{K}$, $W=5.26\\times 10^{3}\\ \\mathrm{J}$"
+  }
+]

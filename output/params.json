@@ -1,0 +1,1384 @@
+{
+  "k001": {
+    "kind": "k_tel_a",
+    "level": 1,
+    "params": {
+      "a": 4
+    },
+    "family": 0,
+    "unit": "望遠鏡和",
+    "variant_of": null
+  },
+  "k002": {
+    "kind": "k_tel_b",
+    "level": 1,
+    "params": {
+      "k": 3,
+      "b": -1
+    },
+    "family": 1,
+    "unit": "望遠鏡和",
+    "variant_of": null
+  },
+  "k003": {
+    "kind": "k_tel_quad",
+    "level": 2,
+    "params": {
+      "c": 3
+    },
+    "family": 2,
+    "unit": "望遠鏡和",
+    "variant_of": null
+  },
+  "k004": {
+    "kind": "k_tel_c",
+    "level": 2,
+    "params": {},
+    "family": 3,
+    "unit": "望遠鏡和",
+    "variant_of": null
+  },
+  "k005": {
+    "kind": "k_log_div",
+    "level": 2,
+    "params": {},
+    "family": 4,
+    "unit": "望遠鏡和",
+    "variant_of": null
+  },
+  "k006": {
+    "kind": "k_log_prod",
+    "level": 3,
+    "params": {},
+    "family": 5,
+    "unit": "望遠鏡和",
+    "variant_of": null
+  },
+  "k007": {
+    "kind": "k_fact_tel",
+    "level": 3,
+    "params": {},
+    "family": 6,
+    "unit": "望遠鏡和",
+    "variant_of": null
+  },
+  "k008": {
+    "kind": "k_ratio",
+    "level": 1,
+    "params": {
+      "expr": "n**3/3**n",
+      "title": "比判定法(多項式÷指数)",
+      "tool": "$n^3$ と $3^n$ の比較なので比をとると多項式部分は $1$ に近づき、指数部分の比 $\\dfrac{1}{3}$ だけが残る(ダランベールの判定法)。"
+    },
+    "family": 7,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k009": {
+    "kind": "k_ratio",
+    "level": 2,
+    "params": {
+      "expr": "factorial(n)**2/factorial(2*n)",
+      "title": "比判定法(階乗)",
+      "tool": "階乗を含む一般項は比をとると約分で多項式の比になる(ダランベールの判定法)。$(2n+2)!=(2n+2)(2n+1)(2n)!$ に注意する。"
+    },
+    "family": 8,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k010": {
+    "kind": "k_ratio",
+    "level": 2,
+    "params": {
+      "expr": "8**n*factorial(n)**2/factorial(2*n)",
+      "title": "比判定法(階乗と指数)",
+      "tool": "階乗と指数の積なので比をとる(ダランベール)。比の極限が $1$ より大きいか小さいかで判定する。"
+    },
+    "family": 9,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k011": {
+    "kind": "k_ratio_e",
+    "level": 3,
+    "params": {
+      "as": [
+        2,
+        3
+      ]
+    },
+    "family": 10,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k012": {
+    "kind": "k_root",
+    "level": 1,
+    "params": {
+      "expr": "((4*n+1)/(5*n+2))**n",
+      "base": "(4*n+1)/(5*n+2)",
+      "title": "根判定法(n 乗の形)",
+      "tool": "一般項が丸ごと $n$ 乗なので $n$ 乗根をとると括弧の中だけが残る(コーシーの根判定法)。"
+    },
+    "family": 11,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k013": {
+    "kind": "k_root",
+    "level": 2,
+    "params": {
+      "expr": "(n/(n+2))**(n**2)",
+      "base": "(n/(n+2))**n",
+      "title": "根判定法と e の極限",
+      "tool": "指数が $n^2$ なので $n$ 乗根をとると $\\left(\\dfrac{n}{n+2}\\right)^n$ が残る。これは $\\left(1+\\dfrac{2}{n}\\right)^{-n}$ と見て $e$ の極限を使う。",
+      "extra": "$\\left(\\dfrac{n}{n+2}\\right)^n=\\dfrac{1}{\\left(1+\\frac{2}{n}\\right)^n}$"
+    },
+    "family": 12,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k014": {
+    "kind": "k_comp",
+    "level": 1,
+    "params": {
+      "expr": "(n+2)/(n**3+1)",
+      "p": "2",
+      "title": "p 級数との極限比較",
+      "tool": "分子は1次、分母は3次なので一般項は $\\dfrac{1}{n^2}$ と同じオーダー。$p$ 級数 $\\sum\\dfrac{1}{n^2}$ と極限比較する。"
+    },
+    "family": 13,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k015": {
+    "kind": "k_comp",
+    "level": 2,
+    "params": {
+      "expr": "1/sqrt(n**2+3*n)",
+      "p": "1",
+      "title": "極限比較で発散",
+      "tool": "根号の中は2次式なので一般項は $\\dfrac{1}{n}$ と同じオーダー。調和級数($p=1$)と極限比較する。"
+    },
+    "family": 14,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k016": {
+    "kind": "k_comp",
+    "level": 2,
+    "params": {
+      "expr": "sqrt(n)/(n**2+2)",
+      "p": "3/2",
+      "title": "分数乗の p 級数と比較",
+      "tool": "分子が $n^{1/2}$、分母が $n^2$ なので一般項は $\\dfrac{1}{n^{3/2}}$ のオーダー。$p=\\dfrac{3}{2}$ の $p$ 級数と極限比較する。"
+    },
+    "family": 15,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k017": {
+    "kind": "k_comp",
+    "level": 3,
+    "params": {
+      "expr": "1-cos(4/n)",
+      "p": "2",
+      "title": "テイラー展開と極限比較",
+      "tool": "$n\\to\\infty$ で $\\dfrac{4}{n}\\to 0$ なので $1-\\cos\\theta\\approx\\dfrac{\\theta^2}{2}$ を使うと一般項は $\\dfrac{1}{n^2}$ のオーダーとわかる。これと極限比較する。",
+      "extra": "$1-\\cos\\theta=\\dfrac{\\theta^2}{2}+O(\\theta^4)$ に $\\theta=\\dfrac{4}{n}$ を代入すると $1-\\cos\\dfrac{4}{n}\\approx\\dfrac{8}{n^2}$"
+    },
+    "family": 16,
+    "unit": "収束判定",
+    "variant_of": null
+  },
+  "k018": {
+    "kind": "k_alt",
+    "level": 1,
+    "params": {
+      "b": "1/n**(1/3)",
+      "p": "1/3",
+      "shift": true,
+      "title": "交代 p 級数",
+      "tool": "絶対値をとると $p=\\dfrac{1}{3}$ の $p$ 級数。絶対収束しないときはライプニッツの判定法で収束を確かめる。",
+      "mono": "$\\sqrt[3]{n}$ は単調増加なので $\\dfrac{1}{\\sqrt[3]{n}}$ は単調減少"
+    },
+    "family": 17,
+    "unit": "絶対収束・条件収束",
+    "variant_of": null
+  },
+  "k019": {
+    "kind": "k_alt",
+    "level": 1,
+    "params": {
+      "b": "n/(n**3+2)",
+      "p": "2",
+      "title": "絶対収束の判定",
+      "tool": "まず絶対値の級数を調べる。分子1次・分母3次で $\\dfrac{1}{n^2}$ のオーダーなので $p$ 級数と比較できる。",
+      "mono": ""
+    },
+    "family": 18,
+    "unit": "絶対収束・条件収束",
+    "variant_of": null
+  },
+  "k020": {
+    "kind": "k_alt",
+    "level": 2,
+    "params": {
+      "b": "n/(n**2+3)",
+      "p": "1",
+      "title": "条件収束の判定",
+      "tool": "絶対値は $\\dfrac{1}{n}$ のオーダーで発散するので絶対収束しない。そこでライプニッツの判定法($|a_n|$ が単調減少して $0$ に収束)を確かめる。",
+      "mono": "$g(x)=\\dfrac{x}{x^2+3}$ は $g'(x)=\\dfrac{3-x^2}{(x^2+3)^2}<0$ $(x>\\sqrt{3})$ なので $n\\ge 2$ で単調減少"
+    },
+    "family": 19,
+    "unit": "絶対収束・条件収束",
+    "variant_of": null
+  },
+  "k021": {
+    "kind": "k_alt",
+    "level": 2,
+    "params": {
+      "b": "n/(5*n+1)",
+      "title": "一般項が 0 に行かない交代級数",
+      "tool": "交代級数でもまず一般項 $\\to 0$ を確認する。$0$ に収束しなければその時点で発散と決まる(ライプニッツは使えない)。"
+    },
+    "family": 20,
+    "unit": "絶対収束・条件収束",
+    "variant_of": null
+  },
+  "k022": {
+    "kind": "k_alt",
+    "level": 2,
+    "params": {
+      "b": "1/log(n+1)",
+      "p": "0",
+      "title": "対数を含む条件収束",
+      "tool": "$\\log(n+1)<n+1$ を使うと絶対値の級数は調和級数より大きく発散する。一方 $\\dfrac{1}{\\log(n+1)}$ は単調減少して $0$ に収束するのでライプニッツが使える。",
+      "abs_step": "$\\log(n+1)<n+1$ より $|a_n|=\\dfrac{1}{\\log(n+1)}>\\dfrac{1}{n+1}$。$\\displaystyle\\sum\\dfrac{1}{n+1}$ は発散するので比較判定法より $\\displaystyle\\sum|a_n|$ は発散",
+      "mono": "$\\log(n+1)$ は単調増加なので $\\dfrac{1}{\\log(n+1)}$ は単調減少"
+    },
+    "family": 21,
+    "unit": "絶対収束・条件収束",
+    "variant_of": null
+  },
+  "k023": {
+    "kind": "k_alt_param",
+    "level": 3,
+    "params": {},
+    "family": 22,
+    "unit": "絶対収束・条件収束",
+    "variant_of": null
+  },
+  "k024": {
+    "kind": "k_radius",
+    "level": 1,
+    "params": {
+      "c": "6**n",
+      "k": 2,
+      "title": "x²ⁿ 型の収束半径",
+      "tool": "$x^{2n}$ の係数しかなく奇数次の係数が $0$ なので、係数の比の公式はそのまま使えない。$t=x^2$ と置いて $t$ の整級数の収束半径を求めてから $x$ に戻す(または項どうしの比をとる)。"
+    },
+    "family": 23,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k025": {
+    "kind": "k_radius",
+    "level": 1,
+    "params": {
+      "c": "1/5**n",
+      "k": 2,
+      "title": "x²ⁿ 型の収束半径(割る形)",
+      "tool": "$x^{2n}$ の係数しかなく奇数次の係数が $0$ なので、係数の比の公式はそのまま使えない。$t=x^2$ と置いて $t$ の整級数の収束半径を求めてから $x$ に戻す(または項どうしの比をとる)。"
+    },
+    "family": 24,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k026": {
+    "kind": "k_radius",
+    "level": 1,
+    "params": {
+      "c": "25**n",
+      "k": 2,
+      "j": 1,
+      "title": "x²ⁿ⁺¹ 型の収束半径",
+      "tool": "偶数次の係数が $0$ なので係数の比の公式はそのまま使えない。$x^{2n+1}=x\\cdot(x^2)^n$ と分けて $t=x^2$ と置く(または項どうしの比をとる)。"
+    },
+    "family": 25,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k027": {
+    "kind": "k_radius",
+    "level": 2,
+    "params": {
+      "c": "n/5**n",
+      "k": 2,
+      "title": "n がかかった x²ⁿ 型",
+      "tool": "$x^{2n}$ の係数しかなく奇数次の係数が $0$ なので、係数の比の公式はそのまま使えない。$t=x^2$ と置いて $t$ の整級数の収束半径を求めてから $x$ に戻す(または項どうしの比をとる)。"
+    },
+    "family": 26,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k028": {
+    "kind": "k_radius",
+    "level": 2,
+    "params": {
+      "c": "(-1)**n*5**n/(n+1)",
+      "k": 2,
+      "j": 1,
+      "title": "符号つき x²ⁿ⁺¹ 型",
+      "tool": "係数の符号 $(-1)^n$ は比の絶対値をとれば消える。$x^{2n+1}=x(x^2)^n$ として $t=x^2$ の整級数の収束半径を求める(偶数次の係数が $0$ なので公式を直接は使えない)。"
+    },
+    "family": 27,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k029": {
+    "kind": "k_radius",
+    "level": 2,
+    "params": {
+      "c": "64**n",
+      "k": 3,
+      "title": "x³ⁿ 型の収束半径",
+      "tool": "$x^{3n}$ の項しかないので $t=x^3$ と置く。$|t|<R_t\\iff|x|<\\sqrt[3]{R_t}$ で戻す。"
+    },
+    "family": 28,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k030": {
+    "kind": "k_radius",
+    "level": 3,
+    "params": {
+      "c": "2**n/n",
+      "k": 2,
+      "lo": 1,
+      "endpoints": true,
+      "p_end": "1",
+      "title": "x²ⁿ 型の収束域(端点で発散)",
+      "tool": "$t=x^2$ と置いて収束半径を出し、端点 $x=\\pm R$ では $x^{2n}=R^{2n}$ を代入した級数を $p$ 級数として別に調べる(比判定法は端点では使えない)。"
+    },
+    "family": 29,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k031": {
+    "kind": "k_radius",
+    "level": 3,
+    "params": {
+      "c": "9**n/n**2",
+      "k": 2,
+      "lo": 1,
+      "endpoints": true,
+      "p_end": "2",
+      "title": "x²ⁿ 型の収束域(端点で収束)",
+      "tool": "$t=x^2$ と置いて収束半径を出し、端点では代入した級数を $p$ 級数として調べる。$p=2>1$ なら端点も含む。"
+    },
+    "family": 30,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k032": {
+    "kind": "k_radius",
+    "level": 3,
+    "params": {
+      "c": "2**n+5**n",
+      "k": 2,
+      "title": "係数が和の x²ⁿ 型",
+      "tool": "係数 $2^n+5^n$ は $n$ が大きいと大きい方の $5^n$ が支配する。$t=x^2$ と置き、比の極限を $5^n$ でくくって求める。"
+    },
+    "family": 31,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k033": {
+    "kind": "k_radius",
+    "level": 3,
+    "params": {
+      "c": "1/9**n",
+      "k": 2,
+      "center": 2,
+      "endpoints": true,
+      "p_end": "0",
+      "title": "中心がずれた (x−c)²ⁿ 型",
+      "tool": "$u=x-2$, $t=u^2$ と2回置き換える。端点では各項が $1$ になり一般項が $0$ に収束しないことを使う。"
+    },
+    "family": 32,
+    "unit": "収束半径(x²ⁿ型)",
+    "variant_of": null
+  },
+  "k034": {
+    "kind": "k_radius",
+    "level": 1,
+    "params": {
+      "c": "n**2/5**n",
+      "k": 1,
+      "title": "基本の収束半径",
+      "tool": "すべての次数の係数がそろっているので、係数の比 $\\left|\\dfrac{c_{n+1}}{c_n}\\right|$ の極限の逆数が収束半径になる。"
+    },
+    "family": 33,
+    "unit": "収束半径",
+    "variant_of": null
+  },
+  "k035": {
+    "kind": "k_radius",
+    "level": 3,
+    "params": {
+      "c": "factorial(n)/n**n",
+      "k": 1,
+      "lo": 1,
+      "extra": "$\\left(\\dfrac{n}{n+1}\\right)^n=\\dfrac{1}{\\left(1+\\frac{1}{n}\\right)^n}\\to\\dfrac{1}{e}$",
+      "title": "係数の比に e が出る収束半径",
+      "tool": "係数に階乗と $n^n$ があるので比をとる。比の極限に $\\left(1+\\dfrac{1}{n}\\right)^n\\to e$ が出てくることがポイント。"
+    },
+    "family": 34,
+    "unit": "収束半径",
+    "variant_of": null
+  },
+  "k036": {
+    "kind": "k_param_an",
+    "level": 3,
+    "params": {},
+    "family": 35,
+    "unit": "パラメータの場合分け",
+    "variant_of": null
+  },
+  "k037": {
+    "kind": "k_param_np",
+    "level": 3,
+    "params": {},
+    "family": 36,
+    "unit": "パラメータの場合分け",
+    "variant_of": null
+  },
+  "k038": {
+    "kind": "k_param_a2n",
+    "level": 3,
+    "params": {},
+    "family": 37,
+    "unit": "パラメータの場合分け",
+    "variant_of": null
+  },
+  "b001": {
+    "kind": "b_pd",
+    "level": 1,
+    "params": {
+      "f": "x**3*y**2+5*x*y",
+      "title": "多項式の偏微分",
+      "tool": "$f_x$ は $y$ を定数とみて $x$ で微分、$f_y$ は $x$ を定数とみて $y$ で微分する。"
+    },
+    "family": 0,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b002": {
+    "kind": "b_pd",
+    "level": 1,
+    "params": {
+      "f": "exp(3*x)*sin(2*y)",
+      "title": "指数×三角の偏微分",
+      "tool": "$x$ で微分するとき $\\sin 2y$ は定数、$y$ で微分するとき $e^{3x}$ は定数。それぞれ合成関数の微分で中身の係数が前に出る。"
+    },
+    "family": 1,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b003": {
+    "kind": "b_pd",
+    "level": 1,
+    "params": {
+      "f": "log(x**2+4*y**2)",
+      "title": "対数関数の偏微分",
+      "tool": "$\\log u$ の微分は $\\dfrac{u'}{u}$。中身 $u=x^2+4y^2$ を $x$, $y$ でそれぞれ偏微分する。"
+    },
+    "family": 2,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b004": {
+    "kind": "b_pd",
+    "level": 2,
+    "params": {
+      "f": "exp(x*y**3)",
+      "title": "指数の肩に積がある偏微分",
+      "tool": "$e^{u}$ の偏微分は $e^{u}\\cdot u_x$, $e^{u}\\cdot u_y$。肩の $u=xy^3$ を偏微分したものがかかる。"
+    },
+    "family": 3,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b005": {
+    "kind": "b_pd",
+    "level": 2,
+    "params": {
+      "f": "atan(y/x)",
+      "title": "逆正接の偏微分",
+      "tool": "$(\\arctan u)'=\\dfrac{1}{1+u^2}$ と合成関数の微分を使う。$u=\\dfrac{y}{x}$ を $x$ で微分すると $-\\dfrac{y}{x^2}$ になる。"
+    },
+    "family": 4,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b006": {
+    "kind": "b_pd",
+    "level": 2,
+    "params": {
+      "f": "x**y",
+      "title": "xʸ の偏微分",
+      "tool": "$x$ で微分するときは $y$ が定数なので $x^n$ の微分、$y$ で微分するときは $x$ が定数なので $a^y$ の微分($a^y\\log a$)になる。",
+      "ftex": "x^y\\ (x>0)"
+    },
+    "family": 5,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b007": {
+    "kind": "b_pd",
+    "level": 2,
+    "params": {
+      "f": "(x+2*y)/(x-y)",
+      "title": "商の偏微分",
+      "tool": "商の微分公式 $\\left(\\dfrac{u}{v}\\right)'=\\dfrac{u'v-uv'}{v^2}$ を $x$, $y$ それぞれについて使う。"
+    },
+    "family": 6,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b008": {
+    "kind": "b_pd_pt",
+    "level": 1,
+    "params": {
+      "f": "sqrt(5*x**2+y**2)",
+      "pt": [
+        "2",
+        "1"
+      ],
+      "title": "点での偏微分係数",
+      "tool": "$\\sqrt{u}$ の微分は $\\dfrac{u'}{2\\sqrt{u}}$。偏導関数を求めてから点の座標を代入する。"
+    },
+    "family": 7,
+    "unit": "偏微分",
+    "variant_of": null
+  },
+  "b009": {
+    "kind": "b_chain_t",
+    "level": 1,
+    "params": {
+      "z": "x**2*y",
+      "x": "cos(t)",
+      "y": "sin(t)",
+      "t0": "pi/4",
+      "title": "1変数への連鎖律"
+    },
+    "family": 8,
+    "unit": "連鎖律",
+    "variant_of": null
+  },
+  "b010": {
+    "kind": "b_chain_t",
+    "level": 2,
+    "params": {
+      "z": "exp(x)*log(y)",
+      "x": "3*t",
+      "y": "t**2+1",
+      "t0": "0",
+      "title": "指数・対数の連鎖律"
+    },
+    "family": 9,
+    "unit": "連鎖律",
+    "variant_of": null
+  },
+  "b011": {
+    "kind": "b_chain_uv",
+    "level": 2,
+    "params": {
+      "F": "u**2*v",
+      "u": "x+y",
+      "v": "x*y",
+      "title": "2変数への連鎖律"
+    },
+    "family": 10,
+    "unit": "連鎖律",
+    "variant_of": null
+  },
+  "b012": {
+    "kind": "b_chain_polar",
+    "level": 2,
+    "params": {
+      "f": "x**2-y**2"
+    },
+    "family": 11,
+    "unit": "連鎖律",
+    "variant_of": null
+  },
+  "b013": {
+    "kind": "b_tp",
+    "level": 1,
+    "params": {
+      "f": "x**2+3*y**2",
+      "pt": [
+        "2",
+        "1"
+      ],
+      "title": "接平面(2次式)"
+    },
+    "family": 12,
+    "unit": "接平面",
+    "variant_of": null
+  },
+  "b014": {
+    "kind": "b_tp",
+    "level": 1,
+    "params": {
+      "f": "x**2*y+y**3",
+      "pt": [
+        "1",
+        "2"
+      ],
+      "title": "接平面(3次式)"
+    },
+    "family": 13,
+    "unit": "接平面",
+    "variant_of": null
+  },
+  "b015": {
+    "kind": "b_tp",
+    "level": 2,
+    "params": {
+      "f": "log(x**2+y**2)",
+      "pt": [
+        "1",
+        "1"
+      ],
+      "title": "接平面(対数)"
+    },
+    "family": 14,
+    "unit": "接平面",
+    "variant_of": null
+  },
+  "b016": {
+    "kind": "b_tp",
+    "level": 2,
+    "params": {
+      "f": "exp(x)*cos(y)",
+      "pt": [
+        "0",
+        "0"
+      ],
+      "title": "接平面(指数×三角)"
+    },
+    "family": 15,
+    "unit": "接平面",
+    "variant_of": null
+  },
+  "b017": {
+    "kind": "b_tp_imp",
+    "level": 2,
+    "params": {
+      "F": "x**2+y**2+z**2",
+      "c": "9",
+      "pt": [
+        "2",
+        "2",
+        "1"
+      ],
+      "title": "球面の接平面"
+    },
+    "family": 16,
+    "unit": "接平面",
+    "variant_of": null
+  },
+  "b018": {
+    "kind": "b_tp_imp",
+    "level": 2,
+    "params": {
+      "F": "x*y*z",
+      "c": "6",
+      "pt": [
+        "1",
+        "2",
+        "3"
+      ],
+      "title": "陰関数表示の曲面の接平面"
+    },
+    "family": 17,
+    "unit": "接平面",
+    "variant_of": null
+  },
+  "b019": {
+    "kind": "b_tp_par",
+    "level": 3,
+    "params": {
+      "f": "x**2+2*y**2",
+      "pq": [
+        "2",
+        "8"
+      ]
+    },
+    "family": 18,
+    "unit": "接平面",
+    "variant_of": null
+  },
+  "b020": {
+    "kind": "b_lim_exist",
+    "level": 1,
+    "params": {
+      "f": "3*x**2*y/(x**2+y**2)",
+      "L": "0",
+      "polar": "3*r*cos(theta)**2*sin(theta)",
+      "bound": "3*r",
+      "title": "極座標で極限を求める",
+      "tool": "分母が $x^2+y^2=r^2$ になるので極座標 $x=r\\cos\\theta,\\ y=r\\sin\\theta$ に直し、$\\theta$ によらない評価ではさみうちにする。",
+      "steps": [
+        "$|f|=3 r|\\cos^2\\theta\\sin\\theta|\\le 3 r$",
+        "$r\\to 0$ で $3 r\\to 0$ なので、はさみうちの原理より極限は $0$"
+      ]
+    },
+    "family": 19,
+    "unit": "2変数の極限(存在する)",
+    "variant_of": null
+  },
+  "b021": {
+    "kind": "b_lim_exist",
+    "level": 1,
+    "params": {
+      "f": "(x**3+y**3)/(x**2+y**2)",
+      "L": "0",
+      "polar": "r*(cos(theta)**3+sin(theta)**3)",
+      "bound": "2*r",
+      "title": "極座標とはさみうち",
+      "tool": "極座標に直すと $r$ が1つ残り、残りの $\\theta$ の部分は有界。$|\\cos\\theta|,|\\sin\\theta|\\le 1$ で評価する。",
+      "steps": [
+        "$|f|\\le r(|\\cos\\theta|^3+|\\sin\\theta|^3)\\le 2r$",
+        "$r\\to 0$ で $2r\\to 0$ なので、はさみうちの原理より極限は $0$"
+      ]
+    },
+    "family": 20,
+    "unit": "2変数の極限(存在する)",
+    "variant_of": null
+  },
+  "b022": {
+    "kind": "b_lim_exist",
+    "level": 2,
+    "params": {
+      "f": "x**2*y**2/(x**2+y**2)",
+      "L": "0",
+      "polar": "r**2*cos(theta)**2*sin(theta)**2",
+      "bound": "r**2",
+      "title": "極座標で 2 次の残り",
+      "tool": "分母が $r^2$、分子が $r^4$ の次数なので極座標で $r^2\\times(\\theta$ の有界な式$)$ になる。",
+      "steps": [
+        "$|f|=r^2\\cos^2\\theta\\sin^2\\theta\\le r^2$",
+        "$r\\to 0$ で $r^2\\to 0$ なので極限は $0$"
+      ]
+    },
+    "family": 21,
+    "unit": "2変数の極限(存在する)",
+    "variant_of": null
+  },
+  "b023": {
+    "kind": "b_lim_exist",
+    "level": 2,
+    "params": {
+      "f": "sin(4*(x**2+y**2))/(x**2+y**2)",
+      "L": "4",
+      "bound": "64*r**4/6",
+      "title": "1変数の極限に帰着",
+      "tool": "$x,y$ が $x^2+y^2$ の形でしか現れないので $s=x^2+y^2\\to+0$ と1変数にまとめ、$\\displaystyle\\lim_{u\\to 0}\\dfrac{\\sin u}{u}=1$ を使う。",
+      "steps": [
+        "$s=x^2+y^2$ とおくと $(x,y)\\to(0,0)$ のとき $s\\to +0$",
+        "$f=\\dfrac{\\sin 4s}{s}=4\\cdot\\dfrac{\\sin 4s}{4s}$",
+        "$\\dfrac{\\sin 4s}{4s}\\to 1$ より $f\\to 4$"
+      ]
+    },
+    "family": 22,
+    "unit": "2変数の極限(存在する)",
+    "variant_of": null
+  },
+  "b024": {
+    "kind": "b_lim_exist",
+    "level": 3,
+    "params": {
+      "f": "x**3*y/(x**4+y**2)",
+      "L": "0",
+      "bound": "r/2",
+      "title": "相加相乗平均で評価する極限",
+      "tool": "極座標では分母が $r^4\\cos^4\\theta+r^2\\sin^2\\theta$ となり $\\theta$ の評価が難しい。$x^4+y^2\\ge 2x^2|y|$(相加相乗平均)で分子と比べる。",
+      "steps": [
+        "$x^4+y^2\\ge 2\\sqrt{x^4y^2}=2x^2|y|$",
+        "$|f|=\\dfrac{|x|\\cdot x^2|y|}{x^4+y^2}\\le\\dfrac{|x|\\cdot x^2|y|}{2x^2|y|}=\\dfrac{|x|}{2}$($xy\\neq 0$。$xy=0$ なら $f=0$)",
+        "$|x|\\to 0$ なので、はさみうちの原理より極限は $0$"
+      ]
+    },
+    "family": 23,
+    "unit": "2変数の極限(存在する)",
+    "variant_of": null
+  },
+  "b025": {
+    "kind": "b_lim_none",
+    "level": 1,
+    "params": {
+      "f": "x*y/(x**2+y**2)",
+      "paths": [
+        [
+          "x",
+          "m*x"
+        ]
+      ],
+      "check_paths": [
+        [
+          "x",
+          "m*x",
+          "0"
+        ],
+        [
+          "x",
+          "m*x",
+          "1"
+        ]
+      ],
+      "title": "直線に沿った極限が傾きで変わる",
+      "tool": "直線 $y=mx$ に沿って近づけて、極限が $m$ によって変わることを示す(経路依存性)。",
+      "conclude": "$m=0$ なら $@0$, $m=1$ なら $@1$ と近づき方で値が異なる",
+      "answer": "存在しない($y=mx$ に沿うと $\\dfrac{m}{1+m^2}$ に近づき、$m$ によって値が変わる)"
+    },
+    "family": 24,
+    "unit": "2変数の極限(存在しない)",
+    "variant_of": null
+  },
+  "b026": {
+    "kind": "b_lim_none",
+    "level": 1,
+    "params": {
+      "f": "(x**2-2*y**2)/(x**2+y**2)",
+      "paths": [
+        [
+          "x",
+          "m*x"
+        ]
+      ],
+      "check_paths": [
+        [
+          "x",
+          "m*x",
+          "0"
+        ],
+        [
+          "x",
+          "m*x",
+          "1"
+        ]
+      ],
+      "title": "直線に沿った極限(2次の比)",
+      "tool": "分子と分母がどちらも2次なので、直線 $y=mx$ に沿うと $x^2$ が約分されて $m$ だけの式が残る。",
+      "conclude": "$m=0$ なら $@0$, $m=1$ なら $@1$ と近づき方で値が異なる",
+      "answer": "存在しない($y=mx$ に沿うと $\\dfrac{1-2m^2}{1+m^2}$ に近づき、$m$ によって値が変わる)"
+    },
+    "family": 25,
+    "unit": "2変数の極限(存在しない)",
+    "variant_of": null
+  },
+  "b027": {
+    "kind": "b_lim_none",
+    "level": 2,
+    "params": {
+      "f": "x**2*y**2/(x**2*y**2+(x-y)**2)",
+      "paths": [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "x",
+          "0"
+        ]
+      ],
+      "check_paths": [
+        [
+          "x",
+          "x",
+          "0"
+        ],
+        [
+          "x",
+          "0*x",
+          "0"
+        ]
+      ],
+      "title": "2つの経路で値が違う",
+      "tool": "分母の $(x-y)^2$ が $y=x$ 上で消えることに注目し、$y=x$ と $y=0$ の2つの経路を比べる。",
+      "conclude": "経路によって極限が $@0$ と $@1$ で異なる",
+      "answer": "存在しない($y=x$ に沿うと $1$、$y=0$ に沿うと $0$)"
+    },
+    "family": 26,
+    "unit": "2変数の極限(存在しない)",
+    "variant_of": null
+  },
+  "b028": {
+    "kind": "b_lim_none",
+    "level": 3,
+    "params": {
+      "f": "x**2*y/(x**4+y**2)",
+      "paths": [
+        [
+          "x",
+          "m*x"
+        ],
+        [
+          "x",
+          "m*x**2"
+        ]
+      ],
+      "check_paths": [
+        [
+          "x",
+          "m*x",
+          "1"
+        ],
+        [
+          "x",
+          "m*x**2",
+          "1"
+        ]
+      ],
+      "title": "直線では同じでも放物線で違う",
+      "tool": "直線 $y=mx$ ではどれも $0$ になってしまう。分母の $x^4$ と $y^2$ の次数をそろえるため放物線 $y=mx^2$ に沿って調べる。",
+      "conclude": "直線に沿うとすべて $@0$ だが、放物線 $y=x^2$ に沿うと $@1$ で一致しない",
+      "answer": "存在しない(直線 $y=mx$ ではすべて $0$、放物線 $y=mx^2$ に沿うと $\\dfrac{m}{1+m^2}$)"
+    },
+    "family": 27,
+    "unit": "2変数の極限(存在しない)",
+    "variant_of": null
+  },
+  "b029": {
+    "kind": "b_lim_none",
+    "level": 3,
+    "params": {
+      "f": "x*y**2/(x**2+y**4)",
+      "paths": [
+        [
+          "y",
+          "m*y"
+        ],
+        [
+          "y",
+          "m*y**2"
+        ]
+      ],
+      "check_paths": [
+        [
+          "y",
+          "m*y",
+          "1"
+        ],
+        [
+          "y",
+          "m*y**2",
+          "1"
+        ]
+      ],
+      "title": "x=my² に沿った極限",
+      "tool": "分母の $x^2$ と $y^4$ の次数をそろえるため、$x=my^2$ という曲線に沿って近づける。直線だけでは $0$ にしかならない。",
+      "conclude": "直線 $x=my$ ではすべて $@0$ だが、$x=y^2$ に沿うと $@1$ で一致しない",
+      "answer": "存在しない(直線 $x=my$ ではすべて $0$、曲線 $x=my^2$ に沿うと $\\dfrac{m}{1+m^2}$)"
+    },
+    "family": 28,
+    "unit": "2変数の極限(存在しない)",
+    "variant_of": null
+  },
+  "b030": {
+    "kind": "b_high",
+    "level": 1,
+    "params": {
+      "f": "x**5*y**2",
+      "title": "2階偏導関数(多項式)",
+      "tool": "まず $f_x, f_y$ を求め、それをもう一度偏微分する。$f_{xy}$ は $f_x$ を $y$ で微分したもの。"
+    },
+    "family": 29,
+    "unit": "高階偏導関数",
+    "variant_of": null
+  },
+  "b031": {
+    "kind": "b_high",
+    "level": 2,
+    "params": {
+      "f": "exp(4*x)*cos(1*y)",
+      "title": "2階偏導関数(指数×三角)",
+      "tool": "指数と三角は微分しても形が変わらない。係数がどう出てくるかに注意して2回偏微分する。"
+    },
+    "family": 30,
+    "unit": "高階偏導関数",
+    "variant_of": null
+  },
+  "b032": {
+    "kind": "b_high",
+    "level": 2,
+    "params": {
+      "f": "log(x**2+y**2)",
+      "laplace": true,
+      "title": "ラプラシアンの計算",
+      "tool": "$f_x$ は商の形になるので、2階は商の微分公式を使う。$f_{xx}$ と $f_{yy}$ を足すと打ち消し合う。"
+    },
+    "family": 31,
+    "unit": "高階偏導関数",
+    "variant_of": null
+  },
+  "b033": {
+    "kind": "b_high",
+    "level": 3,
+    "params": {
+      "f": "x**y",
+      "title": "xʸ の2階偏導関数",
+      "tool": "$x$ で微分すると $x^n$ 型、$y$ で微分すると $a^y$ 型になる。$f_{xy}$ では積の微分も必要になる(2つの微分公式の組み合わせ)。"
+    },
+    "family": 32,
+    "unit": "高階偏導関数",
+    "variant_of": null
+  },
+  "b034": {
+    "kind": "b_td",
+    "level": 1,
+    "params": {
+      "f": "x**4*y**1",
+      "title": "全微分(多項式)"
+    },
+    "family": 33,
+    "unit": "全微分",
+    "variant_of": null
+  },
+  "b035": {
+    "kind": "b_td",
+    "level": 1,
+    "params": {
+      "f": "x/y",
+      "title": "全微分(商)"
+    },
+    "family": 34,
+    "unit": "全微分",
+    "variant_of": null
+  },
+  "b036": {
+    "kind": "b_td_approx",
+    "level": 2,
+    "params": {
+      "f": "sqrt(x**2+y**2)",
+      "pt": [
+        "3",
+        "4"
+      ],
+      "d": [
+        "-3/100",
+        "1/100"
+      ],
+      "qtex": "\\sqrt{2.97^2+4.01^2}"
+    },
+    "family": 35,
+    "unit": "全微分",
+    "variant_of": null
+  },
+  "b037": {
+    "kind": "b_td_err",
+    "level": 3,
+    "params": {
+      "r": "5",
+      "h": "10",
+      "dr": "1/10",
+      "dh": "1/5"
+    },
+    "family": 36,
+    "unit": "全微分",
+    "variant_of": null
+  },
+  "p001": {
+    "kind": "p_latent",
+    "level": 1,
+    "params": {
+      "m": 1.5,
+      "L": 334000.0,
+      "tc": 0,
+      "dir": "melt",
+      "show_m": 1.5,
+      "show_unit": "kg"
+    },
+    "family": 0,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p002": {
+    "kind": "p_latent",
+    "level": 1,
+    "params": {
+      "m": 0.3,
+      "L": 334000.0,
+      "tc": 0,
+      "dir": "melt",
+      "show_m": 300,
+      "show_unit": "g"
+    },
+    "family": 1,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p003": {
+    "kind": "p_latent",
+    "level": 1,
+    "params": {
+      "m": 0.2,
+      "L": 2260000.0,
+      "tc": 100,
+      "dir": "boil",
+      "show_m": 0.2,
+      "show_unit": "kg"
+    },
+    "family": 2,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p004": {
+    "kind": "p_latent",
+    "level": 2,
+    "params": {
+      "m": 1.2,
+      "L": 334000.0,
+      "tc": 0,
+      "dir": "freeze",
+      "show_m": 1.2,
+      "show_unit": "kg"
+    },
+    "family": 3,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p005": {
+    "kind": "p_heat",
+    "level": 1,
+    "params": {
+      "m": 1.0,
+      "c": 4190.0,
+      "t1": 30,
+      "t2": 90
+    },
+    "family": 4,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p006": {
+    "kind": "p_heat",
+    "level": 2,
+    "params": {
+      "m": 0.5,
+      "c": 4190.0,
+      "t1": 70,
+      "t2": 10
+    },
+    "family": 5,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p007": {
+    "kind": "p_ice_water",
+    "level": 3,
+    "params": {
+      "m": 0.3,
+      "ci": 2100.0,
+      "cw": 4190.0,
+      "L": 334000.0,
+      "t1": -15,
+      "t2": 25
+    },
+    "family": 6,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p008": {
+    "kind": "p_mix",
+    "level": 3,
+    "params": {
+      "m1": 1.0,
+      "t1": 80,
+      "m2": 1.0,
+      "t2": 20,
+      "c": 4190.0
+    },
+    "family": 7,
+    "unit": "エントロピー",
+    "variant_of": null
+  },
+  "p009": {
+    "kind": "p_U",
+    "level": 1,
+    "params": {
+      "n": 3,
+      "f": 3,
+      "T": 400
+    },
+    "family": 8,
+    "unit": "内部エネルギーと第1法則",
+    "variant_of": null
+  },
+  "p010": {
+    "kind": "p_isochoric",
+    "level": 2,
+    "params": {
+      "n": 2,
+      "f": 5,
+      "dT": 50
+    },
+    "family": 9,
+    "unit": "内部エネルギーと第1法則",
+    "variant_of": null
+  },
+  "p011": {
+    "kind": "p_isobaric",
+    "level": 3,
+    "params": {
+      "n": 2,
+      "f": 3,
+      "T1": 400,
+      "dT": 100
+    },
+    "family": 10,
+    "unit": "内部エネルギーと第1法則",
+    "variant_of": null
+  },
+  "p012": {
+    "kind": "p_carnot",
+    "level": 1,
+    "params": {
+      "TH": 700,
+      "TC": 350,
+      "unit": "K",
+      "mode": "eff"
+    },
+    "family": 11,
+    "unit": "カルノー機関",
+    "variant_of": null
+  },
+  "p013": {
+    "kind": "p_carnot",
+    "level": 1,
+    "params": {
+      "TH": 127,
+      "TC": 27,
+      "unit": "C",
+      "mode": "eff"
+    },
+    "family": 12,
+    "unit": "カルノー機関",
+    "variant_of": null
+  },
+  "p014": {
+    "kind": "p_carnot",
+    "level": 2,
+    "params": {
+      "TH": 500,
+      "TC": 100,
+      "unit": "C",
+      "mode": "QH",
+      "Q": 20000.0
+    },
+    "family": 13,
+    "unit": "カルノー機関",
+    "variant_of": null
+  },
+  "p015": {
+    "kind": "p_carnot",
+    "level": 2,
+    "params": {
+      "TH": 600,
+      "TC": 400,
+      "unit": "K",
+      "mode": "W",
+      "Q": 1000.0
+    },
+    "family": 14,
+    "unit": "カルノー機関",
+    "variant_of": null
+  },
+  "p016": {
+    "kind": "p_carnot_raise",
+    "level": 3,
+    "params": {
+      "TC": 7,
+      "eta1": 0.3,
+      "eta2": 0.4
+    },
+    "family": 15,
+    "unit": "カルノー機関",
+    "variant_of": null
+  },
+  "p017": {
+    "kind": "p_iso",
+    "level": 1,
+    "params": {
+      "n": 1,
+      "T": 300,
+      "ratio": 2,
+      "ask": "work"
+    },
+    "family": 16,
+    "unit": "等温変化",
+    "variant_of": null
+  },
+  "p018": {
+    "kind": "p_iso",
+    "level": 2,
+    "params": {
+      "n": 2,
+      "T": 350,
+      "ratio": 0.5,
+      "ask": "entropy",
+      "p1": 100000.0,
+      "p2": 200000.0
+    },
+    "family": 17,
+    "unit": "等温変化",
+    "variant_of": null
+  },
+  "p019": {
+    "kind": "p_adia",
+    "level": 2,
+    "params": {
+      "f": 3,
+      "n": 1,
+      "T1": 400,
+      "ratio": 8.0,
+      "ask": "T"
+    },
+    "family": 18,
+    "unit": "断熱変化",
+    "variant_of": null
+  },
+  "p020": {
+    "kind": "p_adia",
+    "level": 2,
+    "params": {
+      "f": 5,
+      "n": 1,
+      "T1": 300,
+      "ratio": 0.25,
+      "ask": "p",
+      "p1": 100000.0
+    },
+    "family": 19,
+    "unit": "断熱変化",
+    "variant_of": null
+  },
+  "p021": {
+    "kind": "p_adia",
+    "level": 3,
+    "params": {
+      "f": 5,
+      "n": 1,
+      "T1": 280,
+      "ratio": 0.2,
+      "ask": "TW"
+    },
+    "family": 20,
+    "unit": "断熱変化",
+    "variant_of": null
+  }
+}
