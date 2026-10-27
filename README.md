@@ -100,6 +100,18 @@ python scripts/verify.py          # 検証(失敗すると終了コード 1)
 
 `output/params.json` は検算用で、id ごとに問題の型・レベル・パラメータを持つ(ドリルへの取り込みには不要)。
 
+## TOEIC 単語
+
+`toeic/words_src.py` が単語リストの元データ(600・730・860点レベル各60語、例文はすべて自作)。
+各語に意味・例文・訳と、Part 5 風の穴埋め用の誤答3つ(答えと同じ語形で、文法か意味のどちらかで明らかに入らない語)を持つ。
+
+```sh
+python scripts/check_words.py   # 重複・例文の [ ] ・語形・誤答の形を検証して toeic/words.json を作る
+```
+
+通学ドリルでは `words` コレクションにレベルごとの文書(`b600` など、`list` に単語の配列)として入れる。
+学習の記録(間隔反復の状態)は学生本人の `data/users/<id>` に `w_<単語id>` として保存される。
+
 ## ファイル構成
 
 ```
@@ -114,6 +126,10 @@ scripts/
   build.py         JSON を再生成する
   verify.py        検証する
   make_variants.py ×・△の問題から検算つきの類題を作る
+  check_words.py   TOEIC 単語リストを検証して toeic/words.json を作る
+toeic/
+  words_src.py     単語リストの元データ
+  words.json       検証済みの単語リスト(ドリルに入れるもの)
 output/
   problems.json    ドリルに取り込む問題
   params.json      検算用のパラメータ

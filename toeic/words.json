@@ -1,0 +1,2522 @@
+[
+ {
+  "id": "w600_01",
+  "w": "available",
+  "pos": "形",
+  "ja": "利用できる、手が空いている",
+  "s": "Is Ms. Tanaka [available] for a short meeting this afternoon?",
+  "sja": "田中さんは今日の午後、短い打ち合わせができますか。",
+  "d": [
+   "delicious",
+   "wooden",
+   "liquid"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_02",
+  "w": "deliver",
+  "pos": "動",
+  "ja": "配達する",
+  "s": "The furniture store will [deliver] the desk on Friday.",
+  "sja": "家具店は金曜日に机を配達する。",
+  "d": [
+   "arrive",
+   "apologize",
+   "graduate"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_03",
+  "w": "receipt",
+  "pos": "名",
+  "ja": "領収書、レシート",
+  "s": "Please keep your [receipt] in case you need to return the item.",
+  "sja": "商品を返品する場合に備えて領収書を保管してください。",
+  "d": [
+   "ceiling",
+   "highway",
+   "harvest"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_04",
+  "w": "department",
+  "pos": "名",
+  "ja": "部署、売り場",
+  "s": "She works in the sales [department] of a large company.",
+  "sja": "彼女は大企業の営業部で働いている。",
+  "d": [
+   "weather",
+   "mistake",
+   "flight"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_05",
+  "w": "employee",
+  "pos": "名",
+  "ja": "従業員",
+  "s": "All new [employees] must attend the training session.",
+  "sja": "新入社員は全員研修に出席しなければならない。",
+  "d": [
+   "buildings",
+   "invoices",
+   "umbrellas"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_06",
+  "w": "customer",
+  "pos": "名",
+  "ja": "顧客",
+  "s": "The shop offers free gift wrapping to every [customer].",
+  "sja": "その店はすべての客に無料でギフト包装をしている。",
+  "d": [
+   "ceiling",
+   "holiday",
+   "highway"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_07",
+  "w": "reserve",
+  "pos": "動",
+  "ja": "予約する",
+  "s": "I would like to [reserve] a table for four at seven o'clock.",
+  "sja": "7時に4人分の席を予約したいのですが。",
+  "d": [
+   "arrive",
+   "recover",
+   "complain"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_08",
+  "w": "purchase",
+  "pos": "動",
+  "ja": "購入する",
+  "s": "Customers can [purchase] tickets online or at the station.",
+  "sja": "客はオンラインか駅で切符を購入できる。",
+  "d": [
+   "attend",
+   "celebrate",
+   "retire"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_09",
+  "w": "refund",
+  "pos": "名",
+  "ja": "返金",
+  "s": "If the product is damaged, you will receive a full [refund].",
+  "sja": "製品が破損していれば全額返金を受けられる。",
+  "d": [
+   "ladder",
+   "weather",
+   "career"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_10",
+  "w": "colleague",
+  "pos": "名",
+  "ja": "同僚",
+  "s": "I had lunch with a [colleague] from the accounting team.",
+  "sja": "経理チームの同僚と昼食をとった。",
+  "d": [
+   "document",
+   "furniture",
+   "vehicle"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_11",
+  "w": "attend",
+  "pos": "動",
+  "ja": "出席する",
+  "s": "More than 200 people are expected to [attend] the conference.",
+  "sja": "200人以上が会議に出席する見込みだ。",
+  "d": [
+   "hire",
+   "repair",
+   "borrow"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_12",
+  "w": "submit",
+  "pos": "動",
+  "ja": "提出する",
+  "s": "Please [submit] your report by the end of the week.",
+  "sja": "週末までに報告書を提出してください。",
+  "d": [
+   "arrive",
+   "laugh",
+   "sleep"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_13",
+  "w": "invoice",
+  "pos": "名",
+  "ja": "請求書",
+  "s": "The [invoice] must be paid within thirty days.",
+  "sja": "請求書は30日以内に支払わなければならない。",
+  "d": [
+   "weather",
+   "elevator",
+   "audience"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_14",
+  "w": "repair",
+  "pos": "動",
+  "ja": "修理する",
+  "s": "A technician came to [repair] the broken copy machine.",
+  "sja": "技術者が壊れたコピー機を修理しに来た。",
+  "d": [
+   "attend",
+   "apologize",
+   "arrive"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_15",
+  "w": "announce",
+  "pos": "動",
+  "ja": "発表する",
+  "s": "The company will [announce] its new product next month.",
+  "sja": "その会社は来月新製品を発表する。",
+  "d": [
+   "arrive",
+   "sleep",
+   "belong"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_16",
+  "w": "expand",
+  "pos": "動",
+  "ja": "拡大する、進出する",
+  "s": "The restaurant chain plans to [expand] into Asia next year.",
+  "sja": "そのレストランチェーンは来年アジアに進出する予定だ。",
+  "d": [
+   "apologize",
+   "borrow",
+   "describe"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_17",
+  "w": "hire",
+  "pos": "動",
+  "ja": "雇う",
+  "s": "The hotel needs to [hire] more staff for the summer.",
+  "sja": "そのホテルは夏に向けてもっとスタッフを雇う必要がある。",
+  "d": [
+   "arrive",
+   "attend",
+   "complain"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_18",
+  "w": "appointment",
+  "pos": "名",
+  "ja": "(面会の)約束、予約",
+  "s": "I have a dental [appointment] at three o'clock.",
+  "sja": "3時に歯医者の予約がある。",
+  "d": [
+   "salary",
+   "ladder",
+   "furniture"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_19",
+  "w": "brochure",
+  "pos": "名",
+  "ja": "パンフレット",
+  "s": "You can find our prices in the travel [brochure].",
+  "sja": "料金は旅行パンフレットに載っている。",
+  "d": [
+   "traffic",
+   "ceiling",
+   "kitchen"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_20",
+  "w": "contract",
+  "pos": "名",
+  "ja": "契約(書)",
+  "s": "Both companies signed the [contract] yesterday.",
+  "sja": "両社は昨日契約に署名した。",
+  "d": [
+   "weather",
+   "audience",
+   "harvest"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_21",
+  "w": "deadline",
+  "pos": "名",
+  "ja": "締め切り",
+  "s": "The [deadline] for applications is March 31.",
+  "sja": "応募の締め切りは3月31日だ。",
+  "d": [
+   "kitchen",
+   "passenger",
+   "flavor"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_22",
+  "w": "equipment",
+  "pos": "名",
+  "ja": "装置、機器",
+  "s": "The gym has the latest exercise [equipment].",
+  "sja": "そのジムには最新の運動器具がある。",
+  "d": [
+   "opinion",
+   "deadline",
+   "applause"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_23",
+  "w": "estimate",
+  "pos": "名",
+  "ja": "見積もり",
+  "s": "The contractor gave us an [estimate] for the roof repairs.",
+  "sja": "業者が屋根の修理の見積もりを出してくれた。",
+  "d": [
+   "applause",
+   "gratitude",
+   "weather"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_24",
+  "w": "inventory",
+  "pos": "名",
+  "ja": "在庫",
+  "s": "We need to check our [inventory] before ordering more paper.",
+  "sja": "紙を追加注文する前に在庫を確認する必要がある。",
+  "d": [
+   "applause",
+   "weather",
+   "gratitude"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_25",
+  "w": "recently",
+  "pos": "副",
+  "ja": "最近",
+  "s": "The museum has [recently] opened a new wing.",
+  "sja": "その美術館は最近新館を開いた。",
+  "d": [
+   "tomorrow",
+   "soon",
+   "ago"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_26",
+  "w": "directly",
+  "pos": "副",
+  "ja": "直接",
+  "s": "Please contact the manager [directly] if you have any problems.",
+  "sja": "問題があれば直接マネージャーに連絡してください。",
+  "d": [
+   "ago",
+   "yesterday",
+   "formerly"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_27",
+  "w": "local",
+  "pos": "形",
+  "ja": "地元の",
+  "s": "The festival is organized by [local] volunteers.",
+  "sja": "その祭りは地元のボランティアによって運営されている。",
+  "d": [
+   "frozen",
+   "liquid",
+   "empty"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_28",
+  "w": "confirm",
+  "pos": "動",
+  "ja": "確認する",
+  "s": "Please call us to [confirm] your reservation.",
+  "sja": "予約を確認するためにお電話ください。",
+  "d": [
+   "arrive",
+   "recover",
+   "belong"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_29",
+  "w": "cancel",
+  "pos": "動",
+  "ja": "取り消す、欠航にする",
+  "s": "The flight was [canceled] because of heavy snow.",
+  "sja": "大雪のため便は欠航になった。",
+  "d": [
+   "hired",
+   "celebrated",
+   "interviewed"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_30",
+  "w": "increase",
+  "pos": "動",
+  "ja": "増える、増やす",
+  "s": "Sales [increased] by 15 percent last quarter.",
+  "sja": "前四半期に売上は15%増えた。",
+  "d": [
+   "apologized",
+   "borrowed",
+   "attended"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_31",
+  "w": "decline",
+  "pos": "動",
+  "ja": "減少する;断る",
+  "s": "The number of visitors [declined] sharply during the winter.",
+  "sja": "冬の間に訪問者数は急激に減少した。",
+  "d": [
+   "hired",
+   "delivered",
+   "signed"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_32",
+  "w": "branch",
+  "pos": "名",
+  "ja": "支店",
+  "s": "The bank opened a new [branch] near the station.",
+  "sja": "その銀行は駅の近くに新しい支店を開いた。",
+  "d": [
+   "flavor",
+   "opinion",
+   "salary"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_33",
+  "w": "headquarters",
+  "pos": "名",
+  "ja": "本社",
+  "s": "The company's [headquarters] is located in Osaka.",
+  "sja": "その会社の本社は大阪にある。",
+  "d": [
+   "flavor",
+   "deadline",
+   "gratitude"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_34",
+  "w": "position",
+  "pos": "名",
+  "ja": "職、地位",
+  "s": "She applied for the [position] of marketing manager.",
+  "sja": "彼女はマーケティング部長の職に応募した。",
+  "d": [
+   "weather",
+   "receipt",
+   "ladder"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_35",
+  "w": "apply",
+  "pos": "動",
+  "ja": "応募する、申し込む",
+  "s": "Over 100 people [applied] for the job.",
+  "sja": "100人以上がその仕事に応募した。",
+  "d": [
+   "delivered",
+   "repaired",
+   "purchased"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_36",
+  "w": "qualified",
+  "pos": "形",
+  "ja": "資格のある、適任の",
+  "s": "We are looking for a [qualified] accountant.",
+  "sja": "資格のある会計士を探している。",
+  "d": [
+   "delicious",
+   "cloudy",
+   "crowded"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_37",
+  "w": "experience",
+  "pos": "名",
+  "ja": "経験",
+  "s": "Applicants must have at least three years of [experience].",
+  "sja": "応募者は少なくとも3年の経験が必要だ。",
+  "d": [
+   "furniture",
+   "weather",
+   "traffic"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_38",
+  "w": "manufacture",
+  "pos": "動",
+  "ja": "製造する",
+  "s": "The factory [manufactures] parts for cars.",
+  "sja": "その工場は車の部品を製造している。",
+  "d": [
+   "arrives",
+   "apologizes",
+   "retires"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_39",
+  "w": "product",
+  "pos": "名",
+  "ja": "製品",
+  "s": "Our new [product] will be on sale next month.",
+  "sja": "新製品は来月発売される。",
+  "d": [
+   "audience",
+   "deadline",
+   "weather"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_40",
+  "w": "discount",
+  "pos": "名",
+  "ja": "割引",
+  "s": "Members receive a 10 percent [discount] on all items.",
+  "sja": "会員は全商品が10%割引になる。",
+  "d": [
+   "deadline",
+   "kitchen",
+   "colleague"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_41",
+  "w": "register",
+  "pos": "動",
+  "ja": "登録する",
+  "s": "Participants must [register] online before the event.",
+  "sja": "参加者はイベント前にオンラインで登録しなければならない。",
+  "d": [
+   "repair",
+   "decorate",
+   "polish"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_42",
+  "w": "offer",
+  "pos": "動",
+  "ja": "提供する",
+  "s": "The hotel [offers] free breakfast to all guests.",
+  "sja": "そのホテルは全宿泊客に無料の朝食を提供している。",
+  "d": [
+   "arrives",
+   "belongs",
+   "apologizes"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_43",
+  "w": "provide",
+  "pos": "動",
+  "ja": "提供する、用意する",
+  "s": "The city will [provide] buses for the festival.",
+  "sja": "市は祭りのためにバスを用意する。",
+  "d": [
+   "arrive",
+   "complain",
+   "belong"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_44",
+  "w": "require",
+  "pos": "動",
+  "ja": "必要とする",
+  "s": "This job [requires] a driver's license.",
+  "sja": "この仕事には運転免許が必要だ。",
+  "d": [
+   "arrives",
+   "sleeps",
+   "laughs"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_45",
+  "w": "notice",
+  "pos": "名",
+  "ja": "お知らせ、通知",
+  "s": "A [notice] about the parking rules was posted on the wall.",
+  "sja": "駐車規則についてのお知らせが壁に貼られた。",
+  "d": [
+   "flavor",
+   "salary",
+   "harvest"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_46",
+  "w": "policy",
+  "pos": "名",
+  "ja": "方針、規定",
+  "s": "According to company [policy], employees cannot smoke indoors.",
+  "sja": "会社の規定により、従業員は屋内で喫煙できない。",
+  "d": [
+   "weather",
+   "furniture",
+   "traffic"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_47",
+  "w": "feature",
+  "pos": "名",
+  "ja": "特徴、機能",
+  "s": "The new phone has several useful [features].",
+  "sja": "新しい電話にはいくつかの便利な機能がある。",
+  "d": [
+   "deadlines",
+   "colleagues",
+   "holidays"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_48",
+  "w": "improve",
+  "pos": "動",
+  "ja": "改善する",
+  "s": "The training helped staff [improve] their customer service.",
+  "sja": "研修はスタッフが接客を改善するのに役立った。",
+  "d": [
+   "arrive",
+   "belong",
+   "apologize"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_49",
+  "w": "complete",
+  "pos": "動",
+  "ja": "完了する、記入し終える",
+  "s": "Please [complete] the form and return it to the front desk.",
+  "sja": "用紙に記入して受付に返してください。",
+  "d": [
+   "arrive",
+   "belong",
+   "sleep"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_50",
+  "w": "instruction",
+  "pos": "名",
+  "ja": "指示、説明",
+  "s": "Read the [instructions] carefully before using the machine.",
+  "sja": "機械を使う前に説明書をよく読みなさい。",
+  "d": [
+   "ceilings",
+   "holidays",
+   "passengers"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_51",
+  "w": "assist",
+  "pos": "動",
+  "ja": "手伝う",
+  "s": "Our staff will be happy to [assist] you.",
+  "sja": "スタッフが喜んでお手伝いいたします。",
+  "d": [
+   "arrive",
+   "belong",
+   "rain"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_52",
+  "w": "currently",
+  "pos": "副",
+  "ja": "現在",
+  "s": "The position is [currently] open.",
+  "sja": "その職は現在空いている。",
+  "d": [
+   "yesterday",
+   "ago",
+   "tomorrow"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_53",
+  "w": "delay",
+  "pos": "名",
+  "ja": "遅れ",
+  "s": "We apologize for the [delay] in shipping your order.",
+  "sja": "ご注文品の発送の遅れをおわびします。",
+  "d": [
+   "ceiling",
+   "flavor",
+   "colleague"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_54",
+  "w": "fee",
+  "pos": "名",
+  "ja": "料金、手数料",
+  "s": "There is no entrance [fee] for children.",
+  "sja": "子どもは入場料が無料だ。",
+  "d": [
+   "weather",
+   "colleague",
+   "ladder"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_55",
+  "w": "renovate",
+  "pos": "動",
+  "ja": "改装する",
+  "s": "The hotel lobby is being [renovated] this month.",
+  "sja": "ホテルのロビーは今月改装中だ。",
+  "d": [
+   "apologized",
+   "arrived",
+   "belonged"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_56",
+  "w": "relocate",
+  "pos": "動",
+  "ja": "移転する",
+  "s": "The office will [relocate] to a larger building in May.",
+  "sja": "事務所は5月により広いビルに移転する。",
+  "d": [
+   "hire",
+   "purchase",
+   "submit"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_57",
+  "w": "supply",
+  "pos": "名",
+  "ja": "供給品、備品",
+  "s": "Office [supplies] are kept in the cabinet.",
+  "sja": "事務用品は戸棚に保管されている。",
+  "d": [
+   "opinions",
+   "deadlines",
+   "colleagues"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_58",
+  "w": "vacation",
+  "pos": "名",
+  "ja": "休暇",
+  "s": "Mr. Lee is on [vacation] until next Monday.",
+  "sja": "リーさんは来週の月曜まで休暇中だ。",
+  "d": [
+   "invoice",
+   "receipt",
+   "ladder"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_59",
+  "w": "annual",
+  "pos": "形",
+  "ja": "毎年の、年1回の",
+  "s": "The [annual] meeting is held every April.",
+  "sja": "年次総会は毎年4月に開かれる。",
+  "d": [
+   "hungry",
+   "broken",
+   "sleepy"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w600_60",
+  "w": "participate",
+  "pos": "動",
+  "ja": "参加する",
+  "s": "Everyone is welcome to [participate] in the workshop.",
+  "sja": "誰でも講習会に参加できる。",
+  "d": [
+   "hire",
+   "purchase",
+   "require"
+  ],
+  "band": 600
+ },
+ {
+  "id": "w730_01",
+  "w": "accommodate",
+  "pos": "動",
+  "ja": "収容する、対応する",
+  "s": "The conference room can [accommodate] up to 50 people.",
+  "sja": "会議室は50人まで収容できる。",
+  "d": [
+   "apologize",
+   "depart",
+   "hesitate"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_02",
+  "w": "anticipate",
+  "pos": "動",
+  "ja": "予想する、見込む",
+  "s": "We [anticipate] a large increase in sales this year.",
+  "sja": "今年は売上の大きな増加を見込んでいる。",
+  "d": [
+   "hesitate",
+   "depart",
+   "belong"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_03",
+  "w": "comply",
+  "pos": "動",
+  "ja": "従う",
+  "s": "All factories must [comply] with safety regulations.",
+  "sja": "すべての工場は安全規則に従わなければならない。",
+  "d": [
+   "hire",
+   "purchase",
+   "renovate"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_04",
+  "w": "implement",
+  "pos": "動",
+  "ja": "実施する",
+  "s": "The city will [implement] the new recycling program next month.",
+  "sja": "市は来月新しいリサイクル制度を実施する。",
+  "d": [
+   "hesitate",
+   "depart",
+   "exist"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_05",
+  "w": "negotiate",
+  "pos": "動",
+  "ja": "交渉する",
+  "s": "The two firms are [negotiating] the terms of the merger.",
+  "sja": "2社は合併の条件を交渉中だ。",
+  "d": [
+   "hesitating",
+   "departing",
+   "arriving"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_06",
+  "w": "postpone",
+  "pos": "動",
+  "ja": "延期する",
+  "s": "The outdoor concert was [postponed] due to rain.",
+  "sja": "野外コンサートは雨のため延期された。",
+  "d": [
+   "hired",
+   "purchased",
+   "applauded"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_07",
+  "w": "reimburse",
+  "pos": "動",
+  "ja": "払い戻す、弁済する",
+  "s": "The company will [reimburse] employees for travel expenses.",
+  "sja": "会社は従業員の出張費を払い戻す。",
+  "d": [
+   "depart",
+   "hesitate",
+   "occur"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_08",
+  "w": "itinerary",
+  "pos": "名",
+  "ja": "旅程",
+  "s": "Please check the [itinerary] for your business trip.",
+  "sja": "出張の旅程を確認してください。",
+  "d": [
+   "applause",
+   "gratitude",
+   "harvest"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_09",
+  "w": "proposal",
+  "pos": "名",
+  "ja": "提案(書)",
+  "s": "The board approved the [proposal] to build a new warehouse.",
+  "sja": "取締役会は新倉庫建設の提案を承認した。",
+  "d": [
+   "applause",
+   "weather",
+   "flavor"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_10",
+  "w": "merger",
+  "pos": "名",
+  "ja": "合併",
+  "s": "The [merger] of the two banks was announced yesterday.",
+  "sja": "2つの銀行の合併が昨日発表された。",
+  "d": [
+   "flavor",
+   "ceiling",
+   "gratitude"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_11",
+  "w": "revenue",
+  "pos": "名",
+  "ja": "収益",
+  "s": "The company's [revenue] rose by 8 percent last year.",
+  "sja": "その会社の収益は昨年8%増えた。",
+  "d": [
+   "kitchen",
+   "applause",
+   "gratitude"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_12",
+  "w": "expense",
+  "pos": "名",
+  "ja": "費用、経費",
+  "s": "Travel [expenses] will be covered by the company.",
+  "sja": "旅費は会社が負担する。",
+  "d": [
+   "harvests",
+   "ceilings",
+   "flavors"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_13",
+  "w": "budget",
+  "pos": "名",
+  "ja": "予算",
+  "s": "The project was completed under [budget].",
+  "sja": "そのプロジェクトは予算内で完了した。",
+  "d": [
+   "kitchen",
+   "gratitude",
+   "applause"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_14",
+  "w": "candidate",
+  "pos": "名",
+  "ja": "候補者",
+  "s": "We interviewed five [candidates] for the position.",
+  "sja": "その職に5人の候補者を面接した。",
+  "d": [
+   "ceilings",
+   "receipts",
+   "harvests"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_15",
+  "w": "evaluate",
+  "pos": "動",
+  "ja": "評価する",
+  "s": "Managers [evaluate] employee performance twice a year.",
+  "sja": "管理職は年2回従業員の業績を評価する。",
+  "d": [
+   "depart",
+   "hesitate",
+   "arrive"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_16",
+  "w": "promote",
+  "pos": "動",
+  "ja": "昇進させる;宣伝する",
+  "s": "Ms. Garcia was [promoted] to sales director last month.",
+  "sja": "ガルシアさんは先月営業部長に昇進した。",
+  "d": [
+   "departed",
+   "hesitated",
+   "belonged"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_17",
+  "w": "launch",
+  "pos": "動",
+  "ja": "(新製品を)発売する、開始する",
+  "s": "The company will [launch] its new smartphone in October.",
+  "sja": "会社は10月に新しいスマホを発売する。",
+  "d": [
+   "hesitate",
+   "depart",
+   "collapse"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_18",
+  "w": "enclose",
+  "pos": "動",
+  "ja": "同封する",
+  "s": "Please find [enclosed] a copy of the contract.",
+  "sja": "契約書の写しを同封いたします。",
+  "d": [
+   "departed",
+   "hesitated",
+   "belonged"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_19",
+  "w": "inquiry",
+  "pos": "名",
+  "ja": "問い合わせ",
+  "s": "Thank you for your [inquiry] about our services.",
+  "sja": "当社のサービスについてお問い合わせいただきありがとうございます。",
+  "d": [
+   "ceiling",
+   "harvest",
+   "weather"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_20",
+  "w": "venue",
+  "pos": "名",
+  "ja": "会場",
+  "s": "The [venue] for the awards ceremony has been changed.",
+  "sja": "授賞式の会場が変更された。",
+  "d": [
+   "gratitude",
+   "applause",
+   "flavor"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_21",
+  "w": "tentative",
+  "pos": "形",
+  "ja": "仮の、暫定的な",
+  "s": "We have made a [tentative] plan for the trip.",
+  "sja": "旅行の仮の計画を立てた。",
+  "d": [
+   "hungry",
+   "sleepy",
+   "juicy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_22",
+  "w": "mandatory",
+  "pos": "形",
+  "ja": "義務的な、必須の",
+  "s": "Attendance at the safety meeting is [mandatory].",
+  "sja": "安全会議への出席は必須だ。",
+  "d": [
+   "delicious",
+   "cloudy",
+   "juicy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_23",
+  "w": "eligible",
+  "pos": "形",
+  "ja": "資格がある",
+  "s": "Full-time employees are [eligible] for the bonus.",
+  "sja": "正社員はボーナスを受ける資格がある。",
+  "d": [
+   "cloudy",
+   "juicy",
+   "sleepy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_24",
+  "w": "adequate",
+  "pos": "形",
+  "ja": "十分な、適切な",
+  "s": "The room does not have [adequate] lighting for reading.",
+  "sja": "その部屋は読書に十分な明るさがない。",
+  "d": [
+   "hungry",
+   "polite",
+   "sleepy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_25",
+  "w": "prior",
+  "pos": "形",
+  "ja": "前の(prior to ~より前に)",
+  "s": "Please arrive 15 minutes [prior] to the interview.",
+  "sja": "面接の15分前に到着してください。",
+  "d": [
+   "hungry",
+   "polite",
+   "juicy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_26",
+  "w": "respectively",
+  "pos": "副",
+  "ja": "それぞれ",
+  "s": "Mr. Kim and Ms. Ito were born in 1990 and 1995, [respectively].",
+  "sja": "キムさんと伊藤さんはそれぞれ1990年と1995年に生まれた。",
+  "d": [
+   "loudly",
+   "angrily",
+   "hungrily"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_27",
+  "w": "approximately",
+  "pos": "副",
+  "ja": "およそ",
+  "s": "The tour lasts [approximately] two hours.",
+  "sja": "ツアーはおよそ2時間かかる。",
+  "d": [
+   "angrily",
+   "loudly",
+   "politely"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_28",
+  "w": "thoroughly",
+  "pos": "副",
+  "ja": "徹底的に",
+  "s": "The inspector [thoroughly] examined the building.",
+  "sja": "検査官は建物を徹底的に調べた。",
+  "d": [
+   "hungrily",
+   "ago",
+   "tomorrow"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_29",
+  "w": "commute",
+  "pos": "動",
+  "ja": "通勤する",
+  "s": "She [commutes] to work by train every day.",
+  "sja": "彼女は毎日電車で通勤している。",
+  "d": [
+   "hires",
+   "purchases",
+   "reimburses"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_30",
+  "w": "renew",
+  "pos": "動",
+  "ja": "更新する",
+  "s": "You need to [renew] your passport before it expires.",
+  "sja": "期限が切れる前にパスポートを更新する必要がある。",
+  "d": [
+   "hesitate",
+   "depart",
+   "vanish"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_31",
+  "w": "expire",
+  "pos": "動",
+  "ja": "期限が切れる",
+  "s": "This coupon [expires] at the end of the month.",
+  "sja": "このクーポンは月末で期限が切れる。",
+  "d": [
+   "hires",
+   "negotiates",
+   "purchases"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_32",
+  "w": "warranty",
+  "pos": "名",
+  "ja": "保証(書)",
+  "s": "The printer comes with a two-year [warranty].",
+  "sja": "そのプリンターには2年間の保証がつく。",
+  "d": [
+   "applause",
+   "gratitude",
+   "harvest"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_33",
+  "w": "defective",
+  "pos": "形",
+  "ja": "欠陥のある",
+  "s": "We will replace any [defective] products free of charge.",
+  "sja": "欠陥品は無料で交換いたします。",
+  "d": [
+   "hungry",
+   "polite",
+   "sleepy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_34",
+  "w": "subscription",
+  "pos": "名",
+  "ja": "定期購読",
+  "s": "I canceled my [subscription] to the magazine.",
+  "sja": "私はその雑誌の定期購読を解約した。",
+  "d": [
+   "ceiling",
+   "harvest",
+   "applause"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_35",
+  "w": "attendee",
+  "pos": "名",
+  "ja": "出席者",
+  "s": "Each [attendee] will receive a name badge.",
+  "sja": "出席者はそれぞれ名札を受け取る。",
+  "d": [
+   "ceiling",
+   "harvest",
+   "invoice"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_36",
+  "w": "audit",
+  "pos": "名",
+  "ja": "監査",
+  "s": "An external [audit] of the accounts is conducted every year.",
+  "sja": "会計の外部監査は毎年行われる。",
+  "d": [
+   "applause",
+   "umbrella",
+   "orchestra"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_37",
+  "w": "vendor",
+  "pos": "名",
+  "ja": "販売業者、売り手",
+  "s": "We are looking for a new [vendor] for office supplies.",
+  "sja": "事務用品の新しい業者を探している。",
+  "d": [
+   "ceiling",
+   "gratitude",
+   "harvest"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_38",
+  "w": "shipment",
+  "pos": "名",
+  "ja": "発送(品)、積み荷",
+  "s": "The [shipment] is expected to arrive on Thursday.",
+  "sja": "荷物は木曜日に届く予定だ。",
+  "d": [
+   "gratitude",
+   "applause",
+   "ceiling"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_39",
+  "w": "fluctuate",
+  "pos": "動",
+  "ja": "変動する",
+  "s": "Fuel prices [fluctuate] from month to month.",
+  "sja": "燃料価格は月ごとに変動する。",
+  "d": [
+   "hire",
+   "purchase",
+   "reimburse"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_40",
+  "w": "allocate",
+  "pos": "動",
+  "ja": "割り当てる",
+  "s": "The manager [allocated] more funds to advertising.",
+  "sja": "部長は広告にさらに資金を割り当てた。",
+  "d": [
+   "hesitated",
+   "departed",
+   "belonged"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_41",
+  "w": "collaborate",
+  "pos": "動",
+  "ja": "協力する、共同で取り組む",
+  "s": "The two universities [collaborated] on the research project.",
+  "sja": "2つの大学はその研究計画で協力した。",
+  "d": [
+   "hired",
+   "purchased",
+   "reimbursed"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_42",
+  "w": "acquire",
+  "pos": "動",
+  "ja": "取得する、買収する",
+  "s": "The firm [acquired] a small software company last year.",
+  "sja": "その会社は昨年小さなソフトウェア会社を買収した。",
+  "d": [
+   "hesitated",
+   "departed",
+   "occurred"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_43",
+  "w": "streamline",
+  "pos": "動",
+  "ja": "効率化する",
+  "s": "The new system will [streamline] the ordering process.",
+  "sja": "新しいシステムは発注手続きを効率化する。",
+  "d": [
+   "hesitate",
+   "depart",
+   "belong"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_44",
+  "w": "outstanding",
+  "pos": "形",
+  "ja": "優れた;未払いの",
+  "s": "She received an award for her [outstanding] performance.",
+  "sja": "彼女は優れた業績で賞を受けた。",
+  "d": [
+   "hungry",
+   "juicy",
+   "sleepy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_45",
+  "w": "prompt",
+  "pos": "形",
+  "ja": "迅速な",
+  "s": "Thank you for your [prompt] reply.",
+  "sja": "迅速なご返信ありがとうございます。",
+  "d": [
+   "juicy",
+   "hungry",
+   "cloudy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_46",
+  "w": "regarding",
+  "pos": "前",
+  "ja": "~に関して",
+  "s": "I am writing [regarding] your recent order.",
+  "sja": "先日のご注文の件でご連絡しております。",
+  "d": [
+   "beneath",
+   "unless",
+   "although"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_47",
+  "w": "occupancy",
+  "pos": "名",
+  "ja": "(部屋などの)稼働率、入居",
+  "s": "Hotel [occupancy] rates are high during the holidays.",
+  "sja": "休暇中はホテルの稼働率が高い。",
+  "d": [
+   "gratitude",
+   "applause",
+   "flavor"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_48",
+  "w": "incentive",
+  "pos": "名",
+  "ja": "報奨(金)、動機づけ",
+  "s": "The company offers cash [incentives] to top sellers.",
+  "sja": "会社は成績上位の販売員に報奨金を出している。",
+  "d": [
+   "ceilings",
+   "harvests",
+   "umbrellas"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_49",
+  "w": "assess",
+  "pos": "動",
+  "ja": "評価する、査定する",
+  "s": "Experts were hired to [assess] the damage from the storm.",
+  "sja": "専門家が嵐の被害を査定するために雇われた。",
+  "d": [
+   "hesitate",
+   "depart",
+   "belong"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_50",
+  "w": "compensation",
+  "pos": "名",
+  "ja": "報酬、補償",
+  "s": "Workers received [compensation] for working overtime.",
+  "sja": "労働者は残業の報酬を受け取った。",
+  "d": [
+   "ceiling",
+   "applause",
+   "flavor"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_51",
+  "w": "dedicated",
+  "pos": "形",
+  "ja": "熱心な、献身的な",
+  "s": "Our [dedicated] staff work hard to satisfy customers.",
+  "sja": "熱心なスタッフが顧客満足のために懸命に働いている。",
+  "d": [
+   "juicy",
+   "cloudy",
+   "wooden"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_52",
+  "w": "extensive",
+  "pos": "形",
+  "ja": "広範囲の、大規模な",
+  "s": "The hotel underwent [extensive] renovations last year.",
+  "sja": "そのホテルは昨年大規模な改装をした。",
+  "d": [
+   "hungry",
+   "polite",
+   "sleepy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_53",
+  "w": "feasible",
+  "pos": "形",
+  "ja": "実現可能な",
+  "s": "The engineers concluded that the plan is [feasible].",
+  "sja": "技術者たちはその計画は実現可能だと結論づけた。",
+  "d": [
+   "hungry",
+   "juicy",
+   "sleepy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_54",
+  "w": "reception",
+  "pos": "名",
+  "ja": "歓迎会;受付",
+  "s": "A [reception] will be held to welcome the new president.",
+  "sja": "新社長を歓迎するレセプションが開かれる。",
+  "d": [
+   "ceiling",
+   "harvest",
+   "gratitude"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_55",
+  "w": "representative",
+  "pos": "名",
+  "ja": "担当者、代表者",
+  "s": "Please contact a customer service [representative].",
+  "sja": "顧客サービス担当者にご連絡ください。",
+  "d": [
+   "ceiling",
+   "harvest",
+   "gratitude"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_56",
+  "w": "temporary",
+  "pos": "形",
+  "ja": "一時的な、臨時の",
+  "s": "The store hired [temporary] workers for the holiday season.",
+  "sja": "その店は繁忙期に臨時の従業員を雇った。",
+  "d": [
+   "juicy",
+   "cloudy",
+   "wooden"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_57",
+  "w": "vacant",
+  "pos": "形",
+  "ja": "空いている",
+  "s": "There are two [vacant] seats in the front row.",
+  "sja": "最前列に2つ空席がある。",
+  "d": [
+   "hungry",
+   "polite",
+   "sleepy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_58",
+  "w": "brief",
+  "pos": "形",
+  "ja": "短い、簡潔な",
+  "s": "The manager gave a [brief] speech at the party.",
+  "sja": "部長はパーティーで短いスピーチをした。",
+  "d": [
+   "hungry",
+   "juicy",
+   "cloudy"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_59",
+  "w": "consult",
+  "pos": "動",
+  "ja": "相談する、参照する",
+  "s": "You should [consult] a lawyer before signing the contract.",
+  "sja": "契約に署名する前に弁護士に相談すべきだ。",
+  "d": [
+   "hesitate",
+   "depart",
+   "belong"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w730_60",
+  "w": "distribute",
+  "pos": "動",
+  "ja": "配布する",
+  "s": "Volunteers [distributed] flyers at the station.",
+  "sja": "ボランティアが駅でちらしを配った。",
+  "d": [
+   "hesitated",
+   "departed",
+   "belonged"
+  ],
+  "band": 730
+ },
+ {
+  "id": "w860_01",
+  "w": "deteriorate",
+  "pos": "動",
+  "ja": "悪化する、劣化する",
+  "s": "The road surface has [deteriorated] after years of heavy traffic.",
+  "sja": "長年の交通量で路面が劣化した。",
+  "d": [
+   "allocated",
+   "reimbursed",
+   "scrutinized"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_02",
+  "w": "scrutinize",
+  "pos": "動",
+  "ja": "精査する",
+  "s": "Auditors [scrutinized] every expense report.",
+  "sja": "監査人はすべての経費報告書を精査した。",
+  "d": [
+   "deteriorated",
+   "prevailed",
+   "plummeted"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_03",
+  "w": "plummet",
+  "pos": "動",
+  "ja": "急落する",
+  "s": "Share prices [plummeted] after the announcement.",
+  "sja": "発表後、株価は急落した。",
+  "d": [
+   "scrutinized",
+   "reimbursed",
+   "allocated"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_04",
+  "w": "prevail",
+  "pos": "動",
+  "ja": "広く行き渡る、勝る",
+  "s": "Sunny weather will [prevail] throughout the weekend.",
+  "sja": "週末は晴天が続くだろう。",
+  "d": [
+   "scrutinize",
+   "reimburse",
+   "allocate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_05",
+  "w": "expedite",
+  "pos": "動",
+  "ja": "迅速に処理する、早める",
+  "s": "We paid extra to [expedite] the delivery.",
+  "sja": "配達を早めるために追加料金を払った。",
+  "d": [
+   "deteriorate",
+   "plummet",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_06",
+  "w": "alleviate",
+  "pos": "動",
+  "ja": "和らげる、緩和する",
+  "s": "The new bridge should [alleviate] traffic congestion.",
+  "sja": "新しい橋は交通渋滞を緩和するはずだ。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_07",
+  "w": "adjacent",
+  "pos": "形",
+  "ja": "隣接した",
+  "s": "The parking lot is [adjacent] to the main building.",
+  "sja": "駐車場は本館に隣接している。",
+  "d": [
+   "hungry",
+   "eloquent",
+   "thrifty"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_08",
+  "w": "tenant",
+  "pos": "名",
+  "ja": "賃借人、入居者",
+  "s": "The building's [tenants] were notified of the repairs.",
+  "sja": "ビルの入居者は修理について知らされた。",
+  "d": [
+   "ceilings",
+   "harvests",
+   "flavors"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_09",
+  "w": "lucrative",
+  "pos": "形",
+  "ja": "もうかる、利益の大きい",
+  "s": "The company signed a [lucrative] contract with the government.",
+  "sja": "その会社は政府と利益の大きい契約を結んだ。",
+  "d": [
+   "hungry",
+   "sleepy",
+   "punctual"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_10",
+  "w": "meticulous",
+  "pos": "形",
+  "ja": "細心の、几帳面な",
+  "s": "She is known for her [meticulous] attention to detail.",
+  "sja": "彼女は細部への細心の注意で知られている。",
+  "d": [
+   "vacant",
+   "juicy",
+   "adjacent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_11",
+  "w": "discrepancy",
+  "pos": "名",
+  "ja": "食い違い、不一致",
+  "s": "The accountant found a [discrepancy] between the two reports.",
+  "sja": "会計士は2つの報告書の食い違いを見つけた。",
+  "d": [
+   "harvest",
+   "ceiling",
+   "tenant"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_12",
+  "w": "contingent",
+  "pos": "形",
+  "ja": "~次第の(contingent on)",
+  "s": "The deal is [contingent] on approval from the board.",
+  "sja": "その取引は取締役会の承認次第だ。",
+  "d": [
+   "hungry",
+   "juicy",
+   "vacant"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_13",
+  "w": "consolidate",
+  "pos": "動",
+  "ja": "統合する",
+  "s": "The company plans to [consolidate] its two warehouses into one.",
+  "sja": "会社は2つの倉庫を1つに統合する予定だ。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_14",
+  "w": "commence",
+  "pos": "動",
+  "ja": "開始する、始まる",
+  "s": "Construction will [commence] early next year.",
+  "sja": "工事は来年早々に始まる。",
+  "d": [
+   "scrutinize",
+   "reimburse",
+   "alleviate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_15",
+  "w": "inaugural",
+  "pos": "形",
+  "ja": "最初の、就任の",
+  "s": "The museum held its [inaugural] exhibition in May.",
+  "sja": "その美術館は5月に最初の展覧会を開いた。",
+  "d": [
+   "hungry",
+   "sleepy",
+   "thrifty"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_16",
+  "w": "prerequisite",
+  "pos": "名",
+  "ja": "前提条件、履修条件",
+  "s": "A basic statistics course is a [prerequisite] for this class.",
+  "sja": "基礎統計学の授業がこの授業の履修条件だ。",
+  "d": [
+   "tenant",
+   "harvest",
+   "ceiling"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_17",
+  "w": "surplus",
+  "pos": "名",
+  "ja": "余剰、黒字",
+  "s": "The government reported a budget [surplus] this year.",
+  "sja": "政府は今年度の財政黒字を発表した。",
+  "d": [
+   "tenant",
+   "kitchen",
+   "flavor"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_18",
+  "w": "deficit",
+  "pos": "名",
+  "ja": "赤字、不足",
+  "s": "The airline is trying to reduce its large [deficit].",
+  "sja": "航空会社は大きな赤字を減らそうとしている。",
+  "d": [
+   "tenant",
+   "kitchen",
+   "applause"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_19",
+  "w": "liability",
+  "pos": "名",
+  "ja": "法的責任;負債",
+  "s": "The company accepted [liability] for the accident.",
+  "sja": "会社はその事故の責任を認めた。",
+  "d": [
+   "ceiling",
+   "harvest",
+   "tenant"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_20",
+  "w": "exemplary",
+  "pos": "形",
+  "ja": "模範的な",
+  "s": "He was praised for his [exemplary] customer service.",
+  "sja": "彼は模範的な接客をほめられた。",
+  "d": [
+   "vacant",
+   "adjacent",
+   "juicy"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_21",
+  "w": "stringent",
+  "pos": "形",
+  "ja": "厳しい、厳格な",
+  "s": "The factory must follow [stringent] safety standards.",
+  "sja": "工場は厳しい安全基準に従わなければならない。",
+  "d": [
+   "juicy",
+   "sleepy",
+   "vacant"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_22",
+  "w": "viable",
+  "pos": "形",
+  "ja": "実行可能な、存続可能な",
+  "s": "Solar power is now a [viable] option for many households.",
+  "sja": "太陽光発電は今や多くの家庭にとって現実的な選択肢だ。",
+  "d": [
+   "hungry",
+   "sleepy",
+   "adjacent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_23",
+  "w": "imperative",
+  "pos": "形",
+  "ja": "絶対必要な、不可欠な",
+  "s": "It is [imperative] that all staff attend the safety briefing.",
+  "sja": "全スタッフが安全説明会に出席することが不可欠だ。",
+  "d": [
+   "juicy",
+   "adjacent",
+   "vacant"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_24",
+  "w": "subsidiary",
+  "pos": "名",
+  "ja": "子会社",
+  "s": "The firm sold its European [subsidiary] last year.",
+  "sja": "その会社は昨年ヨーロッパの子会社を売却した。",
+  "d": [
+   "gratitude",
+   "applause",
+   "flavor"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_25",
+  "w": "obsolete",
+  "pos": "形",
+  "ja": "時代遅れの、廃れた",
+  "s": "The old software has become [obsolete].",
+  "sja": "古いソフトは時代遅れになった。",
+  "d": [
+   "hungry",
+   "eloquent",
+   "punctual"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_26",
+  "w": "reluctant",
+  "pos": "形",
+  "ja": "気が進まない",
+  "s": "Many employees were [reluctant] to change their routine.",
+  "sja": "多くの社員は日課を変えることに消極的だった。",
+  "d": [
+   "vacant",
+   "adjacent",
+   "obsolete"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_27",
+  "w": "tremendous",
+  "pos": "形",
+  "ja": "とてつもない、非常に大きな",
+  "s": "The event was a [tremendous] success.",
+  "sja": "そのイベントは大成功だった。",
+  "d": [
+   "vacant",
+   "punctual",
+   "thrifty"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_28",
+  "w": "unanimously",
+  "pos": "副",
+  "ja": "満場一致で",
+  "s": "The board [unanimously] approved the budget.",
+  "sja": "取締役会は満場一致で予算を承認した。",
+  "d": [
+   "hungrily",
+   "ago",
+   "tomorrow"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_29",
+  "w": "consecutive",
+  "pos": "形",
+  "ja": "連続した",
+  "s": "The team won the award for the third [consecutive] year.",
+  "sja": "そのチームは3年連続で賞を取った。",
+  "d": [
+   "hungry",
+   "vacant",
+   "juicy"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_30",
+  "w": "lenient",
+  "pos": "形",
+  "ja": "寛大な、甘い",
+  "s": "The new manager is more [lenient] about dress codes.",
+  "sja": "新しい部長は服装規定にもっと寛大だ。",
+  "d": [
+   "vacant",
+   "juicy",
+   "adjacent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_31",
+  "w": "succinct",
+  "pos": "形",
+  "ja": "簡潔な",
+  "s": "Please keep your presentation [succinct].",
+  "sja": "発表は簡潔にしてください。",
+  "d": [
+   "hungry",
+   "vacant",
+   "adjacent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_32",
+  "w": "waive",
+  "pos": "動",
+  "ja": "(権利・料金を)免除する",
+  "s": "The bank agreed to [waive] the annual fee.",
+  "sja": "銀行は年会費を免除することに同意した。",
+  "d": [
+   "plummet",
+   "deteriorate",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_33",
+  "w": "endorse",
+  "pos": "動",
+  "ja": "支持する、推奨する",
+  "s": "Several famous athletes [endorse] the brand.",
+  "sja": "何人かの有名選手がそのブランドを推奨している。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_34",
+  "w": "solicit",
+  "pos": "動",
+  "ja": "求める、募る",
+  "s": "The city is [soliciting] opinions from residents.",
+  "sja": "市は住民から意見を募っている。",
+  "d": [
+   "plummeting",
+   "prevailing",
+   "deteriorating"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_35",
+  "w": "procure",
+  "pos": "動",
+  "ja": "調達する",
+  "s": "The department is responsible for [procuring] office equipment.",
+  "sja": "その部署は事務機器の調達を担当している。",
+  "d": [
+   "plummeting",
+   "deteriorating",
+   "prevailing"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_36",
+  "w": "reconcile",
+  "pos": "動",
+  "ja": "照合する、一致させる",
+  "s": "The accountant [reconciled] the bank statements with the records.",
+  "sja": "会計士は銀行明細を記録と照合した。",
+  "d": [
+   "plummeted",
+   "prevailed",
+   "deteriorated"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_37",
+  "w": "adhere",
+  "pos": "動",
+  "ja": "従う、固守する(adhere to)",
+  "s": "All staff must [adhere] to the new guidelines.",
+  "sja": "全スタッフは新しい指針に従わなければならない。",
+  "d": [
+   "scrutinize",
+   "procure",
+   "waive"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_38",
+  "w": "attribute",
+  "pos": "動",
+  "ja": "(~の)おかげ・せいにする(attribute A to B)",
+  "s": "The manager [attributed] the success to teamwork.",
+  "sja": "部長は成功をチームワークのおかげだとした。",
+  "d": [
+   "plummeted",
+   "prevailed",
+   "deteriorated"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_39",
+  "w": "diversify",
+  "pos": "動",
+  "ja": "多様化する",
+  "s": "The company wants to [diversify] its product line.",
+  "sja": "会社は製品ラインを多様化したい。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_40",
+  "w": "ample",
+  "pos": "形",
+  "ja": "十分な、たっぷりの",
+  "s": "There is [ample] parking space behind the store.",
+  "sja": "店の裏に十分な駐車スペースがある。",
+  "d": [
+   "eloquent",
+   "punctual",
+   "reluctant"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_41",
+  "w": "pertinent",
+  "pos": "形",
+  "ja": "関係のある、適切な",
+  "s": "Please bring all [pertinent] documents to the meeting.",
+  "sja": "関係書類をすべて会議に持ってきてください。",
+  "d": [
+   "hungry",
+   "sleepy",
+   "punctual"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_42",
+  "w": "punctual",
+  "pos": "形",
+  "ja": "時間を守る",
+  "s": "Mr. Ono is always [punctual] for meetings.",
+  "sja": "小野さんはいつも会議の時間を守る。",
+  "d": [
+   "vacant",
+   "obsolete",
+   "adjacent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_43",
+  "w": "thrifty",
+  "pos": "形",
+  "ja": "倹約な",
+  "s": "[Thrifty] shoppers compare prices before buying.",
+  "sja": "倹約家の買い物客は買う前に価格を比べる。",
+  "d": [
+   "Vacant",
+   "Obsolete",
+   "Adjacent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_44",
+  "w": "eloquent",
+  "pos": "形",
+  "ja": "雄弁な",
+  "s": "The CEO gave an [eloquent] speech at the ceremony.",
+  "sja": "社長は式典で雄弁なスピーチをした。",
+  "d": [
+   "adjacent",
+   "vacant",
+   "obsolete"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_45",
+  "w": "inadvertently",
+  "pos": "副",
+  "ja": "うっかり、不注意で",
+  "s": "The assistant [inadvertently] deleted the file.",
+  "sja": "アシスタントはうっかりそのファイルを消してしまった。",
+  "d": [
+   "respectively",
+   "approximately",
+   "unanimously"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_46",
+  "w": "accordingly",
+  "pos": "副",
+  "ja": "それに応じて",
+  "s": "The schedule has changed, so please plan [accordingly].",
+  "sja": "予定が変わったので、それに合わせて計画してください。",
+  "d": [
+   "hungrily",
+   "ago",
+   "yesterday"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_47",
+  "w": "predominantly",
+  "pos": "副",
+  "ja": "主に、大部分は",
+  "s": "The company's customers are [predominantly] young adults.",
+  "sja": "その会社の顧客は主に若者だ。",
+  "d": [
+   "hungrily",
+   "sleepily",
+   "unanimously"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_48",
+  "w": "notwithstanding",
+  "pos": "前",
+  "ja": "~にもかかわらず",
+  "s": "[Notwithstanding] the bad weather, the event was a success.",
+  "sja": "悪天候にもかかわらず、イベントは成功した。",
+  "d": [
+   "Unless",
+   "Whereas",
+   "Although"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_49",
+  "w": "commensurate",
+  "pos": "形",
+  "ja": "釣り合った(commensurate with)",
+  "s": "Salary will be [commensurate] with experience.",
+  "sja": "給与は経験に見合ったものになる。",
+  "d": [
+   "hungry",
+   "vacant",
+   "sleepy"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_50",
+  "w": "provisional",
+  "pos": "形",
+  "ja": "仮の、暫定的な",
+  "s": "The committee approved a [provisional] budget.",
+  "sja": "委員会は暫定予算を承認した。",
+  "d": [
+   "hungry",
+   "juicy",
+   "sleepy"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_51",
+  "w": "fiscal",
+  "pos": "形",
+  "ja": "会計の、財政の",
+  "s": "The [fiscal] year ends on March 31.",
+  "sja": "会計年度は3月31日に終わる。",
+  "d": [
+   "juicy",
+   "hungry",
+   "sleepy"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_52",
+  "w": "amenity",
+  "pos": "名",
+  "ja": "(快適な)設備",
+  "s": "The apartment offers many [amenities], including a pool.",
+  "sja": "そのマンションにはプールなど多くの設備がある。",
+  "d": [
+   "deficits",
+   "discrepancies",
+   "liabilities"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_53",
+  "w": "patronage",
+  "pos": "名",
+  "ja": "ひいき、愛顧",
+  "s": "Thank you for your continued [patronage].",
+  "sja": "引き続きのご愛顧に感謝いたします。",
+  "d": [
+   "deficit",
+   "discrepancy",
+   "liability"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_54",
+  "w": "dilapidated",
+  "pos": "形",
+  "ja": "荒れ果てた、老朽化した",
+  "s": "The [dilapidated] building will be torn down next month.",
+  "sja": "老朽化した建物は来月取り壊される。",
+  "d": [
+   "punctual",
+   "eloquent",
+   "thrifty"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_55",
+  "w": "replenish",
+  "pos": "動",
+  "ja": "補充する",
+  "s": "Staff [replenish] the shelves every morning.",
+  "sja": "スタッフは毎朝棚に商品を補充する。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_56",
+  "w": "forfeit",
+  "pos": "動",
+  "ja": "(権利などを)失う、没収される",
+  "s": "Late applicants will [forfeit] their deposit.",
+  "sja": "遅れた応募者は手付金を失う。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_57",
+  "w": "rectify",
+  "pos": "動",
+  "ja": "是正する、直す",
+  "s": "We will [rectify] the error as soon as possible.",
+  "sja": "できるだけ早く誤りを正します。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_58",
+  "w": "culminate",
+  "pos": "動",
+  "ja": "ついに~となる(culminate in)",
+  "s": "Years of research [culminated] in a major discovery.",
+  "sja": "長年の研究は大発見に結実した。",
+  "d": [
+   "scrutinized",
+   "procured",
+   "rectified"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_59",
+  "w": "exponentially",
+  "pos": "副",
+  "ja": "急激に、指数関数的に",
+  "s": "The number of users has grown [exponentially].",
+  "sja": "利用者数は急激に増えている。",
+  "d": [
+   "unanimously",
+   "inadvertently",
+   "respectively"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_60",
+  "w": "jeopardize",
+  "pos": "動",
+  "ja": "危うくする",
+  "s": "The delay could [jeopardize] the entire project.",
+  "sja": "その遅れはプロジェクト全体を危うくしかねない。",
+  "d": [
+   "plummet",
+   "prevail",
+   "culminate"
+  ],
+  "band": 860
+ }
+]
