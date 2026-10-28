@@ -112,6 +112,26 @@ python scripts/check_words.py   # 重複・例文の [ ] ・語形・誤答の�
 通学ドリルでは `words` コレクションにレベルごとの文書(`b600` など、`list` に単語の配列)として入れる。
 学習の記録(間隔反復の状態)は学生本人の `data/users/<id>` に `w_<単語id>` として保存される。
 
+## TOEIC 問題(Part 2〜7)
+
+問題の下書きは Gemini に作らせ(Claude のトークン節約のため)、別の Gemini モデルに答えを見せずに解かせて検算する。
+食い違った問題だけを Claude が見直し、直すか捨てる。検算の記録がない問題は `check_toeic.py` が通さない。
+
+```sh
+python scripts/gen_toeic.py 5 --per-level 24            # 下書き(toeic/drafts/)。--focus 関係詞 で苦手分野を厚く
+python scripts/crosscheck_toeic.py toeic/drafts/p5-*.json   # 答えを見ずに解かせる
+python scripts/merge_toeic.py --drafts toeic/drafts/p5-*.json --checks toeic/drafts/check-*.json
+#   → 一致したものは questions_src.json へ、食い違いは review-*.json へ。見直して verified="reviewed" を付けたら
+python scripts/merge_toeic.py --reviewed toeic/drafts/review-XXXX.json
+python scripts/check_toeic.py                           # 形式と検算記録を確かめて toeic/questions.json を作る
+```
+
+- レベル: 600(600点前後の人が7割正解)、730(同じく7割)、860(860点前後の人で5〜6割)。
+- 分野は `toeic/taxonomy.py`(例: Part 5 は品詞・動詞の形・準動詞・関係詞・接続詞と前置詞・代名詞・比較・数量・語彙)。
+- Gemini の API キーは環境変数 `GEMINI_API_KEY` か gemini-pdf-digest スキルの `api_key.txt` から読む。リポジトリには入れない。
+- 通学ドリルでは `toeic` コレクションにパートごとの文書(`p5` など、`list` にセットの配列)として入れる。
+  解答の記録は学生本人の `data/users/<id>` に `t_<設問id>_<時刻>` として保存し、推定スコアと分野別の正答率を出す。
+
 ## ファイル構成
 
 ```
@@ -127,6 +147,7 @@ scripts/
   verify.py        検証する
   make_variants.py ×・△の問題から検算つきの類題を作る
   check_words.py   TOEIC 単語リストを検証して toeic/words.json を作る
+  gen_toeic.py / crosscheck_toeic.py / merge_toeic.py / check_toeic.py   TOEIC 問題の下書き・検算・取り込み・検証
 toeic/
   words_src.py     単語リストの元データ
   words.json       検証済みの単語リスト(ドリルに入れるもの)
