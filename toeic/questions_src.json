@@ -1,0 +1,3589 @@
+[
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Where is the new printer located?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "In the copy room on the second floor.",
+     "To print thirty copies.",
+     "No, I haven't seen it."
+    ],
+    "answer": 0,
+    "skill": "WH疑問文",
+    "explain": "場所を尋ねるWhere疑問文なので、位置を示している「In the copy room on the second floor」が正解です。「To print thirty copies.」のprintは質問のprinterからの似た音の連想語トラップ、「No, I haven't seen it.」はWhere疑問文に対してNoで答えているため不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "M",
+    "t": "When will Mr. Davis return from his business trip?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Yes, he traveled by train.",
+     "On Friday afternoon.",
+     "For a sales meeting."
+    ],
+    "answer": 1,
+    "skill": "WH疑問文",
+    "explain": "時期を尋ねるWhen疑問文なので、日時を明確に答えている「On Friday afternoon.」が正解です。「Yes, he traveled by train.」はWhen疑問文に対してYesで答えており不適切で、「For a sales meeting.」は目的（Why）に対する回答です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Did you turn off the air conditioner before leaving?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Cold drinks are in the fridge.",
+     "By taking the elevator.",
+     "Yes, I checked it twice."
+    ],
+    "answer": 2,
+    "skill": "Yes/No・選択",
+    "explain": "エアコンを消したか尋ねるYes/No疑問文に対し、「Yes, I checked it twice.」と肯定して答えているものが正解です。「Cold drinks are in the fridge.」は「cold」という単語からの連想トラップで、「By taking the elevator.」は手段（How）に対する応答です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Would you like tea or coffee with your breakfast?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Just water, please.",
+     "I bought it yesterday.",
+     "At ten o'clock."
+    ],
+    "answer": 0,
+    "skill": "Yes/No・選択",
+    "explain": "紅茶かコーヒーかを尋ねる選択疑問文に対し、「Just water, please.」と別の飲み物を希望する形で答えている応答が正解です。「I bought it yesterday.」は過去の出来事を述べており文脈に合わず、「At ten o'clock.」は時間（When）への応答です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Could you help me move these boxes to the storage room?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "They were shipped last week.",
+     "The room is very large.",
+     "Sure, I'll be right there."
+    ],
+    "answer": 2,
+    "skill": "依頼・提案",
+    "explain": "箱の移動の依頼に対して「Sure, I'll be right there.」と快諾している応答が正解です。「They were shipped last week.」は過去の配送事実を述べており不適切で、「The room is very large.」は質問の「room」の単語を繰り返しただけのトラップです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Why don't we review the quarterly report together?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Sounds like a great idea.",
+     "It's reported in the newspaper.",
+     "Three quarters of an hour."
+    ],
+    "answer": 0,
+    "skill": "依頼・提案",
+    "explain": "「一緒に見直しませんか」という提案に対し、「Sounds like a great idea.」と賛同する応答が正解です。「It's reported in the newspaper.」は「report」の似た音による誤導、「Three quarters of an hour.」は「quarter」の音の重複を利用したトラップです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "W",
+    "t": "The train to Chicago has been delayed by twenty minutes."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "I bought a ticket yesterday.",
+     "Then we have time to grab a coffee.",
+     "Yes, it arrived on time."
+    ],
+    "answer": 1,
+    "skill": "平叙文・間接的な応答",
+    "explain": "電車の遅延を伝える発言に対し、「Then we have time to grab a coffee.」と状況に合わせた対応を提案する応答が正解です。「I bought a ticket yesterday.」は過去の購入事実で噛み合わず、「Yes, it arrived on time.」は遅延の報告に対して「定刻に到着した」と矛盾しています。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "M",
+    "t": "I can't find the file for the Henderson account."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Account numbers are confidential.",
+     "Yes, it was very interesting.",
+     "Did you check the shared folder?"
+    ],
+    "answer": 2,
+    "skill": "平叙文・間接的な応答",
+    "explain": "ファイルが見つからないという困りごとに対し、「Did you check the shared folder?」と確認を促す助言が正解です。「Account numbers are confidential.」は「account」の単語の重複を利用した無関係な発言で、「Yes, it was very interesting.」は平叙文に対する不適切なYes応答です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Who is responsible for organizing the retirement party?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "In the main conference room.",
+     "Sarah from human resources.",
+     "Next month on the fifteenth."
+    ],
+    "answer": 1,
+    "skill": "WH疑問文",
+    "explain": "担当者を尋ねるWho疑問文に対し、人物を特定している「Sarah from human resources.」が正解です。「In the main conference room.」は場所（Where）、「Next month on the fifteenth.」は日程（When）への応答なので不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 600,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Has the manager approved our travel budget yet?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Not yet, she is still reviewing it.",
+     "I like traveling by plane.",
+     "The budget was very low."
+    ],
+    "answer": 0,
+    "skill": "Yes/No・選択",
+    "explain": "承認の有無を尋ねるYes/No疑問文に対し、「Not yet, she is still reviewing it.」と現状を説明する応答が正解です。「I like traveling by plane.」は「travel」、「The budget was very low.」は「budget」の単語重複を利用した無関係な回答です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "W",
+    "t": "How long will the renovation of the lobby take?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Around three weeks, according to the contractor.",
+     "The lobby is on the ground floor.",
+     "We took the stairs."
+    ],
+    "answer": 0,
+    "skill": "WH疑問文",
+    "explain": "所要期間を尋ねる「How long」疑問文に対し、「Around three weeks, according to the contractor.」と期間を具体的に回答しているものが正解です。「The lobby is on the ground floor.」は「lobby」の重複で場所の説明、「We took the stairs.」は文脈に合わない話です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Why was yesterday's staff meeting canceled?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "It was held in Room 4B.",
+     "Ms. Vance had an urgent client call.",
+     "Yes, everyone attended."
+    ],
+    "answer": 1,
+    "skill": "WH疑問文",
+    "explain": "会議中止の理由を問うWhy疑問文に対し、「Ms. Vance had an urgent client call.」と理由を伝えている応答が正解です。「It was held in Room 4B.」は開催場所を述べており矛盾し、「Yes, everyone attended.」はWhy疑問文へのYes応答かつ「全員が出席した」と述べており不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Are we opening the new store branch in May or June?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Yes, the branch is open now.",
+     "The store sells office supplies.",
+     "It's scheduled for early June."
+    ],
+    "answer": 2,
+    "skill": "Yes/No・選択",
+    "explain": "5月か6月かを尋ねる選択疑問文に対し、「It's scheduled for early June.」と時期を選んで答えているものが正解です。「Yes, the branch is open now.」は選択疑問文へのYes応答なので不可、「The store sells office supplies.」は店舗の扱う商品を述べており不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Should we order extra catering supplies for the workshop?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "The menu looks delicious.",
+     "We already have enough for thirty people.",
+     "Yes, the workshop was very informative."
+    ],
+    "answer": 1,
+    "skill": "Yes/No・選択",
+    "explain": "追加の手配が必要か尋ねる質問に対し、「We already have enough for thirty people.」と十分な量があるため不要であることを間接的に伝える応答が正解です。「The menu looks delicious.」はメニューの感想で噛み合わず、「Yes, the workshop was very informative.」は過去の感想で不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Can you send me the updated schedule for tomorrow's presentation?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "I will email it to you right away.",
+     "The presentation was well received.",
+     "Tomorrow is a public holiday."
+    ],
+    "answer": 0,
+    "skill": "依頼・提案",
+    "explain": "スケジュールの送付を依頼する問いに対し、「I will email it to you right away.」と対応を約束する応答が正解です。「The presentation was well received.」は過去のプレゼンの評判を語っており不適切で、「Tomorrow is a public holiday.」は祝日の事実を伝えているだけで依頼に答えていません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Let me know if you need assistance setting up the projector."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "The movie started at seven.",
+     "Projectors are stored on the shelf.",
+     "Thanks, but Paul is helping me with it."
+    ],
+    "answer": 2,
+    "skill": "依頼・提案",
+    "explain": "手助けを申し出る発言に対し、「Thanks, but Paul is helping me with it.」とお礼を言いつつ他の人が手伝っていると伝える丁寧な辞退の応答が正解です。「The movie started at seven.」は映画の話で無関係、「Projectors are stored on the shelf.」は保管場所を述べるだけで問いに答えていません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "W",
+    "t": "The traffic on Main Street is unusually heavy this morning."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Main Street is near the bank.",
+     "I should probably take the subway instead.",
+     "Heavy rain is expected tomorrow."
+    ],
+    "answer": 1,
+    "skill": "平叙文・間接的な応答",
+    "explain": "道路の混雑を報告する発言に対し、「I should probably take the subway instead.」と迂回策・代替案を選択する応答が正解です。「Main Street is near the bank.」は通りの位置の説明に過ぎず、「Heavy rain is expected tomorrow.」は「heavy」の音を合わせた天気の話題のトラップです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "M",
+    "t": "We still haven't received the catering invoice for the banquet."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "I'll call the restaurant to ask about it.",
+     "The food served was delicious.",
+     "Yes, the banquet starts at six."
+    ],
+    "answer": 0,
+    "skill": "平叙文・間接的な応答",
+    "explain": "請求書が未着であることを伝える発言に対し、「I'll call the restaurant to ask about it.」と解決のために連絡を取る旨を伝える応答が正解です。「The food served was delicious.」は食事の感想で不適切、「Yes, the banquet starts at six.」は平叙文に対する不自然なYes応答です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Whose turn is it to present the financial summary today?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "It was presented yesterday.",
+     "Summaries are usually short.",
+     "I believe David is up next."
+    ],
+    "answer": 2,
+    "skill": "WH疑問文",
+    "explain": "発表担当者を尋ねるWhose疑問文に対し、「I believe David is up next.」と次に発表する人物を挙げている応答が正解です。「It was presented yesterday.」は「昨日発表された」と答えており今日の話に合わず、「Summaries are usually short.」は「summary」の重複による一般論です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 730,
+  "script": [
+   {
+    "sp": "M",
+    "t": "How about moving our weekly team sync to Thursday afternoon?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Thursday works much better for me.",
+     "We synchronized our watches.",
+     "The team won the award last week."
+    ],
+    "answer": 0,
+    "skill": "依頼・提案",
+    "explain": "ミーティングの日時変更の提案に対し、「Thursday works much better for me.」と都合が良い旨を伝えて賛同する応答が正解です。「We synchronized our watches.」は「sync」の派生語を用いたトラップ、「The team won the award last week.」はチームの賞に関する無関係な過去の話です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "W",
+    "t": "What prompted the sudden change in the marketing strategy?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Recent feedback from our pilot survey.",
+     "Strategy games are quite popular.",
+     "Yes, the market is expanding rapidly."
+    ],
+    "answer": 0,
+    "skill": "WH疑問文",
+    "explain": "「何が戦略変更を促した（prompted）のか」と要因・根拠を尋ねるWhat疑問文に対し、「Recent feedback from our pilot survey.」と調査結果を挙げているものが正解です。「Strategy games are quite popular.」は「strategy」の重複を利用した誤導、「Yes, the market is expanding rapidly.」はWhat疑問文へのYes応答のため不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Where can I locate the archive files from five years ago?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Archives are kept for compliance.",
+     "You'll need manager permission to access those.",
+     "Five years is a long time."
+    ],
+    "answer": 1,
+    "skill": "WH疑問文",
+    "explain": "過去のファイルの場所を聞く質問に対し、「You'll need manager permission to access those.」と閲覧の手続き・条件を伝える間接的な応答が正解です。「Archives are kept for compliance.」は保管理由についての一般論、「Five years is a long time.」は質問の語句を繰り返しただけの無意味な発言です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Is the software update compatible with our current operating system?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Yes, operating systems are expensive.",
+     "Updated software is available online.",
+     "I'll check the technical specifications right now."
+    ],
+    "answer": 2,
+    "skill": "Yes/No・選択",
+    "explain": "互換性について尋ねる疑問文に対し、「I'll check the technical specifications right now.」と調べる動作を示す間接的で自然な応答が正解です。「Yes, operating systems are expensive.」はOSの価格に触れており文脈に合わず、「Updated software is available online.」は単語を繰り返しただけで質問に答えていません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Have you submitted the budget proposal, or are you still working on it?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Proposals must be typed double-spaced.",
+     "I sent the final draft to Mr. Kim an hour ago.",
+     "Yes, the budget was approved last week."
+    ],
+    "answer": 1,
+    "skill": "Yes/No・選択",
+    "explain": "提出済みか作成中かを選択させる問いに対し、「I sent the final draft to Mr. Kim an hour ago.」と提出済みであることを具体的に伝える応答が正解です。「Proposals must be typed double-spaced.」はフォーマットの規則で噛み合わず、「Yes, the budget was approved last week.」は選択疑問文に対するYes応答のため不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Would you mind covering my shift at the front desk tomorrow morning?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "The desk is made of solid oak.",
+     "Shift work can be exhausting.",
+     "I have a dentist appointment then, unfortunately."
+    ],
+    "answer": 2,
+    "skill": "依頼・提案",
+    "explain": "シフトの代行を依頼する問いに対し、「I have a dentist appointment then, unfortunately.」と予定があることを理由に断る応答が正解です。「The desk is made of solid oak.」は「desk」の重複で机の素材を説明しており不適切で、「Shift work can be exhausting.」は「shift」の重複による一般論です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Shouldn't we hire an external consultant to evaluate the audit results?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "That might exceed our department's budget.",
+     "The auditor was very professional.",
+     "Yes, we hired two new technicians."
+    ],
+    "answer": 0,
+    "skill": "依頼・提案",
+    "explain": "外部コンサルタントの雇用を提案する否定疑問文に対し、「That might exceed our department's budget.」と予算面での難しさを挙げて間接的に難色を示す応答が正解です。「The auditor was very professional.」は監査人の人物評価で噛み合わず、「Yes, we hired two new technicians.」は技術者の採用についての無関係な発言です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "W",
+    "t": "The flight out of Frankfurt has been rescheduled for tomorrow evening."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Frankfurt is a major financial hub.",
+     "That means I'll have to extend my hotel reservation.",
+     "Yes, I booked the flight last week."
+    ],
+    "answer": 1,
+    "skill": "平叙文・間接的な応答",
+    "explain": "フライト変更の知らせに対し、「That means I'll have to extend my hotel reservation.」と自身の予定調整が必要になることを述べる応答が正解です。「Frankfurt is a major financial hub.」は都市についての雑学で噛み合わず、「Yes, I booked the flight last week.」は平叙文に対する不自然なYes応答です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "M",
+    "t": "I noticed that the heating in the west wing isn't working properly."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "West Wing is open until 5 P.M.",
+     "Heating bills have increased recently.",
+     "I'll notify the facilities manager right away."
+    ],
+    "answer": 2,
+    "skill": "平叙文・間接的な応答",
+    "explain": "暖房の不具合を報告する発言に対し、「I'll notify the facilities manager right away.」と対応策を申し出る応答が正解です。「West Wing is open until 5 P.M.」は営業時間の説明で文脈に合わず、「Heating bills have increased recently.」は「heating」の単語重複による連想トラップです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "W",
+    "t": "How soon do you expect the client to finalize the contract?"
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "Contracts must be signed in blue ink.",
+     "They asked for a few more days to review the clause.",
+     "Yes, the client was very pleased."
+    ],
+    "answer": 1,
+    "skill": "WH疑問文",
+    "explain": "契約完了の時期（How soon）を問う疑問文に対し、「They asked for a few more days to review the clause.」と検討にあと数日かかると現状を説明する応答が正解です。「Contracts must be signed in blue ink.」は署名ルールの説明で不適切、「Yes, the client was very pleased.」はHow soonに対するYes応答のため不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 2,
+  "level": 860,
+  "script": [
+   {
+    "sp": "M",
+    "t": "The deadline for the research grant application is approaching quickly."
+   }
+  ],
+  "questions": [
+   {
+    "q": "",
+    "choices": [
+     "I've already submitted all the required forms.",
+     "Grants are awarded annually.",
+     "The research lab is fully equipped."
+    ],
+    "answer": 0,
+    "skill": "平叙文・間接的な応答",
+    "explain": "申請締め切りが迫っているという注意喚起に対し、「I've already submitted all the required forms.」とすでに手配済みであることを伝えて相手を安心させる応答が正解です。「Grants are awarded annually.」は助成金の周期についての一般論、「The research lab is fully equipped.」は「research」の重複による無関係な発言です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 3,
+  "level": 600,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Hi, Rachel. Did you get a chance to review the catering proposal for next Friday's retirement party?"
+   },
+   {
+    "sp": "W",
+    "t": "I did. The menu options look great, but the total price is slightly higher than our original budget."
+   },
+   {
+    "sp": "M",
+    "t": "Really? We can't exceed the department limit. Should we ask them to remove the dessert course?"
+   },
+   {
+    "sp": "W",
+    "t": "Actually, we could just reduce the number of appetizers. That would bring the cost down enough."
+   },
+   {
+    "sp": "M",
+    "t": "That's a good idea. Would you like me to call the caterer to negotiate that?"
+   },
+   {
+    "sp": "W",
+    "t": "Thanks, but I already have an e-mail thread open with the manager. I'll send her a message right now."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What event are the speakers planning?",
+    "choices": [
+     "A client dinner",
+     "A retirement party",
+     "An annual conference",
+     "A product launch"
+    ],
+    "answer": 1,
+    "skill": "主題・目的",
+    "explain": "男性が冒頭で「next Friday's retirement party（来週の金曜日の退職パーティー）」と述べているため、正解は (B) です。(A) のクライアントとの夕食会や (C) の年次会議は会話に登場しません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What problem does the woman mention?",
+    "choices": [
+     "A venue is unavailable.",
+     "The guest list has changed.",
+     "An estimate exceeds the budget.",
+     "A delivery will arrive late."
+    ],
+    "answer": 2,
+    "skill": "詳細",
+    "explain": "女性は「the total price is slightly higher than our original budget（総額が元の予算を少し上回っている）」と言っており、見積もりが予算を超過していることを指摘しています。したがって (C) が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What will the woman probably do next?",
+    "choices": [
+     "Revise a guest list",
+     "Contact a catering manager",
+     "Print an event agenda",
+     "Check the company budget"
+    ],
+    "answer": 1,
+    "skill": "次の行動",
+    "explain": "最後に女性が「I'll send her a message right now（今すぐ彼女［ケータリング責任者］にメッセージを送ります）」と言っているため、(B) のケータリング責任者への連絡が正解です。男性の電話の申し出は断っています。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 3,
+  "level": 600,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Excuse me, Mark. I'm trying to print the quarterly sales reports, but the printer on the third floor is jammed again."
+   },
+   {
+    "sp": "M",
+    "t": "Oh, that machine has been giving us trouble all morning. Did you try the one in the resource room down the hall?"
+   },
+   {
+    "sp": "W",
+    "t": "I haven't, but I need fifty color copies before the regional managers arrive at two o'clock."
+   },
+   {
+    "sp": "M",
+    "t": "It's only twelve thirty now."
+   },
+   {
+    "sp": "W",
+    "t": "I suppose that's true, but the collating and binding also take time."
+   },
+   {
+    "sp": "M",
+    "t": "Tell you what, send me the file. I'll print half the batch on the second floor to help you out."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does the conversation most likely take place?",
+    "choices": [
+     "At an office",
+     "At a print shop",
+     "At a train station",
+     "At a hotel reception"
+    ],
+    "answer": 0,
+    "skill": "推測",
+    "explain": "「quarterly sales reports（四半期売上報告書）」や「regional managers arrive（地域マネージャーが到着する）」などの職場内のやりとりから、オフィスでの会話だと推測できます。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the man mean when he says, \"It's only twelve thirty now\"?",
+    "choices": [
+     "He wants to take a lunch break.",
+     "He thinks there is sufficient time.",
+     "A meeting has been rescheduled.",
+     "The printer technician will arrive soon."
+    ],
+    "answer": 1,
+    "skill": "発言の意図",
+    "explain": "女性が「2時までに50部必要」と焦っているのに対し、男性が「今はまだ12時半ですよ」と述べているのは、まだ時間に十分な余裕があるとなだめる意図です。したがって (B) が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "How does the man offer to help?",
+    "choices": [
+     "By fixing a paper jam",
+     "By contacting a technician",
+     "By printing part of a document",
+     "By rescheduling an afternoon meeting"
+    ],
+    "answer": 2,
+    "skill": "詳細",
+    "explain": "男性は最後に「I'll print half the batch on the second floor to help you out（手伝うために2階で半分の部数を印刷します）」と申し出ているため、(C) が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 3,
+  "level": 730,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Good morning, David. Did the shipment of ceramic tiles for the renovation project arrive at the warehouse?"
+   },
+   {
+    "sp": "M",
+    "t": "Yes, but there's a slight problem. The supplier sent the gray tiles instead of the beige ones specified in the client's design plan."
+   },
+   {
+    "sp": "W",
+    "t": "That's unfortunate. The installation crew is scheduled to start working in the lobby tomorrow morning."
+   },
+   {
+    "sp": "M",
+    "t": "I already spoke to the supplier. They have the beige tiles in stock, but their standard delivery takes two business days."
+   },
+   {
+    "sp": "W",
+    "t": "Can we pay extra for expedited courier service?"
+   },
+   {
+    "sp": "M",
+    "t": "Since it was their packing error, they agreed to cover the rush shipping. The truck should arrive by eight tomorrow."
+   },
+   {
+    "sp": "W",
+    "t": "Great. I'll let the site supervisor know everything is on track."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What issue are the speakers discussing?",
+    "choices": [
+     "Damaged building supplies",
+     "An incorrect order delivery",
+     "A delayed renovation contract",
+     "An unapproved design blueprint"
+    ],
+    "answer": 1,
+    "skill": "主題・目的",
+    "explain": "男性が「The supplier sent the gray tiles instead of the beige ones（業者が指定のベージュではなくグレーのタイルを送ってきた）」と述べており、誤配送が問題になっているため (B) が正解です。品物が破損したわけではないので (A) は不適切です。",
+    "verified": "agree"
+   },
+   {
+    "q": "Why will the supplier pay for rush shipping?",
+    "choices": [
+     "They value the long-term partnership.",
+     "The order was placed well in advance.",
+     "The mistake was made on their end.",
+     "The client requested a design alteration."
+    ],
+    "answer": 2,
+    "skill": "詳細",
+    "explain": "男性が「Since it was their packing error, they agreed to cover the rush shipping（彼ら［業者］側の梱包ミスだったため、特急配送料の負担に同意した）」と説明しているため、(C) が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What will the woman most likely do next?",
+    "choices": [
+     "Call a courier company",
+     "Notify a site supervisor",
+     "Inspect items at a warehouse",
+     "Modify an architectural plan"
+    ],
+    "answer": 1,
+    "skill": "次の行動",
+    "explain": "女性が最後に「I'll let the site supervisor know everything is on track（現場監督にすべて予定通りだと知らせておきます）」と言っているため、(B) が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 3,
+  "level": 730,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Karen, do you have a minute? The HR department is finalizing the schedule for the summer internship program."
+   },
+   {
+    "sp": "W",
+    "t": "Sure. We're hosting three university students in the marketing division, right?"
+   },
+   {
+    "sp": "M",
+    "t": "Yes, but we still need one more senior staff member to act as a mentor for their final research project."
+   },
+   {
+    "sp": "W",
+    "t": "I'm heading the promotional campaign for the new fitness app throughout July."
+   },
+   {
+    "sp": "M",
+    "t": "I understand that's a major commitment. However, the mentorship mostly involves weekly progress check-ins."
+   },
+   {
+    "sp": "W",
+    "t": "Well, if it's only an hour or two each week, I can fit it into my schedule. Send me the orientation packet."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the man ask the woman to do?",
+    "choices": [
+     "Conduct an interview",
+     "Lead a training seminar",
+     "Mentor an intern",
+     "Evaluate a marketing proposal"
+    ],
+    "answer": 2,
+    "skill": "詳細",
+    "explain": "男性が「we still need one more senior staff member to act as a mentor（指導役を務める上級職員がもう1名必要）」と言って女性に頼んでいるため、(C) が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the woman imply when she says, \"I'm heading the promotional campaign for the new fitness app throughout July\"?",
+    "choices": [
+     "She is unsure whether she has enough time.",
+     "She wants to assign interns to her project.",
+     "She will be working remotely next month.",
+     "She plans to take time off in July."
+    ],
+    "answer": 0,
+    "skill": "発言の意図",
+    "explain": "インターンの指導役を頼まれた直後に、7月はずっと新アプリのキャンペーンを率いていると述べており、「忙しくて指導をする時間があるか分からない」と難色を示しています。したがって (A) が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the woman request at the end of the conversation?",
+    "choices": [
+     "A contact list",
+     "Orientation materials",
+     "A campaign schedule",
+     "Performance review forms"
+    ],
+    "answer": 1,
+    "skill": "詳細",
+    "explain": "会話の最後に女性が「Send me the orientation packet（オリエンテーション資料一式を送ってください）」と依頼しているため、(B) の materials（資料）と言い換えられている選択肢が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 3,
+  "level": 860,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Elena, our analytics dashboard indicates that cart abandonment rates on our online boutique jumped by fifteen percent last week."
+   },
+   {
+    "sp": "W",
+    "t": "That coincided with the roll-out of the new multi-tier verification security feature during checkout."
+   },
+   {
+    "sp": "M",
+    "t": "Customer support reported dozens of inquiries regarding SMS authentication codes failing to arrive promptly."
+   },
+   {
+    "sp": "W",
+    "t": "We partnered with an external gateway provider for that service."
+   },
+   {
+    "sp": "M",
+    "t": "Right. We cannot afford to lose seasonal shoppers right before the holiday peak. Should we revert to the legacy checkout protocol?"
+   },
+   {
+    "sp": "W",
+    "t": "Rolling it back entirely creates compliance liabilities. Instead, let's hold an emergency conference call with their technical leads this afternoon to identify the network bottleneck."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the primary cause of concern for the speakers?",
+    "choices": [
+     "A seasonal slump in inventory levels",
+     "A spike in uncompleted online purchases",
+     "A cybersecurity breach involving customer accounts",
+     "A budget deficit in the marketing department"
+    ],
+    "answer": 1,
+    "skill": "主題・目的",
+    "explain": "男性が冒頭で「cart abandonment rates on our online boutique jumped by fifteen percent（オンラインブティックでのカート放棄率［購入直前での離脱］が15％急増した）」と述べているため、(B) の「未完了のオンライン購入の急増」が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the woman mean when she says, \"We partnered with an external gateway provider for that service\"?",
+    "choices": [
+     "The company should terminate the current vendor contract.",
+     "The issue likely originates outside their internal systems.",
+     "She was not involved in selecting the software vendor.",
+     "The budget cannot cover additional security software."
+    ],
+    "answer": 1,
+    "skill": "発言の意図",
+    "explain": "SMS認証コードが届かないという問い合わせが多発しているという男性の発言に対し、「そのサービスは外部の決済代行業者と提携している」と答えることで、「問題の原因は自社システムではなく外部業者側にある可能性が高い」と示唆しています。したがって (B) が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What do the speakers decide to do?",
+    "choices": [
+     "Restore the previous checkout process immediately",
+     "Issue discount vouchers to affected shoppers",
+     "Meet remotely with an external technical team",
+     "Hire a third-party cybersecurity consultant"
+    ],
+    "answer": 2,
+    "skill": "推測",
+    "explain": "女性が以前の方式に戻す（revert/roll back）案を否定し、「let's hold an emergency conference call with their technical leads this afternoon（今日の午後に相手方の技術責任者と緊急電話会議を開こう）」と提案し、問題箇所の特定を進めることで一致しているため、(C) が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 3,
+  "level": 860,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Marcus, have you seen the revised lease agreement from the property management firm for our downtown branch?"
+   },
+   {
+    "sp": "M",
+    "t": "I glanced at it. They're seeking an eight percent escalation on the base rent starting next fiscal quarter, which seems steep given the recent drop in foot traffic."
+   },
+   {
+    "sp": "W",
+    "t": "True, but they did include a substantial allowance for interior modernization and agreed to upgrade the HVAC infrastructure at their expense."
+   },
+   {
+    "sp": "M",
+    "t": "That would save us capital expenditure on the ventilation overhaul we planned for autumn. Still, an eight percent recurring increase strains our operational margin."
+   },
+   {
+    "sp": "W",
+    "t": "Perhaps we could propose a five-year commitment instead of three in exchange for capping the annual increase at four percent."
+   },
+   {
+    "sp": "M",
+    "t": "Landlords generally favor guaranteed occupancy. I'll draft a counter-proposal highlighting that trade-off before our board review."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers negotiating?",
+    "choices": [
+     "Terms for extending an office lease",
+     "Compensation for facility damages",
+     "Bids from commercial renovation contractors",
+     "A buyout of an adjacent retail property"
+    ],
+    "answer": 0,
+    "skill": "主題・目的",
+    "explain": "「revised lease agreement（改定された賃貸契約書）」や「base rent（基本賃料）」、「five-year commitment instead of three（3年ではなく5年の契約期間）」といった表現から、オフィスの賃貸契約の更新・延長条件について話し合っていることがわかります。よって (A) が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What incentive did the property management firm offer?",
+    "choices": [
+     "Free parking privileges for employees",
+     "Covering the costs of heating and cooling upgrades",
+     "Waiving property maintenance charges for one year",
+     "Allowing subleasing rights to external tenants"
+    ],
+    "answer": 1,
+    "skill": "詳細",
+    "explain": "女性が「agreed to upgrade the HVAC infrastructure at their expense（彼らの費用負担でHVAC［暖房・換気・空調］設備の改修に同意した）」と述べているため、(B) の「冷暖房設備の改修費用を負担すること」が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What will the man most likely do next?",
+    "choices": [
+     "Consult with a real estate attorney",
+     "Schedule an inspection of an HVAC system",
+     "Prepare an alternative contract proposal",
+     "Present the lease directly to the board members"
+    ],
+    "answer": 2,
+    "skill": "次の行動",
+    "explain": "男性が最後に「I'll draft a counter-proposal highlighting that trade-off（その妥協案を強調した対抗提案書のドラフトを作成します）」と述べているため、(C) が正解です。役員会への提示（board review）はその前に行う作成作業の後になります。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 4,
+  "level": 600,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Attention, shoppers! Thank you for visiting Miller Electronics today. We are pleased to announce our special summer clearance event starting this Friday. All home appliances and personal gadgets will be discounted up to 40 percent. If you are a member of our store rewards program, you can receive an additional 10 percent off at the checkout counter. Don't worry if you haven't joined yet—you can sign up for a free membership at our customer service desk near the main entrance. Please note that the store will close early tomorrow at 6:00 P.M. to prepare for the sale. We look forward to seeing you this weekend!"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the main purpose of the announcement?",
+    "choices": [
+     "To announce a store sale",
+     "To report a store closure",
+     "To introduce a new store manager",
+     "To advertise a new product"
+    ],
+    "answer": 0,
+    "skill": "主題・目的",
+    "explain": "話者は \"announce our special summer clearance event\"（特別サマーセールを発表する）と言っており、セール開催を知らせることが目的です。閉店時間についての言及もありますが、それはセールの準備に伴う案内の一部にすぎません。",
+    "verified": "agree"
+   },
+   {
+    "q": "How can listeners get an extra discount?",
+    "choices": [
+     "By purchasing items online",
+     "By joining the rewards program",
+     "By buying three or more items",
+     "By presenting a news coupon"
+    ],
+    "answer": 1,
+    "skill": "詳細",
+    "explain": "\"If you are a member of our store rewards program, you can receive an additional 10 percent off\" と説明されているため、報酬プログラムに加入することで追加割引を受けられます。「オンラインでの購入」などの選択肢は本文で触れられていません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the speaker advise non-members to do?",
+    "choices": [
+     "Visit the company website",
+     "Return to the store next week",
+     "Ask a cashier during checkout",
+     "Sign up at the customer service desk"
+    ],
+    "answer": 3,
+    "skill": "次の行動",
+    "explain": "非会員に対して \"you can sign up for a free membership at our customer service desk\"（カスタマーサービスデスクで無料会員登録ができる）と案内しています。「ウェブサイトを訪れる」という指示は本文に出てきません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 4,
+  "level": 600,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Hello, this is Mark Evans from the facilities department calling for all staff in Building B. This is a reminder regarding the planned elevator maintenance scheduled for tomorrow, Thursday, July 12. The main elevators near the front lobby will be out of service from 9:00 A.M. to 2:00 P.M. During this time, please use the service elevators located at the rear of the building. If you need assistance moving heavy equipment or packages, please contact our maintenance team at extension 402. We apologize for any inconvenience this temporary disruption may cause and appreciate your full cooperation. Thank you for your attention."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the topic of the message?",
+    "choices": [
+     "Office cleaning schedule",
+     "Equipment delivery delays",
+     "Parking lot repairs",
+     "Elevator maintenance"
+    ],
+    "answer": 3,
+    "skill": "主題・目的",
+    "explain": "冒頭で \"reminder regarding the planned elevator maintenance\"（予定されているエレベーター保守作業に関するリマインダー）と述べており、点検作業が話題です。「清掃」や「駐車場修理」は本文で言及されていません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What are employees asked to do between 9:00 A.M. and 2:00 P.M.?",
+    "choices": [
+     "Use the rear elevators",
+     "Work from home for the day",
+     "Avoid using the stairwells",
+     "Reschedule their meetings"
+    ],
+    "answer": 0,
+    "skill": "詳細",
+    "explain": "メインのエレベーターが停止する時間帯について \"please use the service elevators located at the rear of the building\"（建物後方にある業務用エレベーターをご利用ください）と指示しています。「在宅勤務をする」などの指定はありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What should employees do if they need help transporting heavy packages?",
+    "choices": [
+     "Ask a coworker for assistance",
+     "Call extension 402",
+     "Leave packages in the lobby",
+     "Email facilities management"
+    ],
+    "answer": 1,
+    "skill": "次の行動",
+    "explain": "重い荷物の移動に助けが必要な場合、\"contact our maintenance team at extension 402\"（内線402のメンテナンスチームに連絡する）よう案内しています。「ロビーに放置する」や「同僚に頼む」は誤りです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 4,
+  "level": 730,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Good morning, everyone. Thanks for coming to this brief team meeting. I wanted to give you an update on the software redesign project for Apex Systems. As you know, the client requested several major changes to the user interface last Friday. Our design team worked hard over the weekend, and I’m glad to say the new mockups are ready. We still have two weeks before the deadline. However, we need to test these design layouts with actual users before presenting them to Apex Systems next Tuesday. I would like David to oversee the usability testing sessions starting tomorrow morning. Please review the updated files on the shared server before our follow-up meeting this afternoon."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is the speaker giving the talk?",
+    "choices": [
+     "To announce a new software hire",
+     "To report progress on a client's project",
+     "To postpone an upcoming deadline",
+     "To launch a new marketing campaign"
+    ],
+    "answer": 1,
+    "skill": "主題・目的",
+    "explain": "話者は \"give you an update on the software redesign project for Apex Systems\"（Apex Systems社のソフトウェア再設計プロジェクトの進捗を報告する）と述べています。「締め切りの延期」ではなく、現状の進捗報告が目的です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the speaker mean when she says, \"We still have two weeks before the deadline\"?",
+    "choices": [
+     "She wants to request an extension from the client.",
+     "She believes the current schedule is too tight.",
+     "She is emphasizing that there is sufficient time to conduct testing.",
+     "She thinks the team should slow down their work pace."
+    ],
+    "answer": 2,
+    "skill": "発言の意図",
+    "explain": "「締め切りまでまだ2週間ある」という発言は、直後に「クライアントに見せる前にユーザーテストを行う必要がある」と続けていることから、テストを行う時間が十分残されていることを強調しています。「延長を依頼したい」の意味ではありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What are listeners asked to do before the afternoon meeting?",
+    "choices": [
+     "Contact Apex Systems directly",
+     "Submit a budget proposal",
+     "Conduct user interviews",
+     "Review updated files on the server"
+    ],
+    "answer": 3,
+    "skill": "次の行動",
+    "explain": "話者は午後の会議までに \"review the updated files on the shared server\"（共有サーバー上の更新ファイルを確認する）よう指示しています。「直接クライアントに連絡する」などの行動は要求されていません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 4,
+  "level": 730,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Welcome to the annual Green Tech Exposition! My name is Brian, and I’ll be guiding your group through Exhibit Hall A today. On this floor, you’ll discover the latest developments in solar power and energy-efficient building materials. The demonstration in Hall B has already filled up. So I suggest we focus our time here on the interactive displays and talk with the lead engineers on site. At noon, we will take a one-hour break for lunch, which you can purchase at the cafeteria on the second floor. Before we begin, please make sure your visitor badges are clearly visible at all times while inside the center."
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where is the talk most likely taking place?",
+    "choices": [
+     "At a convention center",
+     "At a university library",
+     "At a construction site",
+     "At a solar panel factory"
+    ],
+    "answer": 0,
+    "skill": "推測",
+    "explain": "\"annual Green Tech Exposition\" や \"Exhibit Hall A\", \"visitor badges\" という表現から、大規模な展示場・コンベンションセンターで話していることが推測されます。「大学図書館」や「建設現場」ではありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the speaker imply when he says, \"The demonstration in Hall B has already filled up\"?",
+    "choices": [
+     "Hall B is closed for renovations.",
+     "The group should focus on Hall A instead.",
+     "Tickets for Hall B are selling quickly.",
+     "He will try to reserve seats for the group."
+    ],
+    "answer": 1,
+    "skill": "発言の意図",
+    "explain": "ホールBの実演が満席になったと説明することで、直後の \"I suggest we focus our time here\"（ここで時間を使いましょう）につなげ、代わりにホールAの展示に集中すべきだと示唆しています。「ホールBが工事中」などの事実はありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What are participants instructed to do?",
+    "choices": [
+     "Register for a workshop",
+     "Meet at the second-floor cafeteria",
+     "Keep their visitor badges visible",
+     "Turn off their mobile phones"
+    ],
+    "answer": 2,
+    "skill": "詳細",
+    "explain": "案内の最後で \"make sure your visitor badges are clearly visible at all times\"（見学バッジが常に見える状態にしてください）と明確に言及されています。「ワークショップに登録する」などの指示はありません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 4,
+  "level": 860,
+  "script": [
+   {
+    "sp": "W",
+    "t": "Turning to local business news, the city council yesterday approved a proposal to redevelop the historic waterfront district. The ambitious project, led by Crestview Properties, aims to transform vacant industrial warehouses into a vibrant commercial hub featuring retail shops, restaurants, and a public park. While local business owners generally welcome the potential boost in tourism, some community members expressed concerns regarding increased traffic congestion along Harbor Road. The city planner addressed those worries at last night's meeting. Construction is scheduled to break ground early next spring, with the first phase expected to be completed within eighteen months. Business owners interested in leasing commercial space in the new complex can register for an informational session held at City Hall next Thursday."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the main subject of the broadcast?",
+    "choices": [
+     "The opening of a new park",
+     "Traffic safety improvements on Harbor Road",
+     "A waterfront redevelopment project",
+     "An upcoming election for city council"
+    ],
+    "answer": 2,
+    "skill": "主題・目的",
+    "explain": "ニュース冒頭で \"approved a proposal to redevelop the historic waterfront district\"（歴史的ウォーターフロント地区の再開発案の承認）と述べており、再開発計画が主軸です。「Harbor Roadの交通」は懸念点として一部言及されているにすぎません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What does the speaker mean when she says, \"The city planner addressed those worries at last night's meeting\"?",
+    "choices": [
+     "Traffic concerns were officially discussed and responded to.",
+     "The city planner canceled the redevelopment proposal.",
+     "Local residents refused to attend the public meeting.",
+     "Business owners asked for reduced rental rates."
+    ],
+    "answer": 0,
+    "skill": "発言の意図",
+    "explain": "直前で住民が交通渋滞（traffic congestion）を懸念していると述べており、都市計画担当者が昨夜の会議で「それらの心配点に対処・回答した（addressed those worries）」という意味です。「計画を取り消した」という意味ではありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What can interested business owners do next Thursday?",
+    "choices": [
+     "Submit construction bids",
+     "Meet with Crestview Properties executives",
+     "Sign a lease agreement for commercial space",
+     "Attend an information session at City Hall"
+    ],
+    "answer": 3,
+    "skill": "詳細",
+    "explain": "テナント出店に関心のある事業者に向けて \"register for an informational session held at City Hall next Thursday\"（来週木曜に市役所で開かれる説明会に登録できる）と述べられています。「工事の入札をする」や「契約に署名する」は誤りです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 4,
+  "level": 860,
+  "script": [
+   {
+    "sp": "M",
+    "t": "Thank you all for attending today’s quarterly strategy session. As reflected in our recent financial report, our expansion into European markets has yielded impressive sales growth in the past quarter. However, our logistics costs have risen sharply due to supply chain delays in regional distribution centers. To address this issue, our operations team is currently negotiating with two logistics providers to consolidate our distribution network. I expect to sign a contract by the end of this month. In the meantime, I’d like each regional manager to submit a revised inventory report to my office by Friday afternoon. This will help us optimize warehouse allocation ahead of the upcoming peak holiday season."
+   }
+  ],
+  "questions": [
+   {
+    "q": "What challenge is the company currently facing?",
+    "choices": [
+     "Decreasing sales figures in Europe",
+     "Increased logistics expenses",
+     "High employee turnover in distribution",
+     "Delays in product manufacturing"
+    ],
+    "answer": 1,
+    "skill": "詳細",
+    "explain": "話者は \"logistics costs have risen sharply due to supply chain delays\"（サプライチェーンの遅延により物流費が大幅に増加した）と課題を述べています。「欧州での売上低下」は直前で売上成長（impressive sales growth）と語られているため正反対です。",
+    "verified": "agree"
+   },
+   {
+    "q": "What is inferred about the company's future plans?",
+    "choices": [
+     "It plans to close its European operations.",
+     "It will delay the release of new products.",
+     "It will soon finalize an agreement with a logistics supplier.",
+     "It plans to reduce warehouse staff during the holidays."
+    ],
+    "answer": 2,
+    "skill": "推測",
+    "explain": "現在2社の物流業者と交渉を行っており、\"expect to sign a contract by the end of this month\"（今月末までに契約に署名する見込み）と述べていることから、近々物流業者と合意を結ぶことが推測できます。「新製品の発売延期」などの計画は述べられていません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What are regional managers required to do by Friday afternoon?",
+    "choices": [
+     "Turn in an updated inventory report",
+     "Meet with potential logistics partners",
+     "Lower regional operational costs",
+     "Inspect local warehouse facilities"
+    ],
+    "answer": 0,
+    "skill": "次の行動",
+    "explain": "地域マネージャーに対して \"submit a revised inventory report to my office by Friday afternoon\"（金曜午後までに改訂版の在庫報告書を提出する）よう求めています。「物流パートナーと面談する」などは誤りです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The newly hired technician completed the installation process ____ and without any errors.",
+    "choices": [
+     "quick",
+     "quickly",
+     "quickness",
+     "quicken"
+    ],
+    "answer": 1,
+    "skill": "品詞",
+    "explain": "動詞 completed を修飾する副詞が必要な位置です。正解は「迅速に」を意味する (B) quickly です。形容詞 (A) quick や名詞 (C) quickness は動詞を修飾できません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "All employees are required to submit their monthly expense reports ____ the end of the day.",
+    "choices": [
+     "by",
+     "until",
+     "on",
+     "for"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "「締め切り・期限」を表すには by（〜までに）を用います。したがって (A) by が正解です。until は状態の継続「〜までずっと」を表すため不適です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "Ms. Tanaka will ____ the regional sales conference in Chicago next Tuesday.",
+    "choices": [
+     "attend",
+     "attends",
+     "attended",
+     "attending"
+    ],
+    "answer": 0,
+    "skill": "動詞の形",
+    "explain": "助動詞 will の後には動詞の原形が続くため、(A) attend が正解です。三人称単数形の (B) や過去形の (C) は助動詞の直後に置けません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The marketing manager decided to hire an assistant to ____ her with the upcoming project.",
+    "choices": [
+     "assist",
+     "assisting",
+     "assisted",
+     "assistance"
+    ],
+    "answer": 0,
+    "skill": "準動詞",
+    "explain": "不定詞「to + 動詞の原形」を作る目的を表す表現が必要なため、(A) assist が正解です。動名詞 (B) assisting や名詞 (D) assistance は to の直後に置く目的語の役割には当てはまりません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The IT department fixed the server issue faster than ____ had anticipated.",
+    "choices": [
+     "we",
+     "us",
+     "our",
+     "ourselves"
+    ],
+    "answer": 0,
+    "skill": "代名詞",
+    "explain": "than 以下の節の主語となる主格の代名詞が必要なため、(A) we が正解です。目的格 (B) us や所有格 (C) our は主語になれません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "Mr. Harrison is the senior consultant ____ designed the new training program.",
+    "choices": [
+     "who",
+     "which",
+     "whose",
+     "whom"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞が「人（the senior consultant）」で、後ろの節で主語の役割を果たす関係代名詞主格の (A) who が正解です。物を受ける (B) which や所有格の (C) whose は使えません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "This quarter's sales figures are much ____ than those from the previous quarter.",
+    "choices": [
+     "high",
+     "higher",
+     "highest",
+     "highly"
+    ],
+    "answer": 1,
+    "skill": "比較・数量",
+    "explain": "比較対象を表す than があるため、比較級の (B) higher が正解です。原形 (A) high や最上級 (C) highest は適切ではありません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "Please make sure to check the delivery ____ before signing the package confirmation.",
+    "choices": [
+     "address",
+     "decision",
+     "permission",
+     "attitude"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "文脈上「荷物の受領確認に署名する前に配送先（____）を確認してください」となるため、(A) address（住所・宛先）が正解です。(B) decision（決定）や (C) permission（許可）は意味が通りません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The accounting staff reviewed the financial statements with great ____.",
+    "choices": [
+     "careful",
+     "carefully",
+     "care",
+     "caring"
+    ],
+    "answer": 2,
+    "skill": "品詞",
+    "explain": "前置詞 with の目的語として名詞が必要です。したがって「注意・入念さ」を意味する (C) care が正解です。形容詞 (A) careful や副詞 (B) carefully は置けません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "____ Mr. Lopez was feeling unwell, he managed to deliver an excellent presentation.",
+    "choices": [
+     "Although",
+     "Despite",
+     "Because of",
+     "During"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "空欄の後ろに S+V（Mr. Lopez was...）があるため、従属接続詞が必要です。文脈から「〜だが」を表す (A) Although が正解です。前置詞の (B) Despite や (C) Because of は節を導けません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The company ____ its main office from Boston to New York last month.",
+    "choices": [
+     "relocates",
+     "relocated",
+     "will relocate",
+     "relocating"
+    ],
+    "answer": 1,
+    "skill": "動詞の形",
+    "explain": "文末に過去を表す last month があるため、動詞の過去形 (B) relocated が正解です。現在形の (A) や未来形の (C) は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The supervisor asked us to avoid ____ personal phone calls during work hours.",
+    "choices": [
+     "make",
+     "to make",
+     "making",
+     "made"
+    ],
+    "answer": 2,
+    "skill": "準動詞",
+    "explain": "動詞 avoid は動名詞を目的語に取るため、(C) making が正解です。不定詞 (B) to make は avoid の目的語になれません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "Dr. Miller gathered all of the research data ____ instead of relying on his assistants.",
+    "choices": [
+     "him",
+     "himself",
+     "his",
+     "he"
+    ],
+    "answer": 1,
+    "skill": "代名詞",
+    "explain": "「自分で」を表すには再帰代名詞 himself を使います。gathered の目的語は data なので、him(目的格)を置く場所はなく、his や he も文法的に入りません。",
+    "verified": "reviewed"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The product warranty covers damage ____ was caused by manufacturing defects.",
+    "choices": [
+     "that",
+     "who",
+     "whom",
+     "whose"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞が「物（damage）」であり、後ろの節で主語の役割を果たすため、関係代名詞 (A) that が正解です。人を受ける (B) who や (C) whom は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "Among all the branches, the Tokyo branch generated the ____ profit this fiscal year.",
+    "choices": [
+     "great",
+     "greater",
+     "greatest",
+     "greatness"
+    ],
+    "answer": 2,
+    "skill": "比較・数量",
+    "explain": "Among all the branches（全支店の中で）という範囲があるため、定冠詞 the の後ろには最上級の (C) greatest が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The human resources office will send a confirmation ____ once your application is received.",
+    "choices": [
+     "email",
+     "reason",
+     "habit",
+     "purpose"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "文脈上「応募書類を受信次第、人事部が確認メール（____）を送信します」となるため、(A) email が適切です。(B) reason（理由）や (D) purpose（目的）は意味が合いません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The security system operates ____ to ensure the safety of all building occupants.",
+    "choices": [
+     "continuous",
+     "continuously",
+     "continuity",
+     "continue"
+    ],
+    "answer": 1,
+    "skill": "品詞",
+    "explain": "自動詞 operates を修飾する副詞が必要なため、(B) continuously（連続して、絶え間なく）が正解です。形容詞 (A) continuous は修飾できません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The store will remain open ____ 9:00 P.M. every evening during the holiday season.",
+    "choices": [
+     "until",
+     "by",
+     "since",
+     "for"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "「9時まで（営業状態が継続する）」という意味なので、継続を表す (A) until が正解です。by は「期限（〜までに）」を表すため不適です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The committee members ____ the budget proposal during yesterday's session.",
+    "choices": [
+     "discuss",
+     "discussed",
+     "will discuss",
+     "discussing"
+    ],
+    "answer": 1,
+    "skill": "動詞の形",
+    "explain": "過去を表す副詞句 yesterday's session があるため、過去形の (B) discussed が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "We are planning ____ a new branch office in Seattle early next year.",
+    "choices": [
+     "open",
+     "opening",
+     "to open",
+     "opened"
+    ],
+    "answer": 2,
+    "skill": "準動詞",
+    "explain": "動詞 plan は目的語に to 不定詞を取るため、(C) to open が正解です。動名詞 (B) opening は目的語に取れません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The hotel ____ we stayed during the medical conference was very comfortable.",
+    "choices": [
+     "where",
+     "which",
+     "who",
+     "what"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞が場所（The hotel）で、後ろの節が完全な文（we stayed）のため、関係副詞の (A) where が正解です。関係代名詞 (B) which は不完全な文を導くため不適です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The flight was delayed due to ____ weather conditions over the Pacific Ocean.",
+    "choices": [
+     "severe",
+     "severely",
+     "severity",
+     "severest"
+    ],
+    "answer": 0,
+    "skill": "比較・数量",
+    "explain": "名詞句 weather conditions を修飾する通常の形容詞が必要なため、(A) severe（悪天候の、厳しい）が正解です。副詞 (B) severely や名詞 (C) severity は修飾できません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The project manager requested a brief ____ of the meeting discussion.",
+    "choices": [
+     "summary",
+     "flaw",
+     "distance",
+     "ingredient"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "「会議の議論の簡単な要約（____）を要求した」という文脈のため、(A) summary が正解です。(B) flaw（欠陥）や (D) ingredient（原材料）は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The client evaluated the proposal ____ and commended the project team's thoroughness.",
+    "choices": [
+     "favorable",
+     "favorably",
+     "favor",
+     "favorite"
+    ],
+    "answer": 1,
+    "skill": "品詞",
+    "explain": "動詞 evaluated を修飾する副詞が必要です。正解は「好意的に、高く」を意味する (B) favorably です。形容詞 (A) favorable は動詞を修飾できません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "____ unexpected flight delays, Mr. Vance arrived in time to deliver the keynote address.",
+    "choices": [
+     "Despite",
+     "Although",
+     "Even though",
+     "Whereas"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "空欄の後は名詞句（unexpected flight delays）のみのため、前置詞の (A) Despite（〜にもかかわらず）が正解です。接続詞の (B) Although や (C) Even though は節（S+V）を必要とします。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "By the time the board meeting starts, the executive committee ____ the budget draft.",
+    "choices": [
+     "will have reviewed",
+     "has reviewed",
+     "reviewed",
+     "is reviewing"
+    ],
+    "answer": 0,
+    "skill": "動詞の形",
+    "explain": "「By the time + 現在形（未来の時点）」に伴い、未来の特定時点までの完了を表す未来完了形 (A) will have reviewed が正解です。現在完了 (B) や過去形 (C) は使えません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "____ the revised safety regulations, all factory workers must complete a retraining course.",
+    "choices": [
+     "Following",
+     "Followed",
+     "Follow",
+     "Follows"
+    ],
+    "answer": 0,
+    "skill": "準動詞",
+    "explain": "「〜に従って、〜を受けて」という意味の前置詞的な Following が正解です。Followed や Follows では文が成り立たず、原形 Follow も主節の前に置けません。",
+    "verified": "reviewed"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The architectural firm redesigned the lobby area to make ____ more welcoming to visitors.",
+    "choices": [
+     "it",
+     "itself",
+     "its",
+     "they"
+    ],
+    "answer": 0,
+    "skill": "代名詞",
+    "explain": "make の目的語として前出の単数名詞 the lobby area を指す代名詞 (A) it が正解です。主句の主語 (The architectural firm) と目的語が異なるため再帰代名詞 (B) itself は不適です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The candidate ____ resume impressed the selection panel was invited for an interview.",
+    "choices": [
+     "whose",
+     "who",
+     "whom",
+     "which"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞 The candidate と後ろの文構造 resume impressed... をつなぐ所有格関係代名詞 (A) whose が正解です（「その候補者の履歴書が」の意味）。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The new software allows users to process data considerably ____ than the previous version.",
+    "choices": [
+     "more efficiently",
+     "efficient",
+     "efficiency",
+     "most efficient"
+    ],
+    "answer": 0,
+    "skill": "比較・数量",
+    "explain": "動詞 process を修飾する副詞の比較級が必要です。than があるため (A) more efficiently が正解です。形容詞 (B) efficient や名詞 (C) efficiency は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The facility manager decided to ____ the old heating system with an energy-efficient model.",
+    "choices": [
+     "replace",
+     "relinquish",
+     "reimburse",
+     "reconcile"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "「replace A with B（AをBに取り替える）」の文脈のため、(A) replace が正解です。(B) relinquish（放棄する）や (C) reimburse（払い戻す）は with と共にこの意味を作りません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The research team conducted a ____ study on consumer purchasing habits.",
+    "choices": [
+     "comprehensive",
+     "comprehend",
+     "comprehensively",
+     "comprehension"
+    ],
+    "answer": 0,
+    "skill": "品詞",
+    "explain": "名詞 study を修飾する形容詞が必要です。正解は「総合的な、包括的な」を意味する (A) comprehensive です。名詞 (D) comprehension や副詞 (C) は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The construction will proceed as scheduled, ____ heavy rainfall occurs tomorrow.",
+    "choices": [
+     "unless",
+     "without",
+     "except",
+     "despite"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "空欄の後ろに S+V（heavy rainfall occurs）があるため接続詞が必要です。「〜でない限り」を表す (A) unless が正解です。前置詞の (B) without や (D) despite は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "Several key documents ____ from the archive during the office relocation.",
+    "choices": [
+     "were misplaced",
+     "misplaced",
+     "have misplaced",
+     "misplacing"
+    ],
+    "answer": 0,
+    "skill": "動詞の形",
+    "explain": "主語は Several key documents（書類）であり、誤って紛失「された」受動態の文脈です。したがって過去受動態の (A) were misplaced が正解です。能動態 (B) は不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "Having ____ the financial report, Mr. Davies pointed out two major discrepancies.",
+    "choices": [
+     "examined",
+     "examine",
+     "examining",
+     "examination"
+    ],
+    "answer": 0,
+    "skill": "準動詞",
+    "explain": "完了分詞構文「Having + 過去分詞」の形を作るため、(A) examined が正解です。「財務報告書を調査したあとで〜」という意味になります。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The two divisions decided to share their resources rather than compete with ____.",
+    "choices": [
+     "one another",
+     "themselves",
+     "each",
+     "other"
+    ],
+    "answer": 0,
+    "skill": "代名詞",
+    "explain": "「お互いに」を意味する (A) one another が正解です。代名詞 each 単体では「お互いに」の意味にならず (each other となる)、(B) themselves では「自分自身」となって文意が合いません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The annual report highlights the factors ____ contributed to the firm's growth.",
+    "choices": [
+     "that",
+     "what",
+     "where",
+     "who"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞 the factors（要因・物）を受ける関係代名詞 (A) that が正解です。(B) what は先行詞を含んでしまうため不可、(D) who は人を表します。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The revised contract contains far ____ restrictions than the original version.",
+    "choices": [
+     "fewer",
+     "less",
+     "few",
+     "least"
+    ],
+    "answer": 0,
+    "skill": "比較・数量",
+    "explain": "可算名詞の複数形 restrictions を修飾する比較級には (A) fewer を用います。less (B) は不可算名詞の修飾に使うため不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The company's proposal was accepted because it offered a ____ solution to the client's problem.",
+    "choices": [
+     "feasible",
+     "fragile",
+     "subsequent",
+     "redundant"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "文脈上「顧客の問題に対して実現可能な（____）解決策を提示したため受け入れられた」となるので (A) feasible（実現可能な）が正解です。(B) fragile（壊れやすい）や (D) redundant（余分な）は不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The project was finished ahead of schedule due to the ____ effort of the engineering team.",
+    "choices": [
+     "collaborative",
+     "collaborate",
+     "collaboratively",
+     "collaboration"
+    ],
+    "answer": 0,
+    "skill": "品詞",
+    "explain": "名詞 effort を修飾する形容詞が必要です。正解は「協力的な、共同の」を意味する (A) collaborative です。動詞 (B) や副詞 (C) は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "Please double-check all data entries ____ submitting the final report to management.",
+    "choices": [
+     "prior to",
+     "subsequently",
+     "as long as",
+     "in order that"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "動名詞 submitting を目的語に取ることができる前置詞句 (A) prior to（〜より前に）が正解です。副詞 (B) subsequently や接続詞 (C), (D) は動名詞を直接伴えません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The CEO requested that the marketing strategy ____ updated before the quarterly meeting.",
+    "choices": [
+     "be",
+     "is",
+     "was",
+     "being"
+    ],
+    "answer": 0,
+    "skill": "動詞の形",
+    "explain": "要求を表す動詞 request の後の that 節内では、仮面法現在として「動詞の原形」が使われます。受動態の原形である (A) be (be updated) が正解です。(B) is は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The consultant suggested ____ the supply chain process to cut manufacturing costs.",
+    "choices": [
+     "streamlining",
+     "streamline",
+     "to streamline",
+     "streamlined"
+    ],
+    "answer": 0,
+    "skill": "準動詞",
+    "explain": "動詞 suggest は目的語に動名詞を取るため、(A) streamlining（効率化すること）が正解です。不定詞 (C) to streamline を目的語に取ることはできません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The sales figures for July were higher than ____ for June.",
+    "choices": [
+     "those",
+     "they",
+     "these",
+     "them"
+    ],
+    "answer": 0,
+    "skill": "代名詞",
+    "explain": "前出の複数名詞 the sales figures の繰り返しを避ける比較の指示代名詞 (A) those が正解です。人称代名詞 (B) they や (D) them は比較構造の中で置換として機能しません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The city council approved the plan to build a park in the area ____ the old factory stood.",
+    "choices": [
+     "where",
+     "which",
+     "that",
+     "what"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞 the area を補足し、後ろに完全な文（the old factory stood）が続くため関係副詞 (A) where が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "The newly updated system operates ____ as fast as the previous software.",
+    "choices": [
+     "twice",
+     "double",
+     "two times more",
+     "duo"
+    ],
+    "answer": 0,
+    "skill": "比較・数量",
+    "explain": "「倍数表現 + as + 原形 + as」の形で「〜の◯倍…」を表すため、(A) twice (twice as fast as) が正解です。(B) double や (C) two times more as は文法的に誤りです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 730,
+  "questions": [
+   {
+    "q": "Employees who wish to attend the workshop must submit a written ____ from their supervisor.",
+    "choices": [
+     "authorization",
+     "obligation",
+     "reluctance",
+     "subscription"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "文脈上「上司からの書面による許可・承認（____）を提出しなければならない」となるため、(A) authorization が適切です。(B) obligation（義務）や (C) reluctance（気が進まないこと）は不適です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The Board of Directors commended Ms. Sterling for her ____ leadership during the corporate merger.",
+    "choices": [
+     "exemplary",
+     "exemplify",
+     "exemplification",
+     "exemplarily"
+    ],
+    "answer": 0,
+    "skill": "品詞",
+    "explain": "名詞 leadership を修飾する高難度の形容詞が必要です。正解は「模範的な、優れた」を意味する (A) exemplary です。動詞 (B) exemplify や名詞 (C) は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "____ the regulatory approval is granted, construction of the medical facility will begin immediately.",
+    "choices": [
+     "Provided that",
+     "In spite of",
+     "Prior to",
+     "Regardless of"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "空欄の後に S+V 節があるため接続詞が必要です。条件「〜という条件で、〜ならば」を表す (A) Provided that が正解です。前置詞句の (B) In spite of や (D) Regardless of は節を続けられません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "Had the auditor noticed the calculation discrepancy earlier, the error ____ rectified before publication.",
+    "choices": [
+     "would have been",
+     "will be",
+     "has been",
+     "would be"
+    ],
+    "answer": 0,
+    "skill": "動詞の形",
+    "explain": "If が省略され倒置（Had the auditor noticed...）された仮定法過去完了の文です。帰結節には「would have + 過去分詞」が必要なため、受動態の (A) would have been (rectified) が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The committee members expressed concerns about the project ____ completed on time due to supply chain disruptions.",
+    "choices": [
+     "not being",
+     "being not",
+     "to be not",
+     "not to be"
+    ],
+    "answer": 0,
+    "skill": "準動詞",
+    "explain": "前置詞 about の目的語となる動名詞構文（意味上の主語 the project + 動名詞）の否定形です。動名詞の否定語 not は動名詞の直前に置くため (A) not being が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The human resources manager will interview candidates ____ experience closely matches the job description.",
+    "choices": [
+     "whose",
+     "who",
+     "whom",
+     "whomever"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞 candidates と後ろの代名詞的受ける名詞 experience を繋ぐ所有格の関係代名詞 (A) whose が正解です。「その経験が職務内容と密接に一致する候補者」となります。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The agreement outlines the terms and conditions ____ both participating companies must strictly adhere.",
+    "choices": [
+     "to which",
+     "in that",
+     "with whom",
+     "whereby"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "動詞 adhere は前置詞 to を伴う（adhere to...）ため、前置詞+関係代名詞の (A) to which が正解です。(B) in that は「〜という点で」の意味の接続詞なので文法的に合いません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The new assembly process is all the ____ valuable because it reduces waste while increasing productivity.",
+    "choices": [
+     "more",
+     "most",
+     "much",
+     "greater"
+    ],
+    "answer": 0,
+    "skill": "比較・数量",
+    "explain": "「all the + 比較級 + because節（〜であるから尚更…だ）」の強意構文です。形容詞 valuable の比較級を作る (A) more が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "To prevent unauthorized entry, access to the research laboratory is strictly ____ to designated personnel.",
+    "choices": [
+     "restricted",
+     "relinquished",
+     "derived",
+     "dismissed"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "「be restricted to...（〜に限定・制限されている）」の定型文脈のため、(A) restricted が正解です。(B) relinquished（放棄された）や (D) dismissed（解雇された、却下された）は不適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The CEO spoke ____ about the upcoming acquisition, reassuring shareholders of the firm's financial stability.",
+    "choices": [
+     "optimistically",
+     "optimistic",
+     "optimism",
+     "optimist"
+    ],
+    "answer": 0,
+    "skill": "品詞",
+    "explain": "動詞 spoke を修飾する副詞が必要です。正解は「楽観的に」を意味する (A) optimistically です。形容詞 (B) や名詞 (C) は動詞を修飾できません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "____ the inclement weather conditions, the outdoor charity marathon proceeded as scheduled.",
+    "choices": [
+     "Notwithstanding",
+     "Assuming that",
+     "Given that",
+     "In light of"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "「悪天候にもかかわらず」という意味の前置詞 (A) Notwithstanding が正解です。 (B) Assuming that や (C) Given that は接続詞であり名詞句を受けられません。(D) In light of（〜を考慮して）は文意に合わないです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "It is essential that every delegate ____ their credentials at the registration desk prior to entry.",
+    "choices": [
+     "present",
+     "presents",
+     "presented",
+     "is presenting"
+    ],
+    "answer": 0,
+    "skill": "動詞の形",
+    "explain": "形容詞 essential の後の that 節内では動詞の原形（仮定法現在）が用いられます。三人称単数であっても S+V の V は原形になるため、(A) present が正解です。(B) presents は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The legal department advised against signing the document without ____ thorough legal review.",
+    "choices": [
+     "undergoing",
+     "undergo",
+     "undergone",
+     "underwent"
+    ],
+    "answer": 0,
+    "skill": "準動詞",
+    "explain": "前置詞 without の目的語として動名詞が必要なため、(A) undergoing（〜を受けること）が正解です。動詞の原形 (B) や過去形 (D) は前置詞の直後に置けません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "____ candidate is selected for the executive position will face immediate operational challenges.",
+    "choices": [
+     "Whichever",
+     "Whoever",
+     "Whatever",
+     "Whenever"
+    ],
+    "answer": 0,
+    "skill": "代名詞",
+    "explain": "後続の名詞 candidate を修飾して「どちらの〜であっても」という複合関係形容詞の働きをする (A) Whichever が正解です。Whoever (B) は直接名詞を修飾する形容詞用法を持ちません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The regional office will be relocated to a facility ____ modern technology is fully integrated.",
+    "choices": [
+     "in which",
+     "which",
+     "that",
+     "what"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "先行詞 a facility の場所を受け、後面が完全な文（modern technology is fully integrated）であるため、関係副詞 where に相当する (A) in which が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The updated guidelines are ____ stringent than the previous set of environmental regulations.",
+    "choices": [
+     "no less",
+     "as much",
+     "so much",
+     "more less"
+    ],
+    "answer": 0,
+    "skill": "比較・数量",
+    "explain": "「no less + 形容詞 + than...（〜に負けず劣らず…である、〜と同様に…だ）」というクジラ構文的・比較強意表現を作る (A) no less が正解です。 (D) more less は二重比較で文法的に誤りです。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The audit revealed several financial ____ that required immediate explanation from the controller.",
+    "choices": [
+     "discrepancies",
+     "prerequisites",
+     "contingencies",
+     "deliberations"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "文脈上「監査によって、説明を要する財務上の不一致・矛盾（____）がいくつか明らかになった」となるため、(A) discrepancies が正解です。(B) prerequisites（必須条件）や (C) contingencies（偶発事件）は合いません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The merger negotiations were completed ____ due to the persistent effort of both legal teams.",
+    "choices": [
+     "successfully",
+     "successful",
+     "success",
+     "succeed"
+    ],
+    "answer": 0,
+    "skill": "品詞",
+    "explain": "受動態文 「were completed」 を修飾する副詞が必要なため、(A) successfully が正解です。形容詞 (B) や名詞 (C) は動詞句を修飾できません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "____ the high cost of raw materials, the company managed to maintain its profit margins.",
+    "choices": [
+     "Notwithstanding",
+     "Even if",
+     "In case",
+     "Provided"
+    ],
+    "answer": 0,
+    "skill": "接続詞と前置詞",
+    "explain": "空欄の後が名詞句（the high cost...）なので前置詞が必要です。譲歩「〜にもかかわらず」を表す (A) Notwithstanding が正解です。 (B) Even if や (C) In case は接続詞のため名詞句を直接取れません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The Vice President requested that the financial report ____ to all shareholders by Friday.",
+    "choices": [
+     "be distributed",
+     "is distributed",
+     "was distributed",
+     "will distribute"
+    ],
+    "answer": 0,
+    "skill": "動詞の形",
+    "explain": "要求の動詞 request の後を受ける that 節内では仮定法現在（動詞の原形）を用いるため、受動態の (A) be distributed が正解です。(B) is distributed は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The firm is committed to ____ sustainable energy practices across all manufacturing plants.",
+    "choices": [
+     "implementing",
+     "implement",
+     "implementation",
+     "implemented"
+    ],
+    "answer": 0,
+    "skill": "準動詞",
+    "explain": "熟語 be committed to の to は前置詞であるため、直後には動名詞 (A) implementing（〜を実行すること）が必要です。動詞原形 (B) は置けません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The chief executive officer and the board chairman expressed confidence in ____ respective strategies.",
+    "choices": [
+     "their",
+     "they",
+     "them",
+     "themselves"
+    ],
+    "answer": 0,
+    "skill": "代名詞",
+    "explain": "名詞句 respective strategies（それぞれの戦略）を修飾する所有格代名詞 (A) their が正解です。目的格 (C) them や再帰代名詞 (D) は形容詞的に名詞を修飾できません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The research facility has several laboratories, the largest ____ was renovated last month.",
+    "choices": [
+     "of which",
+     "in that",
+     "from where",
+     "by whom"
+    ],
+    "answer": 0,
+    "skill": "関係詞",
+    "explain": "前出の laboratories（物・複数）を受けて「その中で最大のもの」を表す「the largest + of which」の構文です。したがって (A) of which が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The newly developed battery lasts twice ____ long as conventional models.",
+    "choices": [
+     "as",
+     "more",
+     "than",
+     "so"
+    ],
+    "answer": 0,
+    "skill": "比較・数量",
+    "explain": "同格比較の倍数構文「倍数 + as + 原形 + as」の一部となる (A) as (twice as long as) が正解です。than (C) は比較級と共に用いられます。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 860,
+  "questions": [
+   {
+    "q": "The board reached a ____ consensus after hours of intense negotiation.",
+    "choices": [
+     "unanimous",
+     "redundant",
+     "punctual",
+     "volatile"
+    ],
+    "answer": 0,
+    "skill": "語彙",
+    "explain": "reach a unanimous consensus で「満場一致の合意に達する」。redundant(余分な)、punctual(時間に正確な)、volatile(不安定な)は consensus と意味が合いません。",
+    "verified": "reviewed"
+   }
+  ]
+ },
+ {
+  "part": 6,
+  "level": 600,
+  "passage": {
+   "type": "notice",
+   "title": "Parking Lot Maintenance Schedule",
+   "text": "Please be advised that the west parking lot will undergo resurfacing next week. The project is scheduled to begin on Monday, October 12, and is expected to be [1] by Thursday, October 15. During this period, employees should park their vehicles in the north lot instead. [2], spaces in the north lot are limited. [3]. We apologize for any inconvenience this temporary arrangement may cause. If you have questions, please contact the Facilities Management department at extension 402. Thank you for your [4] and support."
+  },
+  "questions": [
+   {
+    "q": "[1]",
+    "choices": [
+     "completed",
+     "canceled",
+     "delayed",
+     "inspected"
+    ],
+    "answer": 0,
+    "skill": "文脈の語彙",
+    "explain": "工事が木曜日までに「完了する」という文脈に合う completed が正解です。遅延を意味する delayed や中止を意味する canceled は文章全体の肯定的な完了予定の文脈に合いません。",
+    "verified": "agree"
+   },
+   {
+    "q": "[2]",
+    "choices": [
+     "Otherwise",
+     "However",
+     "In fact",
+     "Therefore"
+    ],
+    "answer": 1,
+    "skill": "つなぎの語",
+    "explain": "北駐車場を利用するよう指示した直後に「ただしスペースには限りがある」という注意点を述べるため、逆説の However（しかしながら）が適切です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[3]",
+    "choices": [
+     "The new cafeteria menu will be released next month.",
+     "Parking passes must be renewed annually in January.",
+     "The project was finished two weeks ahead of time.",
+     "We strongly encourage everyone to carpool if possible."
+    ],
+    "answer": 3,
+    "skill": "文挿入",
+    "explain": "直前で「北駐車場のスペースが限られている」と説明しているため、「可能であれば相乗り（carpool）を強くお勧めします」という提案を挟むのが最も論理的です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[4]",
+    "choices": [
+     "cooperate",
+     "cooperative",
+     "cooperation",
+     "cooperatively"
+    ],
+    "answer": 2,
+    "skill": "文脈の文法",
+    "explain": "所有格 your の直後、かつ and support（名詞）と並列接続されているため、名詞の cooperation（協力）が入ります。動詞の cooperate や形容詞の cooperative は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 6,
+  "level": 600,
+  "passage": {
+   "type": "email",
+   "title": "Order Confirmation - Order #4829",
+   "text": "Thank you for shopping with Apex Office Supplies. Your order #4829 has been processed and is currently being prepared for shipment. You will receive a tracking number once the package [1] our warehouse. [2]. Please note that delivery times may vary depending on your location. If you need to make any changes to your shipping address, please contact us [3] within 2 hours of placing the order. [4], all orders over $50 qualify for free standard delivery."
+  },
+  "questions": [
+   {
+    "q": "[1]",
+    "choices": [
+     "leave",
+     "left",
+     "leaves",
+     "leaving"
+    ],
+    "answer": 2,
+    "skill": "文脈の文法",
+    "explain": "時間・条件を表す接続詞 once が導く節内では、未来の事象であっても現在形を用いるため、主語 the package に合わせた三人称単数形の leaves が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[2]",
+    "choices": [
+     "Payment must be completed prior to submitting the form.",
+     "We expect all items to arrive at your door by Friday.",
+     "Our customer support team is available only on weekends.",
+     "The item you requested is currently out of stock."
+    ],
+    "answer": 1,
+    "skill": "文挿入",
+    "explain": "発送準備と追跡番号のお知らせに続く文として、「すべての商品が金曜日までに届く見込みです」というお届け予定を伝える文を入れるのが最も適しています。",
+    "verified": "agree"
+   },
+   {
+    "q": "[3]",
+    "choices": [
+     "promptly",
+     "rarely",
+     "casually",
+     "previously"
+    ],
+    "answer": 0,
+    "skill": "文脈の語彙",
+    "explain": "「注文後2時間以内に『速やかに』連絡してください」という緊急性を表す文脈のため、promptly（速やかに、即座に）が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[4]",
+    "choices": [
+     "Otherwise",
+     "Nevertheless",
+     "Instead",
+     "Additionally"
+    ],
+    "answer": 3,
+    "skill": "つなぎの語",
+    "explain": "配送に関する追加のお得な情報（50ドル以上で送料無料）を補足しているため、追記を表す Additionally（さらに、加えて）が文脈に合致します。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 6,
+  "level": 730,
+  "passage": {
+   "type": "memo",
+   "title": "Updated Travel Expense Reimbursement Policy",
+   "text": "Effective November 1, the company is updating its travel expense policy to streamline the reimbursement process. All employees submitting travel claims must now use the online expense portal. Receipts for all individual expenses exceeding $25 must be [1] to the digital claim form. [2], paper receipts will no longer be accepted by the accounting department. Please note that claims [3] without proper documentation will experience delays in processing. [4]. Please review the updated guidelines on the employee intranet before your next business trip."
+  },
+  "questions": [
+   {
+    "q": "[1]",
+    "choices": [
+     "postponed",
+     "distributed",
+     "attached",
+     "converted"
+    ],
+    "answer": 2,
+    "skill": "文脈の語彙",
+    "explain": "「25ドルを超える経費の領収書はデジタル申請書に『添付され』なければならない」という意味の attached が文脈上正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[2]",
+    "choices": [
+     "In contrast",
+     "For instance",
+     "On the other hand",
+     "Consequently"
+    ],
+    "answer": 3,
+    "skill": "つなぎの語",
+    "explain": "オンライン申請が義務付けられる結果として「紙の領収書は受け付けられなくなる」ため、因果関係を示す Consequently（その結果）が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[3]",
+    "choices": [
+     "submitting",
+     "submitted",
+     "submission",
+     "submit"
+    ],
+    "answer": 1,
+    "skill": "文脈の文法",
+    "explain": "名詞 claims（申請）を後ろから修飾する後置修飾の分詞が必要です。「提出された申請」という意味の過去分詞 submitted が適しています。",
+    "verified": "agree"
+   },
+   {
+    "q": "[4]",
+    "choices": [
+     "Training sessions on how to use the new portal will be held next Tuesday.",
+     "Travel insurance is automatically included in all international flights.",
+     "The accounting office will be closed for annual inventory this Friday.",
+     "Hotel reservations must be made through an approved third-party agency."
+    ],
+    "answer": 0,
+    "skill": "文挿入",
+    "explain": "新システム（オンラインポータル）導入に伴う書類不備の不利益を説明した直後なので、「新ポータルの使い方に関する研修が来週火曜に開催されます」という案内を入れるのが最も自然です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 6,
+  "level": 730,
+  "passage": {
+   "type": "article",
+   "title": "Local Bakery Expands Operations",
+   "text": "Bloomfield Bakery announced yesterday that it will open a second location in the downtown shopping district early next month. The new facility, which is significantly [1] than the original shop, will feature expanded seating and a full espresso bar. Owner Sarah Jenkins stated that customer demand has grown rapidly over the past year. [2]. To prepare for the grand opening, the bakery is currently [3] additional kitchen staff and barista personnel. [4], qualified applicants are encouraged to submit their resumes online by October 20."
+  },
+  "questions": [
+   {
+    "q": "[1]",
+    "choices": [
+     "large",
+     "largely",
+     "largest",
+     "larger"
+    ],
+    "answer": 3,
+    "skill": "文脈の文法",
+    "explain": "空欄直後に比較対象を表す than があるため、比較級の larger が入ります。原級 large や最上級 largest は使えません。",
+    "verified": "agree"
+   },
+   {
+    "q": "[2]",
+    "choices": [
+     "Parking fees in the downtown district have recently increased.",
+     "The original store will permanently close its doors at the end of the week.",
+     "She added that the new space will allow them to double daily production.",
+     "Baking classes are held every Saturday morning for children."
+    ],
+    "answer": 2,
+    "skill": "文挿入",
+    "explain": "顧客需要の急増に関するオーナーの発言に続き、「新しい店舗により日々の生産量を2倍にできると付け加えた」という内容を続けるのが最も論理的です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[3]",
+    "choices": [
+     "recruiting",
+     "inspecting",
+     "purchasing",
+     "relocating"
+    ],
+    "answer": 0,
+    "skill": "文脈の語彙",
+    "explain": "オープン準備として厨房スタッフやバリスタを「募集・採用している」という意味になる recruiting が文脈上最も正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[4]",
+    "choices": [
+     "However",
+     "Therefore",
+     "In contrast",
+     "Meanwhile"
+    ],
+    "answer": 1,
+    "skill": "つなぎの語",
+    "explain": "スタッフの採用活動中であるという前提を受け、「したがって（Therefore）、適任の応募者は履歴書を提出してください」と結論へつなげるのが適切です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 6,
+  "level": 860,
+  "passage": {
+   "type": "letter",
+   "title": "Service Contract Renewal",
+   "text": "Dear Mr. Vance,\n\nWe are writing to remind you that your annual service agreement with Apex IT Solutions is set to expire on December 31. Over the past year, our team has [1] to provide your company with uninterrupted network support and prompt technical assistance. According to our records, your infrastructure experienced zero unscheduled downtime during this contract term. [2], we would like to offer you a 5 percent discount on your plan if you renew before November 15. [3]. Should you wish to discuss custom service options or modify your existing package, please do not hesitate to contact your account manager, Ms. Elena Rostova. We value our partnership and look forward to [4] our agreement."
+  },
+  "questions": [
+   {
+    "q": "[1]",
+    "choices": [
+     "neglected",
+     "hesitated",
+     "objected",
+     "striven"
+    ],
+    "answer": 3,
+    "skill": "文脈の語彙",
+    "explain": "中断のないネットワークサポートを提供するために「努力してきた」という意味の striven（striveの過去分詞）が正解です。neglected（怠った）や objected（反対した）は文脈に反します。",
+    "verified": "agree"
+   },
+   {
+    "q": "[2]",
+    "choices": [
+     "Furthermore",
+     "Otherwise",
+     "Nevertheless",
+     "Instead"
+    ],
+    "answer": 0,
+    "skill": "つなぎの語",
+    "explain": "前の文でこれまでの実績(ダウンタイムゼロ)を述べ、さらに割引の提案を付け加えているので、追加を表す Furthermore が正解です。Otherwise(さもなければ)、Nevertheless(それにもかかわらず)、Instead(代わりに)は前後の関係に合いません。",
+    "verified": "reviewed"
+   },
+   {
+    "q": "[3]",
+    "choices": [
+     "Our offices will be closed during the upcoming holiday weekend.",
+     "A detailed summary of your current billing statement is enclosed for your review.",
+     "New clients are required to pay an initial installation fee.",
+     "Software updates are usually performed without prior notification."
+    ],
+    "answer": 1,
+    "skill": "文挿入",
+    "explain": "契約更新やプラン割引の案内を行っている文脈のため、「ご検討用に現在の請求明細の詳しい要約を同封しております」という一文を入れるのが最も自然で実務的です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[4]",
+    "choices": [
+     "extend",
+     "extension",
+     "extending",
+     "extended"
+    ],
+    "answer": 2,
+    "skill": "文脈の文法",
+    "explain": "熟語 look forward to の to は前置詞であるため、直後には動名詞 extending が来ます。原形 extend や名詞 extension は不可です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 6,
+  "level": 860,
+  "passage": {
+   "type": "email",
+   "title": "Project Schedule Adjustment",
+   "text": "To: Product Development Team\nFrom: Marcus Thorne, Senior Project Lead\nSubject: Timeline Revision for Project Helios\n\nDear Team,\n\nDue to unexpected supply chain delays in acquiring specialized hardware components, we must adjust the launch timeline for Project Helios. The initial testing phase, originally scheduled for next Monday, will be [1] until November 10. While this delay is unfortunate, it provides us with an opportunity to refine the software architecture. [2], I request that all software engineers focus on resolving outstanding code bugs during this extended period. [3]. Please review the updated master schedule attached to this email and ensure that your individual task deadlines are [4] adjusted."
+  },
+  "questions": [
+   {
+    "q": "[1]",
+    "choices": [
+     "postponed",
+     "postpone",
+     "postponing",
+     "postponement"
+    ],
+    "answer": 0,
+    "skill": "文脈の文法",
+    "explain": "will be の後に続けて「延期される」という受動態を構成するため、過去分詞 postponed が正解です。",
+    "verified": "agree"
+   },
+   {
+    "q": "[2]",
+    "choices": [
+     "In contrast",
+     "On the contrary",
+     "Accordingly",
+     "Nevertheless"
+    ],
+    "answer": 2,
+    "skill": "つなぎの語",
+    "explain": "「ソフトウェア構造を洗練させる機会が得られた」という前文の状況を受け、「したがって（Accordingly）、エンジニアはバグ修復に集中してほしい」と適切な行動を指示しています。",
+    "verified": "agree"
+   },
+   {
+    "q": "[3]",
+    "choices": [
+     "The client has expressed extreme dissatisfaction with the product design.",
+     "We will hold a brief status meeting tomorrow morning to reassign priority tasks.",
+     "All travel expenses must be submitted to human resources by Friday.",
+     "Equipment orders have already been canceled by the procurement office."
+    ],
+    "answer": 1,
+    "skill": "文挿入",
+    "explain": "期間延長に伴う作業方針の指示に続き、「優先タスクの再割り当てを行うため、明朝短時間の進捗会議を行います」という連絡を入れるのが最もスムーズです。",
+    "verified": "agree"
+   },
+   {
+    "q": "[4]",
+    "choices": [
+     "permanently",
+     "coincidentally",
+     "superficially",
+     "correspondingly"
+    ],
+    "answer": 3,
+    "skill": "文脈の語彙",
+    "explain": "全体スケジュールの変更に合わせて個別タスクの期日も「それに応じて（同様に）」調整する、という意味の correspondingly が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 600,
+  "passage": {
+   "type": "notice",
+   "title": "Notice of Scheduled Carpet Cleaning",
+   "text": "Please be aware that professional carpet cleaning will take place in the Main Building on Saturday, October 14, from 8:00 A.M. to 4:00 P.M. During this time, access to the third and fourth floors will be strictly restricted. Employees who plan to work over the weekend are encouraged to use the temporary workstations located in the annex building. All personal belongings must be removed from the floor area before Friday evening to avoid any damage or delays. We apologize for any inconvenience this temporary disruption may cause and appreciate your cooperation in maintaining a clean office environment."
+  },
+  "questions": [
+   {
+    "q": "What is the main purpose of the notice?",
+    "choices": [
+     "To inform staff about upcoming office maintenance",
+     "To announce a change in weekend working hours",
+     "To recruit volunteers for office cleaning",
+     "To request approval for a building renovation"
+    ],
+    "answer": 0,
+    "skill": "主題・目的",
+    "explain": "カーペット清掃（\"professional carpet cleaning\"）というオフィスメンテナンスについて社員に周知することが目的であるため、(A)が正解です。(B)の週末の勤務時間の変更や(D)のリノベーション許可の申請は本文に記載がありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What are employees instructed to do before Friday evening?",
+    "choices": [
+     "Submit a weekend work request",
+     "Move all desks to the annex building",
+     "Reserve a temporary workstation",
+     "Clear personal items from the floor"
+    ],
+    "answer": 3,
+    "skill": "詳細",
+    "explain": "本文に \"All personal belongings must be removed from the floor area before Friday evening\"（金曜日の夕方までに私物を床から移動させなければならない）と記載されているため、(D)「私物を床から片付ける」が正解です。(B)の「デスクを移動する」は本文の指示と異なります。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 600,
+  "passage": {
+   "type": "email",
+   "title": "Order #4092 Update",
+   "text": "Dear Ms. Higgins,\nThank you for purchasing from Modern Office Supplies. We are writing to confirm that your order #4092 for twelve ergonomic chairs was processed on May 12. However, due to unexpected demand, shipment will be slightly delayed. The items were originally scheduled to leave our warehouse tomorrow, but they will now be dispatched on May 18. Once your shipment is on its way, you will receive a tracking number via e-mail. We sincerely apologize for this delay and would like to offer you a 10 percent discount coupon on your next order as a token of our appreciation for your patience."
+  },
+  "questions": [
+   {
+    "q": "Why is the shipment delayed?",
+    "choices": [
+     "An item is out of stock permanently.",
+     "Payment has not been completed.",
+     "Demand for the product was higher than expected.",
+     "The delivery address was incorrect."
+    ],
+    "answer": 2,
+    "skill": "推測",
+    "explain": "本文に \"due to unexpected demand\"（予想外の需要のため）とあることから、製品への需要が予想以上に高かったため出荷が遅れていると判断でき、(C)が正解です。(A)の「永久に在庫切れ」や(B)の「未支払い」は本文の記述と矛盾します。",
+    "verified": "agree"
+   },
+   {
+    "q": "What will Ms. Higgins receive for her next order?",
+    "choices": [
+     "Free shipping",
+     "A 10 percent discount",
+     "A complimentary chair",
+     "Priority delivery service"
+    ],
+    "answer": 1,
+    "skill": "詳細",
+    "explain": "本文の末尾で \"a 10 percent discount coupon on your next order\"（次回注文で使える10%割引クーポン）を提供すると述べられているため、(B)が正解です。(A)の「送料無料」や(C)の「無料の椅子」は本文に記載されていません。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 600,
+  "passage": {
+   "type": "advertisement",
+   "title": "Public Speaking Essentials Workshop",
+   "text": "Are you looking to improve your presentation skills? Join our one-day \"Public Speaking Essentials\" workshop hosted by the Leadership Training Institute! Designed for beginners and intermediate professionals, this practical seminar will cover topic selection, audience engagement, and confident delivery. [1] The session will take place on Saturday, June 5, from 9:00 A.M. to 3:00 P.M. at the City Conference Center. [2] The registration fee is $150, which includes all workshop materials and a lunch buffet. [3] Space is limited to 25 participants to ensure personalized feedback. [4] Visit our website at www.lti-seminars.com to secure your spot today!"
+  },
+  "questions": [
+   {
+    "q": "What is included in the registration fee?",
+    "choices": [
+     "Course materials and lunch",
+     "A certificate of completion",
+     "A one-year institute membership",
+     "Transportation to the venue"
+    ],
+    "answer": 0,
+    "skill": "詳細",
+    "explain": "本文に \"includes all workshop materials and a lunch buffet\"（すべての講義教材とランチブッフェが含まれる）とあるため、(A)が正解です。(C)の「1年間の会員権」は含まれていません。",
+    "verified": "agree"
+   },
+   {
+    "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Because of this small group size, early registration is highly recommended.\"",
+    "choices": [
+     "[1]",
+     "[2]",
+     "[3]",
+     "[4]"
+    ],
+    "answer": 3,
+    "skill": "文挿入",
+    "explain": "[3]の直前で \"Space is limited to 25 participants\"（定員は25名に限定されている）と人数制限について述べているため、その直後の[4]の位置に「この小グループ編成のため、早めの登録をお勧めします」が入るのが最も自然です。したがって、(D)の[4]が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 730,
+  "passage": {
+   "type": "chat",
+   "title": "Internal Team Chat",
+   "text": "Elena Vance [9:15 A.M.]: Hi everyone. Has anyone reviewed the draft proposal for the Greenfield Project yet?\nMark Chen [9:18 A.M.]: I looked over it this morning, Elena. Overall, the timeline looks reasonable, but I think the budget allocation for marketing seems a bit low.\nElena Vance [9:20 A.M.]: Thanks, Mark. That was my concern too. Do you think we should increase it by around 15 percent?\nMark Chen [9:22 A.M.]: Yes, that should cover the additional online ads we planned.\nSarah Jenkins [9:25 A.M.]: I agree. By the way, Mr. Harrison wants to see the final draft by 2:00 P.M. today before his meeting with the client.\nElena Vance [9:27 A.M.]: Got it. I'll revise the budget section right away and send the updated document to both of you by noon."
+  },
+  "questions": [
+   {
+    "q": "What is the main topic of the conversation?",
+    "choices": [
+     "Preparing for a job interview",
+     "Scheduling a client meeting",
+     "Reviewing a project proposal",
+     "Budgeting for office supplies"
+    ],
+    "answer": 2,
+    "skill": "主題・目的",
+    "explain": "Elenaが \"reviewed the draft proposal for the Greenfield Project yet?\" と尋ね、プロジェクト提案書の確認や修正について議論しているため、(C)「プロジェクト提案書の確認」が正解です。(A)の「採用面接の準備」や(D)の「オフィス用品の予算」は会話の内容と一致しません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What area of the proposal needs to be modified?",
+    "choices": [
+     "The project manager's name",
+     "The overall completion deadline",
+     "The client contact details",
+     "The budget for marketing"
+    ],
+    "answer": 3,
+    "skill": "詳細",
+    "explain": "Markが \"budget allocation for marketing seems a bit low\" と指摘し、Elenaが \"revise the budget section\" と答えているため、(D)「マーケティング予算」が正解です。(B)の「完了期限」は変更対象ではありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "At 9:27 A.M., what does Elena mean when she says, \"Got it\"?",
+    "choices": [
+     "She understands the updated deadline.",
+     "She received the email from Mr. Harrison.",
+     "She downloaded the finalized document.",
+     "She scheduled a meeting for 2:00 P.M."
+    ],
+    "answer": 0,
+    "skill": "推測",
+    "explain": "Sarahが「ハリソン氏が午後2時までに最終案を見たいと言っている」と伝えた直後にElenaが \"Got it\"（承知しました）と言っているため、(A)「更新された提出期限を理解した」を意味します。(D)の「会議を予約した」は文脈と異なります。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 730,
+  "passage": {
+   "type": "email",
+   "title": "Updated Travel Expense Reimbursement Policy",
+   "text": "Dear Team,\nPlease note that our company's travel expense reimbursement policy will be updated starting July 1. Under the new policy, all travel requests must be submitted through the portal at least two weeks prior to the trip date. Furthermore, receipts for all individual expenses exceeding $25 must be uploaded digitally within five business days of returning from a business trip. Reimbursements for claims submitted after this timeframe will not be processed without prior written authorization from your department director. We will hold a brief online orientation session next Tuesday at 10:00 A.M. to walk everyone through the new online portal system. Attendance is mandatory for all frequent business travelers."
+  },
+  "questions": [
+   {
+    "q": "What is the primary purpose of the e-mail?",
+    "choices": [
+     "To introduce changes to an expense policy",
+     "To announce a corporate business trip",
+     "To invite employees to a farewell party",
+     "To remind staff about annual performance reviews"
+    ],
+    "answer": 0,
+    "skill": "主題・目的",
+    "explain": "メール冒頭の \"travel expense reimbursement policy will be updated\" から、出張経費精算方針の変更を伝えることが目的であり、(A)が正解です。(B)の「出張の告知」や(C)の「送別会への招待」は本文と無関係です。",
+    "verified": "agree"
+   },
+   {
+    "q": "The word \"processed\" in paragraph 1, line 5, is closest in meaning to",
+    "choices": [
+     "manufactured",
+     "purchased",
+     "canceled",
+     "handled"
+    ],
+    "answer": 3,
+    "skill": "語句の意味",
+    "explain": "文脈の \"Reimbursements for claims... will not be processed\" は「精算申請が処理されない」という意味であり、ここでは \"handled\"（取り扱われる・処理される）が最も近い意味になります。したがって(D)が正解です。(A)の \"manufactured\"（製造される）は文脈に合いません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What are employees required to do if their expense claims are late?",
+    "choices": [
+     "Pay a fine to the accounting department",
+     "Obtain written approval from a department director",
+     "Resubmit the request in the following month",
+     "Attend a mandatory training session"
+    ],
+    "answer": 1,
+    "skill": "詳細",
+    "explain": "本文に \"will not be processed without prior written authorization from your department director\"（部門長からの事前の書面による承認がなければ処理されない）とあるため、(B)が正解です。(A)の「経理部に罰金を払う」は本文にない誤った情報です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 730,
+  "passage": {
+   "type": "article",
+   "title": "Apex Logistics Expands Operations",
+   "text": "Apex Logistics announced yesterday that it will open a new regional distribution center in Crestview next month. The 50,000-square-foot facility is expected to create over 120 full-time jobs, ranging from warehouse associates to supply chain managers. [1] According to Chief Executive Officer Maria Torres, Crestview was chosen due to its proximity to major highways and rail links. [2] The facility will feature state-of-the-art automated sorting systems to increase order processing speed. [3] Construction of the center began last August and was completed two weeks ahead of schedule. [4] A community job fair will be hosted at the site on May 20 to recruit local talent."
+  },
+  "questions": [
+   {
+    "q": "Why was Crestview selected for the new facility?",
+    "choices": [
+     "It offered tax incentives for new businesses.",
+     "It has convenient access to transportation routes.",
+     "It had low real estate construction costs.",
+     "It possessed a large existing warehouse."
+    ],
+    "answer": 1,
+    "skill": "推測",
+    "explain": "本文の \"chosen due to its proximity to major highways and rail links\"（主要高速道路や鉄道路線への近接性のために選ばれた）から、交通ルートへのアクセスが良いためだと推測でき、(B)が正解です。(A)の「税制上の優遇措置」は本文で言及されていません。",
+    "verified": "agree"
+   },
+   {
+    "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"These technologies are expected to reduce package handling time by nearly 30 percent.\"",
+    "choices": [
+     "[1]",
+     "[2]",
+     "[3]",
+     "[4]"
+    ],
+    "answer": 2,
+    "skill": "文挿入",
+    "explain": "[2]の直前で \"The facility will feature state-of-the-art automated sorting systems...\"（最先端の自動仕分けシステムを導入する）と説明しており、その直後の[3]の位置に「これらの技術により荷物の取扱時間を30%削減できると見込まれる」と入れるのが論理的です。したがって(C)の[3]が正解です。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 860,
+  "passage": {
+   "type": "email",
+   "title": "Revised Service Agreement - Veloce Cloud Solutions",
+   "text": "Dear Mr. Dupont,\nFollowing our discussion last Thursday, I have updated the terms for the enterprise cloud migration agreement. As requested, we have adjusted the SLA (Service Level Agreement) guarantee to 99.99% uptime. Additionally, the data backup frequency has been increased from daily to hourly without any additional fee.\nPlease review the attached contract draft, specifically Section 4 regarding data security protocols and Section 8 concerning early termination penalties. Note that our legal team has retained the clause stipulating a 60-day written notice for agreement cancellation.\nIf these terms meet your approval, please sign the document electronically using the link below by Friday, November 12. Should you require further adjustments to the implementation schedule, we can arrange a brief conference call early next week."
+  },
+  "questions": [
+   {
+    "q": "What change was made to the agreement without extra cost?",
+    "choices": [
+     "The contract duration was extended.",
+     "Hardware installation fees were waived.",
+     "Data backup frequency was increased.",
+     "Technical support was made available 24/7."
+    ],
+    "answer": 2,
+    "skill": "詳細",
+    "explain": "本文に \"the data backup frequency has been increased from daily to hourly without any additional fee\"（データバックアップ頻度が追加料金なしで日次から毎時に引き上げられた）と明確に書かれているため、(C)が正解です。(A)の「契約期間の延長」は無料の変更点ではありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What is indicated about contract cancellation?",
+    "choices": [
+     "It can be executed immediately online.",
+     "It incurs a 15 percent administrative fee.",
+     "It is not permitted within the first year.",
+     "It requires two months of advance written notification."
+    ],
+    "answer": 3,
+    "skill": "推測",
+    "explain": "本文に \"retained the clause stipulating a 60-day written notice for agreement cancellation\"（解約には60日前の書面通知を規定する条項を維持した）とあり、60日＝約2ヶ月前の事前通知が必要であるため、(D)が正解です。(A)の「オンラインで即座に解約できる」は本文と矛盾します。",
+    "verified": "agree"
+   },
+   {
+    "q": "The word \"retained\" in paragraph 2, line 2, is closest in meaning to",
+    "choices": [
+     "kept",
+     "hired",
+     "revised",
+     "rejected"
+    ],
+    "answer": 0,
+    "skill": "語句の意味",
+    "explain": "文脈の \"our legal team has retained the clause\" は「法務チームがその条項を維持・保持した」という意味であるため、\"kept\"（保持した）を意味する(A)が正解です。(C)の \"revised\"（改訂した）は条項を維持したという文脈と反します。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 860,
+  "passage": {
+   "type": "notice",
+   "title": "Energy Efficiency Initiative - Corporate Campus",
+   "text": "Facilities Operations is pleased to announce the commencement of the Campus Sustainability Project, aimed at reducing energy consumption by 20 percent over the next fiscal year. [1] Phase One will focus on replacing conventional lighting fixtures with smart LED systems across all office buildings. [2] Technicians will work after hours between 7:00 P.M. and 11:00 P.M. starting next Monday to minimize disruption to daytime business operations. [3] Employees are reminded not to obstruct light switches or sensor panels during this installation period. [4] Furthermore, individual thermostats will be recalibrated to maintain a standardized temperature range of 21–23°C. Any department experiencing persistent climate control issues should submit a work order through the intranet rather than attempting manual adjustments."
+  },
+  "questions": [
+   {
+    "q": "What is the main objective of the Campus Sustainability Project?",
+    "choices": [
+     "To decrease corporate power usage",
+     "To install new computer servers",
+     "To expand office floor space",
+     "To reduce water consumption in facilities"
+    ],
+    "answer": 0,
+    "skill": "主題・目的",
+    "explain": "冒頭の \"aimed at reducing energy consumption by 20 percent\" から、企業の電力・エネルギー消費削減が主な目的であるため、(A)が正解です。(B)の「新しいサーバーの設置」や(C)の「オフィス床面積の拡大」は目的ではありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "How will daytime work disruptions be avoided during Phase One?",
+    "choices": [
+     "By closing the office on alternate days",
+     "By hiring external contractor teams",
+     "By performing work during evening hours",
+     "By allowing employees to work remotely"
+    ],
+    "answer": 2,
+    "skill": "詳細",
+    "explain": "本文の \"Technicians will work after hours between 7:00 P.M. and 11:00 P.M... to minimize disruption to daytime business operations\" から、夜間作業を行うことで昼間の業務妨害を防ぐため、(C)が正解です。(D)の「在宅勤務を許可する」は本文に記載がありません。",
+    "verified": "agree"
+   },
+   {
+    "q": "What are employees advised to do if they have temperature issues?",
+    "choices": [
+     "Manually set the thermostat",
+     "Submit an online work request",
+     "Contact external technicians directly",
+     "Report to the Facilities Operations manager in person"
+    ],
+    "answer": 1,
+    "skill": "詳細",
+    "explain": "本文末尾に \"submit a work order through the intranet rather than attempting manual adjustments\"（手動で調整しようとせずイントラネット経由で作業依頼を送信する）と記載されているため、(B)が正解です。(A)の「手動で温度設定する」は禁止されています。",
+    "verified": "agree"
+   }
+  ]
+ },
+ {
+  "part": 5,
+  "level": 600,
+  "questions": [
+   {
+    "q": "The graphics department finished the project on ____ own without external help.",
+    "choices": [
+     "their",
+     "them",
+     "they",
+     "themselves"
+    ],
+    "answer": 0,
+    "skill": "代名詞",
+    "explain": "「on one's own（自力で）」という熟語フレーズの所有格の位置に入るため、(A) their が正解です。目的格 (B) them や再帰代名詞 (D) themselves は入りません。",
+    "verified": "reviewed"
+   }
+  ]
+ },
+ {
+  "part": 7,
+  "level": 860,
+  "passage": {
+   "type": "article",
+   "title": "Market Analysis: Shift in Commercial Real Estate Trends",
+   "text": "Recent quarterly data indicates a significant shift in commercial real estate preferences across major metropolitan areas. Premium corporate tenants are increasingly relinquishing large, centralized headquarters in favor of flexible, multi-hub office models. [1] This transition is largely driven by employee demand for hybrid work arrangements and reduced commute times. [2] Consequently, suburban office parks with modern amenities and access to public transit have seen occupancy rates rise by 14 percent over the past year. [3] Commercial real estate analysts predict that property developers who adapt quickly to this demand by offering modular leasing terms will outperform traditional landlords. [4] Smaller commercial spaces in urban fringe zones are also benefiting from this trend."
+  },
+  "questions": [
+   {
+    "q": "According to the article, why are companies adopting multi-hub office models?",
+    "choices": [
+     "To lower overall municipal tax payments",
+     "To centralize executive management operations",
+     "To accommodate hybrid work preferences",
+     "To comply with recent environmental regulations"
+    ],
+    "answer": 2,
+    "skill": "推測",
+    "explain": "本文の \"driven by employee demand for hybrid work arrangements and reduced commute times\"（ハイブリッドワークの手配や通勤時間の削減を求める従業員の要望による）から、ハイブリッドな働き方の要望に対応するためであるとわかり、(C)が正解です。(A)の「地方税支払いの削減」は本文で言及されていません。",
+    "verified": "reviewed"
+   },
+   {
+    "q": "In which of the positions marked [1], [2], [3], and [4] does the following sentence best belong? \"Many of these suburban facilities now offer shared meeting hubs and fitness centers to attract prospective corporate tenants.\"",
+    "choices": [
+     "[1]",
+     "[2]",
+     "[3]",
+     "[4]"
+    ],
+    "answer": 2,
+    "skill": "文挿入",
+    "explain": "挿入文の these suburban facilities(これらの郊外施設)は、[3] の直前の文の suburban office parks を指します。そこで入居率の上昇を述べ、続けて施設の中身を補足する流れになるので [3] が正解です。",
+    "verified": "reviewed"
+   }
+  ]
+ }
+]

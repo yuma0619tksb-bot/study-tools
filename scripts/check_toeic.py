@@ -2,7 +2,7 @@
 
 確かめること: パート・レベル・分野が定義どおり、選択肢の数と重複なし、正解の番号が範囲内、
 Part 6 の本文に [1]〜[4] がある、リスニングの台本の形、解説がある、同じ問題文の重複なし、
-そして全問に検算の記録(verified が "agree" か "reviewed")があること。検算していない問題は入れない。
+正解の位置を均等にならし、そして全問に検算の記録(verified が "agree" か "reviewed")があること。検算していない問題は入れない。
 """
 import json
 import pathlib
@@ -15,9 +15,22 @@ sys.path.insert(0, str(ROOT / "toeic"))
 from taxonomy import LEVELS, N_CHOICES, SKILLS  # noqa: E402
 
 
+def balance(q, target, part):
+    """正解の位置がかたよらないよう、正解を target 番目に移す(他の選択肢の順は保つ)。
+    解説の中の (A)〜(D) も新しい位置に書き換える。Part 7 の文挿入([1]〜[4])は並びを変えない。"""
+    ch, ans = q.get("choices") or [], q.get("answer")
+    if not isinstance(ans, int) or not 0 <= ans < len(ch) or str(ch[0]).startswith("["):
+        return dict(q)
+    rest = [k for k in range(len(ch)) if k != ans]
+    order = rest[:target] + [ans] + rest[target:]  # order[new] = old
+    new_of = {old: new for new, old in enumerate(order)}
+    exp = re.sub(r"\(([A-D])\)", lambda m: "(%s)" % chr(65 + new_of.get(ord(m.group(1)) - 65, ord(m.group(1)) - 65)), q.get("explain", ""))
+    return {**q, "choices": [ch[o] for o in order], "answer": target, "explain": exp}
+
+
 def main():
     src = json.loads((ROOT / "toeic" / "questions_src.json").read_text(encoding="utf-8"))
-    errors, out, seen, counters = [], [], set(), {}
+    errors, out, seen, counters, pos = [], [], set(), {}, {}
     for n, it in enumerate(src):
         part = it.get("part")
         where = f"#{n} (Part {part})"
@@ -66,7 +79,11 @@ def main():
             seen.add(key)
         counters[part] = counters.get(part, 0) + 1
         iid = f"t{part}_{counters[part]:03d}"
-        out.append({**it, "id": iid, "questions": [{**q, "qid": f"{iid}-{j + 1}"} for j, q in enumerate(qs)]})
+        balanced = []
+        for j, q in enumerate(qs):
+            pos[part] = pos.get(part, -1) + 1
+            balanced.append({**balance(q, pos[part] % N_CHOICES[part], part), "qid": f"{iid}-{j + 1}"})
+        out.append({**it, "id": iid, "questions": balanced})
     if errors:
         print("FAIL")
         for e in errors:
