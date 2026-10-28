@@ -57,6 +57,12 @@ def generate_json(prompt, models=None, temperature=0.7, max_tokens=60000):
                     time.sleep(5)
                     continue
                 raise SystemExit(last)
+            except (urllib.error.URLError, ConnectionError, TimeoutError, OSError) as e:
+                last = f"{m}: 通信エラー ({e})"
+                if attempt == 0:
+                    time.sleep(10)
+                    continue
+                break
             except (json.JSONDecodeError, KeyError) as e:
                 last = f"{m}: 返答を JSON として読めない ({e})"
                 break
