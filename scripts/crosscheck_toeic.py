@@ -50,7 +50,7 @@ def main():
     ap.add_argument("--model", default="gemini-3-flash-preview")
     a = ap.parse_args()
     qs, keys = blind(a.files)
-    res, model = generate_json(PROMPT + json.dumps(qs, ensure_ascii=False), models=[a.model, "gemini-3.5-flash", "gemini-3.7-flash"], temperature=0.0)
+    res, model = generate_json(PROMPT + json.dumps(qs, ensure_ascii=False), models=[a.model, "gemini-3.7-flash", "gemini-3.8-flash"], temperature=0.0)
     by = {r.get("id"): r for r in res if isinstance(r, dict)}
     report, bad = {}, []
     for qid, k in keys.items():
