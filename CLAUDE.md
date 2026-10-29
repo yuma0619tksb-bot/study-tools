@@ -10,6 +10,10 @@
 5. 図・数式・表が崩れていて読めないときだけ、元PDFの該当ページを画像化して見る
    (`pdftoppm -r 150 -png -f N -l N <pdf> <出力>` → Read)
 
+## 資料の入れ口
+ユーザーは Google Drive の「授業資料/<科目>/」に資料を入れる(claude.ai のナレッジはこちらから読めないので使わない)。
+セッション開始時のフックの指示に従って新着を確認し、`materials/<科目>/raw/` に取り込む。
+
 ## 新しい資料が入ったとき
 資料の追加・更新を頼まれたら、または `status` で未処理が見つかったら `.claude/skills/materials/SKILL.md` の手順で処理する。
 1. `python3 tools/materials.py ingest`

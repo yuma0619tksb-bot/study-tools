@@ -5,6 +5,20 @@ description: materials/ に入れた授業資料(PDF・スキャン・画像・W
 
 # 授業資料の取り込みと読み方
 
+## Google Drive からの取り込み(資料の入れ口)
+ユーザーは資料を Drive の「授業資料/<科目>/」に入れる。フォルダIDは `materials/drive.json` の `folder_id`。
+Drive の操作は Google Drive コネクタ(`mcp__Google_Drive__*`、ToolSearch で読み込む)で行う。
+1. `python3 tools/materials.py drive-known` で取り込み済みの一覧(ファイルID・更新日時・保存先)を見る。
+2. `search_files` で `parentId = '<folder_id>'` の子フォルダ(=科目)を列挙し、各科目フォルダの中身を
+   `parentId = '<科目フォルダID>'` で列挙する(`excludeContentSnippets: true`)。科目フォルダの中のサブフォルダも同様にたどる。
+   「授業資料」直下に置かれたファイルは科目が不明なので、ユーザーに科目を聞く。
+3. 一覧に無いファイル、または `modifiedTime` が記録と違うファイルだけを `download_file_content` で取得する。
+   Googleドキュメント・スライドは `exportMimeType: application/pdf` を付ける。
+   - 結果はふつう「ファイルに保存しました」とパスが返る → `python3 tools/materials.py drive-import <そのパス> --subject <科目フォルダ名> --file-id <ID> --modified <modifiedTime>`
+   - 小さいファイルで結果がそのまま返ってきたときは、その JSON をスクラッチパッドに Write してから同じコマンドで取り込む。
+4. このあと下の「取り込み」の手順へ進む。drive.json も commit する。
+※ Drive 側のファイルは消したり動かしたりしない(読むだけ)。
+
 ## 取り込み
 1. 元ファイルが `materials/<科目>/raw/` にあるか確認する(なければユーザーに科目名を聞いてそこへ移す)。
 2. `python3 tools/materials.py ingest` → `python3 tools/materials.py status`

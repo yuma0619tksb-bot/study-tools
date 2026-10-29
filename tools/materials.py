@@ -8,6 +8,9 @@
   python3 tools/materials.py ocr [--subject S]  # OCR待ちページを画像化して一覧表示
   python3 tools/materials.py export-obsidian [--out DIR]   # 要約をObsidian用ノートに書き出し
   python3 tools/materials.py bundle [--subject S]          # claude.aiプロジェクトにアップする一式を作る
+  python3 tools/materials.py drive-known                    # Driveから取り込み済みのファイル一覧(新着判定用)
+  python3 tools/materials.py drive-import 保存JSON --subject S --file-id ID --modified T
+                                                            # Driveのダウンロード結果を raw/ に保存して記録
 
 置き場所: materials/<科目>/raw/ に元ファイルを入れる。
 生成物:   materials/<科目>/text/<名前>.md   ページ単位のテキスト(## p.N 見出し)
@@ -28,6 +31,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MAT = ROOT / "materials"
 CATALOG = MAT / "catalog.json"
+DRIVE = MAT / "drive.json"  # Google Drive 連携の設定と取り込み記録
 INDEX = MAT / "INDEX.md"
 EXPORTS = ROOT / "exports"
 
@@ -487,6 +491,54 @@ def cmd_bundle(args):
         print(f"{subject}: {len(items)} 件 → {out.relative_to(ROOT)}/")
 
 
+# ---------- Google Drive 連携 ----------
+# Drive の読み書きは Claude が Google Drive コネクタで行う。ここでは記録とファイル保存だけを担当する。
+
+def load_drive():
+    if DRIVE.exists():
+        return json.loads(DRIVE.read_text(encoding="utf-8"))
+    return {"folder_id": None, "files": {}}
+
+
+def save_drive(d):
+    DRIVE.write_text(json.dumps(d, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def cmd_drive_known(args):
+    d = load_drive()
+    print(f"folder_id: {d.get('folder_id')}")
+    for fid, f in sorted(d["files"].items(), key=lambda x: x[1]["path"]):
+        print(f"{fid}\t{f['modified']}\t{f['path']}")
+
+
+def safe_name(name):
+    return re.sub(r'[\\/:*?"<>|]', "_", name).strip() or "無題"
+
+
+def cmd_drive_import(args):
+    import base64
+    data = json.loads(Path(args.json).read_text(encoding="utf-8"))
+    content = base64.b64decode(data["content"])
+    name = safe_name(data.get("title") or args.file_id)
+    ext = {"application/pdf": ".pdf"}.get(data.get("mimeType", ""), "")
+    if ext and not name.lower().endswith(ext):
+        name += ext  # Googleドキュメント等をPDFで書き出した場合
+    d = load_drive()
+    old = d["files"].get(args.file_id)
+    raw_dir = MAT / args.subject / "raw"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    dest = raw_dir / name
+    # 同名の別ファイルがあれば上書きしない
+    if dest.exists() and not (old and old["path"] == dest.relative_to(MAT).as_posix()):
+        dest = raw_dir / f"{Path(name).stem}_{args.file_id[:6]}{Path(name).suffix}"
+    if old and old["path"] != dest.relative_to(MAT).as_posix():
+        (MAT / old["path"]).unlink(missing_ok=True)  # 科目フォルダを移した・名前を変えた場合
+    dest.write_bytes(content)
+    d["files"][args.file_id] = {"modified": args.modified, "path": dest.relative_to(MAT).as_posix()}
+    save_drive(d)
+    print(f"保存: materials/{dest.relative_to(MAT).as_posix()} ({len(content):,} バイト)")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -502,6 +554,10 @@ def main():
     p = sub.add_parser("export-obsidian"); p.add_argument("--subject"); p.add_argument("--out")
     p.set_defaults(func=cmd_export_obsidian)
     p = sub.add_parser("bundle"); p.add_argument("--subject"); p.set_defaults(func=cmd_bundle)
+    p = sub.add_parser("drive-known"); p.set_defaults(func=cmd_drive_known)
+    p = sub.add_parser("drive-import"); p.add_argument("json"); p.add_argument("--subject", required=True)
+    p.add_argument("--file-id", required=True); p.add_argument("--modified", required=True)
+    p.set_defaults(func=cmd_drive_import)
     args = ap.parse_args()
     MAT.mkdir(exist_ok=True)
     args.func(args)
