@@ -1380,5 +1380,253 @@
     "family": 20,
     "unit": "断熱変化",
     "variant_of": null
+  },
+  "r001": {
+    "kind": "r_forced",
+    "level": 1,
+    "params": {
+      "kmul": 4,
+      "mmul": 3
+    },
+    "family": 0,
+    "unit": "強制振動・減衰振動",
+    "variant_of": null
+  },
+  "r002": {
+    "kind": "r_forced",
+    "level": 1,
+    "params": {
+      "kmul": 2,
+      "mmul": 1
+    },
+    "family": 1,
+    "unit": "強制振動・減衰振動",
+    "variant_of": null
+  },
+  "r003": {
+    "kind": "r_forced_cos",
+    "level": 2,
+    "params": {},
+    "family": 2,
+    "unit": "強制振動・減衰振動",
+    "variant_of": null
+  },
+  "r004": {
+    "kind": "r_resonance",
+    "level": 3,
+    "params": {},
+    "family": 3,
+    "unit": "強制振動・減衰振動",
+    "variant_of": null
+  },
+  "r005": {
+    "kind": "r_damped",
+    "level": 1,
+    "params": {
+      "case": "under"
+    },
+    "family": 4,
+    "unit": "強制振動・減衰振動",
+    "variant_of": null
+  },
+  "r006": {
+    "kind": "r_damped",
+    "level": 2,
+    "params": {
+      "case": "critical"
+    },
+    "family": 5,
+    "unit": "強制振動・減衰振動",
+    "variant_of": null
+  },
+  "r007": {
+    "kind": "r_damped",
+    "level": 2,
+    "params": {
+      "case": "over"
+    },
+    "family": 6,
+    "unit": "強制振動・減衰振動",
+    "variant_of": null
+  },
+  "r008": {
+    "kind": "r_tube",
+    "level": 1,
+    "params": {
+      "start": "speed"
+    },
+    "family": 7,
+    "unit": "回転する座標(円管)",
+    "variant_of": null
+  },
+  "r009": {
+    "kind": "r_tube",
+    "level": 2,
+    "params": {
+      "start": "rest"
+    },
+    "family": 8,
+    "unit": "回転する座標(円管)",
+    "variant_of": null
+  },
+  "r010": {
+    "kind": "r_tube_work",
+    "level": 3,
+    "params": {},
+    "family": 9,
+    "unit": "回転する座標(円管)",
+    "variant_of": null
+  },
+  "r011": {
+    "kind": "r_elevator",
+    "level": 1,
+    "params": {
+      "kmul": 4
+    },
+    "family": 10,
+    "unit": "慣性力",
+    "variant_of": null
+  },
+  "r012": {
+    "kind": "r_turntable",
+    "level": 1,
+    "params": {
+      "mu": "3/10",
+      "r": "2/5"
+    },
+    "family": 11,
+    "unit": "慣性力",
+    "variant_of": null
+  },
+  "r013": {
+    "kind": "r_disk_walk",
+    "level": 3,
+    "params": {},
+    "family": 12,
+    "unit": "慣性力",
+    "variant_of": null
+  },
+  "r014": {
+    "kind": "r_reduced",
+    "level": 1,
+    "params": {
+      "a": 1,
+      "b": 3
+    },
+    "family": 13,
+    "unit": "2体問題・換算質量",
+    "variant_of": null
+  },
+  "r015": {
+    "kind": "r_twobody_rot",
+    "level": 2,
+    "params": {
+      "a": 1,
+      "b": 3,
+      "c": "5/4"
+    },
+    "family": 14,
+    "unit": "2体問題・換算質量",
+    "variant_of": null
+  },
+  "r016": {
+    "kind": "r_twobody_rot",
+    "level": 2,
+    "params": {
+      "a": 2,
+      "b": 3,
+      "c": "4/3"
+    },
+    "family": 15,
+    "unit": "2体問題・換算質量",
+    "variant_of": null
+  },
+  "r017": {
+    "kind": "r_twobody_vib",
+    "level": 1,
+    "params": {
+      "a": 1,
+      "b": 3
+    },
+    "family": 16,
+    "unit": "2体問題・換算質量",
+    "variant_of": null
+  },
+  "r018": {
+    "kind": "r_system",
+    "level": 2,
+    "params": {
+      "s": 3
+    },
+    "family": 17,
+    "unit": "質点系と衝突",
+    "variant_of": null
+  },
+  "r019": {
+    "kind": "r_system",
+    "level": 2,
+    "params": {
+      "s": 1
+    },
+    "family": 18,
+    "unit": "質点系と衝突",
+    "variant_of": null
+  },
+  "r020": {
+    "kind": "r_collision",
+    "level": 1,
+    "params": {
+      "a": 1,
+      "b": 3,
+      "e": "1/2"
+    },
+    "family": 19,
+    "unit": "質点系と衝突",
+    "variant_of": null
+  },
+  "r021": {
+    "kind": "r_collision",
+    "level": 2,
+    "params": {
+      "a": 1,
+      "b": 1,
+      "e": "1/3",
+      "title": "反発係数と失われる運動エネルギー"
+    },
+    "family": 20,
+    "unit": "質点系と衝突",
+    "variant_of": null
+  },
+  "r022": {
+    "kind": "r_pend",
+    "level": 1,
+    "params": {},
+    "family": 21,
+    "unit": "連成振動",
+    "variant_of": null
+  },
+  "r023": {
+    "kind": "r_springs3",
+    "level": 2,
+    "params": {},
+    "family": 22,
+    "unit": "連成振動",
+    "variant_of": null
+  },
+  "r024": {
+    "kind": "r_unequal",
+    "level": 3,
+    "params": {},
+    "family": 23,
+    "unit": "連成振動",
+    "variant_of": null
+  },
+  "r025": {
+    "kind": "r_beats",
+    "level": 3,
+    "params": {},
+    "family": 24,
+    "unit": "連成振動",
+    "variant_of": null
   }
 }

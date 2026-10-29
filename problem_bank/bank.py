@@ -29,6 +29,12 @@ UNITS = {
     "p_U": "内部エネルギーと第1法則", "p_isochoric": "内部エネルギーと第1法則", "p_isobaric": "内部エネルギーと第1法則",
     "p_carnot": "カルノー機関", "p_carnot_raise": "カルノー機関",
     "p_iso": "等温変化", "p_adia": "断熱変化",
+    "r_forced": "強制振動・減衰振動", "r_forced_cos": "強制振動・減衰振動", "r_resonance": "強制振動・減衰振動", "r_damped": "強制振動・減衰振動",
+    "r_tube": "回転する座標(円管)", "r_tube_work": "回転する座標(円管)",
+    "r_elevator": "慣性力", "r_turntable": "慣性力", "r_disk_walk": "慣性力",
+    "r_reduced": "2体問題・換算質量", "r_twobody_rot": "2体問題・換算質量", "r_twobody_vib": "2体問題・換算質量",
+    "r_system": "質点系と衝突", "r_collision": "質点系と衝突",
+    "r_pend": "連成振動", "r_springs3": "連成振動", "r_unequal": "連成振動", "r_beats": "連成振動",
 }
 
 
@@ -39,9 +45,9 @@ def unit_of(kind_name, params):
 
 
 def modules():
-    from . import kaiseki, bisekibun2, butsuri2
+    from . import kaiseki, bisekibun2, butsuri2, rikigaku
 
-    return [kaiseki, bisekibun2, butsuri2]
+    return [kaiseki, bisekibun2, butsuri2, rikigaku]
 
 
 def module_for(prefix):

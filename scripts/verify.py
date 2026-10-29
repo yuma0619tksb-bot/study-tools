@@ -26,7 +26,8 @@ from problem_bank import core  # noqa: E402
 from problem_bank.bank import build, modules, render_one  # noqa: E402
 
 KEYS = {"id", "order", "subject", "title", "level", "question", "tool", "steps", "answer"}
-SUBJECTS = {"解析学": "k", "微積第二": "b", "物理学概論第二": "p"}
+SUBJECTS = {"解析学": "k", "微積第二": "b", "物理学概論第二": "p", "力学": "r"}
+FIRST_BANK = ("k", "b", "p")  # 最初の依頼(80〜100問)の対象。力学は後から足した科目
 TEXT_FIELDS = ["title", "question", "tool", "answer"]
 
 
@@ -64,7 +65,7 @@ def validate_schema(problems, errors):
         if set(p) != KEYS:
             errors.append(f"{where}: キーが違う(過不足: {sorted(set(p) ^ KEYS)})")
             continue
-        if not isinstance(p["id"], str) or not re.fullmatch(r"[kbp]\d{3}", p["id"]):
+        if not isinstance(p["id"], str) or not re.fullmatch(r"[kbpr]\d{3}", p["id"]):
             errors.append(f"{where}: id の形式が不正")
         if p["subject"] not in SUBJECTS:
             errors.append(f"{where}: subject が不正 {p['subject']!r}")
@@ -127,7 +128,7 @@ def main():
     validate_schema(problems, errors)
     modules()  # 全モジュールを読み込んで REGISTRY を埋める
 
-    base = [k for k, v in pmap.items() if not v.get("variant_of")]
+    base = [k for k, v in pmap.items() if not v.get("variant_of") and k[0] in FIRST_BANK]
     if not 80 <= len(base) <= 100:
         errors.append(f"基本の問題数が 80〜100 の範囲外: {len(base)}")
     for k, v in pmap.items():

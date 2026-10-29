@@ -1453,5 +1453,383 @@
       "$W=\\dfrac{5}{2}\\times 1\\times 8.31\\times(533.0-280)=5.257\\times 10^{3}\\ \\mathrm{J}$"
     ],
     "answer": "$T_2=533\\ \\mathrm{K}$, $W=5.26\\times 10^{3}\\ \\mathrm{J}$"
+  },
+  {
+    "id": "r001",
+    "order": 97,
+    "subject": "力学",
+    "title": "支点を振動させたばね振り子",
+    "level": 1,
+    "question": "ばね定数 $4k$ のばねの一端に質量 $3m$ のおもりを付けて吊るし、つり合った状態にある。時刻 $t=0$ 以降、上端の支点を $u(t)=u_0\\sin\\omega t$ で上下に振動させた。つり合いの位置からのおもりの変位を $x(t)$(上向き正)として、$t\\ge 0$ での $x(t)$ を求めよ。ただし $t=0$ でおもりは静止しており、$\\omega$ は固有角振動数と異なるとする。粘性抵抗は無視する。",
+    "tool": "ばねの伸びは「おもりの変位 − 支点の変位」なので、復元力は $-k'(x-u)$。運動方程式を $\\ddot x+\\omega_0^2x=f_0\\sin\\omega t$ の形にし、一般解 = 斉次方程式の一般解 + 定常解($A\\sin\\omega t$)として、最後に初期条件で定数を決める。",
+    "steps": [
+      "$3m\\ddot x=-4k(x-u_0\\sin\\omega t)$",
+      "$\\omega_0^2=\\dfrac{4k}{3m}$ とおくと $\\ddot x+\\omega_0^2x=\\omega_0^2u_0\\sin\\omega t$",
+      "定常解 $A\\sin\\omega t$ を代入: $(\\omega_0^2-\\omega^2)A=\\omega_0^2u_0$ より $A=\\dfrac{\\omega_0^2u_0}{\\omega_0^2-\\omega^2}$",
+      "一般解 $x=C_3\\sin\\omega_0t+C_4\\cos\\omega_0t+A\\sin\\omega t$。$x(0)=0$ より $C_4=0$、$\\dot x(0)=0$ より $C_3=-\\dfrac{\\omega}{\\omega_0}A$"
+    ],
+    "answer": "$x(t)=\\dfrac{\\omega_0^2u_0}{\\omega_0^2-\\omega^2}\\left(\\sin\\omega t-\\dfrac{\\omega}{\\omega_0}\\sin\\omega_0 t\\right)$(ただし $\\omega_0^2=\\dfrac{4k}{3m}$)"
+  },
+  {
+    "id": "r002",
+    "order": 98,
+    "subject": "力学",
+    "title": "支点を振動させたばね振り子",
+    "level": 1,
+    "question": "ばね定数 $2k$ のばねの一端に質量 $m$ のおもりを付けて吊るし、つり合った状態にある。時刻 $t=0$ 以降、上端の支点を $u(t)=u_0\\sin\\omega t$ で上下に振動させた。つり合いの位置からのおもりの変位を $x(t)$(上向き正)として、$t\\ge 0$ での $x(t)$ を求めよ。ただし $t=0$ でおもりは静止しており、$\\omega$ は固有角振動数と異なるとする。粘性抵抗は無視する。",
+    "tool": "ばねの伸びは「おもりの変位 − 支点の変位」なので、復元力は $-k'(x-u)$。運動方程式を $\\ddot x+\\omega_0^2x=f_0\\sin\\omega t$ の形にし、一般解 = 斉次方程式の一般解 + 定常解($A\\sin\\omega t$)として、最後に初期条件で定数を決める。",
+    "steps": [
+      "$m\\ddot x=-2k(x-u_0\\sin\\omega t)$",
+      "$\\omega_0^2=\\dfrac{2k}{m}$ とおくと $\\ddot x+\\omega_0^2x=\\omega_0^2u_0\\sin\\omega t$",
+      "定常解 $A\\sin\\omega t$ を代入: $(\\omega_0^2-\\omega^2)A=\\omega_0^2u_0$ より $A=\\dfrac{\\omega_0^2u_0}{\\omega_0^2-\\omega^2}$",
+      "一般解 $x=C_3\\sin\\omega_0t+C_4\\cos\\omega_0t+A\\sin\\omega t$。$x(0)=0$ より $C_4=0$、$\\dot x(0)=0$ より $C_3=-\\dfrac{\\omega}{\\omega_0}A$"
+    ],
+    "answer": "$x(t)=\\dfrac{\\omega_0^2u_0}{\\omega_0^2-\\omega^2}\\left(\\sin\\omega t-\\dfrac{\\omega}{\\omega_0}\\sin\\omega_0 t\\right)$(ただし $\\omega_0^2=\\dfrac{2k}{m}$)"
+  },
+  {
+    "id": "r003",
+    "order": 99,
+    "subject": "力学",
+    "title": "外力 F₀cosωt による強制振動",
+    "level": 2,
+    "question": "なめらかな水平面上で、ばね定数 $k$ のばねにつながれた質量 $m$ の物体が、つり合いの位置に静止している。$t=0$ から物体に外力 $F_0\\cos\\omega t$ を加え続けた。$\\omega_0=\\sqrt{k/m}\\ (\\neq\\omega)$ として、変位 $x(t)$ を求めよ。",
+    "tool": "外力が $\\cos$ なので定常解も $A\\cos\\omega t$ と置く。一般解を作ってから $x(0)=0,\\ \\dot x(0)=0$ で定数を決める(第1回の手順と同じで、置く関数だけ変わる)。",
+    "steps": [
+      "$m\\ddot x=-kx+F_0\\cos\\omega t$ より $\\ddot x+\\omega_0^2x=\\dfrac{F_0}{m}\\cos\\omega t$",
+      "定常解 $A\\cos\\omega t$: $A=\\dfrac{F_0}{m(\\omega_0^2-\\omega^2)}$",
+      "一般解 $x=C_1\\cos\\omega_0t+C_2\\sin\\omega_0t+A\\cos\\omega t$",
+      "$x(0)=0$ より $C_1=-A$、$\\dot x(0)=0$ より $C_2=0$"
+    ],
+    "answer": "$x(t)=\\dfrac{F_0}{m(\\omega_0^2-\\omega^2)}\\left(\\cos\\omega t-\\cos\\omega_0 t\\right)$"
+  },
+  {
+    "id": "r004",
+    "order": 100,
+    "subject": "力学",
+    "title": "共振(ω=ω₀)のときの解",
+    "level": 3,
+    "question": "$\\ddot x+\\omega_0^2x=f_0\\sin\\omega_0 t$($\\omega=\\omega_0$、共振)を、$x(0)=0,\\ \\dot x(0)=0$ のもとで解け。また、$t$ が大きいとき振幅がどうなるかを答えよ。",
+    "tool": "$\\omega=\\omega_0$ では $A\\sin\\omega t$ が斉次方程式の解になってしまい、$A=\\dfrac{f_0}{\\omega_0^2-\\omega^2}$ が使えない(場合分け)。そこで定常解を $x_p=Bt\\cos\\omega_0 t$ と置き直す(2つのことの組み合わせ)。",
+    "steps": [
+      "$x_p=Bt\\cos\\omega_0t$ を代入: $\\ddot x_p+\\omega_0^2x_p=-2B\\omega_0\\sin\\omega_0t$ なので $B=-\\dfrac{f_0}{2\\omega_0}$",
+      "一般解 $x=C_1\\cos\\omega_0t+C_2\\sin\\omega_0t-\\dfrac{f_0}{2\\omega_0}t\\cos\\omega_0t$",
+      "$x(0)=0$ より $C_1=0$、$\\dot x(0)=C_2\\omega_0-\\dfrac{f_0}{2\\omega_0}=0$ より $C_2=\\dfrac{f_0}{2\\omega_0^2}$"
+    ],
+    "answer": "$x(t)=\\dfrac{f_0}{2\\omega_0^2}\\left(\\sin\\omega_0t-\\omega_0t\\cos\\omega_0t\\right)$。$t\\cos\\omega_0 t$ の項があるので、振幅は時間に比例して大きくなり続ける"
+  },
+  {
+    "id": "r005",
+    "order": 101,
+    "subject": "力学",
+    "title": "粘性抵抗のある振動(減衰振動)",
+    "level": 1,
+    "question": "質量 $1\\ \\mathrm{kg}$ の物体がばね定数 $5\\ \\mathrm{N/m}$ のばねにつながれ、速度に比例する抵抗力 $-2\\dot x$ を受けて運動する。$x(0)=1,\\ \\dot x(0)=0$ のとき、運動の種類(減衰振動・臨界減衰・過減衰)を判定し、$x(t)$ を求めよ。",
+    "tool": "$x=e^{\\lambda t}$ を代入した特性方程式の判別式の符号で場合分けする。重解なら $(C_1+C_2t)e^{\\lambda t}$、複素数解なら $e^{-\\gamma t}(C_1\\cos+C_2\\sin)$ の形。",
+    "steps": [
+      "$\\ddot x+2\\dot x+5x=0$。特性方程式 $\\lambda^2+2\\lambda+5=0$",
+      "判別式 $2^2-4\\cdot1\\cdot5=-16<0$ より減衰振動。$\\lambda=-1 - 2 i, -1 + 2 i$",
+      "初期条件 $x(0)=1,\\ \\dot x(0)=0$ で定数を決める"
+    ],
+    "answer": "減衰振動、$x(t)=e^{-t}\\left(\\cos 2t+\\dfrac{1}{2}\\sin 2t\\right)$"
+  },
+  {
+    "id": "r006",
+    "order": 102,
+    "subject": "力学",
+    "title": "粘性抵抗のある振動(臨界減衰)",
+    "level": 2,
+    "question": "質量 $1\\ \\mathrm{kg}$ の物体がばね定数 $4\\ \\mathrm{N/m}$ のばねにつながれ、速度に比例する抵抗力 $-4\\dot x$ を受けて運動する。$x(0)=1,\\ \\dot x(0)=0$ のとき、運動の種類(減衰振動・臨界減衰・過減衰)を判定し、$x(t)$ を求めよ。",
+    "tool": "$x=e^{\\lambda t}$ を代入した特性方程式の判別式の符号で場合分けする。重解なら $(C_1+C_2t)e^{\\lambda t}$、複素数解なら $e^{-\\gamma t}(C_1\\cos+C_2\\sin)$ の形。",
+    "steps": [
+      "$\\ddot x+4\\dot x+4x=0$。特性方程式 $\\lambda^2+4\\lambda+4=0$",
+      "判別式 $4^2-4\\cdot1\\cdot4=0$ より臨界減衰。$\\lambda=-2$",
+      "初期条件 $x(0)=1,\\ \\dot x(0)=0$ で定数を決める"
+    ],
+    "answer": "臨界減衰、$x(t)=(1+2t)e^{-2t}$"
+  },
+  {
+    "id": "r007",
+    "order": 103,
+    "subject": "力学",
+    "title": "粘性抵抗のある振動(過減衰)",
+    "level": 2,
+    "question": "質量 $1\\ \\mathrm{kg}$ の物体がばね定数 $4\\ \\mathrm{N/m}$ のばねにつながれ、速度に比例する抵抗力 $-5\\dot x$ を受けて運動する。$x(0)=1,\\ \\dot x(0)=0$ のとき、運動の種類(減衰振動・臨界減衰・過減衰)を判定し、$x(t)$ を求めよ。",
+    "tool": "$x=e^{\\lambda t}$ を代入した特性方程式の判別式の符号で場合分けする。重解なら $(C_1+C_2t)e^{\\lambda t}$、複素数解なら $e^{-\\gamma t}(C_1\\cos+C_2\\sin)$ の形。",
+    "steps": [
+      "$\\ddot x+5\\dot x+4x=0$。特性方程式 $\\lambda^2+5\\lambda+4=0$",
+      "判別式 $5^2-4\\cdot1\\cdot4=9>0$ より過減衰。$\\lambda=-4, -1$",
+      "初期条件 $x(0)=1,\\ \\dot x(0)=0$ で定数を決める"
+    ],
+    "answer": "過減衰、$x(t)=\\dfrac{4}{3}e^{-t}-\\dfrac{1}{3}e^{-4t}$"
+  },
+  {
+    "id": "r008",
+    "order": 104,
+    "subject": "力学",
+    "title": "回転する円管内の質点",
+    "level": 1,
+    "question": "水平面内で、一端 $O$ のまわりに一定の角速度 $\\omega_0$ で回る細い円管の中を、質量 $3m$ の質点がなめらかに動く。$t=0$ に $O$ から $v_0$ の速さで管内に入れた。質点の $O$ からの距離 $r$ を時刻 $t$ の関数として表せ。",
+    "tool": "管と一緒に回る座標で考えると、動径方向に働く力は遠心力 $3mr\\omega_0^2$ だけ(管の壁からの力は管に垂直)。動径方向の運動方程式 $\\ddot r=\\omega_0^2r$ を解く。",
+    "steps": [
+      "動径方向: $3m\\ddot r=3mr\\omega_0^2$ より $\\ddot r=\\omega_0^2 r$",
+      "一般解 $r=C_1e^{\\omega_0t}+C_2e^{-\\omega_0t}$",
+      "$r(0)=0,\\ \\dot r(0)=v_0$ より $C_1+C_2=0,\\ \\omega_0(C_1-C_2)=v_0$"
+    ],
+    "answer": "$r(t)=\\dfrac{v_{0} \\sinh{\\left(\\omega_{0} t \\right)}}{\\omega_{0}}$"
+  },
+  {
+    "id": "r009",
+    "order": 105,
+    "subject": "力学",
+    "title": "回転する円管内の質点(途中から放す)",
+    "level": 2,
+    "question": "水平面内で、一端 $O$ のまわりに一定の角速度 $\\omega_0$ で回る細い円管の中を、質量 $3m$ の質点がなめらかに動く。$t=0$ に $O$ から距離 $a$ の位置で、管に対して静かに放した。質点の $O$ からの距離 $r$ を時刻 $t$ の関数として表せ。",
+    "tool": "管と一緒に回る座標で考えると、動径方向に働く力は遠心力 $3mr\\omega_0^2$ だけ(管の壁からの力は管に垂直)。動径方向の運動方程式 $\\ddot r=\\omega_0^2r$ を解く。初期条件が変わるだけで、運動方程式は同じ。",
+    "steps": [
+      "動径方向: $3m\\ddot r=3mr\\omega_0^2$ より $\\ddot r=\\omega_0^2 r$",
+      "一般解 $r=C_1e^{\\omega_0t}+C_2e^{-\\omega_0t}$",
+      "$r(0)=a,\\ \\dot r(0)=0$ より $C_1=C_2=\\dfrac{a}{2}$"
+    ],
+    "answer": "$r(t)=a \\cosh{\\left(\\omega_{0} t \\right)}$"
+  },
+  {
+    "id": "r010",
+    "order": 106,
+    "subject": "力学",
+    "title": "円管を回すトルクと仕事",
+    "level": 3,
+    "question": "前問(角速度 $\\omega_0$ の円管に、質量 $3m$ の質点を $O$ から速さ $v_0$ で入れた。$r(t)=\\dfrac{v_0}{\\omega_0}\\sinh\\omega_0t$)の続き。質点の $O$ のまわりの角運動量 $L(t)$、円管を一定の角速度で回し続けるのに必要なトルク $N(t)$ を求めよ。さらに、$t=0$ から $t$ までにトルクがした仕事が、質点の運動エネルギーの増加に等しいことを示せ。",
+    "tool": "角運動量は $L=3mr^2\\omega_0$($\\omega_0$ 一定)。トルクは $N=\\dfrac{dL}{dt}$、仕事は $\\displaystyle\\int N\\omega_0\\,dt$。運動エネルギーは動径方向と回転方向の速度の2乗の和で書く。",
+    "steps": [
+      "$L=3mr^2\\omega_0=\\dfrac{3 m v_{0}^{2} \\sinh^{2}{\\left(\\omega_{0} t \\right)}}{\\omega_{0}}$",
+      "$N=\\dfrac{dL}{dt}=3 m v_{0}^{2} \\sinh{\\left(2 \\omega_{0} t \\right)}$",
+      "$W=\\displaystyle\\int_0^t N\\omega_0\\,dt=\\dfrac{3 m v_{0}^{2} \\left(\\cosh{\\left(2 \\omega_{0} t \\right)} - 1\\right)}{2}$",
+      "$\\Delta K=\\dfrac{3}{2}m(\\dot r^2+r^2\\omega_0^2)-\\dfrac{3}{2}mv_0^2=\\dfrac{3 m v_{0}^{2} \\left(\\cosh{\\left(2 \\omega_{0} t \\right)} - 1\\right)}{2}$ で $W$ と一致"
+    ],
+    "answer": "$L=\\dfrac{3 m v_{0}^{2} \\sinh^{2}{\\left(\\omega_{0} t \\right)}}{\\omega_{0}},\\quad N=3 m v_{0}^{2} \\sinh{\\left(2 \\omega_{0} t \\right)},\\quad W=\\Delta K=\\dfrac{3 m v_{0}^{2} \\left(\\cosh{\\left(2 \\omega_{0} t \\right)} - 1\\right)}{2}$"
+  },
+  {
+    "id": "r011",
+    "order": 107,
+    "subject": "力学",
+    "title": "エレベーター内のばね(慣性力)",
+    "level": 1,
+    "question": "エレベーターの中で、ばね定数 $4k$ のばねに質量 $m$ のおもりを吊るした。エレベーターが一定の加速度 $\\alpha$ で上昇しながら加速しているときと、下向きに加速度 $\\alpha$ で加速しているときとで、ばねの伸びはどれだけ違うか。おもりはエレベーター内で静止しているとする。",
+    "tool": "エレベーターと一緒に動く座標では、加速度と逆向きに慣性力 $-m\\vec\\alpha$ が働く。上向き加速なら下向きに $m\\alpha$ が加わり、見かけの重力が $m(g\\pm\\alpha)$ になる。",
+    "steps": [
+      "上向き加速: $4kx_1=m(g+\\alpha)$",
+      "下向き加速: $4kx_2=m(g-\\alpha)$",
+      "$x_1-x_2=\\dfrac{2m\\alpha}{4k}=\\dfrac{\\alpha m}{2 k}$"
+    ],
+    "answer": "上向き加速のときの方が $\\dfrac{\\alpha m}{2 k}$ だけ長く伸びる"
+  },
+  {
+    "id": "r012",
+    "order": 108,
+    "subject": "力学",
+    "title": "回転円盤上の物体(遠心力と摩擦)",
+    "level": 1,
+    "question": "水平に回転する円盤の上、中心から $0.4\\ \\mathrm{m}$ の位置に小物体を置いた。静止摩擦係数を $0.3$、$g=9.8\\ \\mathrm{m/s^2}$ とするとき、物体が円盤上ですべらないための円盤の角速度の最大値を有効数字3桁で求めよ。",
+    "tool": "円盤と一緒に回る座標では、物体に遠心力 $mr\\omega^2$ が外向きに働き、それを静止摩擦力が支える。最大摩擦力 $\\mu mg$ と等しくなるときが限界。",
+    "steps": [
+      "つり合い: $mr\\omega^2=f\\le\\mu mg$",
+      "$\\omega\\le\\sqrt{\\dfrac{\\mu g}{r}}=\\sqrt{\\dfrac{0.3\\times 9.8}{0.4}}$"
+    ],
+    "answer": "$\\omega_{\\max}=2.71\\ \\mathrm{rad/s}$"
+  },
+  {
+    "id": "r013",
+    "order": 109,
+    "subject": "力学",
+    "title": "回転円盤上を歩く人に必要な力(遠心力とコリオリ力)",
+    "level": 3,
+    "question": "角速度 $\\omega$(上から見て反時計回り)で回る円盤上で、質量 $m$ の人が、円盤に固定した座標の点 $P(2r,0)$ を $t=0$ に出発し、円盤座標で一定の速度 $\\vec v=(-v,0)$ で中心に向かって歩く。この運動をするために、各時刻 $t$ に人が受けなければならない力(床からの摩擦力など)を円盤座標の成分で求めよ。",
+    "tool": "円盤座標では加速度が $0$ なので、「実際の力 + 遠心力 + コリオリ力 $=0$」。遠心力は $m\\omega^2\\vec r'$、コリオリ力は $-2m\\vec\\omega\\times\\vec v'$。2つの慣性力の向きを外積で確かめるのがポイント(組み合わせ)。",
+    "steps": [
+      "位置 $\\vec r'=(2r-vt,\\ 0)$、速度 $\\vec v'=(-v,\\ 0)$、加速度 $\\vec a'=\\vec 0$",
+      "遠心力 $m\\omega^2\\vec r'=(m\\omega^2(2r-vt),\\ 0)$",
+      "コリオリ力 $-2m\\vec\\omega\\times\\vec v'=-2m\\omega\\hat z\\times(-v\\hat x)=(0,\\ 2m\\omega v)$",
+      "$\\vec F+(\\text{遠心力})+(\\text{コリオリ力})=\\vec 0$"
+    ],
+    "answer": "$\\vec F=\\left(- 2 m \\omega^{2} r + m \\omega^{2} t v,\\ - 2 m \\omega v\\right)$(中心向きに大きさ $m\\omega^2(2r-vt)$、$y$ 軸の負の向きに大きさ $2m\\omega v$)"
+  },
+  {
+    "id": "r014",
+    "order": 110,
+    "subject": "力学",
+    "title": "換算質量",
+    "level": 1,
+    "question": "質量 $m$ と $3m$ の2つの質点が、互いの間に働く力だけで運動している。相対運動の運動方程式に現れる換算質量 $\\mu$ を求めよ。",
+    "tool": "2体の運動方程式から相対座標 $\\vec r=\\vec r_1-\\vec r_2$ の式を作ると $\\mu\\ddot{\\vec r}=\\vec F$、$\\dfrac{1}{\\mu}=\\dfrac{1}{m_1}+\\dfrac{1}{m_2}$。",
+    "steps": [
+      "$m_1\\ddot{\\vec r}_1=\\vec F,\\ m_2\\ddot{\\vec r}_2=-\\vec F$ より $\\ddot{\\vec r}=\\left(\\dfrac{1}{m_1}+\\dfrac{1}{m_2}\\right)\\vec F$",
+      "$\\mu=\\dfrac{m_1m_2}{m_1+m_2}=\\dfrac{m\\cdot 3m}{4m}$"
+    ],
+    "answer": "$\\mu=\\dfrac{3 m}{4}$"
+  },
+  {
+    "id": "r015",
+    "order": 111,
+    "subject": "力学",
+    "title": "ばねでつながった2質点の回転",
+    "level": 2,
+    "question": "自然長 $l_0$、ばね定数 $k$ のばねの両端に質量 $m$ と $3m$ の質点がつながれ、なめらかな水平面上で重心 $G$ のまわりを一定の角速度 $\\omega$ で回っている。ばねの長さが $\\dfrac{5 l_{0}}{4}$ に保たれているとき、$\\omega$ を求めよ。換算質量を使って解き、重心のまわりで片方の質点だけを考えても同じ結果になることを確かめよ。",
+    "tool": "相対運動は換算質量 $\\mu$ の1体問題になるので、$\\mu r\\omega^2=k(r-l_0)$(向心力=ばねの力)。確かめは、重心からの距離 $\\dfrac{m_2}{m_1+m_2}r$ を回る $m_1$ の運動方程式で。",
+    "steps": [
+      "$\\mu=\\dfrac{m\\cdot 3m}{4m}=\\dfrac{3 m}{4}$",
+      "$\\mu r\\omega^2=k(r-l_0)$ に $r=\\dfrac{5 l_{0}}{4}$ を代入",
+      "確かめ: $m$ は重心から $\\dfrac{3}{4}r$ を回るので $m\\cdot\\dfrac{3}{4}r\\omega^2=k(r-l_0)$ で同じ式"
+    ],
+    "answer": "$\\omega=\\sqrt{\\dfrac{4 k}{15 m}}$"
+  },
+  {
+    "id": "r016",
+    "order": 112,
+    "subject": "力学",
+    "title": "ばねでつながった2質点の回転",
+    "level": 2,
+    "question": "自然長 $l_0$、ばね定数 $k$ のばねの両端に質量 $2m$ と $3m$ の質点がつながれ、なめらかな水平面上で重心 $G$ のまわりを一定の角速度 $\\omega$ で回っている。ばねの長さが $\\dfrac{4 l_{0}}{3}$ に保たれているとき、$\\omega$ を求めよ。換算質量を使って解き、重心のまわりで片方の質点だけを考えても同じ結果になることを確かめよ。",
+    "tool": "相対運動は換算質量 $\\mu$ の1体問題になるので、$\\mu r\\omega^2=k(r-l_0)$(向心力=ばねの力)。確かめは、重心からの距離 $\\dfrac{m_2}{m_1+m_2}r$ を回る $m_1$ の運動方程式で。",
+    "steps": [
+      "$\\mu=\\dfrac{2m\\cdot 3m}{5m}=\\dfrac{6 m}{5}$",
+      "$\\mu r\\omega^2=k(r-l_0)$ に $r=\\dfrac{4 l_{0}}{3}$ を代入",
+      "確かめ: $2m$ は重心から $\\dfrac{3}{5}r$ を回るので $2m\\cdot\\dfrac{3}{5}r\\omega^2=k(r-l_0)$ で同じ式"
+    ],
+    "answer": "$\\omega=\\sqrt{\\dfrac{5 k}{24 m}}$"
+  },
+  {
+    "id": "r017",
+    "order": 113,
+    "subject": "力学",
+    "title": "ばねでつながった2物体の振動",
+    "level": 1,
+    "question": "なめらかな水平面上で、ばね定数 $k$ のばねの両端に質量 $m$ と $3m$ の物体がつながれている。両方を引き離して静かに放したとき、ばねの伸縮の角振動数を求めよ。",
+    "tool": "ばねの伸び $x=x_1-x_2-l_0$ の運動方程式は換算質量 $\\mu$ を使って $\\mu\\ddot x=-kx$ になる(重心は静止したまま)。",
+    "steps": [
+      "$\\mu=\\dfrac{3 m}{4}$",
+      "$\\mu\\ddot x=-kx$ より $\\omega=\\sqrt{k/\\mu}$"
+    ],
+    "answer": "$\\omega=\\sqrt{\\dfrac{4 k}{3 m}}$"
+  },
+  {
+    "id": "r018",
+    "order": 114,
+    "subject": "力学",
+    "title": "3つの質点の重心運動と相対運動",
+    "level": 2,
+    "question": "質量 $3m$ の質点1と、質量 $2m$ の質点2・3が $xy$ 面内を運動している。ある瞬間、質点1・2・3はそれぞれ $(0,0)$、$(3 a,0)$、$(0,3 a)$ にあり、速度は $(0,0)$、$(0,3 V)$、$(- 3 V,0)$ であった。(1) 重心速度を求めよ。(2) 全運動エネルギーを、各質点の和と「重心運動+相対運動」の両方で求めて等しいことを示せ。(3) 原点のまわりの全角運動量を同様に2通りで求めよ。",
+    "tool": "重心 $\\vec R=\\dfrac{\\sum m_i\\vec r_i}{M}$、$\\vec V_G=\\dfrac{\\sum m_i\\vec v_i}{M}$。相対速度 $\\vec v_i-\\vec V_G$ を使うと $K=\\dfrac{1}{2}MV_G^2+\\sum\\dfrac{1}{2}m_i|\\vec v_i-\\vec V_G|^2$、$\\vec L=\\vec R\\times M\\vec V_G+\\sum(\\vec r_i-\\vec R)\\times m_i(\\vec v_i-\\vec V_G)$。",
+    "steps": [
+      "$M=7m$、$\\vec R=\\left(\\dfrac{6 a}{7},\\ \\dfrac{6 a}{7}\\right)$、$\\vec V_G=\\left(- \\dfrac{6 V}{7},\\ \\dfrac{6 V}{7}\\right)$",
+      "各質点の和: $K=\\dfrac{1}{2}(2m)(3 V)^2\\times 2=18 V^{2} m$",
+      "分離: $\\dfrac{1}{2}MV_G^2=\\dfrac{36 V^{2} m}{7}$、相対運動 $\\dfrac{90 V^{2} m}{7}$、和 $18 V^{2} m$",
+      "角運動量: 和で $36 V a m$、分離で $\\dfrac{72 V a m}{7}+(\\dfrac{180 V a m}{7})=36 V a m$"
+    ],
+    "answer": "$\\vec V_G=\\left(- \\dfrac{6 V}{7},\\ \\dfrac{6 V}{7}\\right)$、$K=18 V^{2} m$、$L_z=36 V a m$(どちらの求め方でも一致)"
+  },
+  {
+    "id": "r019",
+    "order": 115,
+    "subject": "力学",
+    "title": "3つの質点の重心運動と相対運動",
+    "level": 2,
+    "question": "質量 $3m$ の質点1と、質量 $2m$ の質点2・3が $xy$ 面内を運動している。ある瞬間、質点1・2・3はそれぞれ $(0,0)$、$(a,0)$、$(0,a)$ にあり、速度は $(0,0)$、$(0,V)$、$(- V,0)$ であった。(1) 重心速度を求めよ。(2) 全運動エネルギーを、各質点の和と「重心運動+相対運動」の両方で求めて等しいことを示せ。(3) 原点のまわりの全角運動量を同様に2通りで求めよ。",
+    "tool": "重心 $\\vec R=\\dfrac{\\sum m_i\\vec r_i}{M}$、$\\vec V_G=\\dfrac{\\sum m_i\\vec v_i}{M}$。相対速度 $\\vec v_i-\\vec V_G$ を使うと $K=\\dfrac{1}{2}MV_G^2+\\sum\\dfrac{1}{2}m_i|\\vec v_i-\\vec V_G|^2$、$\\vec L=\\vec R\\times M\\vec V_G+\\sum(\\vec r_i-\\vec R)\\times m_i(\\vec v_i-\\vec V_G)$。",
+    "steps": [
+      "$M=7m$、$\\vec R=\\left(\\dfrac{2 a}{7},\\ \\dfrac{2 a}{7}\\right)$、$\\vec V_G=\\left(- \\dfrac{2 V}{7},\\ \\dfrac{2 V}{7}\\right)$",
+      "各質点の和: $K=\\dfrac{1}{2}(2m)(V)^2\\times 2=2 V^{2} m$",
+      "分離: $\\dfrac{1}{2}MV_G^2=\\dfrac{4 V^{2} m}{7}$、相対運動 $\\dfrac{10 V^{2} m}{7}$、和 $2 V^{2} m$",
+      "角運動量: 和で $4 V a m$、分離で $\\dfrac{8 V a m}{7}+(\\dfrac{20 V a m}{7})=4 V a m$"
+    ],
+    "answer": "$\\vec V_G=\\left(- \\dfrac{2 V}{7},\\ \\dfrac{2 V}{7}\\right)$、$K=2 V^{2} m$、$L_z=4 V a m$(どちらの求め方でも一致)"
+  },
+  {
+    "id": "r020",
+    "order": 116,
+    "subject": "力学",
+    "title": "2物体の衝突",
+    "level": 1,
+    "question": "なめらかな直線上で、速度 $v$ で進む質量 $m$ の物体が、静止している質量 $3m$ の物体に正面衝突した。反発係数を $\\dfrac{1}{2}$ とするとき、衝突後のそれぞれの速度と、衝突で失われた運動エネルギーを求めよ。",
+    "tool": "運動量保存 $m_1v=m_1v_1'+m_2v_2'$ と反発係数の式 $v_2'-v_1'=e(v-0)$ を連立する。失われるエネルギーは重心運動の分が変わらないので、相対運動の分 $\\dfrac{1}{2}\\mu(1-e^2)v^2$ になる(第5回の分離の考え方)。",
+    "steps": [
+      "$mv=mv_1'+3mv_2'$、$v_2'-v_1'=\\dfrac{1}{2}v$",
+      "$v_1'=- \\dfrac{v}{8}$、$v_2'=\\dfrac{3 v}{8}$",
+      "換算質量 $\\mu=\\dfrac{3 m}{4}$ より $\\Delta K=-\\dfrac{1}{2}\\mu(1-e^2)v^2$"
+    ],
+    "answer": "$v_1'=- \\dfrac{v}{8},\\quad v_2'=\\dfrac{3 v}{8}$、失われた運動エネルギー $\\dfrac{9 m v^{2}}{32}$"
+  },
+  {
+    "id": "r021",
+    "order": 117,
+    "subject": "力学",
+    "title": "反発係数と失われる運動エネルギー",
+    "level": 2,
+    "question": "なめらかな直線上で、速度 $v$ で進む質量 $m$ の物体が、静止している質量 $m$ の物体に正面衝突した。反発係数を $\\dfrac{1}{3}$ とするとき、衝突後のそれぞれの速度と、衝突で失われた運動エネルギーを求めよ。",
+    "tool": "運動量保存 $m_1v=m_1v_1'+m_2v_2'$ と反発係数の式 $v_2'-v_1'=e(v-0)$ を連立する。失われるエネルギーは重心運動の分が変わらないので、相対運動の分 $\\dfrac{1}{2}\\mu(1-e^2)v^2$ になる(第5回の分離の考え方)。",
+    "steps": [
+      "$mv=mv_1'+mv_2'$、$v_2'-v_1'=\\dfrac{1}{3}v$",
+      "$v_1'=\\dfrac{v}{3}$、$v_2'=\\dfrac{2 v}{3}$",
+      "換算質量 $\\mu=\\dfrac{m}{2}$ より $\\Delta K=-\\dfrac{1}{2}\\mu(1-e^2)v^2$"
+    ],
+    "answer": "$v_1'=\\dfrac{v}{3},\\quad v_2'=\\dfrac{2 v}{3}$、失われた運動エネルギー $\\dfrac{2 m v^{2}}{9}$"
+  },
+  {
+    "id": "r022",
+    "order": 118,
+    "subject": "力学",
+    "title": "ばねでつないだ2つの振り子(基準振動)",
+    "level": 1,
+    "question": "長さ $l$ の糸に質量 $m$ の質点を付けた振り子2つを、ばね定数 $k$ のばねでつないだ(静止状態でばねは自然長)。微小振動で、各質点の静止位置からの右向きのずれを $x_1,x_2$ とする。(1) 運動方程式を立てよ。(2) $x_1=C_1\\sin(\\omega t+\\alpha),\\ x_2=C_2\\sin(\\omega t+\\alpha)$ とおいて基準振動の角振動数と $C_2/C_1$ を求めよ。",
+    "tool": "微小振動では重力の復元力が $-\\dfrac{mg}{l}x$、ばねの力はのび $x_1-x_2$ に比例。解を代入すると $C_1,C_2$ の連立1次方程式になり、$C_1=C_2=0$ 以外の解をもつ条件(係数行列式 $=0$)から $\\omega$ が決まる。",
+    "steps": [
+      "$m\\ddot x_1=-\\dfrac{mg}{l}x_1-k(x_1-x_2)$、$m\\ddot x_2=-\\dfrac{mg}{l}x_2+k(x_1-x_2)$",
+      "代入: $\\left(\\dfrac{g}{l}+\\dfrac{k}{m}-\\omega^2\\right)C_1-\\dfrac{k}{m}C_2=0$ など",
+      "行列式 $=0$: $\\left(\\dfrac{g}{l}+\\dfrac{k}{m}-\\omega^2\\right)^2=\\left(\\dfrac{k}{m}\\right)^2$"
+    ],
+    "answer": "$\\omega_1=\\sqrt{\\dfrac{g}{l}}$($C_2/C_1=1$、同じ向きにそろって振れる)、$\\omega_2=\\sqrt{\\dfrac{g}{l}+\\dfrac{2k}{m}}$($C_2/C_1=-1$、逆向きに振れる)"
+  },
+  {
+    "id": "r023",
+    "order": 119,
+    "subject": "力学",
+    "title": "3本のばねでつないだ2物体の連成振動",
+    "level": 2,
+    "question": "なめらかな水平面上で、壁―ばね $k$ ―質量 $m$ ―ばね $k'$ ―質量 $m$ ―ばね $k$ ―壁 の順につながれている(静止状態で全ばねは自然長)。基準振動の角振動数と、それぞれの振動の様子を答えよ。",
+    "tool": "前問(振り子)と同じ手順。重力の項がばね $k$ に置き換わっただけ。$x_1=x_2$(同位相)と $x_1=-x_2$(逆位相)の2つが基準振動になる。",
+    "steps": [
+      "$m\\ddot x_1=-kx_1-k'(x_1-x_2)$、$m\\ddot x_2=-kx_2+k'(x_1-x_2)$",
+      "行列式 $=0$: $\\left(\\dfrac{k+k'}{m}-\\omega^2\\right)^2=\\left(\\dfrac{k'}{m}\\right)^2$"
+    ],
+    "answer": "$\\omega_1=\\sqrt{\\dfrac{k}{m}}$(同じ向きに動き、真ん中のばねは伸び縮みしない)、$\\omega_2=\\sqrt{\\dfrac{k+2k'}{m}}$(逆向きに動く)"
+  },
+  {
+    "id": "r024",
+    "order": 120,
+    "subject": "力学",
+    "title": "質量が違う2物体の連成振動",
+    "level": 3,
+    "question": "なめらかな水平面上で、壁―ばね $k$ ―質量 $m$ ―ばね $k$ ―質量 $2m$ ―ばね $k$ ―壁 とつながれている。基準振動の角振動数 $\\omega$ と、それぞれの振幅比 $C_2/C_1$ を求めよ。",
+    "tool": "質量が違うと同位相・逆位相の対称な解にはならないので、行列式 $=0$ の2次方程式をきちんと解く。$\\omega^2$ を求めてから振幅比を連立方程式の1本目に戻して出す。",
+    "steps": [
+      "$m\\ddot x_1=-2kx_1+kx_2$、$2m\\ddot x_2=kx_1-2kx_2$",
+      "$s=k/m$ とおくと $(2s-\\omega^2)(s-\\omega^2)-\\dfrac{s^2}{2}=0$、つまり $\\omega^4-3s\\omega^2+\\dfrac{3}{2}s^2=0$",
+      "$\\omega^2=\\dfrac{3\\pm\\sqrt3}{2}\\,\\dfrac{k}{m}$。1本目から $\\dfrac{C_2}{C_1}=\\dfrac{2s-\\omega^2}{s}=\\dfrac{1\\mp\\sqrt3}{2}$"
+    ],
+    "answer": "$\\omega^2=\\dfrac{3-\\sqrt3}{2}\\dfrac{k}{m}$ のとき $C_2/C_1=\\dfrac{1+\\sqrt3}{2}$(同じ向き)、$\\omega^2=\\dfrac{3+\\sqrt3}{2}\\dfrac{k}{m}$ のとき $C_2/C_1=\\dfrac{1-\\sqrt3}{2}$(逆向き)"
+  },
+  {
+    "id": "r025",
+    "order": 121,
+    "subject": "力学",
+    "title": "連成振り子の一般解とうなり",
+    "level": 3,
+    "question": "ばね $k$ でつないだ2つの振り子(長さ $l$、質量 $m$)で、$t=0$ に質点1だけを $a$ ずらして静かに放した($x_1(0)=a,\\ x_2(0)=0$、速度はともに $0$)。$x_1(t),\\ x_2(t)$ を求め、ばねが弱いとき($k$ が小さいとき)どのような運動になるかを説明せよ。",
+    "tool": "一般解は2つの基準振動の重ね合わせ。初期条件で4つの定数を決める。和積の公式で $\\cos$ の和を積にすると、振幅がゆっくり変わる「うなり」が見える(基準振動と初期条件の組み合わせ)。",
+    "steps": [
+      "一般解 $x_1=A\\cos\\omega_1t+B\\cos\\omega_2t$、$x_2=A\\cos\\omega_1t-B\\cos\\omega_2t$(速度0なので sin の項はない)",
+      "$x_1(0)=A+B=a$、$x_2(0)=A-B=0$ より $A=B=\\dfrac{a}{2}$",
+      "$x_1=a\\cos\\dfrac{\\omega_2-\\omega_1}{2}t\\cos\\dfrac{\\omega_2+\\omega_1}{2}t$、$x_2=a\\sin\\dfrac{\\omega_2-\\omega_1}{2}t\\sin\\dfrac{\\omega_2+\\omega_1}{2}t$"
+    ],
+    "answer": "$x_1=\\dfrac{a}{2}(\\cos\\omega_1t+\\cos\\omega_2t),\\ x_2=\\dfrac{a}{2}(\\cos\\omega_1t-\\cos\\omega_2t)$($\\omega_1=\\sqrt{g/l},\\ \\omega_2=\\sqrt{g/l+2k/m}$)。$k$ が小さいと $\\omega_1\\approx\\omega_2$ で、振動のエネルギーが2つの振り子の間をゆっくり行き来する(うなり)"
   }
 ]
