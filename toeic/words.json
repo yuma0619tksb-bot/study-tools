@@ -2518,5 +2518,565 @@
    "culminate"
   ],
   "band": 860
+ },
+ {
+  "id": "w860_61",
+  "w": "abide",
+  "pos": "動",
+  "ja": "従う(abide by)",
+  "s": "All contractors must [abide] by the safety rules on the site.",
+  "sja": "すべての請負業者は現場の安全規則に従わなければならない。",
+  "d": [
+   "scrutinize",
+   "procure",
+   "replenish"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_62",
+  "w": "advocate",
+  "pos": "動",
+  "ja": "提唱する、支持する",
+  "s": "The committee [advocates] flexible working hours for all staff.",
+  "sja": "委員会は全社員の柔軟な勤務時間を提唱している。",
+  "d": [
+   "plummets",
+   "deteriorates",
+   "prevails"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_63",
+  "w": "allegedly",
+  "pos": "副",
+  "ja": "伝えられるところでは",
+  "s": "The supplier [allegedly] shipped the wrong parts twice.",
+  "sja": "その業者は2度も間違った部品を発送したと言われている。",
+  "d": [
+   "ago",
+   "tomorrow",
+   "unanimously"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_64",
+  "w": "anonymous",
+  "pos": "形",
+  "ja": "匿名の",
+  "s": "The survey is [anonymous], so please answer honestly.",
+  "sja": "その調査は匿名なので正直に答えてください。",
+  "d": [
+   "punctual",
+   "dilapidated",
+   "lucrative"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_65",
+  "w": "arbitrary",
+  "pos": "形",
+  "ja": "恣意的な、根拠のない",
+  "s": "Employees complained that the new rules seemed [arbitrary].",
+  "sja": "社員たちは新しい規則が恣意的に思えると不満を言った。",
+  "d": [
+   "punctual",
+   "thrifty",
+   "dilapidated"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_66",
+  "w": "bolster",
+  "pos": "動",
+  "ja": "強化する、後押しする",
+  "s": "The new advertising campaign should [bolster] sales in Asia.",
+  "sja": "新しい広告キャンペーンはアジアでの売上を後押しするはずだ。",
+  "d": [
+   "plummet",
+   "deteriorate",
+   "abide"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_67",
+  "w": "candid",
+  "pos": "形",
+  "ja": "率直な",
+  "s": "Thank you for your [candid] feedback on the proposal.",
+  "sja": "提案への率直なご意見をありがとうございます。",
+  "d": [
+   "dilapidated",
+   "adjacent",
+   "punctual"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_68",
+  "w": "coherent",
+  "pos": "形",
+  "ja": "一貫した、筋の通った",
+  "s": "The report lacks a [coherent] structure.",
+  "sja": "その報告書には一貫した構成がない。",
+  "d": [
+   "punctual",
+   "thrifty",
+   "adjacent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_69",
+  "w": "complimentary",
+  "pos": "形",
+  "ja": "無料の;称賛の",
+  "s": "Guests receive a [complimentary] breakfast every morning.",
+  "sja": "宿泊客は毎朝無料の朝食を受け取れる。",
+  "d": [
+   "reluctant",
+   "punctual",
+   "stringent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_70",
+  "w": "comprehensive",
+  "pos": "形",
+  "ja": "包括的な、総合的な",
+  "s": "The manual provides a [comprehensive] guide to the software.",
+  "sja": "そのマニュアルはソフトウェアの総合的な手引きになっている。",
+  "d": [
+   "reluctant",
+   "punctual",
+   "thrifty"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_71",
+  "w": "concurrently",
+  "pos": "副",
+  "ja": "同時に",
+  "s": "The two training sessions will run [concurrently] in different rooms.",
+  "sja": "2つの研修は別々の部屋で同時に行われる。",
+  "d": [
+   "ago",
+   "yesterday",
+   "unanimously"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_72",
+  "w": "conducive",
+  "pos": "形",
+  "ja": "(~の)助けになる(conducive to)",
+  "s": "A quiet office is [conducive] to productive work.",
+  "sja": "静かなオフィスは生産的な仕事の助けになる。",
+  "d": [
+   "punctual",
+   "thrifty",
+   "dilapidated"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_73",
+  "w": "contend",
+  "pos": "動",
+  "ja": "争う;主張する",
+  "s": "Several firms are [contending] for the government contract.",
+  "sja": "数社が政府の契約を争っている。",
+  "d": [
+   "plummeting",
+   "deteriorating",
+   "culminating"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_74",
+  "w": "curtail",
+  "pos": "動",
+  "ja": "削減する、切り詰める",
+  "s": "The company had to [curtail] travel expenses this year.",
+  "sja": "会社は今年、出張費を削減しなければならなかった。",
+  "d": [
+   "plummet",
+   "prevail",
+   "abide"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_75",
+  "w": "delegate",
+  "pos": "動",
+  "ja": "(仕事を)任せる",
+  "s": "Good managers [delegate] routine tasks to their teams.",
+  "sja": "よい管理職は日常業務をチームに任せる。",
+  "d": [
+   "plummet",
+   "prevail",
+   "deteriorate"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_76",
+  "w": "deliberately",
+  "pos": "副",
+  "ja": "わざと、意図的に",
+  "s": "The price was [deliberately] set low to attract new customers.",
+  "sja": "新規客を呼ぶため、価格は意図的に低く設定された。",
+  "d": [
+   "ago",
+   "unanimously",
+   "tomorrow"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_77",
+  "w": "disrupt",
+  "pos": "動",
+  "ja": "混乱させる、中断させる",
+  "s": "The power outage [disrupted] production for three hours.",
+  "sja": "停電で生産が3時間中断した。",
+  "d": [
+   "plummeted",
+   "prevailed",
+   "abided"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_78",
+  "w": "dwindle",
+  "pos": "動",
+  "ja": "次第に減る",
+  "s": "Ticket sales began to [dwindle] after the first week.",
+  "sja": "チケットの売上は最初の週の後、次第に減り始めた。",
+  "d": [
+   "scrutinize",
+   "procure",
+   "bolster"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_79",
+  "w": "elicit",
+  "pos": "動",
+  "ja": "引き出す",
+  "s": "The survey was designed to [elicit] honest opinions from customers.",
+  "sja": "その調査は顧客から率直な意見を引き出すように作られた。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_80",
+  "w": "exempt",
+  "pos": "形",
+  "ja": "免除された",
+  "s": "Small businesses are [exempt] from the new tax.",
+  "sja": "小規模事業者は新しい税を免除されている。",
+  "d": [
+   "punctual",
+   "eloquent",
+   "candid"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_81",
+  "w": "foster",
+  "pos": "動",
+  "ja": "育成する、促進する",
+  "s": "The program aims to [foster] cooperation between departments.",
+  "sja": "その制度は部署間の協力を促すことを目指している。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_82",
+  "w": "impending",
+  "pos": "形",
+  "ja": "差し迫った",
+  "s": "Staff were informed of the [impending] merger.",
+  "sja": "社員は差し迫った合併について知らされた。",
+  "d": [
+   "punctual",
+   "thrifty",
+   "candid"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_83",
+  "w": "incur",
+  "pos": "動",
+  "ja": "(費用・損失を)負う",
+  "s": "Customers who return items late may [incur] additional fees.",
+  "sja": "返品が遅れた客は追加料金がかかることがある。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "abide"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_84",
+  "w": "indispensable",
+  "pos": "形",
+  "ja": "欠かせない",
+  "s": "Her experience made her [indispensable] to the project team.",
+  "sja": "その経験で彼女はプロジェクトチームに欠かせない存在になった。",
+  "d": [
+   "thrifty",
+   "anonymous",
+   "dilapidated"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_85",
+  "w": "intermittent",
+  "pos": "形",
+  "ja": "断続的な",
+  "s": "We have experienced [intermittent] problems with the network.",
+  "sja": "ネットワークに断続的な問題が起きている。",
+  "d": [
+   "punctual",
+   "eloquent",
+   "thrifty"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_86",
+  "w": "mitigate",
+  "pos": "動",
+  "ja": "軽減する",
+  "s": "The new policy will help [mitigate] the risk of data loss.",
+  "sja": "新しい方針はデータ消失の危険を減らすのに役立つ。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_87",
+  "w": "overhaul",
+  "pos": "動",
+  "ja": "全面的に見直す、総点検する",
+  "s": "The city plans to [overhaul] its public transportation system.",
+  "sja": "市は公共交通の仕組みを全面的に見直す予定だ。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "abide"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_88",
+  "w": "pending",
+  "pos": "形",
+  "ja": "未決定の、保留中の",
+  "s": "The contract is still [pending] approval from the legal team.",
+  "sja": "契約はまだ法務チームの承認待ちだ。",
+  "d": [
+   "punctual",
+   "thrifty",
+   "eloquent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_89",
+  "w": "preliminary",
+  "pos": "形",
+  "ja": "予備の、暫定の",
+  "s": "The [preliminary] results of the study look promising.",
+  "sja": "その研究の暫定結果は有望に見える。",
+  "d": [
+   "punctual",
+   "thrifty",
+   "eloquent"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_90",
+  "w": "prestigious",
+  "pos": "形",
+  "ja": "名声のある、一流の",
+  "s": "She graduated from a [prestigious] business school.",
+  "sja": "彼女は一流のビジネススクールを卒業した。",
+  "d": [
+   "punctual",
+   "thrifty",
+   "reluctant"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_91",
+  "w": "proficient",
+  "pos": "形",
+  "ja": "熟達した",
+  "s": "Applicants must be [proficient] in at least two languages.",
+  "sja": "応募者は少なくとも2か国語に堪能でなければならない。",
+  "d": [
+   "dilapidated",
+   "adjacent",
+   "obsolete"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_92",
+  "w": "prolong",
+  "pos": "動",
+  "ja": "延長する、長持ちさせる",
+  "s": "Regular maintenance will [prolong] the life of the machine.",
+  "sja": "定期的な整備で機械が長持ちする。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_93",
+  "w": "proximity",
+  "pos": "名",
+  "ja": "近いこと、近接",
+  "s": "The hotel's [proximity] to the airport makes it popular.",
+  "sja": "空港に近いことでそのホテルは人気がある。",
+  "d": [
+   "deficit",
+   "liability",
+   "patronage"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_94",
+  "w": "relinquish",
+  "pos": "動",
+  "ja": "手放す、放棄する",
+  "s": "The founder agreed to [relinquish] control of the company.",
+  "sja": "創業者は会社の経営権を手放すことに同意した。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_95",
+  "w": "scrutiny",
+  "pos": "名",
+  "ja": "精査、厳しい監視",
+  "s": "The proposal came under close [scrutiny] from investors.",
+  "sja": "その提案は投資家から厳しく精査された。",
+  "d": [
+   "amenity",
+   "surplus",
+   "patronage"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_96",
+  "w": "stagnant",
+  "pos": "形",
+  "ja": "停滞した",
+  "s": "Sales have remained [stagnant] for three quarters.",
+  "sja": "売上は3四半期にわたって停滞している。",
+  "d": [
+   "punctual",
+   "eloquent",
+   "candid"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_97",
+  "w": "unprecedented",
+  "pos": "形",
+  "ja": "前例のない",
+  "s": "The company reported [unprecedented] growth last year.",
+  "sja": "その会社は昨年、前例のない成長を報告した。",
+  "d": [
+   "punctual",
+   "candid",
+   "thrifty"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_98",
+  "w": "versatile",
+  "pos": "形",
+  "ja": "用途の広い、多才な",
+  "s": "This [versatile] printer can also scan and copy documents.",
+  "sja": "この多用途プリンターは書類のスキャンやコピーもできる。",
+  "d": [
+   "punctual",
+   "reluctant",
+   "candid"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_99",
+  "w": "warrant",
+  "pos": "動",
+  "ja": "正当化する、必要とする",
+  "s": "The minor error does not [warrant] a full investigation.",
+  "sja": "その小さな誤りは全面的な調査を必要とするほどではない。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "prevail"
+  ],
+  "band": 860
+ },
+ {
+  "id": "w860_100",
+  "w": "yield",
+  "pos": "動",
+  "ja": "(利益・結果を)生む",
+  "s": "The new strategy is expected to [yield] higher profits.",
+  "sja": "新しい戦略はより高い利益を生むと見込まれている。",
+  "d": [
+   "plummet",
+   "dwindle",
+   "abide"
+  ],
+  "band": 860
  }
 ]
